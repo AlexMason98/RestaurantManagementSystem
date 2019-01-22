@@ -1,0 +1,301 @@
+﻿1*Tortilla Chips With Dips*Starters*£2.99*Yes*No
+2*Barbeque Southern Fried Chicken Strips*Starters*£5.79*No*No
+3*Hot Habanero Chicken Strips*Starters*£5.79*No*No
+4*Vegetarian Chilli Empanadas*Starters*£5.99*Yes*No
+5*Chicken Empanadas*Starters*£5.99*No*No
+6*Beef Chilli Empanadas*Starters*£5.99*No*No
+7*Salsa and Guacamole Nachos*Starters*£6.19*Yes*No
+8*Chicken, Chorizo and Sweetcorn Nachos*Starters*£6.19*No*No
+9*Barbeque Chicken Wings*Starters*£6.29*No*No
+10*Hot Habanero Chicken Wings*Starters*£6.29*No*No
+11*Cajun Dusted Green Beans*Starters*£4.59*No*No
+12*Garlic Tortilla*Starters*£3.99*Yes*No
+13*Garlic Tortilla With Cheese*Starters*£4.49*Yes*No
+14*Garlic Tortilla With Chorizo*Starters*£4.99*No*No
+15*Halloumi Skewers*Starters*£5.99*Yes*Yes
+16*Jalapeno Poppers*Starters*£5.79*Yes*No
+17*Chilli Prawns*Starters*£6.99*Yes*No
+18*Habanero Mushrooms*Starters*£5.49*Yes*Yes
+19*Patatas Bravas*Starters*£5.00*Yes*Yes
+20*The Ultimate Sharers*Sharers*£17.99*No*No
+21*Quesadilla Sharers*Sharers*£9.99*No*No
+22*Fully Loaded Nachos With Tomato Salsa*Sharers*£11.99*Yes*No
+23*Chicken Fully Loaded Nachos*Sharers*£11.99*No*No
+24*Beef Chilli Fully Loaded Nachos*Sharers*£11.99*No*No
+25*Five Bean Chilli Fully Loaded Nachos*Sharers*£11.99*Yes*No
+26*Crispy Tacos*Street Food*£5.00*No*No
+27*Habanero Mushrooms*Street Food*£5.00*Yes*Yes
+28*Mini Chicken Burrito*Street Food*£5.00*No*No
+29*Pan-Fried Chorizo*Street Food*£5.00*No*No
+30*Chorizo and Sweet Potato Croquettes*Street Food*£5.00*No*No
+31*Chicken, Chorizo and Sweetcorn Quesadilla Bites*Street Food*£5.00*No*No
+32*Roasted Veg and Chilli Beetroot Quesadilla Bites*Street Food*£5.00*Yes*No
+33*Beef Chilli Tortilla Stack*Street Food*£5.00*No*No
+34*Five Bean Chilli Tortilla Stack*Street Food*£5.00*Yes*No
+35*Patatas Bravas*Street Food*£5.00*Yes*Yes
+36*Halloumi Bites*Street Food*£5.00*Yes*Yes
+37*Classic Chicken*Fajitas*£12.99*No*Yes
+38*Extra Barbeque Sauce*Fajitas*£0.50*Yes*Yes
+39*Extra Hot Habanero Sauce*Fajitas*£0.50*Yes*Yes
+40*Barbeque Chicken and Pulled Pork*Fajitas*£14.69*No*Yes
+41*Seasoned Roasted Veg Fajita*Fajitas*£9.99*Yes*Yes
+42*Tender Steak*Fajitas*£15.99*No*Yes
+43*Garlic King Prawns*Fajitas*£15.69*No*Yes
+44*The Ultimate Fajita*Fajitas*£18.99*No*Yes
+45*Extra Chicken*Fajitas*£2.59*No*Yes
+46*Extra Barbeque Chicken and Pulled Pork*Fajitas*£2.59*No*Yes
+47*Extra Tender Steak*Fajitas*£2.59*No*Yes
+48*Extra Seasoned Roasted Veg*Fajitas*£2.59*Yes*Yes
+49*Extra Garlic King Prawns*Fajitas*£2.59*No*Yes
+50*Chicken and Barbeque Pulled Pork Burger*Burgers*£12.99*No*Yes
+51*Classic Beef Burger*Burgers*£9.99*No*Yes
+52*Southern Fried Chicken Burger*Burgers*£10.99*No*No
+53*Halloumi Burger*Burgers*£11.49*No*No
+54*Beef, Chorizo and Pulled Pork Burger*Burgers*£13.99*No*Yes
+55*Texan Stack Burger*Burgers*£14.99*No*No
+56*Extra Beef*Burgers*£2.99*No*Yes
+57*Extra Chicken Breast*Burgers*£2.99*No*Yes
+58*Extra Southern Fried Chicken Breast*Burgers*£2.99*No*No
+59*Extra Beef Chilli*Burgers*£1.49*No*Yes
+60*Extra Chorizo*Burgers*£1.49*No*Yes
+61*Extra Cheese*Burgers*£1.00*Yes*Yes
+62*Extra Bacon*Burgers*£1.00*No*Yes
+63*Extra Guacamole*Burgers*£1.00*Yes*Yes
+64*Extra Grilled Halloumi*Burgers*£1.49*Yes*No
+65*Steak and Fries*Grills*£12.99*No*No
+66*Steak and Salad*Grills*£12.99*No*Yes
+67*Extra Jalapeno Cheese Sauce*Grills*£0.00*Yes*No
+68*Extra Barbeque Sauce*Grills*£0.00*Yes*No
+69*Extra Peppercorn Sauce*Grills*£0.00*No*No
+70*Rib Eye Steak*Grills*£18.69*No*Yes
+71*Barbeque Chicken Melt*Grills*£13.99*No*Yes
+72*Chicken and Ribs*Grills*£16.59*No*Yes
+73*Whole Rack of Ribs*Grills*£19.99*No*Yes
+74*Half Rack of Ribs*Grills*£14.29*No*Yes
+75*Pork Belly*Grills*£14.59*No*No
+76*Southern Fried Chicken and Barbeque Pulled Pork*Grills*£15.59*No*No
+77*Classic Beef Chilli*Classics*£12.99*No*Yes
+78*Five Bean and Roasted Veg Chilli*Classics*£10.49*Yes*Yes
+79*Fiery Chicken*Classics*£13.99*No*Yes
+80*Barbeque Chicken Wrap*Classics*£11.79*No*No
+81*Chicken Baja Bowl*Classics*£13.89*No*No
+82*Jambalaya*Classics*£13.99*No*Yes
+83*Steak Salad*Salads*£12.99*No*Yes
+84*Mango and Avocado Salad*Salads*£9.99*Yes*Yes
+85*Chicken, Mango and Avocado Salad*Salads*£11.99*No*Yes
+86*Prawn, Mango and Avocado Salad*Salads*£11.99*No*Yes
+87*Chicken Fajita Salad*Salads*£11.49*No*Yes
+88*Roasted Halloumi and Veg Naked Burrito*Salads*£9.99*Yes*Yes
+89*Beef Chilli Naked Burrito*Salads*£9.99*No*Yes
+90*Mild Habanero Chicken*Salads*£9.99*No*Yes
+91*Skin-on Fries*Sides*£2.79*Yes*No
+92*Sweet Potato Fries*Sides*£3.29*Yes*No
+93*Sweet Potato Wedges*Sides*£2.99*Yes*Yes
+94*Refried Beans*Sides*£2.79*Yes*Yes
+95*Roasted Vegetables*Sides*£2.99*Yes*Yes
+96*Rice*Sides*£2.79*Yes*Yes
+97*Grilled Halloumi*Sides*£3.99*Yes*Yes
+98*Onion Rings*Sides*£3.49*Yes*No
+99*Coleslaw*Sides*£2.49*Yes*No
+100*Garlic Tortilla*Sides*£3.99*Yes*No
+101*Corn On The Cob*Sides*£2.79*Yes*Yes
+102*Small Churros*Desserts*£3.99*Yes*No
+103*Churros*Desserts*£5.99*Yes*No
+104*Hot Chocolate and Churros*Desserts*£5.90*Yes*No
+105*Pineapple Thins*Desserts*£4.99*Yes*Yes
+106*Chilli Pineapple Thins*Desserts*£4.99*Yes*Yes
+107*Brownie Baked Banana*Desserts*£5.59*Yes*No
+108*Toffee Popcorn Brownie*Desserts*£5.79*Yes*No
+109*Golden Nugget Cheesecake*Desserts*£5.89*Yes*No
+110*Blueberry and Apple Crumble*Desserts*£5.89*Yes*Yes
+111*Chocolate Orange Cake*Desserts*£5.99*Yes*No
+112*Cointreau 25ml Shot*Desserts*£1.95*Yes*Yes
+113*Mexican Mess*Desserts*£5.99*Yes*No
+114*Ice Cream - One Scoop*Desserts*£2.19*Yes*Yes
+115*Ice Cream - Trio*Desserts*£4.49*Yes*Yes
+116*Brownies and Ice Cream*Dessert*£5.89*Yes*Yes
+117*Lemon Sorbet - One Scoop*Dessert*£2.19*Yes*Yes
+118*Lemon Sorbet - Trio*Desserts*£4.49*Yes*Yes
+119*Americano*Hot Drinks*£2.69*Yes*No
+120*Latte*Hot Drinks*£2.79*Yes*No
+121*Cappuccino*Hot Drinks*£2.79*Yes*No
+122*Cappuccino - Large*Hot Drinks*£2.99*Yes*No
+123*Espresso*Hot Drinks*£2.29*Yes*No
+124*Double Espresso*Hot Drinks*£2.79*Yes*No
+125*Tea*Hot Drinks*£2.29*Yes*No
+126*Hot Chocolate*Hot Drinks*£2.99*Yes*No
+127*Liqueur Coffee - Goslings Addition*Hot Drinks*£4.99*Yes*No
+128*Liqueur Coffee - Baileys Addition*Hot Drinks*£4.99*Yes*No
+129*Liqueur Coffee - Disaronno Amaretto Addition*Hot Drinks*£4.99*Yes*No
+130*Liqueur Coffee - Jamesons Addition*Hot Drinks*£4.99*Yes*No
+131*Liqueur Coffee - Kahlua Addition*Hot Drinks*£4.99*Yes*No
+132*Liqueur Coffee - Martell Addition*Hot Drinks*£4.99*Yes*No
+133*Decaff Americano*Hot Drinks*£2.69*Yes*No
+134*Decaff Latte*Hot Drinks*£2.79*Yes*No
+135*Decaff Cappuccino*Hot Drinks*£2.79*Yes*No
+136*Decaff Cappuccino - Large*Hot Drinks*£2.99*Yes*No
+137*Decaff Espresso*Hot Drinks*£2.29*Yes*No
+138*Decaff Double Espresso*Hot Drinks*£2.79*Yes*No
+139*Homemade Lemonade*Mocktails*£3.79*Yes*Yes
+140*Ginger Beer Mock-jito*Mocktails*£3.69*Yes*Yes
+141*Apple Juice Mock-jito*Mocktails*£3.69*Yes*Yes
+142*Lemonade Mock-jito*Mocktails*£3.69*Yes*Yes
+143*Virgin Colada*Mocktails*£3.89*Yes*Yes
+144*Appleberry*Mocktails*£3.89*Yes*Yes
+145*Strawberry and Raspberry Agua Fresca*Mocktails*£2.99*Yes*Yes
+146*Mango and Passion Fruit Agua Fresca*Mocktails*£2.99*Yes*Yes
+147*Classic Vanilla*Milkshakes*£3.69*No*Yes
+148*Classic Strawberry*Milkshakes*£3.69*No*Yes
+149*Classic Chocolate*Milkshakes*£3.69*No*Yes
+150*Classic Blueberry*Milkshakes*£3.69*No*Yes
+151*Salted Caramel Popcorn*Milkshakes*£4.49*Yes*Yes
+152*Chocolate Churro*Milkshakes*£4.49*Yes*No
+153*Classic Vanilla Bourbon*Milkshakes*£6.19*No*Yes
+154*Classic Strawberry Bourbon*Milkshakes*£6.19*No*Yes
+155*Classic Chocolate Bourbon*Milkshakes*£6.19*No*Yes
+156*Classic Blueberry Bourbon*Milkshakes*£6.19*No*Yes
+157*Salted Caramel Popcorn Bourbon*Milkshakes*£6.99*Yes*Yes
+158*Chocolate Churro Bourbon*Milkshakes*£6.99*Yes*No
+159*Classic Margarita*House Margaritas*£6.49*Yes*Yes
+160*Tommies Margarita*House Margaritas*£7.49*Yes*Yes
+161*Best Margarita In The World*House Margaritas*£7.99*Yes*Yes
+162*Margarita Del Fuego*House Margaritas*£7.29*Yes*Yes
+163*Strawberry Margarita*House Margaritas*£6.99*Yes*Yes
+164*Coconut Margarita*House Margaritas*£7.49*Yes*Yes
+165*Classic Margarita Ocho*House Margaritas*£7.49*Yes*Yes
+166*Tommies Margarita Ocho*House Margaritas*£8.49*Yes*Yes
+167*Best Margarita In The World*House Margaritas*£8.99*Yes*Yes
+168*Margarita Del Fuego Ocho*House Margaritas*£8.29*Yes*Yes
+169*Strawberry Margarita Ocho*House Margaritas*£7.99*Yes*Yes
+170*Coconut Margarita Ocho*House Margaritas*£8.49*Yes*Yes
+171*Classic Margarita Pitcher*House Margaritas*£14.99*Yes*Yes
+172*Tommies Margarita Jug*House Margaritas*£14.99*Yes*Yes
+173*Strawberry Margarita Jug*House Margaritas*£14.99*Yes*Yes
+174*Pornstar Martini*Classic Cocktails*£7.29*Yes*Yes
+175*Southern Belle*Classic Cocktails*£6.99*Yes*Yes
+176*Mex On The Beach*Classic Cocktails*£6.49*Yes*Yes
+177*Raspberry Rum Collins*Classic Cocktails*£6.99*Yes*Yes
+178*Cherry Libre*Classic Cocktails*£6.89*Yes*Yes
+179*Woo Woo*Classic Cocktails*£5.79*Yes*Yes
+180*Frozen Strawberry Daiquiri*Classic Cocktails*£6.99*Yes*Yes
+181*Gin Fizz*Classic Cocktails*£7.59*Yes*Yes
+182*Espresso Martini*Classic Cocktails*£6.99*Yes*Yes
+183*Kir Royale*Classic Cocktails*£6.49*Yes*Yes
+184*Amaretto Sour*Classic Cocktails*£6.49*Yes*Yes
+185*Long Island Ice Tea*Classic Cocktails*£6.59*Yes*Yes
+186*Berry Sling*Classic Cocktails*£6.79*Yes*Yes
+187*Pina Colada*Classic Cocktails*£6.49*Yes*Yes
+188*Bourbon Sours*Classic Cocktails*£6.99*Yes*Yes
+189*Fruity Passion Fruit Mojito*Classic Cocktails*£7.29*Yes*Yes
+190*Classic Mojito*Classic Cocktails*£6.99*Yes*Yes
+191*Apple Juice*Juices*£0.80*Yes*Yes
+192*Egar Cloudy Apple Juice (16oz)*Juices*£3.50*Yes*Yes
+193*Orange Juice*Juices*£0.50*Yes*Yes
+194*Pineapple Juice*Juices*£0.90*Yes*Yes
+195*Gauva Juice (16oz)*Juices*£1.99*Yes*Yes
+196*El Velero Verdejo Blanco - 175ml, Valdepenas, Spain*White Wines*£4.59*Yes*Yes
+197*El Velero Verdejo Blanco - 250ml, Valdepenas, Spain*White Wines*£6.19*Yes*Yes
+198*El Velero Verdejo Blanco - Bottle, Valdepenas, Spain*White Wines*£15.99*Yes*Yes
+199*Casa Vista Chardonnay - 175ml, Central Valley, Chile*White Wines*£4.99*Yes*Yes
+200*Casa Vista Chardonnay - 250ml, Central Valley, Chile*White Wines*£6.89*Yes*Yes
+201*Casa Vista Chardonnay - Bottle, Central Valley, Chile*White Wines*£17.99*Yes*Yes
+202*Quindi Pinot Grigio - 175ml, Italy*White Wines*£5.19*Yes*Yes
+203*Quindi Pinot Grigio - 250ml, Italy*White Wines*£7.19*Yes*Yes
+204*Quindi Pinot Grigio - Bottle, Italy*White Wines*£19.99*Yes*Yes
+205*Milford Point Sauvignon Blanc - 175ml, Marlborough, New Zealand*White Wines*£6.19*Yes*Yes
+206*Milford Point Sauvignon Blanc - 250ml, Marlborough, New Zealand*White Wines*£8.19*Yes*Yes
+207*Milford Point Sauvignon Blanc - Bottle, Marlborough, New Zealand*White Wines*£23.49*Yes*Yes
+208*El Velero Tempranillo Tinto - 175ml, Valdepenas, Spain*Red Wines*£4.59*Yes*Yes
+209*El Velero Tempranillo Tinto - 250ml, Valdepenas, Spain*Red Wines*£6.59*Yes*Yes
+210*El Velero Tempranillo Tinto - Bottle, Valdepenas, Spain*Red Wines*£15.99*Yes*Yes
+211*Altoritas Merlot - 175ml, Central Valley, Chile*Red Wines*£4.79*Yes*Yes
+212*Altoritas Merlot - 250ml, Central Valley, Chile*Red Wines*£6.79*Yes*Yes
+213*Altoritas Merlot - Bottle, Central Valley, Chile*Red Wines*£16.99*Yes*Yes
+214*Casa Vista Cabernet Sauvignon - 175ml, Central Valley, Chile*Red Wines*£4.99*Yes*Yes
+215*Casa Vista Cabernet Sauvignon - 250ml, Central Valley, Chile*Red Wines*£6.89*Yes*Yes
+216*Casa Vista Cabernet Sauvignon - Bottle, Central Valley, Chile*Red Wines*£17.99*Yes*Yes
+217*Callia Lunaris Malbec - 175ml, Argentina*Red Wines*£5.19*Yes*Yes
+218*Callia Lunaris Malbec - 250ml, Argentina*Red Wines*£7.19*Yes*Yes
+219*Callia Lunaris Malbec - Bottle, Argentina*Red Wines*£19.99*Yes*Yes
+220*Don Jacobo Rioja Crianza - 175ml, Bodegas Corral, Spain*Red Wines*£6.19*Yes*Yes
+221*Don Jacobo Rioja Crianza - 250ml, Bodegas Corral, Spain*Red Wines*£8.19*Yes*Yes
+222*Don Jacobo Rioja Crianza - Bottle, Bodegas Corral, Spain*Red Wines*£23.49*Yes*Yes
+223*Echo Falls White Zinfandel - 175ml, USA*Rose Wines*£4.99*Yes*Yes
+224*Echo Falls White Zinfandel - 250ml, USA*Rose Wines*£6.89*Yes*Yes
+225*Echo Falls White Zinfandel - Bottle, USA*Rose Wines*£17.99*Yes*Yes
+226*Parini Pinot Grigio Rose Delle Venezie - 175ml, Italy*Rose Wines*£5.49*Yes*Yes
+227*Parini Pinot Grigio Rose Delle Venezie - 250ml, Italy*Rose Wines*£7.29*Yes*Yes
+228*Parini Pinot Grigio Rose Delle Venezie - Bottle, Italy*Rose Wines*£19.99*Yes*Yes
+229*Prosecco - 175ml, Midea, Italy*Fizz Wines*£4.99*Yes*Yes
+230*Prosecco - Bottle, Midea, Italy*Fizz Wines*£21.99*Yes*Yes
+231*Codorniu Brut Rosado - 175ml, Cava, Spain*Fizz Wines*£5.49*Yes*Yes
+232*Codorniu Brut Rosado - Bottle, Cava, Spain*Fizz Wines*£25.99*Yes*Yes
+233*Lanson Black Label Brut NV - Bottle*Fizz Wines*£39.99*Yes*Yes
+234*Evan Williams*Spirits - Bourbon*£3.69*Yes*Yes
+235*Buffalo Trace*Spirits - Bourbon*£3.99*Yes*Yes
+236*Colorado Tincup*Spirits - Bourbon*£3.69*Yes*Yes
+237*Old Forester*Spirits - Bourbon*£4.59*Yes*Yes
+238*Bulleit*Spirits - Bourbon*£3.79*Yes*Yes
+239*Woodford Reserve*Spirits - Bourbon*£5.19*Yes*Yes
+240*Eagle Rare 10 Year Old*Spirits - Bourbon*£5.79*Yes*Yes
+241*Stagg Jr*Spirits - Bourbon*£6.59*Yes*Yes
+242*Beefeater London Dry Gin*Spirits - Gin*£3.79*Yes*Yes
+243*Tanqueray*Spirits - Gin*£3.99*Yes*Yes
+244*Hendricks*Spirits - Gin*£4.59*Yes*Yes
+245*Tanqueray 10*Spirits - Gin*£5.39*Yes*Yes
+246*Smirnoff*Spirits - Vodka*£3.69*Yes*Yes
+247*Tito's Texan*Spirits - Vodka*£4.59*Yes*Yes
+248*Ketel One*Spirits - Vodka*£4.99*Yes*Yes
+249*Pampero*Spirits - Rum*£3.69*Yes*Yes
+250*Bacardi Carta Blanca*Spirits - Rum*£3.79*Yes*Yes
+251*Captain Morgan Spiced*Spirits - Rum*£3.99*Yes*Yes
+252*Old J Spiced*Spirits - Rum*£3.69*Yes*Yes
+253*Old J Cherry*Spirits - Rum*£3.69*Yes*Yes
+254*Old J Tiki Overproof*Spirits - Rum*£4.59*Yes*Yes
+255*Goslings Black Seal*Spirits - Rum*£4.19*Yes*Yes
+256*Bacardi 8 Year Old*Spirits - Rum*£5.29*Yes*Yes
+257*Corona - 330ml ABV% 4.2*Beer and Cider*£4.39*Yes*Yes
+258*Corona - 710ml ABV% 4.2*Beer and Cider*£6.69*Yes*Yes
+259*Mexican Blonde - 330ml*Beer and Cider*£3.99*Yes*Yes
+260*Budweiser Prohibition - 330ml ABV% 0.05*Beer and Cider*£3.49*Yes*No
+261*Brewdog Vagabond - 330ml ABV% 4.5*Beer and Cider*£4.69*Yes*Yes
+262*Desperados - 330ml ABV% 5.9*Beer and Cider*£4.49*Yes*No
+263*Doom Bar - 500ml ABV% 4.3*Beer and Cider*£4.99*Yes*No
+264*Budweiser - 330ml ABV% 4.5*Beer and Cider*£3.99*Yes*No
+265*Peroni - 330ml ABV% 5.1*Beer and Cider*£4.39*Yes*Yes
+266*Modelo Especial - 355ml ABV% 4.5*Beer and Cider*£4.39*Yes*Yes
+267*Magners Irish Cider Apple - 568ml ABV% 4.5*Beer and Cider*£4.79*Yes*Yes
+268*Rekorderlig Strawberry and Lime - 500ml ABV 4%*Beer and Cider*£4.79*Yes*Yes
+269*Diet Pepsi - Glass*Soft Drinks - Soda*£2.79*Yes*Yes
+270*R White's Lemonade - Glass*Soft Drinks - Soda*£2.79*Yes*Yes
+271*Pepsi Max - Glass*Soft Drinks - Soda*£2.79*Yes*Yes
+272*Tango Orange - Glass*Soft Drinks - Soda*£2.79*Yes*Yes
+273*Pepsi - Glass*Soft Drinks - Soda*£2.89*Yes*Yes
+274*Pepsi - Bottle 330ml*Soft Drinks - Soda*£2.99*Yes*Yes
+275*Diet Pepsi - Bottle 330ml*Soft Drinks - Soda*£2.99*Yes*Yes
+276*Pepsi Max - Bottle 330ml*Soft Drinks - Soda*£2.99*Yes*Yes
+277*Tango Orange - Bottle 330ml*Soft Drinks - Soda*£2.99*Yes*Yes
+278*7UP Free - Bottle 330ml*Soft Drinks - Soda*£2.99*Yes*Yes
+279*Strathmore Still Water - 330ml*Soft Drinks - Water*£2.49*Yes*Yes
+280*Strathmore Still Water - 750ml*Soft Drinks - Water*£3.99*Yes*Yes
+281*Strathmore Sparkling Water - 330ml*Soft Drinks - Water*£2.49*Yes*Yes
+282*Strathmore Sparkling Water - 750ml*Soft Drinks - Water*£3.99*Yes*Yes
+283*J2O Apple and Mango - 275ml*Soft Drinks - Juice*£2.79*Yes*Yes
+284*J2O Orange and Passion Fruit - 275ml*Soft Drinks - Juice*£2.79*Yes*Yes
+285*J2O Apple and Raspberry - 275ml*Soft Drinks - Juice*£2.79*Yes*Yes
+286*J2O Spritz Peach and Apricot - 275ml*Soft Drinks - Juice*£2.99*Yes*Yes
+287*J2O Spritz Apple and Watermelon - 275ml*Soft Drinks - Juice*£2.99*Yes*Yes
+288*Lipton Ice Tea - 330ml*Soft Drinks - Ice Tea*£2.89*Yes*Yes
+289*Blanco Tequila - Ocho Blanco*Tequilas*£3.59*Yes*Yes
+290*Blanco Tequila - 1800 Blanco*Tequilas*£4.19*Yes*Yes
+291*Anejo Tequila - 1800 Anejo*Tequilas*£4.59*Yes*Yes
+292*Anejo Tequila - Sauza Tres Generaciones Anejo*Tequilas*£5.19*Yes*Yes
+293*Extra Anejo - Jose Cuervo Reserva De La Familia*Tequilas*£8.59*Yes*Yes
+294*Reposado Tequila - Jose Cuervo Traditional Reposado*Tequilas*£4.19*Yes*Yes
+295*Reposado Tequila - Sauza Tres Generaciones Reposado*Tequilas*£4.59*Yes*Yes
+296*The Rule Breaker - Maestro Dobel Diamante*Tequilas*£5.19*Yes*Yes
+297*Flavours - 1800 Coconut*Tequilas*£4.59*Yes*Yes
+298*Flavours - Patron Xo Café (Coffee)*Tequilas*£4.59*Yes*Yes
+299*Flavours - Patron Xo Incendio*Tequilas*£4.59*Yes*Yes
+300*Mezcal - Montelobos*Tequilas*£5.19*Yes*Yes
+301*Mezcal - Vida*Tequilas*£5.19*Yes*Yes
