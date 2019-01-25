@@ -7,7 +7,9 @@
 
 	<title>Oaxaca</title>
 
+	<link rel="icon" type="image/icon" href="images/Favicon.ico">
 	<link rel="stylesheet" type="text/css" href="cssStyleSheets/indexStylePage.css">
+	
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -27,7 +29,9 @@
 			<div class="row" id="row1">
 				<div class="col-lg-12 col-md-12 col-sm-12 " id="whole">
 					<div class="row" id="wholeInsideRow">
-						<div class="col-lg-3 col-md-3 col-sm-3" id="left">
+						<!-- <div class="col-lg-3 col-md-3 col-sm-3" id="left"> -->
+						<!-- <div class="col-lg-2 col-md-2 col-sm-2" id="left"> -->
+						<div class="col-lg-2 col-md-4 col-sm-6 scrollit" id="left">
 							<table class="table table-striped table-bordered-less">
 								<thead class="thead-light">
 									<tr><th>Category</th></tr>
@@ -58,32 +62,65 @@
 								?>
 							</table>
 						</div>
-						<div class="col-lg-9 col-md-9 col-sm-9" id="right">
+						<!-- <div class="col-lg-9 col-md-9 col-sm-9" id="right"> -->
+						<div class="col-lg-10" id="right">
 							<div class="row" id="rightInsideRow">
-								<div class="col-lg-3 boxed" id="dish1">
+								<div class="DishImagePlaceholder" id="dish">
 									<p>One</p>
 								</div>
-								<div class="col-lg-1 boxed" id="EmptySpace1"></div>
-								<div class="col-lg-3 boxed" id="dish2">
-									<p>two</p>
+								<div class="EmptySpace" id="EmptySpace"></div>
+								<div class="DishImagePlaceholder" id="dish">
+									<p>Two</p>
 								</div>
-								<div class="col-lg-1 boxed" id="EmptySpace2"></div>
-								<div class="col-lg-3 boxed" id="dish3">
+								<div class="EmptySpace" id="EmptySpace"></div>
+								<div class="DishImagePlaceholder" id="dish">
 									<p>Three</p>
+								</div> 
+								<div class="EmptySpace" id="EmptySpace"></div>
+								<div class="DishImagePlaceholder" id="dish">
+									<p>Four</p>
+								</div> 
+								<div class="EmptySpace" id="EmptySpace"></div>
+								<div class="DishImagePlaceholder" id="dish">
+									<p>Five</p>
+								</div>
+								<div class="EmptySpace" id="EmptySpace"></div>
+								<div class="DishImagePlaceholder" id="dish">
+									<p>Six</p>
+								</div>
+								<div class="EmptySpace" id="EmptySpace"></div>
+								<div class="DishImagePlaceholder" id="dish">
+									<p>Seven</p>
 								</div> 
 							</div>
 							<div class="row" id="rightInsideRow2">
-								<div class="col-lg-3 boxed" id="dish4">
+								<div class="DishImagePlaceholder" id="dish">
 									<p>One</p>
 								</div>
-								<div class="col-lg-1 boxed" id="EmptySpace1"></div>
-								<div class="col-lg-3 boxed" id="dish5">
-									<p>two</p>
+								<div class="EmptySpace" id="EmptySpace"></div>
+								<div class="DishImagePlaceholder" id="dish">
+									<p>Two</p>
 								</div>
-								<div class="col-lg-1 boxed" id="EmptySpace2"></div>
-								<div class="col-lg-3 boxed" id="dish6">
+								<div class="EmptySpace" id="EmptySpace"></div>
+								<div class="DishImagePlaceholder" id="dish">
 									<p>Three</p>
 								</div> 
+								<div class="EmptySpace" id="EmptySpace"></div>
+								<div class="DishImagePlaceholder" id="dish">
+									<p>Four</p>
+								</div> 
+								<div class="EmptySpace" id="EmptySpace"></div>
+								<div class="DishImagePlaceholder" id="dish">
+									<p>Five</p>
+								</div>
+								<div class="EmptySpace" id="EmptySpace"></div>
+								<div class="DishImagePlaceholder" id="dish">
+									<p>Six</p>
+								</div>
+								<div class="EmptySpace" id="EmptySpace"></div>
+								<div class="DishImagePlaceholder" id="dish">
+									<p>Seven</p>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -91,7 +128,12 @@
 			</div>
 		</div>  
 	</form>
+	<div class="row">
+		<div class="col-lg-2"></div>
+		<div class="col-lg-8" id="OrderButton">
+			<a class="btn btn-light btn-lg btn-block" href="OrderPage.php">Order</a>
+		</div>
+		<div class="col-lg-2"></div>
+	</div>
 </body>
 </html>
-
-<!-- -->
