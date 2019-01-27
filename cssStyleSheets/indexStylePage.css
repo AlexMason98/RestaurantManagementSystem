@@ -1,63 +1,107 @@
-#body {
-	background-color: rgb(239, 178, 55, 1);
 
+/* Desktop Mode (above 768px width) */
+@media only screen and (min-width: 768px) {
+	*{
+		box-sizing: border-box;
+	}
+	#body{
+		background-color: rgb(239, 178, 55, 1);
+	}
+
+	.navbar{
+		background-color: rgb(255, 255, 255, 1);
+	}
+
+	#logo{
+		height: 90px;
+		width: 130px;
+	}
+	#left {
+		padding-top: 35px; 
+		padding-left: 50px;
+		width: 20%;
+	}
+
+	#right {
+		padding-left: 50px;
+		width: 80%;
+	}
+
+	#rightInsideRow{
+		padding-top: 20px;
+		padding-right: 35px;
+		padding-left: 35px;
+	}
+
+	#rightInsideRow2{
+		padding-top: 170px;
+		padding-right: 35px;
+		padding-left: 35px;
+	}
+
+	#EmptySpace{
+		height: 30px;
+		width: 15px;
+	}
+
+	#dish{
+		border: 1px solid;
+		height: 200px;
+		width: 200px;
+	}
+
+	.scrollit{
+		overflow: auto;
+		height: 800px;
+		width: 200px;	
+	}
 }
 
-#navbar{
-	background-color:rgb(245, 245, 245, 1);
-	font-family: Impact;
+/* Tablet Mode */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	
 }
 
-#whole{
-	background-color: rgb(239, 178, 55, 0.8);
-}
 
-#wholeInsideRow{
-	padding-left: 5px;
-	padding-top: 30px;
+/* Mobile Phone Mode */
+@media only screen and (max-width: 479px) {
+	#body{
+		background-color: rgb(239, 178, 55, 1);
+	}
 
-}
+	.navbar{
+		background-color: rgb(255, 255, 255, 1);
+	}
 
-#row1{
-	padding-left: 5px;
-	padding-top: 30px;
+	#left {
+		padding-top: 25px;
+		padding-left: 40px;
+		width: 20%;
+	}
 
-}
+	#right {
+		padding-left: 80px;
+		width: 80%;
+	}
 
-#left{
-	background-color: rgb(239, 178, 55, 0.75);
-}
+	#EmptySpace{
+				height: 30px;
+		width: 10px;
+		padding-bottom: 250px; /* Height of dish placeholder + Padding on bottom */
+	}
 
-#right{
-	background-color: rgb(239, 178, 55, 0.75);
+	#dish{
+		border: 1px solid;
+		height: 150px;
+		width: 150px;
+		padding-top: 20px;
+		padding-left: 20px; /*This controls padding inside dish placeholder*/
+	}
 
-}
+	.scrollit{
+		overflow: auto;
+		height: 479px;
+		width: 100px;	
+	}
 
-#rightInsideRow{
-	padding-right: 35px;
-	padding-left: 35px;
-}
-
-#rightInsideRow2{
-	padding-top: 170px;
-	padding-right: 35px;
-	padding-left: 35px;
-}
-
-#EmptySpace{
-	height: 30px;
-	width: 15px;
-}
-
-#dish{
-	background-color: rgb(239, 178, 55, 0.75);
-	border: 1px solid;
-	height: 200px;
-	width: 200px;
-}
-
-.scrollit{
-	overflow: auto;
-	height: 730px;
-	width: 200px;	
 }
