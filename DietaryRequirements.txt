@@ -6,7 +6,7 @@
 6*Beef Chilli Empanadas*No*No*No*No*Yes*No*No*Yes*No*No*No*No*Yes*Yes*No*No
 7*Salsa and Guacamole Nachos*Yes*No*No*No*Yes*No*No*Yes*No*No*No*No*No*Yes*No*No
 8*Chicken, Chorizo and Sweetcorn Nachos*No*No*No*No*Yes*No*No*Yes*No*No*No*No*No*Yes*No*No
-9*Barbeque Chicken Wings*Starters*No*No*No*No*No*No*No*No*No*No*No*No*No*Yes*No*No
+9*Barbeque Chicken Wings*No*No*No*No*No*No*No*No*No*No*No*No*No*Yes*No*No
 10*Hot Habanero Chicken Wings*No*No*No*No*Yes*No*No*Yes*No*No*No*No*No*Yes*No*No
 11*Cajun Dusted Green Beans*No*No*No*Yes*No*No*No*No*No*No*No*Yes*No*Yes*No*No
 12*Garlic Tortilla*Yes*Yes*No*No*No*No*No*Yes*No*No*No*No*No*No*No*No
@@ -67,7 +67,7 @@
 67*Steak and Salad*No*No*Yes*No*No*No*No*No*No*No*No*Yes*No*No*No*No
 68*Extra Jalapeno Cheese Sauce*Yes*No*No*No*Yes*No*No*No*No*No*No*No*No*No*No*No
 69*Extra Barbeque Sauce*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No*No
-70*Extra Peppercorn Sauce*No*No*No*Yes*No*No*Yes*No*No*No*Yes*No*No*No*No
+70*Extra Peppercorn Sauce*No*No*No*No*Yes*No*No*Yes*No*No*No*Yes*No*No*No*No
 71*Rib Eye Steak*No*No*Yes*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No
 72*Barbeque Chicken Melt*No*No*Yes*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No
 73*Chicken and Ribs*No*No*Yes*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No
