@@ -1,0 +1,30 @@
+Starters:
+-No changes to this category will contain all the starter food
+
+Main menu
+-Sharers
+-Fajitas
+-Burgers
+-Grills
+-Classics
+-Salads
+
+Street food
+-Separate category as Oxaca is known for its street food
+
+Drinks
+-Two categories alcoholic and non alcoholic
+alcoholic:
+-Cocktails
+-House margaritas
+-Wines
+-Spirits
+-Beer and Cider
+-Tequilas
+
+Non alcoholic
+-Milkshakes
+-Soft drinks
+
+Desserts
+Separate menu for Desserts
