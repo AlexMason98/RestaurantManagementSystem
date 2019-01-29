@@ -1,0 +1,19 @@
+Good resources for learning PHP
+
+Have been working through them and would recommend
+
+https://www.tutorialspoint.com/php/
+https://www.w3schools.com/php/default.asp
+https://www.learn-php.org/
+
+-Youtube Tutorial links
+
+https://www.youtube.com/watch?v=mpQts3ezPVg
+Really good shows how to use PHP and MYSQL to interact with a database which is what we are doing
+
+https://www.youtube.com/watch?v=ILyf16MEvHM
+How to connect to a database in PHP another tutorial
+
+https://www.youtube.com/watch?v=LPT7v69guVY
+Connect eclipse to github
+
