@@ -8,3 +8,24 @@
 .navbar{
 	background-color: rgb(255, 255, 255, 1);
 }	
+
+#TotalPrice{
+	font-size: 30px;
+}
+
+#Pay{
+	height: 90px;
+	width: 170px;
+	font-size: 40px;
+}
+
+#Cancel{
+	height: 90px;
+	width: 170px;
+	font-size: 40px;
+}
+.scrollit{
+	overflow: auto;
+	height: 650px;
+	width: 100px;	
+}

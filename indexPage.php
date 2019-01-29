@@ -17,8 +17,6 @@
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-
-
 </head>
 <body id="body">
 	<nav class="navbar navbar-expand-lg navbar-light">
@@ -29,52 +27,78 @@
 	<form method="post">
 		<div class="container-fluid">
 			<div class="row" id="row1">
-				<div class="col-lg-2 col-md-3 col-sm-6 scrollit sticky-top" id="left">
-					<table class="table table-striped table-bordered-less header">
-						<thead class="thead-light">
-							<tr><th>Category</th></tr>
-						</thead>
-						<?php
-						$servername = "localhost";
-						$username = "root";
-						$password = "teamproject5";
-						$dbname = "customer";
-								// Create connection
-						$conn = new mysqli($servername, $username, $password, $dbname);
-								// Check connection
-						if ($conn->connect_error) {
-							die("Connection failed: " . $conn->connect_error);
-						}
-								// require 'php/Connection.php';
-						$sql = "SELECT DISTINCT Category FROM menu";
-						$res = $conn->query($sql);
-						if($res-> num_rows == 0){
-							echo "0 results";
-						}
-						else{
-							while($row = mysqli_fetch_assoc($res)){
-								echo "<tr><td>{$row['Category']}</td></tr>\n";
-							}
-						}
-						mysqli_close($conn);
-						?>
-					</table>
-				</div>
-				<div class="col-lg-1 col-md-2 col-sm-3" id="categoryCol">
-					<form>
-						<label class="container"></br>Vegan
-							<input type="checkbox" name="Category1" checked="checked">
-							<span class="checkmark"></span>
-						</label>
 
-						<label class="container"></br>Veg
-							<input type="checkbox" name="Category2">
-							<span class="checkmark"></span>
-						</label>
-						<input type="submit" value="Submit" class="btn btn-light">
-					</form>
+				<div class="col-lg-3 col-md-5 col-sm-6" id="left">
+
+					<div class="accordion" id="accordionExample">
+						<div class="card">
+							<div class="card-header" id="headingOne">
+								<h2 class="mb-0">
+									<button class="btn btn-light- btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"  id="dropDown">
+										Categories
+									</button>
+								</h2>
+							</div>
+							<div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+								<div class="card-body">
+									<?php
+									$servername = "localhost";
+									$username = "root";
+									$password = "teamproject5";
+									$dbname = "customer";
+								// Create connection
+									$conn = new mysqli($servername, $username, $password, $dbname);
+								// Check connection
+									if ($conn->connect_error) {
+										die("Connection failed: " . $conn->connect_error);
+									}
+								// require 'php/Connection.php';
+									$sql = "SELECT DISTINCT Category FROM menu";
+									$res = $conn->query($sql);
+									if($res-> num_rows == 0){
+										echo "0 results";
+									}
+									else{
+										while($row = mysqli_fetch_assoc($res)){
+											echo "<a href='#'><br>{$row['Category']}</a>\n";
+										}
+									}
+									mysqli_close($conn);
+									?>
+								</div>
+							</div>
+						</div>
+						<div class="card">
+							<div class="card-header" id="headingTwo">
+								<h2 class="mb-0">
+									<button class="btn btn-link btn-light collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+										Dietary Requirements
+									</button>
+								</h2>
+							</div>
+							<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+								<div class="card-body">
+									<a href="#"><br>Vegan</a>
+									<a href="#"><br>Vegetarian</a>
+									<a href="#"><br>Contains Egg</a>
+									<a href="#"><br>Contains Milk</a>
+									<a href="#"><br>Contains Peanu</a>
+									<a href="#"><br>Contains Tree Nuts</a>
+									<a href="#"><br>Contains Celery</a>
+									<a href="#"><br>Contains Fish </a>
+									<a href="#"><br>Contains Crustaceans </a>
+									<a href="#"><br>Contains Molluscs</a>
+									<a href="#"><br>Contains Mustard</a>
+									<a href="#"><br>Contains Soya</a>
+									<a href="#"><br>Contains Sulphites</a>
+									<a href="#"><br>Contains Sesame Seeds</a>
+									<a href="#"><br>Contains Lupin Link</a>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
-				<div class="col-lg-9 col-md-7 col-sm-3" id="right">
+				<div class="col-lg-9 col-md-7 col-sm-6" id="right">
 					<div class="row" id="rightInsideRow">
 						<div class="DishImagePlaceholder" id="dish">
 							<p>One</p>
@@ -102,27 +126,27 @@
 					</div>
 					<div class="row" id="pricingRow">
 						<div class="DishImagePlaceholder" id="pricing">
-							
+
 						</div>
 						<div class="EmptySpace" id="EmptySpace"></div>
 						<div class="DishImagePlaceholder" id="pricing">
-							
+
 						</div>
 						<div class="EmptySpace" id="EmptySpace"></div>
 						<div class="DishImagePlaceholder" id="pricing">
-							
+
 						</div> 
 						<div class="EmptySpace" id="EmptySpace"></div>
 						<div class="DishImagePlaceholder" id="pricing">
-							
+
 						</div> 
 						<div class="EmptySpace" id="EmptySpace"></div>
 						<div class="DishImagePlaceholder" id="pricing">
-							
+
 						</div>
 						<div class="EmptySpace" id="EmptySpace"></div>
 						<div class="DishImagePlaceholder" id="pricing">
-							
+
 						</div>
 					</div>
 					<div class="row" id="rightInsideRow">
@@ -152,37 +176,38 @@
 					</div>
 					<div class="row" id="pricingRow">
 						<div class="DishImagePlaceholder" id="pricing">
-							
+
 						</div>
 						<div class="EmptySpace" id="EmptySpace"></div>
 						<div class="DishImagePlaceholder" id="pricing">
-							
+
 						</div>
 						<div class="EmptySpace" id="EmptySpace"></div>
 						<div class="DishImagePlaceholder" id="pricing">
-							
+
 						</div> 
 						<div class="EmptySpace" id="EmptySpace"></div>
 						<div class="DishImagePlaceholder" id="pricing">
-							
+
 						</div> 
 						<div class="EmptySpace" id="EmptySpace"></div>
 						<div class="DishImagePlaceholder" id="pricing">
-							
+
 						</div>
 						<div class="EmptySpace" id="EmptySpace"></div>
 						<div class="DishImagePlaceholder" id="pricing">
-							
+
 						</div>
 					</div>
 					<div class="container-fluid">
 						<div class="row" id="buttonRow">
 							<div class="col-lg-12" id="OrderButton">
-								<a class="btn btn-light btn-lg btn-block" href="OrderPage.php">Order</a>
+								<a class="btn btn-light btn-lg btn-block" href="OrderPage">Order</a>
 							</div>
 						</div>
 					</div>
 				</div>
+
 			</div>
 		</div>
 	</form>
@@ -192,17 +217,6 @@
 
 
 <!-- 
-	<script type="text/javascript">
-		function showData() {
-			$.ajax({
-				type: "POST",
-				url: "php/productPricing.php",
-				data:{
-					Item;
-					},
-				success:function(data){
-				}
-			})
+		
 
-		}
-	</script> -->
+</script> -->
