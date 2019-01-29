@@ -10,6 +10,10 @@
 
 	.navbar{
 		background-color: rgb(255, 255, 255, 1);
+	}	
+
+	.select{
+
 	}
 
 	#logo{
@@ -29,15 +33,33 @@
 
 	#rightInsideRow{
 		padding-top: 20px;
-		padding-right: 35px;
+		padding-right: 0px;
 		padding-left: 35px;
 	}
 
 	#rightInsideRow2{
-		padding-top: 170px;
-		padding-right: 35px;
+		padding-top: 20px;
+		padding-right: 0px;
 		padding-left: 35px;
 	}
+
+	#categoryCol{
+		padding-top: 20px;
+		padding-right: 20px; 
+	}
+
+	#pricingRow{
+		padding-top: 20px;
+		padding-right: 0px;
+		padding-left: 35px;
+	}
+
+	#buttonRow{
+		padding-top: 20px;
+		/*padding-right: 35px;*/
+		/*padding-left: 35px;*/
+	}
+
 
 	#EmptySpace{
 		height: 30px;
@@ -47,6 +69,12 @@
 	#dish{
 		border: 1px solid;
 		height: 200px;
+		width: 200px;
+	}
+
+	#pricing{
+		border: 1px solid;
+		height: 100px;
 		width: 200px;
 	}
 

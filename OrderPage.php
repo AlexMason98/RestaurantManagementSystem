@@ -22,5 +22,97 @@
 		</div>
 	</nav>
 
-
+	<div class="container" id="MainContainer">
+		<div class="row">
+			<div class="col-lg-9 col-md-8 col-sm-7">
+				<table class="table table-striped table-bordered-less header">
+					<thead class="thead-light">
+						<tr><th>Items</th></tr>
+					</thead>
+					<?php
+					$servername = "localhost";
+					$username = "root";
+					$password = "teamproject5";
+					$dbname = "customer";
+								// Create connection
+					$conn = new mysqli($servername, $username, $password, $dbname);
+								// Check connection
+					if ($conn->connect_error) {
+						die("Connection failed: " . $conn->connect_error);
+					}
+								// require 'php/Connection.php';
+					$sql = "SELECT Item FROM Orders";
+					$res = $conn->query($sql);
+					if($res-> num_rows == 0){
+						echo "0 results";
+					}
+					else{
+						while($row = mysqli_fetch_assoc($res)){
+							echo "<tr><td>{$row['Item']}</td></tr>\n";
+						}
+					}
+					mysqli_close($conn);
+					?>
+				</table>
+			</div>
+			<div class="col-lg-3 col-md-4 col-sm-5">
+				<table class="table table-striped table-bordered-less header">
+					<thead class="thead-light">
+						<tr><th>Price</th></tr>
+					</thead>
+					<?php
+					$servername = "localhost";
+					$username = "root";
+					$password = "teamproject5";
+					$dbname = "customer";
+								// Create connection
+					$conn = new mysqli($servername, $username, $password, $dbname);
+								// Check connection
+					if ($conn->connect_error) {
+						die("Connection failed: " . $conn->connect_error);
+					}
+								// require 'php/Connection.php';
+					$sql = "SELECT Price FROM Orders";
+					$res = $conn->query($sql);
+					if($res-> num_rows == 0){
+						echo "0 results";
+					}
+					else{
+						while($row = mysqli_fetch_assoc($res)){
+							echo "<tr><td>{$row['Price']}</td></tr>\n";
+						}
+					}
+					mysqli_close($conn);
+					?>
+				</table>
+				<table class="table table-striped table-bordered-less header">
+					
+					<?php
+					$servername = "localhost";
+					$username = "root";
+					$password = "teamproject5";
+					$dbname = "customer";
+								// Create connection
+					$conn = new mysqli($servername, $username, $password, $dbname);
+								// Check connection
+					if ($conn->connect_error) {
+						die("Connection failed: " . $conn->connect_error);
+					}
+								// require 'php/Connection.php';
+					$sql = "SELECT DISTINCT SUM(Price) AS Total FROM Orders";
+					$res = $conn->query($sql);
+					if($res-> num_rows == 0){
+						echo "0 results";
+					}
+					else{
+						while($row = mysqli_fetch_assoc($res)){
+							echo "<tr><td>{$row['Total']}</td></tr>\n";
+						}
+					}
+					mysqli_close($conn);
+					?>
+				</table>
+			</div>
+		</div>		
+	</div>
 </body>
