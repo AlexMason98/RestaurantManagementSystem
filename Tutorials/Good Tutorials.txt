@@ -1,0 +1,12 @@
+For reminding yourself of CSS and html for the webpages:
+https://www.youtube.com/watch?v=mFgltjfVV6A
+https://www.youtube.com/watch?v=TKYsuU86-DQ&list=PL0eyrZgxdwhwNC5ppZo_dYGVjerQY3xYU
+https://www.w3schools.com/html/html_css.asp
+
+Inserting images into the webpage:
+https://www.youtube.com/watch?v=_w6N_nplmAw
+
+Everything php:
+https://www.youtube.com/watch?v=OK_JCtrrv-c 
+https://www.youtube.com/watch?v=qVU3V0A05k8&list=PL0eyrZgxdwhwBToawjm9faF1ixePexft-
+

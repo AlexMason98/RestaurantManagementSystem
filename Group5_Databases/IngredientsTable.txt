@@ -1,0 +1,314 @@
+1*Tortilla Chips With Dips*Tortilla chips, Sour cream, Guacamole*460
+2*Barbeque Southern Fried Chicken Strips*BBQ sauce, Chicken*720*
+3*Hot Habanero Chicken Strips*Hot habanero sauce, Chicken*760
+4*Vegetarian Chilli Empanadas*Tortilla parcels, Sour cream, Veg chilli*670
+5*Chicken Empanadas*Tortilla parcels, sour cream, Chicken chilli*710
+6*Beef Chilli Empanadas*Tortilla parcels, Sour cream, Beef chilli*723
+7*Salsa and Guacamole Nachos*Jalapeño cheese sauce, jalapeño peppers, melted mozzarella, sour cream, Salsa, guacamole*560
+8*Chicken, Chorizo and Sweetcorn Nachos*Jalapeño cheese sauce, jalapeño peppers, melted mozzarella, sour cream, chorizo, sweetcorn 690
+9*Barbeque Chicken Wings*BBQ sauce, Chicken*680
+10*Hot Habanero Chicken Wings*Chicken, Hot habanero sauce*702
+11*Cajun Dusted Green Beans*Green beans, Chipotle Mayo* 398
+12*Garlic Tortilla*Tortillas, Garlic, Parsley*240
+13*Garlic Tortilla With Cheese*Tortillas, Garlic, Parsley, Cheddar Cheese*310
+14*Garlic Tortilla With Chorizo*Tortillas, Garlic, Parsley, Chorizo*340
+15*Garlic Tortilla With Chilli*Tortillas, Garlic, Parsley, Chilli*290
+16*Halloumi Skewers*Halloumi, Onions, Peppers, Citrus dressed salad with salsa*370
+17*Jalapeno Poppers*Jalapenos, Cream Cheese, Jalapeno Jelly*530
+18*Chilli Prawns*Prawns, Garlic, Hot haberno sauce, Tortilla Chips*450
+19*Habanero Mushrooms*Hot Haberno sauce, Tomato sauce, Melted mozzarella*320
+20* Patatas Bravas*Potatoes, tomatoes, chilli powder*580
+21*The Ultimate Sharers*Jalapeño poppers, southern fried chicken strips, chicken empanadas, nachos, onion rings, corn*1290
+22*Quesadilla Sharers*Tortilla, mozzarella, chicken, chorizo, sweetcorn, chilli beetroot*1420
+23*Fully Loaded Nachos With Tomato Salsa* Jalapeño cheese sauce, jalapeño peppers, mozzarella, sour cream, salsa, guacamole*980
+24*Chicken Fully Loaded Nachos* Paprika,cumin,chilli powder,salt,pepper,onion powder,garlic powder, orange juice, lime juice, lemon, soy sauce, vinegar, chicken breast, onion, red pepper, green pepper, tortilla, chips, black beans, corn, cheese*1860
+25*Beef Chilli Fully Loaded Nachos*Tortillas, chipotle beer shredded beef, black beans, cheese sauce, more cheese, pico de gallo, fresh guacamole, jalapeños, cilantro, mexican crema*1900
+26*Five Bean Chilli Fully Loaded Nachos*Tortilla chips, pinto beans, cheddar cheese, monterey Jack cheese, red bell pepper, finely chopped, crumbled feta cheese, pickled jalapeños, avocado dip, guacamole, chopped green onions, radishes, chopped cilantro, salsa*1200 
+27*Crispy Tacos* Tacos, chicken, cheese, sour cream*720
+28*Habanero Mushrooms*Habanero sauce, tomato sauce, mozzarella*540
+29*Mini Chicken Burrito*Guacamole, tomato salsa, sour cream*560
+30*Pan-Fried Chorizo*Tomato sauce, tortilla chips, chorizo*560
+31*Chorizo and Sweet Potato Croquettes*Croquettes, chorizo, sweetcorn, chilli, onion, jalapeño jelly*430
+32*Chicken, Chorizo and Sweetcorn Quesadilla Bite*Tortilla, mozzarella, tomato salsa, chicken, chorizo, sweetcorn*500
+33*Roasted Veg and Chilli Beetroot Quesadilla Bites*Tortilla, mozzarella, tomato salsa, chilli beetroot*460
+34*Beef Chilli Tortilla Stack*Tortillas, mozzarella, cheese, habanero sauce, tomato sauce, sour cream, classic beef chilli*790
+35*Five Bean Chilli Tortilla Stack*Tortillas, mozzarella, cheese, habanero sauce, tomato sauce, sour cream, five bean chilli*540
+36*Patatas Bravas*Potatoes, hot habanero sauce, tomato sauce* 590
+37* Halloumi Bites*Halloumi, jalapeño jelly*512
+38*Classic Chicken*Chicken, BBQ sauce, hot habanero sauce*659
+39*Extra Barbeque Sauce*BBQ sauce*50
+40*Extra Hot Habanero Sauce*Habanero sauce*60
+41*Barbeque Chicken and Pulled Pork*Chicken, pork, cheese, BBQ sauce*670
+42*Seasoned Roasted Veg Fajita*Fajita, peppers, onions, tomatoes, mushrooms*540
+43*Tender Steak*Beef*600
+44*Garlic King Prawns*Prawns, garlic*560
+45*The Ultimate Fajita*Fajitas, chicken, pork, beef*780
+46*Extra Chicken*Chicken*190
+47*Extra Barbeque Chicken and Pulled Pork*Chicken, pork*300
+48*Extra Tender Steak*Beef*760
+49*Extra Seasoned Roasted Veg*Peppers, onions, tomatoes, mushrooms*130
+50*Extra Garlic King Prawns*Prawns, garlic*590
+51*Chicken and Barbeque Pulled Pork Burger*Chicken, BBQ sauce, pork, Monterey Jack cheese*1030
+52*Classic Beef Burger* Classic 5oz*Beef, bread*1290
+53*Southern Fried Chicken Burger* Chicken, bread*1389
+54*Halloumi Burger*Halloumi, tomato salsa, nachos, chipotle mayo, bread*980
+55*Beef, Chorizo and Pulled Pork Burger* 5oz*Beef, pork, chorizo, red jalapeños, cheese, BBQ sauce, chipotle mayo, bread*1500
+56*Texan Stack Burger*Beef, pork, bacon, cheese, BBQ sauce, bread*1520
+57*Extra Beef*Beef*190
+58*Extra Chicken Breast*Chicken*180
+59*Extra Southern Fried Chicken Breast*Chicken*210
+60*Extra Beef Chilli*Beef chilli*230
+61*Extra Chorizo*Chorizo*198
+62*Extra Cheese*Cheese*120
+63*Extra Bacon*Bacon*200
+64*Extra Guacamole*Guacamole*150
+65*Extra Grilled Halloumi*Halloumi*157
+66*Steak and Fries*Beef, potatoes*1020
+67*Steak and Salad*Beef, lettuce, tomatoes*970
+68*Extra Jalapeno Cheese Sauce*Jalapeno Cheese Sauce*230
+69*Extra Barbeque Sauce*BBQ sauce*150
+70*Extra Peppercorn Sauce*Peppercorn sauce*150
+71*Rib Eye Steak*Succulent 8oz*Beef, Jalapeño cheese, peppercorn sauce, BBQ sauce*980
+72*Barbeque Chicken Melt*Chicken, BBQ sauce, cheese*890
+73*Chicken and Ribs*Chicken, BBQ sauce, pork*1700
+74*Whole Rack of Ribs*Pork, BBQ sauce*1800
+75*Half Rack of Ribs*Pork, BBQ sauce*900
+76*Pork Belly*Grills*Pork, honey, beef chilli, eggs*980
+77*Southern Fried Chicken and Barbeque Pulled Pork*Chicken, monterey Jack cheese and BBQ sauce*1200
+78*Classic Beef Chilli*Beef chilli, rice, tortilla chips, sour cream, pink onions, beef*950
+79*Five Bean and Roasted Veg Chilli*Beans, rice, tortilla chips, sour cream, pink onions, vegetables*670
+80*Fiery Chicken*Hot habanero sauce, chicken, rice, roasted veg, sour cream*850
+81*Barbeque Chicken Wrap*Chicken, baby gem lettuce, cheese, BBQ sauce, potatoes, coleslaw, lettuce, tomatoes*670
+82*Chicken Baja Bowl*Chicken, roasted veg, rice, coconut sauce, tortillas, sour cream, chilli pepper*590
+83*Jambalaya*King prawns, chicken, chorizo, rice, tomatoes, hot habanero sauce*720
+84*Steak Salad*Beef, lettuce, tomatoes, roasted red peppers, black beans, red chillies*690
+85*Mango and Avocado Salad*Mango and avocado, lettuce, tomatoes*580
+86*Chicken, Mango and Avocado Salad*Mango and avocado, lettuce, tomatoes, chicken*680
+87*Prawn, Mango and Avocado Salad*Mango and avocado, lettuce, tomatoes, prawn*620
+88*Chicken Fajita Salad*Chicken, fajita, lettuce, tomatoes, salsa, guacamole, sour cream*820
+89*Roasted Halloumi and Veg Naked Burrito*Guacamole, salsa, refried beans, baby gem lettuce*520
+90*Beef Chilli Naked Burrito*Guacamole, salsa, refried beans, baby gem lettuce, beef chilli*590
+91*Mild Habanero Chicken*Chicken, mild habanero sauce*630
+92*Skin-on Fries*Potatoes*230
+93*Sweet Potato Fries*Sweet potatoes*190
+94*Sweet Potato Wedges* Sweet potatoes*193 
+95*Refried Beans*Refried beans*159
+96*Roasted Vegetables*Peppers, onions, mushrooms*110
+97*Rice*Rice*120
+98*Grilled Halloumi*Halloumi*200
+99*Onion Rings*Onions*230
+100*Coleslaw*Mayonnaise, Cabbage, Carrot*300
+101* Garlic Tortilla*Garlic, Tortilla*390
+102*Corn On The Cob*Corn, Butter*190
+103*Small Churros* Flour, sugar, cinnamon, strawberries, chocolate sauce*340
+104*Churros*Flour, sugar, cinnamon, strawberries, chocolate sauce*790
+105*Hot Chocolate and Churros*Flour, sugar, cinnamon, strawberries, chocolate sauce, milk*870
+106*Pineapple Thins*Pineapple, cinnamon, sugar, raspberries, vanilla ice cream*650
+107*Chilli Pineapple Thins*Pineapple, cinnamon, sugar, raspberries, vanilla ice cream, chilli*670
+108*Brownie Baked Banana*Banana, flour, sugar, butter, egg, chocolate, raspberries, chocolate sauce, vanilla ice cream*1230
+109*Toffee Popcorn Brownie*Flour, sugar, butter, egg,  chocolate, toffee popcorn, honeycomb ice cream*1400
+110*Golden Nugget Cheesecake*Cream cheese, honeycomb, chocolate, sugar, milk, egg, chocolate coated nuggets, strawberries, chocolate sauce*980
+111*Blueberry and Apple Crumble*Blueberries, apples, vanilla ice cream*820
+112*Chocolate Orange Cake*Flour, sugar, butter, egg, chocolate, orange, vanilla ice cream, strawberries*790
+113*Cointreau 25ml Shot*Alcohol, orange*120
+114*Mexican Mess*Flour, sugar, cinnamon, strawberries, chocolate sauce, raspberry ice cream, strawberry yoghurt, cream*1100
+115*Ice Cream - One Scoop*cream, sugar*150
+116*Ice Cream - Trio*cream, sugar*450
+117*Brownies and Ice Cream*Cream, sugar, flour, butter, egg,  chocolate*980
+118*Lemon Sorbet - One Scoop*Lemon, sugar*120
+119*Lemon Sorbet - Trio*lemon, sugar*360
+120*Americano*Coffee*100
+121*Latte*Coffee, milk*160
+122*Cappuccino*Coffee, milk*164
+123*Cappuccino - Large*Coffee, milk*300
+124*Espresso*Coffee*90
+125*Double Espresso*Coffee*180
+126*Tea*Tea*39
+127*Hot Chocolate*Chocolate, milk, cream240
+128*Liqueur Coffee - Goslings Addition*Coffee, alcohol*120
+129*Liqueur Coffee - Baileys Addition*Coffee, alcohol*134
+130*Liqueur Coffee - Disaronno Amaretto Addition*Coffee, alcohol*123
+131*Liqueur Coffee - Jamesons Addition*Coffee, alcohol*120
+132*Liqueur Coffee - Kahlua Addition*Coffee, alcohol*120
+133*Liqueur Coffee - Martell Addition*Coffee, alcohol*120
+134*Decaff Americano*Decaf coffee*100
+135*Decaff Latte*Decaf coffee*160
+136*Decaff Cappuccino*Decaf coffee, milk*164
+137*Decaff Cappuccino - Large*Decaf coffee, milk*300
+138*Decaff Espresso*Decaf coffee*90
+139*Decaff Double Espresso*Decaf coffee*180
+140*Homemade Lemonade*Lemons, sugar*230
+141*Ginger Beer Mock-jito*Ginger, soda*340
+142*Apple Juice Mock-jito*Apples, soda*340
+143*Lemonade Mock-jito*Lemons, soda*350 
+144*Virgin Colada*Pineapple, coconut, soda*340
+145*Appleberry*Apples, blueberries, raspberries, soda*290
+146*Strawberry and Raspberry Agua Fresca*Strawberry, raspberry, soda*200
+147*Mango and Passion Fruit Agua Fresca*Mango, passion fruit, soda*200
+148*Classic Vanilla*Milk, icecream, vanilla*400
+149*Classic Strawberry*Milk, icecream, strawberry*300
+150*Classic Chocolate*Milk, icecream, chocolate*430
+151*Classic Blueberry*Milk, icecream, blueberries*300
+152*Salted Caramel Popcorn*Milk, icecream, salted caramel popcorn*590
+153*Chocolate Churro*Milk, ice cream, doughnut syrup, cinnamon syrup, chocolate sauce*620
+154*Classic Vanilla Bourbon*Milk, icecream, vanilla, alcohol*720
+155*Classic Strawberry Bourbon*Milk, icecream, strawberries, alcohol*700
+156*Classic Chocolate Bourbon*Milk, icecream, chocolate, alcohol*720
+157*Classic Blueberry Bourbon*Milk, icecream, blueberries, alcohol*690
+158*Salted Caramel Popcorn Bourbon*Milk, icecream, salted caramel popcorn, alcohol*800
+159*Chocolate Churro Bourbon*Milk, icecream, chocolate churros, alcohol*800
+160*Classic Margarita*Jose Cuervo Tequila, Triple Sec, lime juice*200
+161*Tommies Margarita*100% Agave Tequila, lime juice, agave syrup*200
+162*Best Margarita In The World*1800 Tequila, lime juice*190
+163*Margarita Del Fuego*Gran Centenario Tequila, guava juice, lime juice, jalapeño syrup*200
+164*Strawberry Margarita*Jose Cuervo Tequila, Triple Sec, lime juice, strawberry juice*240
+165*Coconut Margarita*Jose Cuervo Tequila, Triple Sec, lime juice, coconut juice*240
+166*Classic Margarita Ocho*Ocho Blanco Tequila, Triple Sec, lime juice*240
+167*Tommies Margarita Ocho*Ocho Blanco Tequila, lime juice, agave syrup*240
+168*Best Margarita In The World*Ocho Blanco Tequila, lime juice*240
+169*Margarita Del Fuego Ocho*Ocho Blanco Tequila, lime juice*150
+170*Strawberry Margarita Ocho*Ocho Blanco Tequila, lime juice, strawberry juice*200
+171*Coconut Margarita Ocho*Ocho Blanco Tequila, lime juice, coconut juice*200
+172*Classic Margarita Pitcher*Jose Cuervo Tequila, Triple Sec, lime juice*1300
+173*Tommies Margarita Jug*100% Agave Tequila, lime juice, agave syrup*1300
+174*Strawberry Margarita Jug*Jose Cuervo Tequila, Triple Sec, lime juice, strawberry juice*1300
+175*Pornstar Martini*Smirnoff vodka, passion fruit purée, lemon, pineapple juice and vanilla syrup, prosecco*320
+176*Southern Belle*The spirit of New Orleans, Southern Comfort, lemon juice, passion fruit purée, prosecco*320
+177*Mex On The Beach*Archers, orange and guava juice drink, grenadine*330
+178*Raspberry Rum Collins*Captain Morgan Spiced rum, raspberry purée, lime juice, soda water*300
+179*Cherry Libre*Old J cherry rum, lime juice, Pepsi*310
+180*Woo Woo*Smirnoff vodka, Archers, cranberry juice, lemon juice*210
+181*Frozen Strawberry Daiquiri*Pampero rum, lime juice, strawberry purée *290
+182*Gin Fizz*Beefeater gin, lemon juice, sugar, egg whites, soda*230
+183*Espresso Martini*Smirnoff vodka, Kahlua coffee liqueur, vanilla syrup, espresso*320
+184*Kir Royale*Chambord black raspberry liqueur, prosecco*250
+185*Amaretto Sour*Luxardo Amaretto, lemon juice, egg whites, sugar *250
+186*Long Island Ice Tea*Pampero rum, Smirnoff vodka, Beefeater gin, Jose Cuervo tequila, orange liqueur, lemon juice, pepsi *350
+187*Berry Sling*Smirnoff vodka with raspberry purée, cranberry, orange juice, soda*320
+188*Pina Colada*Pampero rum, pineapple juice, coconut cream*340
+189*Bourbon Sours*Classic whiskey sour, Evan Williams bourbon, lemon juice, egg white*320
+190*Fruity Passion Fruit Mojito*Pampero rum, muddled lime, fresh mint, sugar, soda, passion fruit*320
+191*Classic Mojito*Pampero rum, muddled lime, fresh mint, sugar, soda*310
+192*Apple Juice*Apples, sugar*230
+193*Egar Cloudy Apple Juice (16oz)*Apples, sugar*230
+194*Orange Juice*Oranges, sugar*230
+195*Pineapple Juice*Pineapple, sugar*230
+196*Gauva Juice (16oz)*Gauva, sugar*230
+197*El Velero Verdejo Blanco - 175ml, Valdepenas, Spain*Melon, apple, alcohol*170
+198*El Velero Verdejo Blanco - 250ml, Valdepenas, Spain*Melon, apple, alcohol*213
+199*El Velero Verdejo Blanco - Bottle, Valdepenas, Spain*Melon, apple, alcohol*1600
+200*Casa Vista Chardonnay - 175ml, Central Valley, Chile*Honeydew melon, alcohol*176
+201*Casa Vista Chardonnay - 250ml, Central Valley, Chile*Honeydew melon, alcohol*220
+202*Casa Vista Chardonnay - Bottle, Central Valley, Chile*Honeydew melon, alcohol*1650
+203*Quindi Pinot Grigio - 175ml, Italy*Peach, alcohol*170
+204*Quindi Pinot Grigio - 250ml, Italy*Peach, alcohol*223
+205*Quindi Pinot Grigio - Bottle, Italy*Peach, alcohol*1620
+206*Milford Point Sauvignon Blanc - 175ml, Marlborough, New Zealand*Grapes, elderflower, alcohol*173
+207*Milford Point Sauvignon Blanc - 250ml, Marlborough, New Zealand**Grapes, elderflower, alcohol*230
+208*Milford Point Sauvignon Blanc - Bottle, Marlborough, New Zealand**Grapes, elderflower, alcohol*1700
+209*El Velero Tempranillo Tinto - 175ml, Valdepenas, Spain*Cherry red Tempranillo, strawberries, alcohol*175
+210*El Velero Tempranillo Tinto - 250ml, Valdepenas, Spain**Cherry red Tempranillo, strawberries, alcohol*216
+211*El Velero Tempranillo Tinto - Bottle, Valdepenas, Spain**Cherry red Tempranillo, strawberries, alcohol*1569
+212*Altoritas Merlot - 175ml, Central Valley, Chile*Berries, plum, alcohol*178
+213*Altoritas Merlot - 250ml, Central Valley, Chile**Berries, plum, alcohol*230
+214*Altoritas Merlot - Bottle, Central Valley, Chile**Berries, plum, alcohol*1630
+215*Casa Vista Cabernet Sauvignon - 175ml, Central Valley, Chile*Plum, damson, alcohol*180
+216*Casa Vista Cabernet Sauvignon - 250ml, Central Valley, Chile*Plum, damson, alcohol*230
+217*Casa Vista Cabernet Sauvignon - Bottle, Central Valley, Chile*Plum, damson, alcohol*1690
+218*Callia Lunaris Malbec - 175ml, Argentina*Plum, cherry, alcohol*182
+219*Callia Lunaris Malbec - 250ml, Argentina*Plum, cherry, alcohol*239
+220*Callia Lunaris Malbec - Bottle, Argentina*Plum, cherry, alcohol*1703
+221*Don Jacobo Rioja Crianza - 175ml, Bodegas Corral, Spain*Blackberries, blueberries, grapes, alcohol*185
+222*Don Jacobo Rioja Crianza - 250ml, Bodegas Corral, Spain*Blackberries, blueberries, grapes, alcohol*240
+223*Don Jacobo Rioja Crianza - Bottle, Bodegas Corral, Spain*Blackberries, blueberries, grapes, alcohol*1790
+224*Echo Falls White Zinfandel - 175ml, USA*Strawberries, raspberries, alcohol*176
+225*Echo Falls White Zinfandel - 250ml, USA*Strawberries, raspberries, alcohol*240
+226*Echo Falls White Zinfandel - Bottle, USA*Strawberries, raspberries, alcohol*1690
+227*Parini Pinot Grigio Rose Delle Venezie - 175ml, Italy*Strawberries, alcohol*178
+228*Parini Pinot Grigio Rose Delle Venezie - 250ml, Italy*Strawberries, alcohol*238
+229*Parini Pinot Grigio Rose Delle Venezie - Bottle, Italy*Strawberries, alcohol*1670
+230*Prosecco - 175ml, Midea, Italy*Pear, alcohol*180
+231*Prosecco - Bottle, Midea, Italy*Pear, alcohol*1640
+232*Codorniu Brut Rosado - 175ml, Cava, Spain*Strawberries, cherries, alcohol*190
+233*Codorniu Brut Rosado - Bottle, Cava, Spain*Strawberries, cherries, alcohol*1730
+234*Lanson Black Label Brut NV - Bottle*Grapes, alcohol*1720
+235*Evan Williams*Bourbon*140
+236*Buffalo Trace*Bourbon*130
+237*Colorado Tincup*Bourbon*140
+238*Old Forester*Bourbon*120
+239*Bulleit*Bourbon*130
+240*Woodford Reserve*Bourbon*130
+241*Eagle Rare 10 Year Old*Bourbon*130
+242*Stagg Jr*Bourbon*130
+243*Beefeater London Dry Gin*Gin*130
+244*Tanqueray*Gin*120
+245*Hendricks*Gin*129
+246*Tanqueray 10*Gin*120
+247*Smirnoff*Vodka*100
+248*Titos Texan*Vodka*100
+249*Ketel One*Vodka*100
+250*Pampero*Rum*100
+251*Bacardi Carta Blanca*Rum*102
+252*Captain Morgan Spiced*Rum*120
+253*Old J Spiced*Rum*110
+254*Old J Cherry*Rum*120
+255*Old J Tiki Overproof*Rum*100
+256*Goslings Black Seal*Rum*100
+257*Bacardi 8 Year Old*Rum*100
+258*Corona - 330ml ABV% 4.2*Barley, hops, yeast, water*340
+259*Corona - 710ml ABV% 4.2*Barley, hops, yeast, water*530
+260*Mexican Blonde - 330ml*Barley, hops, yeast, water*350
+261*Budweiser Prohibition - 330ml ABV% 0.05*Barley, hops, yeast, water*540
+262*Brewdog Vagabond - 330ml ABV% 4.5*Barley, hops, yeast, water*520
+263*Desperados - 330ml ABV% 5.9*Barley, hops, yeast, water*540
+264*Doom Bar - 500ml ABV% 4.3*Barley, hops, yeast, water*670
+265*Budweiser - 330ml ABV% 4.5*Barley, hops, yeast, water*510
+266*Peroni - 330ml ABV% 5.1*Barley, hops, yeast, water*521
+267*Modelo Especial - 355ml ABV% 4.5*Barley, hops, yeast, water*550
+268*Magners Irish Cider Apple - 568ml ABV% 4.5*Barley, hops, yeast, water, apples*670
+269*Rekorderlig Strawberry and Lime - 500ml ABV 4%*Barley, hops, yeast, water, strawberries, lime*610
+270*Diet Pepsi - Glass*Soda, syrup, sugar*2
+271*R Whites Lemonade - Glass*Soda, lemons, sugar*120
+272*Pepsi Max - Glass*Soda, syrup, sugar*2
+273*Tango Orange - Glass*Soda, syrup, sugar, orange*120
+274*Pepsi - Glass*Soda, syrup, sugar*110
+275*Pepsi - Bottle 330ml*Soda, syrup, sugar*130
+276*Diet Pepsi - Bottle 330ml*Soda, syrup, sugar*12
+277*Pepsi Max - Bottle 330ml*Soda, syrup, sugar*12
+278*Tango Orange - Bottle 330ml*Soda, syrup, sugar, orange*120
+279*7UP Free - Bottle 330ml*Soda, syrup, sugar, lemons*120
+280*Strathmore Still Water - 330ml*Water*0
+281*Strathmore Still Water - 750ml*Water*0
+282*Strathmore Sparkling Water - 330ml*Water*0
+283*Strathmore Sparkling Water - 750ml*Water*0
+284*J2O Apple and Mango - 275ml*Soda, syrup, sugar, apples, mangos*210
+285*J2O Orange and Passion Fruit - 275ml*Soda, syrup, sugar, orange, passion fruit*210
+286*J2O Apple and Raspberry - 275ml*Soda, syrup, sugar, apples, raspberries*210
+287*J2O Spritz Peach and Apricot - 275ml*Soda, syrup, sugar, peach, apricot*210
+288*J2O Spritz Apple and Watermelon - 275ml*Soda, syrup, sugar, apples, watermelon*210
+289*Lipton Ice Tea - 330ml*Tea, syrup, sugar, water*200
+290*Blanco Tequila - Ocho Blanco*Tequila*100
+291*Blanco Tequila - 1800 Blanco*Tequila*100
+292*Anejo Tequila - 1800 Anejo*Tequila*100
+293*Anejo Tequila - Sauza Tres Generaciones Anejo*Tequila*100
+294*Extra Anejo - Jose Cuervo Reserva De La Familia*Tequila*100
+295*Reposado Tequila - Jose Cuervo Traditional Reposado*Tequila*100
+296*Reposado Tequila - Sauza Tres Generaciones Reposado*Tequila*100
+297*The Rule Breaker - Maestro Dobel Diamante*Tequila*100
+298*Flavours - 1800 Coconut*Tequila, coconut syrup*210
+299*Flavours - Patron Xo Café (Coffee)*Tequila, coffee syrup*210
+300*Flavours - Patron Xo Incendio*Tequila, chilli syrup, chocolate syrup*250
+301*Mezcal - Montelobos*Tequila*100
+302*Mezcal - Vida*Tequila*100
+
+
+
+
+
+
+
+
+
+
+
+

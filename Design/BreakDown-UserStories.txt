@@ -1,0 +1,58 @@
+ Breakdown of user stories
+ 
+ 
+ Customers
+1.	As a customer I want to be able to see an electronic menu so I can select my dishes
+•	Have a database
+	Have a table storing the menu 
+	Have the dishes sorted into veg and non-veg
+•	Display the dishes available along with the price of the dish 
+2.	As a customer I want to be able to have a complete information on ingredients and calories for each dish so I can both avoid foods I am allergic to and follow my diet.
+•	Have the calorie count 
+•	Have the allergies 
+•	Have the ingredient displayed
+3.	As a customer I want to be able to order food so I can eat
+•	Have a select button to add to the basket 
+•	Have an order button which adds the dish selected to the basket
+	Have this stored as a table so the prices can be worked out at the end 
+	Display the final price for the customer + the dishes ordered.
+4.	As a customer I want to be able to filter my choices when ordering so that I can view the food I'm interested in.
+•	Have the food sorted into different categories 
+•	Have a filter button/ thing 
+5.	As a customer I would like to have an intuitive way of submitting an order so that the process is straightforward
+•	
+6.	As a customer I want to be able to call the waiter at any time so I can get help with my order.
+•	Have a button which calls a waiter over, with the info required to find the table and customer
+Waiter 
+7.	As a waiter, I would like to be able to change the menu, so I can show customers only currently available dishes.
+•	Have a login button which gives the waiter privileges
+	Have add dishes button 
+	Have a remove dish button 
+	Have the customer menu update with a set time interval
+
+8.	As a waiter, I want to be notified when a table is ready to order, so that I can confirm the order.
+•	Connect to the customer orders database and show what has been ordered
+•	
+9.	As a waiter, I want to see the orders by the time they were placed, so that I can prioritise them.
+•	Sort the orders by time
+•	Link to the kitchen to show which order is ready 
+10.	As a waiter, I want to be able to mark the order as delivered, so that the order progress is tracked correctly.
+•	Have a completed/delivered button to show the completed/ delivered order
+•	Have a progress tracker (ordered/being cooked/ cooked/ delivered/completed)
+11.	As a waiter, I want to cancel the customer order, so that the kitchen staff knows when people change their mind.
+•	There should be a cancel button to remove everything from the order 
+•	This also removes everything stored in the databases
+12.	 As a waiter, I want to be notified when the kitchen is ready with a dish, so that I can deliver it to the table.
+•	Have a progress tracker (ordered/being cooked/ cooked/ delivered/completed)
+13.	As a waiter, I want to be able to change the status of an order so that the customer is kept informed.
+•	Have a progress tracker (ordered/being cooked/ cooked/ delivered/completed)
+•	This is displayed to keep the customer updated
+14.	As a waiter I want to be notified when the client needs help so I can assist them.
+•	There should be a button to call the waiter displayed to the customer, which notifies the waiter about the customer needs help 
+15.	As kitchen staff I want to be informed when a customer order is confirmed so I can start preparing it.
+•	The ordering of the dishes is linked to the kitchen so they are notified about the dishes being order.
+16.	As kitchen staff I want to be able to notify waiters once an order is ready so that they can deliver it.
+•	Have a progress tracker (ordered/being cooked/ cooked/ delivered/completed)
+•	This tracker will be linked so the customer, waiter and the kitchen are update to with where the dish is
+17.	As kitchen staff I want to know the times at which the orders were made so I can tell if I am on track.
+•	Display the time when the orders where made
