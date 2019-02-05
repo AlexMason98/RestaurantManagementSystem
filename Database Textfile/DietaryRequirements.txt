@@ -296,7 +296,7 @@
 296*Reposado Tequila - Sauza Tres Generaciones Reposado*Yes*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No
 297*The Rule Breaker - Maestro Dobel Diamante*Yes*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No
 298*Flavours - 1800 Coconut*Yes*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No
-299*Flavours - Patron Xo Café (Coffee)*Yes*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No
+299*Flavours - Patron Xo CafÃ© (Coffee)*Yes*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No
 300*Flavours - Patron Xo Incendio*Yes*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No
 301*Mezcal - Montelobos*Yes*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No
 302*Mezcal - Vida*Yes*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No
