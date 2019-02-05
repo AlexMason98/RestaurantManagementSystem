@@ -4,8 +4,8 @@
 4*Vegetarian Chilli Empanadas*Tortilla parcels, Sour cream, Veg chilli*670
 5*Chicken Empanadas*Tortilla parcels, sour cream, Chicken chilli*710
 6*Beef Chilli Empanadas*Tortilla parcels, Sour cream, Beef chilli*723
-7*Salsa and Guacamole Nachos*Jalapeño cheese sauce, jalapeño peppers, melted mozzarella, sour cream, Salsa, guacamole*560
-8*Chicken, Chorizo and Sweetcorn Nachos*Jalapeño cheese sauce, jalapeño peppers, melted mozzarella, sour cream, chorizo, sweetcorn 690
+7*Salsa and Guacamole Nachos*JalapeÃ±o cheese sauce, jalapeÃ±o peppers, melted mozzarella, sour cream, Salsa, guacamole*560
+8*Chicken, Chorizo and Sweetcorn Nachos*JalapeÃ±o cheese sauce, jalapeÃ±o peppers, melted mozzarella, sour cream, chorizo, sweetcorn 690
 9*Barbeque Chicken Wings*BBQ sauce, Chicken*680
 10*Hot Habanero Chicken Wings*Chicken, Hot habanero sauce*702
 11*Cajun Dusted Green Beans*Green beans, Chipotle Mayo* 398
@@ -18,23 +18,23 @@
 18*Chilli Prawns*Prawns, Garlic, Hot haberno sauce, Tortilla Chips*450
 19*Habanero Mushrooms*Hot Haberno sauce, Tomato sauce, Melted mozzarella*320
 20* Patatas Bravas*Potatoes, tomatoes, chilli powder*580
-21*The Ultimate Sharers*Jalapeño poppers, southern fried chicken strips, chicken empanadas, nachos, onion rings, corn*1290
+21*The Ultimate Sharers*JalapeÃ±o poppers, southern fried chicken strips, chicken empanadas, nachos, onion rings, corn*1290
 22*Quesadilla Sharers*Tortilla, mozzarella, chicken, chorizo, sweetcorn, chilli beetroot*1420
-23*Fully Loaded Nachos With Tomato Salsa* Jalapeño cheese sauce, jalapeño peppers, mozzarella, sour cream, salsa, guacamole*980
+23*Fully Loaded Nachos With Tomato Salsa* JalapeÃ±o cheese sauce, jalapeÃ±o peppers, mozzarella, sour cream, salsa, guacamole*980
 24*Chicken Fully Loaded Nachos* Paprika,cumin,chilli powder,salt,pepper,onion powder,garlic powder, orange juice, lime juice, lemon, soy sauce, vinegar, chicken breast, onion, red pepper, green pepper, tortilla, chips, black beans, corn, cheese*1860
-25*Beef Chilli Fully Loaded Nachos*Tortillas, chipotle beer shredded beef, black beans, cheese sauce, more cheese, pico de gallo, fresh guacamole, jalapeños, cilantro, mexican crema*1900
-26*Five Bean Chilli Fully Loaded Nachos*Tortilla chips, pinto beans, cheddar cheese, monterey Jack cheese, red bell pepper, finely chopped, crumbled feta cheese, pickled jalapeños, avocado dip, guacamole, chopped green onions, radishes, chopped cilantro, salsa*1200 
+25*Beef Chilli Fully Loaded Nachos*Tortillas, chipotle beer shredded beef, black beans, cheese sauce, more cheese, pico de gallo, fresh guacamole, jalapeÃ±os, cilantro, mexican crema*1900
+26*Five Bean Chilli Fully Loaded Nachos*Tortilla chips, pinto beans, cheddar cheese, monterey Jack cheese, red bell pepper, finely chopped, crumbled feta cheese, pickled jalapeÃ±os, avocado dip, guacamole, chopped green onions, radishes, chopped cilantro, salsa*1200 
 27*Crispy Tacos* Tacos, chicken, cheese, sour cream*720
 28*Habanero Mushrooms*Habanero sauce, tomato sauce, mozzarella*540
 29*Mini Chicken Burrito*Guacamole, tomato salsa, sour cream*560
 30*Pan-Fried Chorizo*Tomato sauce, tortilla chips, chorizo*560
-31*Chorizo and Sweet Potato Croquettes*Croquettes, chorizo, sweetcorn, chilli, onion, jalapeño jelly*430
+31*Chorizo and Sweet Potato Croquettes*Croquettes, chorizo, sweetcorn, chilli, onion, jalapeÃ±o jelly*430
 32*Chicken, Chorizo and Sweetcorn Quesadilla Bite*Tortilla, mozzarella, tomato salsa, chicken, chorizo, sweetcorn*500
 33*Roasted Veg and Chilli Beetroot Quesadilla Bites*Tortilla, mozzarella, tomato salsa, chilli beetroot*460
 34*Beef Chilli Tortilla Stack*Tortillas, mozzarella, cheese, habanero sauce, tomato sauce, sour cream, classic beef chilli*790
 35*Five Bean Chilli Tortilla Stack*Tortillas, mozzarella, cheese, habanero sauce, tomato sauce, sour cream, five bean chilli*540
 36*Patatas Bravas*Potatoes, hot habanero sauce, tomato sauce* 590
-37* Halloumi Bites*Halloumi, jalapeño jelly*512
+37* Halloumi Bites*Halloumi, jalapeÃ±o jelly*512
 38*Classic Chicken*Chicken, BBQ sauce, hot habanero sauce*659
 39*Extra Barbeque Sauce*BBQ sauce*50
 40*Extra Hot Habanero Sauce*Habanero sauce*60
@@ -52,7 +52,7 @@
 52*Classic Beef Burger* Classic 5oz*Beef, bread*1290
 53*Southern Fried Chicken Burger* Chicken, bread*1389
 54*Halloumi Burger*Halloumi, tomato salsa, nachos, chipotle mayo, bread*980
-55*Beef, Chorizo and Pulled Pork Burger* 5oz*Beef, pork, chorizo, red jalapeños, cheese, BBQ sauce, chipotle mayo, bread*1500
+55*Beef, Chorizo and Pulled Pork Burger* 5oz*Beef, pork, chorizo, red jalapeÃ±os, cheese, BBQ sauce, chipotle mayo, bread*1500
 56*Texan Stack Burger*Beef, pork, bacon, cheese, BBQ sauce, bread*1520
 57*Extra Beef*Beef*190
 58*Extra Chicken Breast*Chicken*180
@@ -68,7 +68,7 @@
 68*Extra Jalapeno Cheese Sauce*Jalapeno Cheese Sauce*230
 69*Extra Barbeque Sauce*BBQ sauce*150
 70*Extra Peppercorn Sauce*Peppercorn sauce*150
-71*Rib Eye Steak*Succulent 8oz*Beef, Jalapeño cheese, peppercorn sauce, BBQ sauce*980
+71*Rib Eye Steak*Succulent 8oz*Beef, JalapeÃ±o cheese, peppercorn sauce, BBQ sauce*980
 72*Barbeque Chicken Melt*Chicken, BBQ sauce, cheese*890
 73*Chicken and Ribs*Chicken, BBQ sauce, pork*1700
 74*Whole Rack of Ribs*Pork, BBQ sauce*1800
@@ -124,7 +124,7 @@
 124*Espresso*Coffee*90
 125*Double Espresso*Coffee*180
 126*Tea*Tea*39
-127*Hot Chocolate*Chocolate, milk, cream”240
+127*Hot Chocolate*Chocolate, milk, creamÂ”240
 128*Liqueur Coffee - Goslings Addition*Coffee, alcohol*120
 129*Liqueur Coffee - Baileys Addition*Coffee, alcohol*134
 130*Liqueur Coffee - Disaronno Amaretto Addition*Coffee, alcohol*123
@@ -160,7 +160,7 @@
 160*Classic Margarita*Jose Cuervo Tequila, Triple Sec, lime juice*200
 161*Tommies Margarita*100% Agave Tequila, lime juice, agave syrup*200
 162*Best Margarita In The World*1800 Tequila, lime juice*190
-163*Margarita Del Fuego*Gran Centenario Tequila, guava juice, lime juice, jalapeño syrup*200
+163*Margarita Del Fuego*Gran Centenario Tequila, guava juice, lime juice, jalapeÃ±o syrup*200
 164*Strawberry Margarita*Jose Cuervo Tequila, Triple Sec, lime juice, strawberry juice*240
 165*Coconut Margarita*Jose Cuervo Tequila, Triple Sec, lime juice, coconut juice*240
 166*Classic Margarita Ocho*Ocho Blanco Tequila, Triple Sec, lime juice*240
@@ -172,19 +172,19 @@
 172*Classic Margarita Pitcher*Jose Cuervo Tequila, Triple Sec, lime juice*1300
 173*Tommies Margarita Jug*100% Agave Tequila, lime juice, agave syrup*1300
 174*Strawberry Margarita Jug*Jose Cuervo Tequila, Triple Sec, lime juice, strawberry juice*1300
-175*Pornstar Martini*Smirnoff vodka, passion fruit purée, lemon, pineapple juice and vanilla syrup, prosecco*320
-176*Southern Belle*The spirit of New Orleans, Southern Comfort, lemon juice, passion fruit purée, prosecco*320
+175*Pornstar Martini*Smirnoff vodka, passion fruit purÃ©e, lemon, pineapple juice and vanilla syrup, prosecco*320
+176*Southern Belle*The spirit of New Orleans, Southern Comfort, lemon juice, passion fruit purÃ©e, prosecco*320
 177*Mex On The Beach*Archers, orange and guava juice drink, grenadine*330
-178*Raspberry Rum Collins*Captain Morgan Spiced rum, raspberry purée, lime juice, soda water*300
+178*Raspberry Rum Collins*Captain Morgan Spiced rum, raspberry purÃ©e, lime juice, soda water*300
 179*Cherry Libre*Old J cherry rum, lime juice, Pepsi*310
 180*Woo Woo*Smirnoff vodka, Archers, cranberry juice, lemon juice*210
-181*Frozen Strawberry Daiquiri*Pampero rum, lime juice, strawberry purée *290
+181*Frozen Strawberry Daiquiri*Pampero rum, lime juice, strawberry purÃ©e *290
 182*Gin Fizz*Beefeater gin, lemon juice, sugar, egg whites, soda*230
 183*Espresso Martini*Smirnoff vodka, Kahlua coffee liqueur, vanilla syrup, espresso*320
 184*Kir Royale*Chambord black raspberry liqueur, prosecco*250
 185*Amaretto Sour*Luxardo Amaretto, lemon juice, egg whites, sugar *250
 186*Long Island Ice Tea*Pampero rum, Smirnoff vodka, Beefeater gin, Jose Cuervo tequila, orange liqueur, lemon juice, pepsi *350
-187*Berry Sling*Smirnoff vodka with raspberry purée, cranberry, orange juice, soda*320
+187*Berry Sling*Smirnoff vodka with raspberry purÃ©e, cranberry, orange juice, soda*320
 188*Pina Colada*Pampero rum, pineapple juice, coconut cream*340
 189*Bourbon Sours*Classic whiskey sour, Evan Williams bourbon, lemon juice, egg white*320
 190*Fruity Passion Fruit Mojito*Pampero rum, muddled lime, fresh mint, sugar, soda, passion fruit*320
@@ -296,7 +296,7 @@
 296*Reposado Tequila - Sauza Tres Generaciones Reposado*Tequila*100
 297*The Rule Breaker - Maestro Dobel Diamante*Tequila*100
 298*Flavours - 1800 Coconut*Tequila, coconut syrup*210
-299*Flavours - Patron Xo Café (Coffee)*Tequila, coffee syrup*210
+299*Flavours - Patron Xo CafÃ© (Coffee)*Tequila, coffee syrup*210
 300*Flavours - Patron Xo Incendio*Tequila, chilli syrup, chocolate syrup*250
 301*Mezcal - Montelobos*Tequila*100
 302*Mezcal - Vida*Tequila*100
