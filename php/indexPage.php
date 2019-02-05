@@ -1,29 +1,10 @@
-<!doctype html>
-<html lang="en">
-<head>
-	<!-- Required meta tags -->
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!-- Header -->
+<?php
+include_once 'Header.php';
+?>
+<!-- Header -->
 
-	<title>Oaxaca</title>
-
-	<link rel="icon" type="image/icon" href="images/Favicon.ico">
-	<link rel="stylesheet" type="text/css" href="cssStyleSheets/indexStylePage.css">
-
-	<!-- Bootstrap CSS -->
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-</head>
-<body id="body">
-	<nav class="navbar navbar-expand-lg navbar-light">
-		<div class="col-lg-2 col-md-2 col-sm-2">
-			<img src="images/Logo.png" id="logo" width ="130" height ="90" ;>
-		</div>
-	</nav>
+<section>
 	<form method="post">
 		<div class="container-fluid">
 			<div class="row" id="row1">
@@ -32,27 +13,15 @@
 
 					<div class="accordion" id="accordionExample">
 						<div class="card">
-							<div class="card-header" id="headingOne">
-								<h2 class="mb-0">
-									<button class="btn btn-light- btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"  id="dropDown">
-										Categories
-									</button>
-								</h2>
+							<div class="card-header" id="headingOne">			
+								<button class="btn btn-lg" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"  id="dropDown">
+									Categories
+								</button>
 							</div>
 							<div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
 								<div class="card-body">
 									<?php
-									$servername = "localhost";
-									$username = "root";
-									$password = "teamproject5";
-									$dbname = "customer";
-								// Create connection
-									$conn = new mysqli($servername, $username, $password, $dbname);
-								// Check connection
-									if ($conn->connect_error) {
-										die("Connection failed: " . $conn->connect_error);
-									}
-								// require 'php/Connection.php';
+									require '/var/www/html/Harshdeep/php/Connections/ConnectionCustomer.php';
 									$sql = "SELECT DISTINCT Category FROM menu";
 									$res = $conn->query($sql);
 									if($res-> num_rows == 0){
@@ -71,7 +40,7 @@
 						<div class="card">
 							<div class="card-header" id="headingTwo">
 								<h2 class="mb-0">
-									<button class="btn btn-link btn-light collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+									<button class="btn btn-lg" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" id="dropDown">
 										Dietary Requirements
 									</button>
 								</h2>
@@ -211,12 +180,10 @@
 			</div>
 		</div>
 	</form>
-</body>
-</html>
+</section>
 
-
-
-<!-- 
-		
-
-</script> -->
+<!-- Footer -->
+<?php
+include_once 'footer.php';
+?>
+<!-- Footer -->
