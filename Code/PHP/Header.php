@@ -1,6 +1,3 @@
-<?php
-	session_start();
-?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -10,10 +7,10 @@
 
 	<title>Oaxaca</title>
 
-	<link rel="icon" type="image/icon" href="../images/Favicon.ico">
-	<link rel="stylesheet" type="text/css" href="../cssStyleSheets/indexStylePage.css">
-	<link rel="stylesheet" type="text/css" href="../cssStyleSheets/loginPage.css">
-	<link rel="stylesheet" type="text/css" href="../cssStyleSheets/orderStylePage.css">
+	<link rel="icon" type="image/icon" href="../../../Images/images/Favicon.ico">
+	<link rel="stylesheet" type="text/css" href="../../../CSS/indexStylePage.css">
+	<link rel="stylesheet" type="text/css" href="../../../CSS/loginPage.css">
+	<link rel="stylesheet" type="text/css" href="../../../CSS/orderStylePage.css">
 
 
 	<!-- Bootstrap CSS -->
@@ -28,7 +25,8 @@
 	<header>
 		<nav class="navbar navbar-expand-lg navbar-light">
 			<div class="col-lg-2 col-md-2 col-sm-2">
-				<img src="../images/Logo.png" id="logo" width ="130" height ="90" ;>
+				<img src="../../../Images/images/Logo.png" id="logo" width ="130" height ="90" ;>
 			</div>
 		</nav>
 	</header>
+	
