@@ -1,0 +1,34 @@
+1*Tortilla Chips With Dips*Tortilla chips, Sour cream, Guacamole*460*0920
+2*Barbeque Southern Fried Chicken Strips*BBQ sauce, Chicken*720*0915
+3*Hot Habanero Chicken Strips*Hot habanero sauce, Chicken*760*1050
+4*Vegetarian Chilli Empanadas*Tortilla parcels, Sour cream, Veg chilli*670*1100
+5*Chicken Empanadas*Tortilla parcels, sour cream, Chicken chilli*710*1110
+6*Beef Chilli Empanadas*Tortilla parcels, Sour cream, Beef chilli*723*1120
+7*Salsa and Guacamole Nachos*Jalapeño cheese sauce, jalapeño peppers, melted mozzarella, sour cream, Salsa, guacamole*560*1250
+8*Chicken, Chorizo and Sweetcorn Nachos*Jalapeño cheese sauce, jalapeño peppers, melted mozzarella, sour cream, chorizo, sweetcorn 690*1300
+9*Barbeque Chicken Wings*BBQ sauce, Chicken*680*1300
+10*Hot Habanero Chicken Wings*Chicken, Hot habanero sauce*702*1310
+11*Cajun Dusted Green Beans*Green beans, Chipotle Mayo* 398*1320
+12*Garlic Tortilla*Tortillas, Garlic, Parsley*240*1350
+13*Garlic Tortilla With Cheese*Tortillas, Garlic, Parsley, Cheddar Cheese*310*1400
+14*Garlic Tortilla With Chorizo*Tortillas, Garlic, Parsley, Chorizo*340*1410
+15*Garlic Tortilla With Chilli*Tortillas, Garlic, Parsley, Chilli*290*1420
+16*Halloumi Skewers*Halloumi, Onions, Peppers, Citrus dressed salad with salsa*370*1430
+17*Jalapeno Poppers*Jalapenos, Cream Cheese, Jalapeno Jelly*530*1450
+18*Chilli Prawns*Prawns, Garlic, Hot haberno sauce, Tortilla Chips*450*1545
+19*Habanero Mushrooms*Hot Haberno sauce, Tomato sauce, Melted mozzarella*320*1547
+20* Patatas Bravas*Potatoes, tomatoes, chilli powder*580*1600
+21*The Ultimate Sharers*Jalapeño poppers, southern fried chicken strips, chicken empanadas, nachos, onion rings, corn*1290*1700
+22*Quesadilla Sharers*Tortilla, mozzarella, chicken, chorizo, sweetcorn, chilli beetroot*1420*1800
+23*Fully Loaded Nachos With Tomato Salsa* Jalapeño cheese sauce, jalapeño peppers, mozzarella, sour cream, salsa, guacamole*980*1820
+24*Chicken Fully Loaded Nachos* Paprika,cumin,chilli powder,salt,pepper,onion powder,garlic powder, orange juice, lime juice, lemon, soy sauce, vinegar, chicken breast, onion, red pepper, green pepper, tortilla, chips, black beans, corn, cheese*1860*1900
+25*Beef Chilli Fully Loaded Nachos*Tortillas, chipotle beer shredded beef, black beans, cheese sauce, more cheese, pico de gallo, fresh guacamole, jalapeños, cilantro, mexican crema*1900
+26*Five Bean Chilli Fully Loaded Nachos*Tortilla chips, pinto beans, cheddar cheese, monterey Jack cheese, red bell pepper, finely chopped, crumbled feta cheese, pickled jalapeños, avocado dip, guacamole, chopped green onions, radishes, chopped cilantro, salsa*1200*1921
+27*Crispy Tacos* Tacos, chicken, cheese, sour cream*720*2000
+28*Habanero Mushrooms*Habanero sauce, tomato sauce, mozzarella*540*2000
+29*Mini Chicken Burrito*Guacamole, tomato salsa, sour cream*560*2100
+30*Pan-Fried Chorizo*Tomato sauce, tortilla chips, chorizo*560*2110
+31*Chorizo and Sweet Potato Croquettes*Croquettes, chorizo, sweetcorn, chilli, onion, jalapeño jelly*430*2150
+32*Chicken, Chorizo and Sweetcorn Quesadilla Bite*Tortilla, mozzarella, tomato salsa, chicken, chorizo, sweetcorn*500*2200
+33*Roasted Veg and Chilli Beetroot Quesadilla Bites*Tortilla, mozzarella, tomato salsa, chilli beetroot*460*2200
+34*Beef Chilli Tortilla Stack*Tortillas, mozzarella, cheese, habanero sauce, tomato sauce, sour cream, classic beef chilli*790*2200
