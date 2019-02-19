@@ -1,6 +1,6 @@
 <!-- Header -->
 <?php
-include_once 'Header.php';
+include_once '../Header.php';
 ?>
 <!-- Header -->
 
@@ -17,7 +17,7 @@ include_once 'Header.php';
 						</thead>
 						<?php
 							// header('Content-Type: text/html; charset=utf-8');
-							include_once 'ConnectionStaff.php';
+							include_once '../Connections/ConnectionStaff.php';
 							$sql = "SELECT Time, Items FROM Orders";
 							$res = $conn->query($sql);
 							if($res-> num_rows == 0){
