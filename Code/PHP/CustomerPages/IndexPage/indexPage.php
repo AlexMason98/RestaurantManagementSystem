@@ -12,18 +12,22 @@
  				<div class="col-lg-3 col-md-5 col-sm-6" id="left">
 
  					<div class="accordion" id="accordionExample">
- 						<?php
- 						include_once 'Categories.php';
- 						?>
- 						<?php
- 						include_once 'DietaryRequirements.php';
- 						?>
+ 						<div>
+ 							<?php
+ 							include_once 'Categories/Categories.php';
+ 							?>
+ 						</div>
+ 						<div>
+ 							<?php
+ 							include_once 'DietaryRequirements/DietaryRequirements.php';
+ 							?>
+ 						</div>
 
  					</div>
  				</div>
  				<div class="col-lg-9 col-md-7 col-sm-6 " id="right">
  					<?php
- 					include_once 'ViewMenu.php';
+ 					include_once 'DietaryRequirements/ViewMenu.php';
  					?>
  				</div>
  			</div>
@@ -33,7 +37,7 @@
 
  <!-- Footer -->
  <?php
- include_once '../footer.php';
+ include_once '../../footer.php';
  ?>
  <!-- Footer -->
 

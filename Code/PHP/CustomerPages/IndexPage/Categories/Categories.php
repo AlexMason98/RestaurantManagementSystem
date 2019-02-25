@@ -15,7 +15,7 @@
 			}
 			else{
 				while($row = mysqli_fetch_assoc($res)){
-					echo "<a href='#'><br>{$row['Category']}</a>\n";
+					echo "<a href = 'Categories/MenuTypes/{$row['Category']}'><br>{$row['Category']}</a>";
 				}
 			}
 			mysqli_close($conn);
