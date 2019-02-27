@@ -16,9 +16,11 @@ public class DB {
     String password = "teamproject5";
     String databaseIP = "167.99.80.198";
     String database = "customer";
-    String table = "menu";
+    String menuTable = "menu";
+    String dietaryRequirementsTable = "DietaryRequirements";
     String menuFilePath = "menu.txt";
-    String categoriesFilePath = "categories.txt";
+    String dietaryRequirementsFilePath = "DietaryRequirements.txt";
+    int insertedRows = 0;
     
     Connection connection = connectToDatabase(username, password, databaseIP, database);
     if (connection != null) {
@@ -27,33 +29,39 @@ public class DB {
       System.out.println("Failed to connect to mySQL Server");
     }
     
-    dropTable(connection, table);
+    
+    dropTable(connection, menuTable); // Drops the Menu table in 'Customer' database before inserting data
+    dropTable(connection, dietaryRequirementsTable); // Drops the DietaryRequirements table in 'Customer' database before inserting data
+    
+    // Creates the Menu table with the attributes mentioned
     createTable(connection, 
-        table + "(ID int, Item varchar(65), Category varchar(25), Sub_Category varchar(20), Price varchar(6), "
+        menuTable + "(ID int, Item varchar(65), Category varchar(25), Sub_Category varchar(25), Price float(4,2), ImagePath varchar(25), "
         		+ "PRIMARY KEY (ID));");
-    int insertedRows = insertIntoTable(connection, table, menuFilePath);
-    System.out.println("Inserted " + insertedRows + " rows into '" + table + "' table");
+    
+    // Creates the Dietary Requirements table with the attributes mentioned
+    createTable(connection, 
+        dietaryRequirementsTable + "(ID int, Item varchar(65), Vegetarian varchar(3), Vegan varchar(3), GlutenFree varchar(3), "
+        		+ "ContainsEgg varchar(3), ContainsMilk varchar(3), ContainsPeanuts varchar(3), ContainsTreeNuts varchar(3), "
+        		+ "ContainsCelery varchar(3), ContainsFish varchar(3), ContainsCrustaceans varchar(3), ContainsMolluscs varchar(3), "
+        		+ "ContainsMustard varchar(3), ContainsSoya varchar(3), ContainsSulphites varchar(3), ContainsSesameSeeds varchar(3), "
+        		+ "ContainsLupin varchar(3), PRIMARY KEY (ID));");
+    
+    // Calls the insertIntoTable method, which inserts data into each column in the Menu table with an asterisk as the delimiter
+    insertedRows = insertIntoTable(connection, menuTable, menuFilePath);
+    System.out.println("Inserted " + insertedRows + " rows into '" + menuTable + "' table");
     System.out.println("");
     
-    // This produces a list of food/drink items by category. Takes each category from the categories text file
-    String currentLine;
-    try {
-    	BufferedReader reader = new BufferedReader(new FileReader("categories.txt"));
-    	while ((currentLine = reader.readLine()) != null) {
-    		selectCategory(connection, currentLine);
-    		System.out.println("");
-    	}
-    	reader.close();
-    } catch (IOException e) {
-    	e.printStackTrace();
-    	System.out.println("Could not read '" + categoriesFilePath + "' file, see output for details");
-    }
-    // Query ends here
+    // Calls the insertIntoTable method, which inserts data into each column in the DietaryRequirements table with an asterisk as the delimiter
+    insertedRows = insertIntoTable(connection, dietaryRequirementsTable, dietaryRequirementsFilePath);
+    System.out.println("Inserted " + insertedRows + " rows into '" + dietaryRequirementsTable + "' table");
+    System.out.println("");
+    
     
     System.out.println("");
     System.out.println("----- Finished all tasks! ------");
   }
   
+  // Method is responsible for connecting this Java program to our database
   public static Connection connectToDatabase(String username, String password, String databaseIP, String database) {
     Connection connection = null;
     
@@ -72,6 +80,7 @@ public class DB {
     return connection;
   }
   
+  // Method is responsible for dropping the table mentioned if it already exists before we re-create that table and/or insert data
   public static void dropTable(Connection connection, String table) {
     Statement statement = null;
     try {
@@ -94,6 +103,7 @@ public class DB {
     }
   }
   
+  // Method is responsible for creating a table (the name of this table is passed to the method as 'String table') in our database
   public static void createTable(Connection connection, String table) {
     Statement statement = null;
     try {
@@ -116,6 +126,7 @@ public class DB {
     }
   }
   
+  // Method is responsible for inserting data into our table from a text file. It separates each column by an asterisk which is our delimiter
   public static int insertIntoTable(Connection connection, String table, String filepath) {
     BufferedReader reader = null;
       int numberOfRows = 0;
@@ -154,6 +165,8 @@ public class DB {
     
   }
   
+  // This method is responsible for querying and selecting data from a specific category. 
+  // NOTE: Method only works for menu table, as this is the only table containing a 'Category' column
   public static void selectCategory (Connection connection, String category) {
     Statement statement = null;
     ResultSet resultSet = null;
