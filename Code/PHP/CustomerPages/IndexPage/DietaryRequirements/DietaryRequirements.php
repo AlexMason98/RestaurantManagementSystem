@@ -8,7 +8,7 @@
 	</div>
 	<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
 		<div class="card-body">
-			<input type="checkbox" name="Vegetarian" id="Vegetarian" value="Vegetarian">Vegetarian<br>
+			<input type="checkbox" name="Vegetarian" id="Vegetarian" value="Vegetarian"> Vegetarian<br>
 			<input type="checkbox" name="Vegan" id="Vegan" value="Vegan"> Vegan<br>
 			<input type="checkbox" name="GlutenFree" id="GlutenFree" value="Gluten"> Gluten Free<br>
 			<input type="checkbox" name="ContainsNoEgg" value="Eggs"> Contains No Egg<br>
@@ -24,7 +24,7 @@
 			<input type="checkbox" name="ContainsNoSulphites" value="Sulphites"> Contains No Sulphites<br>
 			<input type="checkbox" name="ContainsNoSesameSeeds" value="Seeds"> Contains No Sesame Seeds<br>
 			<input type="checkbox" name="ContainsNoLupin" value="Lupin"> Contains No Lupin<br>
-			<input type="Submit" value="Submit">
+			<br><input type="Submit" value="Submit">
 
 		</div>
 	</div>

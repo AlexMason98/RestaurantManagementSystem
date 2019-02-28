@@ -69,25 +69,46 @@ session_start()
 						$image = $row['ImagePath'];
 					?>
 					<form method="post" action="indexPage?action=add&ID=<?php echo $row['ID']; ?>">
-						<div class="col-lg-9 col-md-7 col-sm-6" id="right">
-
-							<div class="row" id="rightInsideRow">
+						<div class="col-lg-14 col-md-12 col-sm-10" id="center">
+							<div class="row" id="centerInsideRow">
 								<div class="DishImagePlaceholder" id="dish">
 									<img src="<?php echo $image; ?>" height="300" width="300">
 								</div>
-							
-								<div class="DishImagePlaceholder border border-light" id="pricing">
-									<?php
-									echo "<tr><td>{$row['Item']}</td></tr>";
-									echo "<tr><td><br>Price: £{$row['Price']}</td></tr>";
-
-
-									?>
-									<input type="text" name="quantity" value="1" class="form-control" />
-									<input type="submit" name="add_to_cart" class="btn btn-success" value="Add to Cart" />
+								<div class="DishImagePlaceholder" id="pricing">
+									<p id="itemText">
+										<?php
+										echo "{$row['Item']}";
+										?>
+									</p>
+									<p id="priceText">Price: £
+										<?php
+											echo "{$row['Price']}";
+										?>
+									</p>
+									<div class="quantityForm">
+										<input type="text" name="quantity" value="1" class="form-control" />
+									</div>
+									<div class="itemBoxes">
+										<input type="submit" name="add_to_cart" class="btn btn-success" value="Add to Cart" />
+										<!--<a class="btn btn-success" href="#popup">Info</a> -->
+										<a class="btn btn-success" href="#popup">Info</a>
+									</div>
+								</div>
+								<div id="popup" class="overlay">
+									<div class="popup">
+										<h5>Item Information</h5>
+										<a class="close" href="#">&times;</a>
+										<div class="popupInfo">
+											This is to be used to display the description, allergies, and calories.
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
+
+						<!--<div class="col-lg-4 col-md-3 col-sm-2" id="right">
+
+						</div> -->
 					</form>
 					<?php
 				}

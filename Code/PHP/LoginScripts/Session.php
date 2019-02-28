@@ -9,7 +9,7 @@
   $loginSession = $row['ID'];
 
   if (!isset($_SESSION['userSession'])) {
-    header("Location: ../LoginScripts/LoginPage.php");
+    header("Location: LoginPage/LoginPage.php");
     die();
   }
 
