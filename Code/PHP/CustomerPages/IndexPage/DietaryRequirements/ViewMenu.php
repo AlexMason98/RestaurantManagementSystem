@@ -66,19 +66,22 @@ session_start()
 			}
 			else{
 				while($row = mysqli_fetch_assoc($res)){
-					$image = $row['ImagePath'];
+						$image = $row['ImagePath'];
 					?>
 					<form method="post" action="indexPage?action=add&ID=<?php echo $row['ID']; ?>">
-						<div class="col-lg-8 col-md-7 col-sm-6" id="right">
+						<div class="col-lg-9 col-md-7 col-sm-6" id="right">
+
 							<div class="row" id="rightInsideRow">
 								<div class="DishImagePlaceholder" id="dish">
 									<img src="<?php echo $image; ?>" height="300" width="300">
 								</div>
-								
+							
 								<div class="DishImagePlaceholder border border-light" id="pricing">
 									<?php
 									echo "<tr><td>{$row['Item']}</td></tr>";
 									echo "<tr><td><br>Price: £{$row['Price']}</td></tr>";
+
+
 									?>
 									<input type="text" name="quantity" value="1" class="form-control" />
 									<input type="submit" name="add_to_cart" class="btn btn-success" value="Add to Cart" />

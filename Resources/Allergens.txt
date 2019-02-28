@@ -1,0 +1,303 @@
+1*Tortilla Chips With Dips*Contains gluten, milk and celery
+2*Barbeque Southern Fried Chicken Strips*Contains gluten and celery
+3*Hot Habanero Chicken Strips*Contains gluten, milk and celery
+4*Vegetarian Chilli Empanadas*Contains gluten, milk and celery
+5*Chicken Empanadas*Contains gluten, milk and celery
+6*Beef Chilli Empanadas*Contains gluten, milk, celery, soya and sulphites
+7*Salsa and Guacamole Nachos*Contains gluten, milk, celery and sulphites
+8*Chicken, Chorizo and Sweetcorn Nachos*Contains gluten, milk, celery and sulphites
+9*Barbeque Chicken Wings*Contains gluten and sulphites
+10*Hot Habanero Chicken Wings*Contains gluten, milk, celery and sulphites
+11*Cajun Dusted Green Beans*Contains gluten, egg, mustard and sulphites
+12*Garlic Tortilla With Chicken*Contains gluten and celery
+13*Garlic Tortilla With Cheese*Contains gluten, milk and celery
+14*Garlic Tortilla With Chorizo*Contains gluten, milk and celery
+15*Garlic Tortilla With Chilli*Contains gluten, celery and mustard
+16*Halloumi Skewers*Contains milk, celery and sulphites
+17*Jalapeno Poppers*Contains gluten and milk
+18*Chilli Prawns*Contains gluten, milk, celery and crustaceans
+19*Habanero Mushrooms*Contains milk and celery
+20*Patatas Bravas*Contains milk, celery and sulphites
+21*The Ultimate Sharers*Contains gluten, milk, celery and sulphites
+22*Quesadilla Sharers*Contains gluten, milk, celery and sulphites
+23*Fully Loaded Nachos With Tomato Salsa*Contains gluten, milk, celery and sulphites
+24*Chicken Fully Loaded Nachos*Contains gluten, milk, celery and sulphites
+25*Beef Chilli Fully Loaded Nachos*Contains gluten, milk, celery, soya and sulphites
+26*Five Bean Chilli Fully Loaded Nachos*Contains gluten, milk, celery and sulphites
+27*Crispy Tacos* Contains gluten, milk, celery and sulphites
+28*Habanero Mushrooms* Contains milk and celery 
+29*Mini Chicken Burrito* Contains gluten, milk, celery and sulphites
+30*Pan-Fried Chorizo* Contains gluten, milk, celery and soya
+31*Chorizo and Sweet Potato Croquettes* Contains gluten and milk
+32*Chicken, Chorizo and Sweetcorn Quesadilla Bites* Contains gluten, milk, celery and sulphites
+33*Roasted Veg and Chilli Beetroot Quesadilla Bites* Contains gluten, milk, celery and sulphites
+34*Beef Chilli Tortilla Stack* Contains gluten, milk, celery and soya
+35*Five Bean Chilli Tortilla Stack* Contains gluten, milk and celery
+36*Patatas Bravas* Contains milk, celery and sulphites 
+37*Halloumi Bites*Contains egg, milk and celery
+38*Classic Chicken* Contains milk, celery and sulphites
+39*Extra Barbeque Sauce*
+40*Extra Hot Habanero Sauce* Contains milk and celery 
+41*Barbeque Chicken and Pulled Pork* Contains milk, celery and sulphites
+42*Seasoned Roasted Veg Fajita* Contains milk, celery and sulphites
+43*Tender Steak* Contains milk, celery and sulphites 
+44*Garlic King Prawns* Contains milk, celery, crustaceans and sulphites
+45*The Ultimate Fajita* Contains milk, celery and sulphites 
+46*Extra Chicken* Contains milk, celery and sulphites
+47*Extra Barbeque Chicken and Pulled Pork* Contains milk, celery and sulphites
+48*Extra Tender Steak* Contains milk, celery and sulphites
+49*Extra Seasoned Roasted Veg* Contains milk, celery and sulphites
+50*Extra Garlic King Prawns* Contains milk, celery, crustaceans and sulphites
+51*Chicken and Barbeque Pulled Pork Burger*Contains egg, milk, celery and molluscs
+52*Classic Beef Burger* Contains egg, milk and mustard
+53*Southern Fried Chicken Burger* Contains gluten, egg, milk, celery and sulphites
+54*Halloumi Burger* Contains gluten, egg, milk, celery, mustard and sulphites
+55*Beef, Chorizo and Pulled Pork Burger*No*No*Yes*Contains egg, milk*No*No*No*No*No*No*mustard*soya*sulphites*No*No
+56*Texan Stack Burger* Contains gluten, egg, milk, celery, mustard and sulphites 
+57*Extra Beef*
+58*Extra Chicken Breast*
+59*Extra Southern Fried Chicken Breast*Contains gluten and celery
+60*Extra Beef Chilli* Contains milk, celery and mustard
+61*Extra Chorizo* Contains milk and mustard
+62*Extra Cheese* Contains milk
+63*Extra Bacon*
+64*Extra Guacamole*
+65*Extra Grilled Halloumi* Contains gluten and milk
+66*Steak and Fries* Contains gluten
+67*Steak and Salad* Contains mustard
+68*Extra Jalapeno Cheese Sauce* Contains gluten and milk
+69*Extra Barbeque Sauce* Contains gluten
+70*Extra Peppercorn Sauce* Contains milk, celery and mustard
+71*Rib Eye Steak* Contains egg milk 
+72*Barbeque Chicken Melt* Contains egg and milk
+73*Chicken and Ribs* Contains egg and milk
+74*Whole Rack of Ribs* Contains egg and milk 
+75*Half Rack of Ribs* Contains egg and milk
+76*Pork Belly* Contains gluten, egg, milk, celery and sulphites
+77*Southern Fried Chicken and Barbeque Pulled Pork* Contains gluten, egg, milk and celery 
+78*Classic Beef Chilli* Contains milk, celery and sulphites 
+79*Five Bean and Roasted Veg Chilli* Contains milk and celery 
+80*Fiery Chicken* Contains milk and celery 
+81*Barbeque Chicken Wrap* Contains gluten, egg, milk and celery
+82*Chicken Baja Bowl* Contains gluten, milk and celery 
+83*Jambalaya* Contains milk, celery and crustaceans
+84*Steak Salad* Contains celery 
+85*Mango and Avocado Salad* Contains celery 
+86*Chicken, Mango and Avocado Salad*
+87*Prawn, Mango and Avocado Salad* Contains crustaceans
+88*Chicken Fajita Salad* Contains milk, celery and sulphites
+89*Roasted Halloumi and Veg Naked Burrito* Contains milk, celery and sulphites
+90*Beef Chilli Naked Burrito* Contains milk, celery, soya and sulphites
+91*Mild Habanero Chicken* Contains milk, celery and sulphites
+92*Skin-on Fries* Contains gluten
+93*Sweet Potato Fries* Contains gluten
+94*Sweet Potato Wedges* Contains milk, celery and mustard
+95*Refried Beans* Contains milk and celery 
+96*Roasted Vegetables* Contains celery 
+97*Rice* Contains celery 
+98*Grilled Halloumi* Contains milk
+99*Onion Rings* Contains gluten, milk, celery and sulphites 
+100*Coleslaw* Contains gluten, egg and milk
+101*Garlic Tortilla* Contains gluten and celery
+102*Corn On The Cob* Contains milk
+103*Small Churros* Contains gluten, milk and soya
+104*Churros* Contains gluten, milk and soya
+105*Hot Chocolate and Churros* Contains gluten, milk, celery and sulphites
+106*Pineapple Thins* Contains milk
+107*Chilli Pineapple Thins* Contains milk and mustard
+108*Brownie Baked Banana* Contains gluten, egg, milk and soya
+109*Toffee Popcorn Brownie* Contains gluten, egg, milk and soya
+110*Golden Nugget Cheesecake*Contains gluten, milk, peanuts, tree nuts, mustard and sesame seeds
+111*Blueberry and Apple Crumble* Contains milk and tree nuts
+112*Chocolate Orange Cake* Contains gluten, egg, milk and soya
+113*Cointreau 25ml Shot*
+114*Mexican Mess* Contains gluten, egg, milk and soya
+115*Ice Cream - One Scoop* Contains milk and soya
+116*Ice Cream - Trio* Contains milk and soya
+117*Brownies and Ice Cream* Contains egg, milk and soya
+118*Lemon Sorbet - One Scoop*
+119*Lemon Sorbet - Trio*
+120*Americano* Contains gluten, egg, milk and soya
+121*Latte* Contains gluten, egg, milk and soya
+122*Cappuccino* Contains gluten, egg, milk and soya
+123*Cappuccino - Large* Contains gluten, egg, milk and soya
+124*Espresso* Contains gluten, egg, milk and soya
+125*Double Espresso* Contains gluten, egg, milk and soya
+126*Tea* Contains gluten, egg, milk and soya
+127*Hot Chocolate* Contains gluten, egg, milk and soya
+128*Liqueur Coffee - Goslings Addition* Contains gluten, egg, milk, soya and sulphites
+129*Liqueur Coffee - Baileys Addition* Contains gluten, egg, milk and soya
+130*Liqueur Coffee - Disaronno Amaretto Addition* Contains gluten, egg, milk and soya
+131*Liqueur Coffee - Jamesons Addition* Contains gluten, egg, milk and soya
+132*Liqueur Coffee - Kahlua Addition* Contains gluten, egg, milk and soya
+133*Liqueur Coffee - Martell Addition* Contains gluten, egg, milk and soya
+134*Decaff Americano* Contains gluten, egg, milk and soya
+135*Decaff Latte* Contains gluten, egg, milk and soya
+136*Decaff Cappuccino* Contains gluten, egg, milk and soya
+137*Decaff Cappuccino - Large* Contains gluten, egg, milk and soya
+138*Decaff Espresso* Contains gluten, egg, milk and soya
+139*Decaff Double Espresso* Contains gluten, egg, milk and soya
+140*Homemade Lemonade*
+141*Ginger Beer Mock-jito*
+142*Apple Juice Mock-jito*
+143*Lemonade Mock-jito*
+144*Virgin Colada* Contains milk and sulphites
+145*Appleberry*
+146*Strawberry and Raspberry Agua Fresca*
+147*Mango and Passion Fruit Agua Fresca* Contains sulphites
+148*Classic Vanilla* Contains milk
+149*Classic Strawberry* Contains milk 
+150*Classic Chocolate* Contains milk
+151*Classic Blueberry* Contains milk
+152*Salted Caramel Popcorn* Contains milk and soya
+153*Chocolate Churro* Contains gluten and milk
+154*Classic Vanilla Bourbon* Contains milk
+155*Classic Strawberry Bourbon* Contains milk
+156*Classic Chocolate Bourbon* Contains milk
+157*Classic Blueberry Bourbon* Contains milk
+158*Salted Caramel Popcorn Bourbon* Contains milk and soya
+159*Chocolate Churro Bourbon* Contains gluten and milk
+160*Classic Margarita*
+161*Tommies Margarita*
+162*Best Margarita In The World*
+163*Margarita Del Fuego*
+164*Strawberry Margarita*
+165*Coconut Margarita* Contains milk and sulphites
+166*Classic Margarita Ocho*
+167*Tommies Margarita Ocho*
+168*Best Margarita In The World*
+169*Margarita Del Fuego Ocho*
+170*Strawberry Margarita Ocho*
+171*Coconut Margarita Ocho* Contains milk and sulphites
+172*Classic Margarita Pitcher*
+173*Tommies Margarita Jug*
+174*Strawberry Margarita Jug*
+175*Pornstar Martini* Contains sulphites
+176*Southern Belle* Contains sulphites
+177*Mex On The Beach* Contains sulphites
+178*Raspberry Rum Collins*
+179*Cherry Libre* Contains sulphites
+180*Woo Woo*
+ 181*Frozen Strawberry Daiquiri*
+182*Gin Fizz* Contains egg
+183*Espresso Martini*
+184*Kir Royale* Contains sulphites
+185*Amaretto Sour* Contains egg
+186*Long Island Ice Tea*
+187*Berry Sling*
+188*Pina Colada* Contains milk and sulphites
+189*Bourbon Sours* Contains egg
+190*Fruity Passion Fruit Mojito*
+191*Classic Mojito*
+ 192*Apple Juice*
+ 193*Egar Cloudy Apple Juice (16oz)*
+194*Orange Juice*
+195*Pineapple Juice*
+196*Gauva Juice (16oz)*
+197*El Velero Verdejo Blanco - 175ml, Valdepenas, Spain*
+198*El Velero Verdejo Blanco - 250ml, Valdepenas, Spain*
+199*El Velero Verdejo Blanco - Bottle, Valdepenas, Spain*
+200*Casa Vista Chardonnay - 175ml, Central Valley, Chile*
+201*Casa Vista Chardonnay - 250ml, Central Valley, Chile*
+202*Casa Vista Chardonnay - Bottle, Central Valley, Chile*
+203*Quindi Pinot Grigio - 175ml, Italy*
+204*Quindi Pinot Grigio - 250ml, Italy*
+205*Quindi Pinot Grigio - Bottle, Italy*
+206*Milford Point Sauvignon Blanc - 175ml, Marlborough, New Zealand*
+207*Milford Point Sauvignon Blanc - 250ml, Marlborough, New Zealand*
+208*Milford Point Sauvignon Blanc - Bottle, Marlborough, New Zealand*
+209*El Velero Tempranillo Tinto - 175ml, Valdepenas, Spain*
+210*El Velero Tempranillo Tinto - 250ml, Valdepenas, Spain*
+211*El Velero Tempranillo Tinto - Bottle, Valdepenas, Spain*
+212*Altoritas Merlot - 175ml, Central Valley, Chile*
+213*Altoritas Merlot - 250ml, Central Valley, Chile*
+214*Altoritas Merlot - Bottle, Central Valley, Chile*
+215*Casa Vista Cabernet Sauvignon - 175ml, Central Valley, Chile*
+216*Casa Vista Cabernet Sauvignon - 250ml, Central Valley, Chile*
+217*Casa Vista Cabernet Sauvignon - Bottle, Central Valley, Chile*
+218*Callia Lunaris Malbec - 175ml, Argentina*
+219*Callia Lunaris Malbec - 250ml, Argentina*
+220*Callia Lunaris Malbec - Bottle, Argentina*
+221*Don Jacobo Rioja Crianza - 175ml, Bodegas Corral, Spain*
+222*Don Jacobo Rioja Crianza - 250ml, Bodegas Corral, Spain*
+223*Don Jacobo Rioja Crianza - Bottle, Bodegas Corral, Spain*
+224*Echo Falls White Zinfandel - 175ml, USA*
+225*Echo Falls White Zinfandel - 250ml, USA*
+226*Echo Falls White Zinfandel - Bottle, USA*
+227*Parini Pinot Grigio Rose Delle Venezie - 175ml, Italy*
+228*Parini Pinot Grigio Rose Delle Venezie - 250ml, Italy*
+229*Parini Pinot Grigio Rose Delle Venezie - Bottle, Italy*
+230*Prosecco - 175ml, Midea, Italy*
+231*Prosecco - Bottle, Midea, Italy*
+232*Codorniu Brut Rosado - 175ml, Cava, Spain*
+233*Codorniu Brut Rosado - Bottle, Cava, Spain*
+234*Lanson Black Label Brut NV - Bottle*
+235*Evan Williams*
+ 236*Buffalo Trace*
+ 237*Colorado Tincup*
+238*Old Forester*
+ 239*Bulleit*
+240*Woodford Reserve*
+241*Eagle Rare 10 Year Old*
+242*Stagg Jr*
+243*Beefeater London Dry Gin*
+244*Tanqueray*
+245*Hendricks*
+246*Tanqueray 10*
+247*Smirnoff*
+248*Titos Texan*
+249*Ketel One*
+250*Pampero*
+251*Bacardi Carta Blanca*
+252*Captain Morgan Spiced*
+ 253*Old J Spiced*
+254*Old J Cherry*
+255*Old J Tiki Overproof*
+256*Goslings Black Seal*
+257*Bacardi 8 Year Old*
+258*Corona - 330ml ABV% 4.2*
+259*Corona - 710ml ABV% 4.2*
+260*Mexican Blonde - 330ml*
+261*Budweiser Prohibition - 330ml ABV% 0.05* Contains gluten
+262*Brewdog Vagabond - 330ml ABV% 4.5*
+263*Desperados - 330ml ABV% 5.9* Contains gluten
+264*Doom Bar - 500ml ABV% 4.3* Contains gluten
+265*Budweiser - 330ml ABV% 4.5* Contains gluten
+266*Peroni - 330ml ABV% 5.1*
+267*Modelo Especial - 355ml ABV% 4.5*
+268*Magners Irish Cider Apple - 568ml ABV% 4.5*
+269*Rekorderlig Strawberry and Lime - 500ml ABV 4%*
+270*Diet Pepsi - Glass*
+271*R Whites Lemonade - Glass*
+272*Pepsi Max - Glass*
+273*Tango Orange - Glass*
+274*Pepsi - Glass*
+275*Pepsi - Bottle 330ml*
+ 276*Diet Pepsi - Bottle 330ml*
+277*Pepsi Max - Bottle 330ml*
+278*Tango Orange - Bottle 330ml*
+279*7UP Free - Bottle 330ml*
+280*Strathmore Still Water - 330ml*
+281*Strathmore Still Water - 750ml*
+282*Strathmore Sparkling Water - 330ml*
+283*Strathmore Sparkling Water - 750ml*
+284*J2O Apple and Mango - 275ml*
+285*J2O Orange and Passion Fruit - 275ml*
+286*J2O Apple and Raspberry - 275ml*
+287*J2O Spritz Peach and Apricot - 275ml*
+288*J2O Spritz Apple and Watermelon - 275ml*
+289*Lipton Ice Tea - 330ml*
+290*Blanco Tequila - Ocho Blanco*
+291*Blanco Tequila - 1800 Blanco*
+292*Anejo Tequila - 1800 Anejo*
+293*Anejo Tequila - Sauza Tres Generaciones Anejo*
+294*Extra Anejo - Jose Cuervo Reserva De La Familia*
+295*Reposado Tequila - Jose Cuervo Traditional Reposado*
+296*Reposado Tequila - Sauza Tres Generaciones Reposado*
+297*The Rule Breaker - Maestro Dobel Diamante*
+298*Flavours - 1800 Coconut*
+299*Flavours - Patron Xo Café (Coffee)*
+300*Flavours - Patron Xo Incendio*
+301*Mezcal - Montelobos*
+302*Mezcal - Vida*
+
