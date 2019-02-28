@@ -23,11 +23,11 @@ require '/var/www/html/Harshdeep/PHP/Connections/ConnectionStaff.php';
 								echo "<tr><td>{$row['Items']}</td>\n";
 								echo "<td>{$row['Time']}</td>\n";
 								echo "<td>{$row['Quantity']}</td>\n";
-								echo "<td>{$row['Price']}</td></tr>\n";
+								echo "<td>£{$row['Price']}</td></tr>\n";
 							}
 						}
-						
-						?>						
+
+						?>
 					</table>
 				</div>
 			</div>
@@ -46,14 +46,14 @@ require '/var/www/html/Harshdeep/PHP/Connections/ConnectionStaff.php';
 					}
 					else{
 						while($row = mysqli_fetch_assoc($res)){
-							echo "<tr><td>{$row['Total']}</td></tr>\n";
+							echo "<tr><td>£{$row['Total']}</td></tr>\n";
 						}
 					}
-					
+
 					?>
 				</table>
 			</div>
-		</div>		
+		</div>
 		<div class="row">
 			<div class="col-lg-8 col-md-6 col-sm-4"></div>
 			<div class="col-lg-4 col-md-6 col-sm-8">

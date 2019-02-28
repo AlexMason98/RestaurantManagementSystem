@@ -1,34 +1,44 @@
 
 /* Desktop Mode (above 768px width) */
 @media only screen and (min-width: 768px) {
-	.loginbox{
+	.loginbox {
 		background: rgba(3, 53, 132, 0.3);
 		position:absolute;
-		top:50% ;
+		top:55% ;
 		left:50%;
 		box-sizing: border-box;
 		padding:30px 30px;
 		transform:translate(-50%, -50%);
 	}
 
-	.loginbox h1{
+	.loginbox h1 {
 		text-align: center;
 		font-size: 30px;
+		padding-bottom: 20px;
 		font-family: verdana;
 		font-weight: bold;
 		color: white;
 	}
 
-	.loginbox p{
+	.title h1 {
+		padding-top: 150px;
+		text-align: center;
+		padding-bottom: 20px;
+		font-family: verdana;
+		font-weight: bold;
+		color: white;
+	}
+
+	.loginbox p {
 		font-weight:bold;
 		margin:0;
 		padding:0;
 		color:white;
 	}
 
-	.loginbox input{
+	.loginbox input {
 		width: 100%;
-		margin-bottom: 5px;
+		margin-bottom: 20px;
 		margin-top: 5px;
 		background:transparent;
 		outline:none;
@@ -37,16 +47,118 @@
 		color: white
 	}
 
-	.loginbox button{
+	.loginbox button {
 		background-color:rgba(0, 63, 76, 0.5);
 		font-weight: bold;
 		border-radius:20px;
 		border: none;
 		outline: none;
 		height: 50px;
-		width: 130%;
+		width: 100%;
 		color: white;
 		margin-top: 5px
+	}
+
+	.footer {
+		background: rgba(3, 53, 132, 0.3);
+		position:absolute;
+		bottom: 0%;
+		height: 80px;
+		width: 100%;
+		box-sizing: border-box;
+	}
+
+	.waiterButtonDiv {
+		background: rgba(3, 53, 132, 0.3);
+		position:relative;
+		bottom: 0%;
+		/**transform: translateY(72.5%); /** Magic Number, used because nav bar height and footer
+		height is dynamic/undefined and needed button div to be in middle of space between
+		nav bar and footer **/
+		width: 100%;
+		box-sizing: border-box;
+		float: right;
+	}
+
+	.waiterButtons {
+		background-color:rgba(0, 63, 76, 0.5);
+		font-weight: bold;
+		border-radius:20px;
+		border: none;
+		outline: none;
+		float: right;
+		/**height: 50px;**/
+		margin: 15px;
+		width: calc(100% - 30px);
+		color: white;
+		padding: 10px 32px;
+		text-align: center;
+		font-size: 20px;
+		cursor: pointer;
+		box-sizing: border-box;
+	}
+
+	.signOutButton {
+		background-color:rgba(0, 63, 76, 0.5);
+		font-weight: bold;
+		border-radius:20px;
+		border: none;
+		outline: none;
+		float: right;
+		height: 50px;
+		width: 20%;
+		margin: 15px;
+		color: white;
+		padding: 10px 32px;
+		text-align: center;
+		font-size: 20px;
+		cursor: pointer;
+		box-sizing: border-box;
+	}
+
+	.left {
+		position: relative;
+		float: left;
+		height: 100%;
+		width: 75%;
+	}
+
+	.right {
+		position: relative;
+		float: right;
+		height: 100%;
+		width: calc(20% + 30px);
+		transform: translateY(72.5%);
+	}
+
+	.currentOrderTitle {
+		padding-top: 40px;
+		padding-left: 30px;
+		padding-bottom: 30px;
+	}
+
+	.currentOrderTable {
+		width: 100%;
+		padding-left: 30px;
+	}
+
+	table {
+		border: 1px solid black;
+		table-layout: fixed;
+	}
+
+	th, td {
+		border: 1px solid black;
+		width: 1px;
+		text-align: left;
+		padding-left: 10px;
+		table-layout: fixed;
+	}
+
+	.scrollit{
+		overflow: auto;
+		height: 50%;
+		width: 100%;
 	}
 
 }

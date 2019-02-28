@@ -7,11 +7,8 @@
 
 	<title>Oaxaca</title>
 
-	<link rel="icon" type="image/icon" href="../../../Images/images/Favicon.ico">
+	<link rel="icon" type="image/icon" href="../../../Images/Favicon.ico">
 	<link rel="stylesheet" type="text/css" href="../../../CSS/indexStylePage.css">
-	<link rel="stylesheet" type="text/css" href="../../../CSS/loginPage.css">
-	<link rel="stylesheet" type="text/css" href="../../../CSS/orderStylePage.css">
-	<link rel="stylesheet" type="text/css" href="../../../CSS/MenuType/orderStylePage.css">
 
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
@@ -21,12 +18,11 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <body id="body">
-	
+
 	<header>
 		<nav class="navbar navbar-expand-lg navbar-light">
 			<div class="col-lg-2 col-md-2 col-sm-2">
-				<img src="../../../Images/images/Logo.png" id="logo" width ="130" height ="90" ;>
+				<img src="../../../Images/Logo.png" id="logo" width ="130" height ="90" ;>
 			</div>
 		</nav>
 	</header>
-	

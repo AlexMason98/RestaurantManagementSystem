@@ -5,7 +5,7 @@
  <!-- Header -->
 
  <section>
- 	
+
  	<form method="post">
  		<div class="container-fluid">
  			<div class="row" id="row1">
@@ -40,4 +40,3 @@
  include_once '../../footer.php';
  ?>
  <!-- Footer -->
-
