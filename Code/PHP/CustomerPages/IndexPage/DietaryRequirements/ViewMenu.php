@@ -9,7 +9,7 @@ session_start()
 
 ///////////////////////////////////////////////////////////////////
 /////////////         Starting SQL Query      ////////////////////
-		$sql = "SELECT menu.ID, menu.Item, menu.ImagePath, menu.Price, Descriptions.Description, IngredientsAndCalories.Ingredients, Allergens.Allergens, IngredientsAndCalories.Calories, DietaryRequirements.Item FROM Descriptions, IngredientsAndCalories, Allergens, DietaryRequirements CROSS JOIN menu WHERE menu.ID = DietaryRequirements.ID AND DietaryRequirements.ID = Descriptions.ID AND Descriptions.ID = IngredientsAndCalories.ID AND IngredientsAndCalories.ID = Allergens.ID";
+		$sql = "SELECT menu.ID, menu.Item, menu.ImagePath, menu.Price, DietaryRequirements.Item FROM Descriptions CROSS JOIN menu WHERE menu.ID = DietaryRequirements.ID ";
 		
 //////////////////////////////////////////////////////////////////
 /////////////         Multiple Refinements     //////////////////
@@ -39,10 +39,6 @@ session_start()
 
 				$image = $row['ImagePath'];
 				$id = $row['ID'];
-				$description = $row['Description'];
-				$ingredients = $row['Ingredients'];
-				$allergen = $row['Allergens'];
-				$calories = $row['Calories'];
 				?>
 				<form method="post" action="indexPage?action=add&ID=<?php echo $row['ID']; ?>">
 					<div class="col-lg-14 col-md-12 col-sm-10" id="center">
@@ -67,25 +63,6 @@ session_start()
 								<div class="itemBoxes">
 									<input type="submit" name="add_to_cart" class="btn btn-success" value="Add to Cart" />
 
-								</div>
-							</div>
-
-
-							<div id="<?php echo($popup); ?>" class="overlay">
-								<div class="popup">
-									<h5 id="itemInformation">Item Information</h5>
-									<a class="close" href="#">&times;</a>
-									<div class="popupInfo">
-										<h6 id="descriptionText">Description:</h6>
-										<p id="itemDescription"><?php echo($description); ?></p>
-										<h6 id="ingredientsText">Ingredients:</h6>
-										<p id="itemIngredients"><?php echo ($ingredients); ?></p>
-										<h6 id="allergenText">Allergen Information:</h6>
-										<p id="itemAllergens"><?php echo($allergen); ?></p>
-										<h6 id="caloriesText">Calories:</h6>
-										<p id="itemCalories"><?php echo($calories); ?></p>
-
-									</div>
 								</div>
 							</div>
 						</div>
