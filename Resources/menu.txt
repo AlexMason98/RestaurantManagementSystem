@@ -9,10 +9,10 @@
 9*Barbeque Chicken Wings*Starters*Starters*6.29*../../../Images/9.jpg
 10*Hot Habanero Chicken Wings*Starters*Starters*6.29*../../../Images/10.jpg
 11*Cajun Dusted Green Beans*Starters*Starters*4.59*../../../Images/11.jpg
-12*Garlic Tortilla With Chicken and Cheese Dip*Starters*Starters*4.49*../../../Images/12.png
-13*Garlic Tortilla With Cheese Dip*Starters*Starters*4.49*../../../Images/13.jpg
-14*Garlic Tortilla With Chorizo and Cheese Dip*Starters*Starters*4.99*../../../Images/14.jpg
-15*Garlic Tortilla With Chilli and Cheese Dip*Starters*Starters*5.29*../../../Images/15.jpg
+12*Garlic Tortilla With Chicken*Starters*Starters*4.49*../../../Images/12.png
+13*Garlic Tortilla With Cheese*Starters*Starters*4.49*../../../Images/13.jpg
+14*Garlic Tortilla With Chorizo*Starters*Starters*4.99*../../../Images/14.jpg
+15*Garlic Tortilla With Chilli*Starters*Starters*5.29*../../../Images/15.jpg
 16*Halloumi Skewers*Starters*Starters*5.99*../../../Images/16.jpg
 17*Jalapeno Poppers*Starters*Starters*5.79*../../../Images/17.jpg
 18*Chilli Prawns*Starters*Starters*6.99*../../../Images/18.jpg
@@ -193,7 +193,7 @@
 193*Egar Cloudy Apple Juice (16oz)*Soft Drinks*Juice*3.50*../../../Images/193.jpg
 194*Orange Juice*Soft Drinks*Juice*0.50*../../../Images/194.jpg
 195*Pineapple Juice*Soft Drinks*Juice*0.90*../../../Images/195.jpg
-196*Guava Juice (16oz)*Soft Drinks*Juice*1.99*../../../Images/196.jpg
+196*Gauva Juice (16oz)*Soft Drinks*Juice*1.99*../../../Images/196.jpg
 197*El Velero Verdejo Blanco - 175ml, Valdepenas, Spain*Wines*White*4.59*../../../Images/197.jpg
 198*El Velero Verdejo Blanco - 250ml, Valdepenas, Spain*Wines*White*6.19*../../../Images/198.jpg
 199*El Velero Verdejo Blanco - Bottle, Valdepenas, Spain*Wines*White*15.99*../../../Images/199.jpg

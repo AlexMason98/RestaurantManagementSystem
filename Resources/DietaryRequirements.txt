@@ -1,4 +1,4 @@
-﻿1*Tortilla Chips With Dips*Yes*No*No*No*Yes*No*No*Yes*No*No*No*No*No*Yes*No*No
+1*Tortilla Chips With Dips*Yes*No*No*No*Yes*No*No*Yes*No*No*No*No*No*Yes*No*No
 2*Barbeque Southern Fried Chicken Strips*No*No*No*No*No*No*No*Yes*No*No*No*No*No*No*No*No
 3*Hot Habanero Chicken Strips*No*No*No*No*Yes*No*No*Yes*No*No*No*No*No*No*No*No
 4*Vegetarian Chilli Empanadas*Yes*No*No*No*Yes*No*No*Yes*No*No*No*No*No*No*No*No
@@ -9,13 +9,13 @@
 9*Barbeque Chicken Wings*No*No*No*No*No*No*No*No*No*No*No*No*No*Yes*No*No
 10*Hot Habanero Chicken Wings*No*No*No*No*Yes*No*No*Yes*No*No*No*No*No*Yes*No*No
 11*Cajun Dusted Green Beans*No*No*No*Yes*No*No*No*No*No*No*No*Yes*No*Yes*No*No
-12*Garlic Tortilla*Yes*No*No*No*No*No*No*Yes*No*No*No*No*No*No*No*No
-13*Garlic Tortilla With Cheese Dip*Yes*No*No*No*Yes*No*No*Yes*No*No*No*No*No*No*No*No
-14*Garlic Tortilla With Chorizo and Cheese Dip*No*No*No*No*Yes*No*No*Yes*No*No*No*No*No*No*No*No
-15*Garlic Tortilla With Chilli and Cheese Dip*Yes*No*No*No*No*No*No*Yes*No*No*No*Yes*No*No*No*No
+12*Garlic Tortilla*Yes*Yes*No*No*No*No*No*Yes*No*No*No*No*No*No*No*No
+13*Garlic Tortilla With Cheese*Yes*No*No*No*Yes*No*No*Yes*No*No*No*No*No*No*No*No
+14*Garlic Tortilla With Chorizo*No*No*No*No*Yes*No*No*Yes*No*No*No*No*No*No*No*No
+15*Garlic Tortilla With Chilli*Yes*Yes*No*No*No*No*No*Yes*No*No*No*Yes*No*No*No*No
 16*Halloumi Skewers*Yes*No*Yes*No*Yes*No*No*Yes*No*No*No*No*No*Yes*No*No
 17*Jalapeno Poppers*Yes*No*No*No*Yes*No*No*No*No*No*No*No*No*No*No*No
-18*Chilli Prawns*No*No*No*No*Yes*No*No*Yes*No*Yes*No*No*No*No*No*No
+18*Chilli Prawns*Yes*No*No*No*Yes*No*No*Yes*No*Yes*No*No*No*No*No*No
 19*Habanero Mushrooms*Yes*No*Yes*No*Yes*No*No*Yes*No*No*No*No*No*No*No*No
 20*Patatas Bravas*Yes*No*Yes*No*Yes*No*No*Yes*No*No*No*No*No*Yes*No*No
 21*The Ultimate Sharers*No*No*No*No*Yes*No*No*Yes*No*No*No*No*No*Yes*No*No
@@ -193,7 +193,7 @@
 193*Egar Cloudy Apple Juice (16oz)*Yes*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No
 194*Orange Juice*Yes*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No
 195*Pineapple Juice*Yes*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No
-196*Guava Juice (16oz)*Yes*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No
+196*Gauva Juice (16oz)*Yes*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No
 197*El Velero Verdejo Blanco - 175ml, Valdepenas, Spain*Yes*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No
 198*El Velero Verdejo Blanco - 250ml, Valdepenas, Spain*Yes*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No
 199*El Velero Verdejo Blanco - Bottle, Valdepenas, Spain*Yes*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No
