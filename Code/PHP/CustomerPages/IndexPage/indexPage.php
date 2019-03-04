@@ -25,13 +25,13 @@
 
  					</div>
  				</div>
- 				
+
  				<div class="col-lg-9 col-md-7 col-sm-6 " id="center">
  					<?php
  					include_once 'DietaryRequirements/ViewMenu.php';
  					?>
  				</div>
- 				
+
  			</div>
  		</div>
  	</form>

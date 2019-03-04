@@ -8,6 +8,7 @@
 	</div>
 	<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
 		<div class="card-body">
+
 			<input type="checkbox" name="DietReq[]" id="Vegetarian" value="Vegetarian" <?php if(sizeof($_POST['DietReq'])>0){
 			foreach ($_POST['DietReq'] as $key => $value) {if($value == 'Vegetarian'){ echo "checked";}}} ?> > Vegetarian<br>
 

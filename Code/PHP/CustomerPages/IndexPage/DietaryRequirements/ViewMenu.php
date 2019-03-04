@@ -34,6 +34,7 @@ session_start()
 			echo "0 results";
 		}
 		else{
+
 			while($row = mysqli_fetch_assoc($res)){
 
 				$image = $row['ImagePath'];
@@ -83,10 +84,12 @@ session_start()
 										<p id="itemAllergens"><?php echo($allergen); ?></p>
 										<h6 id="caloriesText">Calories:</h6>
 										<p id="itemCalories"><?php echo($calories); ?></p>
+
 									</div>
 								</div>
 							</div>
 						</div>
+
 					</div>
 
 
