@@ -1,6 +1,6 @@
 <?php
 session_start();
 if (session_destroy()) {
-  header("Location: LoginPage.php");
+  header("Location: LoginPage/LoginPage.php");
 }
 ?>

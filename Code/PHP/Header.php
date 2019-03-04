@@ -9,6 +9,8 @@
 
 	<link rel="icon" type="image/icon" href="../../../Images/Favicon.ico">
 	<link rel="stylesheet" type="text/css" href="../../../CSS/indexStylePage.css">
+	<link rel="stylesheet" type="text/css" href="../../../CSS/orderStylePage.css">
+	<link rel="stylesheet" type="text/css" href="../../../CSS/loginPage.css">
 
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">

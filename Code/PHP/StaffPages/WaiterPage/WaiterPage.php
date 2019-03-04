@@ -1,9 +1,9 @@
 <!-- Header -->
 <?php
 
-include_once '/var/www/html/Alex/php/Header.php';
-//include_once '../Connections/ConnectionStaff';
-include('../LoginScripts/Session.php');
+include_once '../../Header.php';
+include_once '../../Connections/ConnectionStaff';
+include('../../LoginScripts/Session.php');
   $results = mysqli_query("SELECT * FROM Logins WHERE ID = {$_SESSION['ID']}");
   $user = mysqli_fetch_array($results);
 
@@ -35,7 +35,7 @@ include('../LoginScripts/Session.php');
                <th>Status</th>
              </tr>
                <?php
-               require '/var/www/html/Alex/php/Connections/ConnectionStaff.php';
+               require '../../Connections/ConnectionStaff.php';
 
                $sql = "SELECT * FROM Orders";
                $res = $conn->query($sql);
@@ -62,12 +62,6 @@ include('../LoginScripts/Session.php');
                }
                mysqli_close($conn);
                ?>
-             <!--<tr>
-               <th>1</th>
-               <th>Boganzo Meal with Pepsi,<br>
-               Double Boganzo Meal with 2 Pepsis</th>
-               <th>01:16</th>
-               <th>Order Placed</th> -->
             </tr>
            </table>
          </div>
@@ -75,10 +69,10 @@ include('../LoginScripts/Session.php');
 
        <div class="right">
          <div class="waiterButtonDiv">
-           <a href="ChangeMenu.php" class="waiterButtons">Change Menu</a>
-           <a href="TableAssistance.php" class="waiterButtons">Table Assistance</a>
-           <a href="PlaceOrders.php" class="waiterButtons">Place Orders</a>
-           <a href="CancelOrders.php" class="waiterButtons">Cancel Orders</a>
+           <a href="../ChangeMenu.php" class="waiterButtons">Change Menu</a>
+           <a href="../TableAssistance.php" class="waiterButtons">Table Assistance</a>
+           <a href="../PlaceOrders.php" class="waiterButtons">Place Orders</a>
+           <a href="../CancelOrders.php" class="waiterButtons">Cancel Orders</a>
          </div>
        </div>
    </div>
@@ -87,7 +81,7 @@ include('../LoginScripts/Session.php');
    <div class="footer">
      <footer>
        <!--<h6>User: </h6>-->
-       <a href="../LoginScripts/Logout.php" class="signOutButton">Sign Out</a>
+       <a href="../../LoginScripts/Logout.php" class="signOutButton">Sign Out</a>
      </footer>
    </div>
  </form>
