@@ -7,90 +7,91 @@ session_start()
 	<div class="col-lg-12 scrollit" id="DishesCol">
 		<?php
 
-		$sql = "SELECT ID, Item, Price, ImagePath FROM menu ORDER BY ID ASC";
+///////////////////////////////////////////////////////////////////
+/////////////         Starting SQL Query      ////////////////////
+		$sql = "SELECT menu.ID, menu.Item, menu.ImagePath, menu.Price, Descriptions.Description, IngredientsAndCalories.Ingredients, Allergens.Allergens, IngredientsAndCalories.Calories, DietaryRequirements.Item FROM Descriptions, IngredientsAndCalories, Allergens, DietaryRequirements CROSS JOIN menu WHERE menu.ID = DietaryRequirements.ID AND DietaryRequirements.ID = Descriptions.ID AND Descriptions.ID = IngredientsAndCalories.ID AND IngredientsAndCalories.ID = Allergens.ID";
+		
+//////////////////////////////////////////////////////////////////
+/////////////         Multiple Refinements     //////////////////
+
+		$DietReqArray = $_POST['DietReq'];
+		$DietReq = array();
+
+
+		if(sizeof($DietReqArray)>0){
+			foreach ($DietReqArray as $key => $value) {
+				array_push($DietReq, $value. " = 'Yes' ");
+			}
+			$sql = $sql . " AND ";
+			$sql .= join(" AND ", $DietReq);
+		}		
+
+////////////                                     ////////////////
+////////////////////////////////////////////////////////////////	
+		
 		$res = $conn->query($sql);
-			// variables for the refines used in the if statements.
-		$Vegetarian = $_POST['Vegetarian'];
-		$Vegan = $_POST['Vegan'];
-		$GlutenFree = $_POST['GlutenFree'];
-		$Eggs = $_POST['ContainsNoEgg'];
-		$Milk = $_POST['ContainsNoMilk'];
-		$Peanuts = $_POST['ContainsNoPeanuts'];
-		$TreeNut = $_POST['ContainsNoTreeNuts'];
-		$Celery = $_POST['ContainsNoCelery'];
-		$Fish = $_POST['ContainsNoFish'];
-		$Crustaceans = $_POST['ContainsNoCrustaceans'];
-		$Molluscs = $_POST['ContainsNoMolluscs'];
-		$Mustard = $_POST['ContainsNoMustard'];
-		$Soya = $_POST['ContainsNoSoya'];
-		$Sulphites = $_POST['ContainsNoSulphites'];
-		$SesameSeeds = $_POST['ContainsNoSesameSeeds'];
-		$Lupin = $_POST['ContainsNoLupin'];
 		if($res-> num_rows == 0){
 			echo "0 results";
 		}
 		else{
-			// The if statments for the refinements
-			if($Vegetarian){
-				include_once 'Refinements/Vegetarian.php';
-			}elseif ($Vegan) {
-				include_once 'Refinements/VeganDishes.php';
-			}elseif ($GlutenFree) {
-				include_once 'Refinements/GlutenFreeDishes.php';
-			}elseif ($Eggs) {
-				include_once 'Refinements/ContainsNoEgg.php';
-			}elseif ($Milk) {
-				include_once 'Refinements/ContainsNoMilk.php';
-			}elseif ($Peanuts) {
-				include_once 'Refinements/ContainsNoPeanuts.php';
-			}elseif ($TreeNut) {
-				include_once 'Refinements/ContainsNoTreeNuts.php';
-			}elseif ($Celery) {
-				include_once 'Refinements/ContainsNoCelery.php';
-			}elseif ($Fish) {
-				include_once 'Refinements/ContainsNoFish.php';
-			}elseif ($Crustaceans) {
-				include_once 'Refinements/ContainsNoCrustaceans.php';
-			}elseif ($Molluscs) {
-				include_once 'Refinements/ContainsNoMolluscs.php';
-			}elseif ($Mustard) {
-				include_once 'Refinements/ContainsNoMustard.php';
-			}elseif ($Soya) {
-				include_once 'Refinements/ContainsNoSoya.php';
-			}elseif ($Sulphites) {
-				include_once 'Refinements/ContainsNoSulphites.php';
-			}elseif ($SesameSeeds) {
-				include_once 'Refinements/ContainsNoSesameSeeds.php';
-			}elseif ($Lupin) {
-				include_once 'Refinements/ContainsNoLupin.php';
-			}
-			else{
-				while($row = mysqli_fetch_assoc($res)){
-						$image = $row['ImagePath'];
-					?>
-					<form method="post" action="indexPage?action=add&ID=<?php echo $row['ID']; ?>">
-						<div class="col-lg-9 col-md-7 col-sm-6" id="right">
+			while($row = mysqli_fetch_assoc($res)){
 
-							<div class="row" id="rightInsideRow">
-								<div class="DishImagePlaceholder" id="dish">
-									<img src="<?php echo $image; ?>" height="300" width="300">
-								</div>
-							
-								<div class="DishImagePlaceholder border border-light" id="pricing">
+				$image = $row['ImagePath'];
+				$id = $row['ID'];
+				$description = $row['Description'];
+				$ingredients = $row['Ingredients'];
+				$allergen = $row['Allergens'];
+				$calories = $row['Calories'];
+				?>
+				<form method="post" action="indexPage?action=add&ID=<?php echo $row['ID']; ?>">
+					<div class="col-lg-14 col-md-12 col-sm-10" id="center">
+						<div class="row" id="centerInsideRow">
+							<div class="DishImagePlaceholder border border-light border-right-0 " id="dish">
+								<img src="<?php echo $image; ?>" height="298" width="299">
+							</div>
+							<div class="DishImagePlaceholder border border-light border-left-0" id="pricing">
+								<p id="itemText">
 									<?php
-									echo "<tr><td>{$row['Item']}</td></tr>";
-									echo "<tr><td><br>Price: £{$row['Price']}</td></tr>";
-
-
+									echo "{$row['Item']}";
 									?>
+								</p>
+								<p id="priceText">Price: £
+									<?php
+									echo "{$row['Price']}";
+									?>
+								</p>
+								<div class="quantityForm">
 									<input type="text" name="quantity" value="1" class="form-control" />
+								</div>
+								<div class="itemBoxes">
 									<input type="submit" name="add_to_cart" class="btn btn-success" value="Add to Cart" />
+
+								</div>
+							</div>
+
+
+							<div id="<?php echo($popup); ?>" class="overlay">
+								<div class="popup">
+									<h5 id="itemInformation">Item Information</h5>
+									<a class="close" href="#">&times;</a>
+									<div class="popupInfo">
+										<h6 id="descriptionText">Description:</h6>
+										<p id="itemDescription"><?php echo($description); ?></p>
+										<h6 id="ingredientsText">Ingredients:</h6>
+										<p id="itemIngredients"><?php echo ($ingredients); ?></p>
+										<h6 id="allergenText">Allergen Information:</h6>
+										<p id="itemAllergens"><?php echo($allergen); ?></p>
+										<h6 id="caloriesText">Calories:</h6>
+										<p id="itemCalories"><?php echo($calories); ?></p>
+									</div>
 								</div>
 							</div>
 						</div>
-					</form>
-					<?php
-				}
+					</div>
+
+
+				</form>
+				<?php
 			}
 		}
 		mysqli_close($conn);
