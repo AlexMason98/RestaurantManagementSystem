@@ -69,11 +69,6 @@
 		padding: 10px;
 		font-size: 24px;
 		border: 1px solid;
-<<<<<<< HEAD
-		
-=======
-		border-color: white;
->>>>>>> fe1703ef8d355bebc9f70f4cffefe170685c13be
 		line-height: 120%;
 		height: 300px;
 		width: 580px;
@@ -104,7 +99,6 @@
 		height: 650px;
 		width: 100px;
 	}
-<<<<<<< HEAD
 
 	#itemText {
 		font-family: Georgia, Helvetica, sans-serif;
@@ -176,100 +170,6 @@
 		color: white;
 		margin-top: 5px
 	}
-
-	.overlay {
-		position: fixed;
-		top: 0;
-		left: 0;
-		right: 0;
-		background: rgba(0, 0, 0, 0.7);
-		/*transition: opacity 300ms; This is for fading out the popup box, left as an option */
-		transition: opacity;
-		visibility: hidden;
-		opacity: 0;
-		width: 100%;
-		padding-left: 20px;
-		height: 280px;
-	}
-
-	.overlay:target {
-		visibility: visible;
-		opacity: 1;
-		overflow-y: scroll;
-	}
-
-	.overlay {
-		margin: 10px auto; /*Margin around the popup box inside the 300px high item div */
-		/* padding: 20px; All-around padding for the popup box inside the 300px high div */
-		/*padding-left: 20px;
-		padding-right: 20px;*/
-		background: #fff;
-		border-radius: 5px;
-		width: 33.3%;
-		position: relative;
-		/* margin-bottom: -30%; Fills the entire right hand side of screen with popup box info (no space constaints) */
-		/*transition: all 2s ease-in-out; This is for fading out the popup box, left as an option */
-	}
-
-	.overlay .close {
-		position: absolute;
-		top: 20px;
-		right: 30px;
-		/*transition: all 200ms; This is for fading out the popup box, left as an option */
-		font-size: 30px;
-		font-weight: bold;
-		text-decoration: none;
-		color: #333;
-	}
-
-	.overlay .close:hover {
-		color: #06D85F;
-	}
-
-	.overlay .content {
-		max-height: 100%;
-		overflow: scroll;
-	}
-
-	#itemInformation {
-		padding-top: 10px;
-	}
-
-	#descriptionText {
-		/*padding-top: 10px;*/
-		transform: translateY(15%);
-	}
-
-	#itemDescription {
-		transform: translateY(-5px);
-	}
-
-	#ingredientsText {
-		transform: translateY(-8px);
-		/*padding-top: 10px; */
-	}
-
-	#itemIngredients {
-		transform: translateY(-17px);
-	}
-
-	#allergenText {
-		transform: translateY(-20px);
-		/*padding-top: 10px;*/
-	}
-
-	#itemAllergens {
-		transform: translateY(-28px);
-	}
-
-	#caloriesText {
-		transform: translateY(-32px);
-		/*padding-top: 10px;*/
-	}
-
-	#itemCalories {
-		transform: translateY(-40px);
-=======
 
 	#itemText {
 		font-family: Georgia, Helvetica, sans-serif;
@@ -405,7 +305,6 @@
 	.popup .content {
 		max-height: 30%;
 		overflow: auto;
->>>>>>> fe1703ef8d355bebc9f70f4cffefe170685c13be
 	}
 }
 
