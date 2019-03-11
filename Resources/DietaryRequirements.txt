@@ -9,8 +9,8 @@
 9*Barbeque Chicken Wings*No*No*No*No*No*No*No*No*No*No*No*No*No*Yes*No*No
 10*Hot Habanero Chicken Wings*No*No*No*No*Yes*No*No*Yes*No*No*No*No*No*Yes*No*No
 11*Cajun Dusted Green Beans*No*No*No*Yes*No*No*No*No*No*No*No*Yes*No*Yes*No*No
-12*Garlic Tortilla*Yes*No*No*No*No*No*No*Yes*No*No*No*No*No*No*No*No
-13*Garlic Tortilla With Cheese Dip*Yes*No*No*No*Yes*No*No*Yes*No*No*No*No*No*No*No*No
+12*Garlic Tortilla With Chicken and Cheese Dip*Yes*No*No*No*No*No*No*Yes*No*No*No*No*No*No*No*No
+13*Garlic Tortilla With Cheese Dip*No*No*No*No*Yes*No*No*Yes*No*No*No*No*No*No*No*No
 14*Garlic Tortilla With Chorizo and Cheese Dip*No*No*No*No*Yes*No*No*Yes*No*No*No*No*No*No*No*No
 15*Garlic Tortilla With Chilli and Cheese Dip*Yes*No*No*No*No*No*No*Yes*No*No*No*Yes*No*No*No*No
 16*Halloumi Skewers*Yes*No*Yes*No*Yes*No*No*Yes*No*No*No*No*No*Yes*No*No
@@ -296,7 +296,7 @@
 296*Reposado Tequila - Sauza Tres Generaciones Reposado*Yes*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No
 297*The Rule Breaker - Maestro Dobel Diamante*Yes*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No
 298*Flavours - 1800 Coconut*Yes*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No
-299*Flavours - Patron Xo Café (Coffee)*Yes*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No
+299*Flavours - Patron Xo Cafe (Coffee)*Yes*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No
 300*Flavours - Patron Xo Incendio*Yes*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No
 301*Mezcal - Montelobos*Yes*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No
 302*Mezcal - Vida*Yes*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No
