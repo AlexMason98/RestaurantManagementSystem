@@ -66,12 +66,13 @@ session_start()
 
 								<?php
 									$quantityID = "quantity"."".$id;
+									$addToCartID = "addToCart"."".$id;
 									$hrefAddToCartID = "#addToCart"."".$id;
 									$popup = "popupID"."".$id;
 									$hrefPopupID = "#popupID"."".$id;
 								?>
 								<div id="<?php echo($quantityID); ?>" class="quantityForm">
-									<input type="text" name="quantity" value="1" class="form-control" />
+									<input type="text" name="<?php echo($quantityID); ?>" value="1" class="form-control" />
 								</div>
 								<div class="itemBoxes">
 
@@ -109,7 +110,7 @@ session_start()
 
 							<?php
 								if (isset($_POST[$addToCartID])) {
-									$quantity = $_POST['quantity'];
+									$quantity = $_POST["quantity".$id];
 										
 									$sql = "SELECT * FROM TempOrders WHERE ID = '$id'";
 									$res = mysqli_query($conn, $sql);
@@ -120,7 +121,7 @@ session_start()
 										echo '</script>';
 
 									} else {
-										$sql = "INSERT INTO TempOrders (ID, Item, Quantity, Price) SELECT menu.ID, menu.Item, {$quantity}, menu.Price FROM menu WHERE menu.ID = $id";
+										$sql = "INSERT INTO TempOrders (ID, Item, Quantity, Price) SELECT menu.ID, menu.Item, $quantity, menu.Price FROM menu WHERE menu.ID = $id";
 
 										if (mysqli_query($conn, $sql)) {
 			   								 echo '<script language="javascript">';
