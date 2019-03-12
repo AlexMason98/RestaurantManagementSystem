@@ -12,14 +12,29 @@ public class DB {
   //private static final String SQL_INSERT = null;
 
   public static void main(String[] args) {
+  	// Connection Details
     String username = "root";
-    String password = "teamproject5";
+    String password = ""; // Password obscured for commit on GitHub
     String databaseIP = "167.99.80.198";
+    
+    // Database
     String database = "customer";
+    
+    // Tables
     String menuTable = "menu";
+    String allergensTable = "Allergens";
     String dietaryRequirementsTable = "DietaryRequirements";
+    String descriptionsTable = "Descriptions";
+    String ingredientsAndCaloriesTable = "IngredientsAndCalories";
+    
+    // Data Text Files
     String menuFilePath = "menu.txt";
+    String allergensFilePath = "Allergens.txt";
     String dietaryRequirementsFilePath = "DietaryRequirements.txt";
+    String descriptionsFilePath = "Descriptions.txt";
+    String ingredientsFilePath = "IngredientsAndCalories.txt";
+    
+    
     int insertedRows = 0;
     
     Connection connection = connectToDatabase(username, password, databaseIP, database);
@@ -30,13 +45,21 @@ public class DB {
     }
     
     
-    dropTable(connection, menuTable); // Drops the Menu table in 'Customer' database before inserting data
-    dropTable(connection, dietaryRequirementsTable); // Drops the DietaryRequirements table in 'Customer' database before inserting data
+    dropTable(connection, menuTable); // Drops the Menu table if it already exists in 'Customer' database before inserting data
+    dropTable(connection, allergensTable); // Drops the Allergens table if it already exists in 'Customer' database before inserting data
+    dropTable(connection, dietaryRequirementsTable); // Drops the DietaryRequirements table if it already exists in 'Customer' database before inserting data
+    dropTable(connection, descriptionsTable); // Drops the descriptionsTable if it already exists in 'Customer' database before inserting data
+    dropTable(connection, ingredientsAndCaloriesTable); // Drops the ingredientsAndCaloriesTable if it already exists in 'Customer' database before inserting data
     
     // Creates the Menu table with the attributes mentioned
     createTable(connection, 
         menuTable + "(ID int, Item varchar(65), Category varchar(25), Sub_Category varchar(25), Price float(4,2), ImagePath varchar(25), "
-        		+ "PRIMARY KEY (ID));");
+        + "PRIMARY KEY (ID));");
+    
+    // Creates the Allergens table with the attributes mentioned
+    createTable(connection,
+    		allergensTable + "(ID int, Item varchar(65), Allergens varchar(80), "
+    				+ "PRIMARY KEY(ID));");
     
     // Creates the Dietary Requirements table with the attributes mentioned
     createTable(connection, 
@@ -46,14 +69,39 @@ public class DB {
         		+ "ContainsMustard varchar(3), ContainsSoya varchar(3), ContainsSulphites varchar(3), ContainsSesameSeeds varchar(3), "
         		+ "ContainsLupin varchar(3), PRIMARY KEY (ID));");
     
+    // Creates the Description table with the attributes mentioned
+    createTable(connection,
+    		descriptionsTable + "(ID int, Item varchar(65), Description varchar(185), "
+    		+ "PRIMARY KEY (ID));");
+    
+    // Creates the IngredientsAndCalories table with the attributes mentioned
+    createTable(connection,
+    		ingredientsAndCaloriesTable + "(ID int, Item varchar(65), Ingredients varchar(220), Calories varchar(4), "
+    		+ "PRIMARY KEY (ID));");
+    
     // Calls the insertIntoTable method, which inserts data into each column in the Menu table with an asterisk as the delimiter
     insertedRows = insertIntoTable(connection, menuTable, menuFilePath);
     System.out.println("Inserted " + insertedRows + " rows into '" + menuTable + "' table");
     System.out.println("");
     
+    // Calls the insertIntoTable method, which inserts data into each column in the Allergens table with an asterisk as the delimiter
+    insertedRows = insertIntoTable(connection, allergensTable, allergensFilePath);
+    System.out.println("Inserted " + insertedRows + " rows into '" + allergensTable + "' table");
+    System.out.println("");
+    
     // Calls the insertIntoTable method, which inserts data into each column in the DietaryRequirements table with an asterisk as the delimiter
     insertedRows = insertIntoTable(connection, dietaryRequirementsTable, dietaryRequirementsFilePath);
     System.out.println("Inserted " + insertedRows + " rows into '" + dietaryRequirementsTable + "' table");
+    System.out.println("");
+    
+    // Calls the insertIntoTable method, which inserts data into each column in the Descriptions table with an asterisk as the delimiter
+    insertedRows = insertIntoTable(connection, descriptionsTable, descriptionsFilePath);
+    System.out.println("Inserted "+ insertedRows + " rows into '" + descriptionsTable + "' table");
+    System.out.println("");
+    
+    // Calls the insertIntoTable method, which inserts data into each column in the IngredientsAndCalories table with an asterisk as the delimiter
+    insertedRows = insertIntoTable(connection, ingredientsAndCaloriesTable, ingredientsFilePath);
+    System.out.println("Inserted " + insertedRows + " rows into '" + ingredientsAndCaloriesTable + "' table");
     System.out.println("");
     
     
