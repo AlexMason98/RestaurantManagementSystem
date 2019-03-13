@@ -14,12 +14,12 @@
  					<div class="accordion" id="accordionExample">
  						<div>
  							<?php
- 							include_once '/var/www/html/Harshdeep/PHP/CustomerPages/IndexPage/Categories/Categories.php';
+ 							include_once 'Categories.php';
  							?>
  						</div>
  						<div>
  							<?php
- 							include_once '/var/www/html/Harshdeep/PHP/CustomerPages/IndexPage/DietaryRequirements/DietaryRequirements.php';
+ 							include_once 'DietaryRequirements.php';
  							?>
  						</div>
 
@@ -28,7 +28,7 @@
 
  				<div class="col-lg-9 col-md-7 col-sm-6 " id="center">
  					<?php
- 					include_once '/var/www/html/Harshdeep/PHP/CustomerPages/IndexPage/DietaryRequirements/ViewMenu.php';
+ 					include_once 'ViewMenu.php';
  					?>
  				</div>
 
@@ -41,4 +41,5 @@
  <?php
  include_once '/var/www/html/Harshdeep/PHP/footer.php';
  ?>
- <!-- Footer -->	
+ <!-- Footer -->
+

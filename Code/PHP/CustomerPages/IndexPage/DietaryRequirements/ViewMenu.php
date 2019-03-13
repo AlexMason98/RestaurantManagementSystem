@@ -1,5 +1,5 @@
 <?php
-require '/var/www/html/Harshdeep/PHP/Connections/ConnectionCustomer.php';
+require '/var/www/html/Alex/PHP/Connections/ConnectionCustomer.php';
 session_start()
 ?>
 
@@ -30,6 +30,7 @@ session_start()
 ////////////////////////////////////////////////////////////////	
 		
 		$res = $conn->query($sql);
+		$num_rows = mysqli_num_rows($res);
 		if($res-> num_rows == 0){
 			echo "0 results";
 		}
@@ -38,6 +39,8 @@ session_start()
 
 				$image = $row['ImagePath'];
 				$id = $row['ID'];
+				$item = $row['Item'];
+				$price = $row['Price'];
 				$description = $row['Description'];
 				$ingredients = $row['Ingredients'];
 				$allergen = $row['Allergens'];
@@ -53,24 +56,28 @@ session_start()
 							<div class="DishImagePlaceholder border border-light border-left-0" id="pricing">
 								<p id="itemText">
 									<?php
-									echo "{$row['Item']}";
+									echo "$item";
 									?>
 								</p>
 								<p id="priceText">Price: £
 									<?php
-									echo "{$row['Price']}";
+									echo "$price";
 									?>
 								</p>
-								<p id="ItemAvailablity">Available: <?php echo($Available); ?></p>
-								<div class="quantityForm">
-									<input type="text" name="quantity" value="1" class="form-control" />
+								<?php
+								$quantityID = "quantity"."".$id;
+								$addToCartID = "addToCart"."".$id;
+								$hrefAddToCartID = "#addToCart"."".$id;
+								$popup = "popupID"."".$id;
+								$hrefPopupID = "#popupID"."".$id;
+								?>
+								<div id="<?php echo($quantityID); ?>" class="quantityForm">
+									<input type="text" name="<?php echo($quantityID); ?>" value="1" class="form-control" />
 								</div>
 								<div class="itemBoxes">
-									<input type="submit" name="add_to_cart" class="btn btn-success" value="Add to Cart" />
-									<?php
-									$popup = "popupID"."".$id;
-									$hrefPopupID = "#popupID"."".$id;
-									?>
+
+									<input type="submit" class="btn btn-success" name="<?php echo($addToCartID); ?>" value="Add to Cart" href="<?php echo($hrefAddToCartID); ?>" />
+
 									<a class="btn btn-success" href="<?php echo($hrefPopupID); ?>">Info</a>
 								</div>
 							</div>
@@ -92,11 +99,45 @@ session_start()
 							</div>
 						</div>
 					</div>
+					<?php
+				}
+				for ($id = 1; $id <= $num_rows; $id++) {
+					$addToCartID = "addToCart".$id;
+					?>
+					<div id="<?php echo($addToCartID); ?>" class="addItemToCart">
 
+						<?php
+						if (isset($_POST[$addToCartID])) {
+							$quantity = $_POST["quantity".$id];
 
-				</form>
-				<?php
-			}
+							$sql = "SELECT * FROM TempOrders WHERE ID = '$id'";
+							$res = mysqli_query($conn, $sql);
+
+							if (mysqli_num_rows($res) > 0) {
+								echo '<script language="javascript">';
+								echo 'alert("This item is already in your basket")';
+								echo '</script>';
+
+							} else {
+								$sql = "INSERT INTO TempOrders (ID, Item, Quantity, Price, Time) SELECT menu.ID, menu.Item, $quantity, menu.Price, now() FROM menu WHERE menu.ID = $id";
+
+								if (mysqli_query($conn, $sql)) {
+									echo '<script language="javascript">';
+									echo 'alert("Successfully Added to Basket")';
+									echo '</script>';
+								} else {
+									echo "Error: ".mysqli_error($conn);
+								}
+							}
+						}
+						?>
+					</div>
+					<?php
+				}
+				?>
+
+			</form>
+			<?php
 		}
 		mysqli_close($conn);
 		?>

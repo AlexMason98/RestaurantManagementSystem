@@ -69,6 +69,7 @@
 		padding: 10px;
 		font-size: 24px;
 		border: 1px solid;
+		
 		line-height: 120%;
 		height: 300px;
 		width: 580px;
@@ -80,7 +81,16 @@
 	}
 
 	#TotalPrice{
-		font-size: 30px;
+		width: 100%;
+	}
+
+	#totalPriceText {
+		font-size: 24px;
+	}
+
+	#orderPagePriceText {
+		font-weight: normal;
+		font-size: 24px;
 	}
 
 	#Pay{
@@ -92,7 +102,7 @@
 	#Cancel{
 		height: 90px;
 		width: 170px;
-		font-size: 40px;
+		font-size: 24px;
 	}
 	.scrollit{
 		overflow: auto;
@@ -120,6 +130,7 @@
 
 	/*.itemBoxes {
 		padding-top: 20px;
+
 		} */
 
 
@@ -298,30 +309,81 @@
 
 	.ChangeMenuAvailability {
 		position: fixed;
+
+	} 
+
+
+	.loginbox{
+		background: rgba(3, 53, 132, 0.3);
+		position:absolute;
+		top:50% ;
+		left:50%;
+		box-sizing: border-box;
+		padding:30px 30px;
+		transform:translate(-50%, -50%);
+	}
+
+	.loginbox h1{
+		text-align: center;
+		font-size: 30px;
+		font-family: verdana;
+		font-weight: bold;
+		color: white;
+	}
+
+	.loginbox p{
+		font-weight:bold;
+		margin:0;
+		padding:0;
+		color:white;
+	}
+
+	.loginbox input{
+		width: 100%;
+		margin-bottom: 5px;
+		margin-top: 5px;
+		background:transparent;
+		outline:none;
+		border:none;
+		border-bottom: 1px solid white;
+		color: white
+	}
+
+	.loginbox button{
+		background-color:rgba(0, 63, 76, 0.5);
+		font-weight: bold;
+		border-radius:20px;
+		border: none;
+		outline: none;
+		height: 50px;
+		width: 130%;
+		color: white;
+		margin-top: 5px
+	}
+
+	.overlay {
+		position: fixed;
 		top: 0;
 		left: 0;
 		right: 0;
 		background: rgba(0, 0, 0, 0.7);
 		/*transition: opacity 300ms; This is for fading out the popup box, left as an option */
 		transition: opacity;
-		visibility: hidden;
+		/*visibility: hidden;*/
+		display: hidden;
 		opacity: 0;
 		width: 100%;
 		padding-left: 20px;
 		height: 280px;
 	}
 
-	.ChangeMenuAvailability:target {
+	.overlay:target {
 		visibility: visible;
 		opacity: 1;
 		overflow-y: scroll;
-		height: 100px;
-		width: 300px;
-
 	}
 
-
-	.ChangeMenuAvailability {
+	.overlay {
 		margin: 10px auto; /*Margin around the popup box inside the 300px high item div */
 		/* padding: 20px; All-around padding for the popup box inside the 300px high div */
 		/*padding-left: 20px;
@@ -334,11 +396,7 @@
 		/*transition: all 2s ease-in-out; This is for fading out the popup box, left as an option */
 	}
 
-
-	.ChangeMenuAvailability .close {
-
 	.overlay .close {
-
 		position: absolute;
 		top: 20px;
 		right: 30px;
@@ -349,14 +407,233 @@
 		color: #333;
 	}
 
+	.overlay .close:hover {
+		color: #06D85F;
+	}
+
+	.overlay .content {
+		max-height: 100%;
+		overflow: scroll;
+	}
+
+	.overlayAssistance {
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		background: rgba(0, 0, 0, 0.7);
+		/*transition: opacity 300ms; This is for fading out the popup box, left as an option */
+		transition: opacity;
+		/*visibility: hidden;*/
+		display: hidden;
+		opacity: 0;
+		width: 100%;
+		padding-left: 20px;
+		height: 280px;
+	}
+
+	.overlayAssistance:target {
+		visibility: visible;
+		opacity: 1;
+		overflow-y: scroll;
+		transform: translateY(-30%);
+		width: 100%;
+		height: 60%;
+	}
+
+	.overlayAssistance {
+		margin: 10px auto; /*Margin around the popup box inside the 300px high item div */
+		/* padding: 20px; All-around padding for the popup box inside the 300px high div */
+		/*padding-left: 20px;
+		padding-right: 20px;*/
+		background: #fff;
+		border-radius: 5px;
+		/*width: 33.3%;*/
+		width: 100%;
+		position: relative;
+		/* margin-bottom: -30%; Fills the entire right hand side of screen with popup box info (no space constaints) */
+		/*transition: all 2s ease-in-out; This is for fading out the popup box, left as an option */
+	}
+
+	.overlayAssistance .close {
+		position: absolute;
+		top: 20px;
+		right: 30px;
+		/*transition: all 200ms; This is for fading out the popup box, left as an option */
+		font-size: 30px;
+		font-weight: bold;
+		text-decoration: none;
+		color: #333;
+	}
+
+	.overlayAssistance .close:hover {
+		color: #06D85F;
+	}
+
+	.overlayAssistance .content {
+		max-height: 100%;
+		overflow: scroll;
+	}
+
+	.basketOverlay {
+		position: absolute;
+
+		top: 0;
+		left: 0;
+		right: 0;
+		background: rgba(0, 0, 0, 0.7);
+		/*transition: opacity 300ms; This is for fading out the popup box, left as an option */
+		transition: opacity;
+		/*visibility: hidden;*/
+		display: hidden;
+		opacity: 0;
+		width: 100%;
+		padding-left: 20px;
+		height: 280px;
+	}
+
+
+	.ChangeMenuAvailability:target {
+		visibility: visible;
+		opacity: 1;
+		overflow-y: scroll;
+		height: 100px;
+		width: 300px;
+
+	}
+
+
+	.ChangeMenuAvailability {}
+
+
+	.basketOverlay:target {
+		position: absolute;
+		visibility: visible;
+		opacity: 1;
+		overflow-y: scroll;
+		/*transform: translateY(-30%);*/
+		width: 300px;
+		height: 180px;
+		padding-top: 10px;
+		padding-bottom: 20px;
+		transform: translateY(150%);
+	}
+
+	.basketOverlay {
+		margin: 10px auto; /*Margin around the popup box inside the 300px high item div */
+		/* padding: 20px; All-around padding for the popup box inside the 300px high div */
+		/*padding-left: 20px;
+		padding-right: 20px;*/
+		background: #fff;
+		border-radius: 5px;
+		/*width: 33.3%;*/
+		width: 100%;
+		position: absolute;
+		/* margin-bottom: -30%; Fills the entire right hand side of screen with popup box info (no space constaints) */
+		/*transition: all 2s ease-in-out; This is for fading out the popup box, left as an option */
+	}
+
+
+	.ChangeMenuAvailability .close {}
+
+	.overlay .close {}
+
+
+	.basketOverlay .close {
+
+		position: absolute;
+		right: 10px;
+		/*transition: all 200ms; This is for fading out the popup box, left as an option */
+		font-size: 30px;
+		font-weight: bold;
+		text-decoration: none;
+		color: #333;
+	}
 
 	.ChangeMenuAvailability .close:hover {
 		color: #06D85F;
 	}
 
-	.ChangeMenuAvailability .content {
+	.ChangeMenuAvailability .content {}
+
+
+	.basketOverlay .close:hover {
+		color: #06D85F;
+	}
+
+	.basketOverlay .content {
 		max-height: 100%;
 		overflow: scroll;
+	}
+
+	#itemInformation {
+		padding-top: 10px;
+	}
+
+	#descriptionText {
+		/*padding-top: 10px;*/
+		transform: translateY(15%);
+	}
+
+	#itemDescription {
+		transform: translateY(-5px);
+	}
+
+	#ingredientsText {
+		transform: translateY(-8px);
+		/*padding-top: 10px; */
+	}
+
+	#itemIngredients {
+		transform: translateY(-17px);
+	}
+
+	#allergenText {
+		transform: translateY(-20px);
+		/*padding-top: 10px;*/
+	}
+
+	#itemAllergens {
+		transform: translateY(-28px);
+	}
+
+	#caloriesText {
+		transform: translateY(-32px);
+		/*padding-top: 10px;*/
+	}
+
+	#itemCalories {
+		transform: translateY(-40px);
+	}
+
+	#noItems {
+		margin-top: 25px;
+	}
+
+	#confirmationSubTitle {
+		margin-top: 20px;
+	}
+
+	#removeYes {
+		margin-top: 15px;
+		margin-left: 20px;
+		padding-left: 20px;
+		padding-right: 20px;
+		font-size: 18px;
+		transform: translateX(30%);
+	}
+
+	#removeNo {
+		margin-top: 15px;
+		margin-left: 20px;
+		padding-left: 20px;
+		padding-right: 20px;
+		font-size: 18px;
+		transform: translateX(50%);
+	}
+
+	#cannotCancel {
+		transform: translateY(50%);
 	}
 }
 
