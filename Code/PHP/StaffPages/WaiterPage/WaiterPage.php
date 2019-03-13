@@ -100,14 +100,7 @@ $user = mysqli_fetch_array($results);
 
             $sql = "UPDATE menu SET Availability = $GetTrueOrFalse WHERE id=$GetItemID";
             echo $sql;
-            if((!isset($GetItemID)) && (!isset($GetTrueOrFalse))){
-              echo "5";
-            }
-            else{
-              echo "Enter ID and change the Availability.";
-            }
-
-            
+                      
 
 
             ?>
