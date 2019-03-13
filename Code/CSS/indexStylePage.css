@@ -309,10 +309,7 @@
 
 	.ChangeMenuAvailability {
 		position: fixed;
-
-	} */
-
-
+	}
 	.loginbox{
 		background: rgba(3, 53, 132, 0.3);
 		position:absolute;
@@ -502,8 +499,8 @@
 
 	}
 
+	.ChangeMenuAvailability {}
 
-  .ChangeMenuAvailability {}
 	.basketOverlay:target {
 		position: absolute;
 		visibility: visible;
@@ -532,11 +529,9 @@
 		/*transition: all 2s ease-in-out; This is for fading out the popup box, left as an option */
 	}
 
+	.ChangeMenuAvailability .close {}
 
-
-  .ChangeMenuAvailability .close {}
-
-  .overlay .close {}
+	.overlay .close {}
 
 
 	.basketOverlay .close {
@@ -554,7 +549,8 @@
 		color: #06D85F;
 	}
 
-  .ChangeMenuAvailability .content {}
+
+	.ChangeMenuAvailability .content {}
 
 	.basketOverlay .close:hover {
 		color: #06D85F;

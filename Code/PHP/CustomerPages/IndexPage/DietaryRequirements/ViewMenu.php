@@ -9,7 +9,7 @@ session_start()
 
 ///////////////////////////////////////////////////////////////////
 /////////////         Starting SQL Query      ////////////////////
-		$sql = "SELECT menu.ID, menu.Item, menu.ImagePath, menu.Price, menu.Availability, Descriptions.Description, IngredientsAndCalories.Ingredients, Allergens.Allergens, IngredientsAndCalories.Calories, DietaryRequirements.Item FROM Descriptions, IngredientsAndCalories, Allergens, DietaryRequirements CROSS JOIN menu WHERE menu.ID = DietaryRequirements.ID AND DietaryRequirements.ID = Descriptions.ID AND Descriptions.ID = IngredientsAndCalories.ID AND IngredientsAndCalories.ID = Allergens.ID";
+		$sql = "SELECT menu.ID, menu.Item, menu.ImagePath, menu.Price, menu.Availability, Descriptions.Description, IngredientsAndCalories.Ingredients, Allergens.Allergens, IngredientsAndCalories.Calories, DietaryRequirements.Item FROM Descriptions, IngredientsAndCalories, Allergens, DietaryRequirements CROSS JOIN menu WHERE menu.ID = DietaryRequirements.ID AND DietaryRequirements.ID = Descriptions.ID AND Descriptions.ID = IngredientsAndCalories.ID AND IngredientsAndCalories.ID = Allergens.ID AND menu.Availability = 'True' ";
 		
 //////////////////////////////////////////////////////////////////
 /////////////         Multiple Refinements     //////////////////
@@ -66,11 +66,11 @@ session_start()
 								</p>
 
 								<?php
-									$quantityID = "quantity"."".$id;
-									$addToCartID = "addToCart"."".$id;
-									$hrefAddToCartID = "#addToCart"."".$id;
-									$popup = "popupID"."".$id;
-									$hrefPopupID = "#popupID"."".$id;
+								$quantityID = "quantity"."".$id;
+								$addToCartID = "addToCart"."".$id;
+								$hrefAddToCartID = "#addToCart"."".$id;
+								$popup = "popupID"."".$id;
+								$hrefPopupID = "#popupID"."".$id;
 								?>
 								<div id="<?php echo($quantityID); ?>" class="quantityForm">
 									<input type="text" name="<?php echo($quantityID); ?>" value="1" class="form-control" />
@@ -100,51 +100,48 @@ session_start()
 							</div>
 						</div>
 					</div>
-			<?php
+					<?php
 				}
-			?>
+				for ($id = 1; $id <= $num_rows; $id++) {
+					$addToCartID = "addToCart".$id;
+					?>
+					<div id="<?php echo($addToCartID); ?>" class="addItemToCart">
 
-				<?php
-					for ($id = 1; $id <= $num_rows; $id++) {
-						$addToCartID = "addToCart".$id;
-				?>
-						<div id="<?php echo($addToCartID); ?>" class="addItemToCart">
+						<?php
+						if (isset($_POST[$addToCartID])) {
+							$quantity = $_POST["quantity".$id];
 
-							<?php
-								if (isset($_POST[$addToCartID])) {
-									$quantity = $_POST["quantity".$id];
-										
-									$sql = "SELECT * FROM TempOrders WHERE ID = '$id'";
-									$res = mysqli_query($conn, $sql);
+							$sql = "SELECT * FROM TempOrders WHERE ID = '$id'";
+							$res = mysqli_query($conn, $sql);
 
-									if (mysqli_num_rows($res) > 0) {
-										echo '<script language="javascript">';
-										echo 'alert("This item is already in your basket")';
-										echo '</script>';
+							if (mysqli_num_rows($res) > 0) {
+								echo '<script language="javascript">';
+								echo 'alert("This item is already in your basket")';
+								echo '</script>';
 
-									} else {
-										$sql = "INSERT INTO TempOrders (ID, Item, Quantity, Price, Time) SELECT menu.ID, menu.Item, $quantity, menu.Price, now() FROM menu WHERE menu.ID = $id";
+							} else {
+								$sql = "INSERT INTO TempOrders (ID, Item, Quantity, Price, Time) SELECT menu.ID, menu.Item, $quantity, menu.Price, now() FROM menu WHERE menu.ID = $id";
 
-										if (mysqli_query($conn, $sql)) {
-			   								 echo '<script language="javascript">';
-											echo 'alert("Successfully Added to Basket")';
-											echo '</script>';
-										} else {
-											echo "Error: ".mysqli_error($conn);
-										}
-									}
+								if (mysqli_query($conn, $sql)) {
+									echo '<script language="javascript">';
+									echo 'alert("Successfully Added to Basket")';
+									echo '</script>';
+								} else {
+									echo "Error: ".mysqli_error($conn);
 								}
-							?>
-						</div>
-				<?php
-					}
+							}
+						}
+						?>
+					</div>
+					<?php
+				}
 				?>
 
-				</form>
-	<?php
+			</form>
+			<?php
 		}
 		mysqli_close($conn);
-	?>
+		?>
 	</div>
 
 </div>
