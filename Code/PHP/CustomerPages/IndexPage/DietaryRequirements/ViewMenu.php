@@ -30,7 +30,7 @@ session_start()
 ////////////////////////////////////////////////////////////////	
 		
 		$res = $conn->query($sql);
-		//$num_rows = mysqli_num_rows($res);
+		$num_rows = mysqli_num_rows($res);
 		if($res-> num_rows == 0){
 			echo "0 results";
 		}
@@ -103,7 +103,7 @@ session_start()
 			?>
 
 				<?php
-					for ($id = 1; $id <= 302; $id++) {
+					for ($id = 1; $id <= $num_rows; $id++) {
 						$addToCartID = "addToCart".$id;
 				?>
 						<div id="<?php echo($addToCartID); ?>" class="addItemToCart">
@@ -121,7 +121,7 @@ session_start()
 										echo '</script>';
 
 									} else {
-										$sql = "INSERT INTO TempOrders (ID, Item, Quantity, Price) SELECT menu.ID, menu.Item, $quantity, menu.Price FROM menu WHERE menu.ID = $id";
+										$sql = "INSERT INTO TempOrders (ID, Item, Quantity, Price, Time) SELECT menu.ID, menu.Item, $quantity, menu.Price, now() FROM menu WHERE menu.ID = $id";
 
 										if (mysqli_query($conn, $sql)) {
 			   								 echo '<script language="javascript">';
