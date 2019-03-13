@@ -64,6 +64,7 @@ session_start()
 									echo "$price";
 									?>
 								</p>
+
 								<?php
 								$quantityID = "quantity"."".$id;
 								$addToCartID = "addToCart"."".$id;

@@ -309,10 +309,7 @@
 
 	.ChangeMenuAvailability {
 		position: fixed;
-
-	} 
-
-
+	}
 	.loginbox{
 		background: rgba(3, 53, 132, 0.3);
 		position:absolute;
@@ -502,9 +499,7 @@
 
 	}
 
-
 	.ChangeMenuAvailability {}
-
 
 	.basketOverlay:target {
 		position: absolute;
@@ -520,6 +515,7 @@
 	}
 
 	.basketOverlay {
+
 		margin: 10px auto; /*Margin around the popup box inside the 300px high item div */
 		/* padding: 20px; All-around padding for the popup box inside the 300px high div */
 		/*padding-left: 20px;
@@ -532,7 +528,6 @@
 		/* margin-bottom: -30%; Fills the entire right hand side of screen with popup box info (no space constaints) */
 		/*transition: all 2s ease-in-out; This is for fading out the popup box, left as an option */
 	}
-
 
 	.ChangeMenuAvailability .close {}
 
@@ -554,14 +549,15 @@
 		color: #06D85F;
 	}
 
-	.ChangeMenuAvailability .content {}
 
+	.ChangeMenuAvailability .content {}
 
 	.basketOverlay .close:hover {
 		color: #06D85F;
 	}
 
 	.basketOverlay .content {
+
 		max-height: 100%;
 		overflow: scroll;
 	}
