@@ -9,15 +9,15 @@
 9*Barbeque Chicken Wings*BBQ sauce, Chicken*680
 10*Hot Habanero Chicken Wings*Chicken, Hot habanero sauce*702
 11*Cajun Dusted Green Beans*Green beans, Chipotle Mayo* 398
-12*Garlic Tortilla*Tortillas, Garlic, Parsley*240
-13*Garlic Tortilla With Cheese*Tortillas, Garlic, Parsley, Cheddar Cheese*310
-14*Garlic Tortilla With Chorizo*Tortillas, Garlic, Parsley, Chorizo*340
-15*Garlic Tortilla With Chilli*Tortillas, Garlic, Parsley, Chilli*290
+12*Garlic Tortilla With Chicken and Cheese Dip*Tortillas, Chicken, Garlic, Parsley, Cheddar Cheese*240
+13*Garlic Tortilla With Cheese Dip*Tortillas, Garlic, Parsley, Cheddar Cheese*310
+14*Garlic Tortilla With Chorizo and Cheese Dip*Tortillas, Chorizo, Garlic, Parsley, Cheddar Cheese*340
+15*Garlic Tortilla With Chilli and Cheese Dip*Tortillas, Chilli, Garlic, Parsley, Cheddar Cheese*290
 16*Halloumi Skewers*Halloumi, Onions, Peppers, Citrus dressed salad with salsa*370
 17*Jalapeno Poppers*Jalapenos, Cream Cheese, Jalapeno Jelly*530
 18*Chilli Prawns*Prawns, Garlic, Hot haberno sauce, Tortilla Chips*450
 19*Habanero Mushrooms*Hot Haberno sauce, Tomato sauce, Melted mozzarella*320
-20* Patatas Bravas*Potatoes, tomatoes, chilli powder*580
+20*Patatas Bravas*Potatoes, tomatoes, chilli powder*580
 21*The Ultimate Sharers*Jalapeno poppers, southern fried chicken strips, chicken empanadas, nachos, onion rings, corn*1290
 22*Quesadilla Sharers*Tortilla, mozzarella, chicken, chorizo, sweetcorn, chilli beetroot*1420
 23*Fully Loaded Nachos With Tomato Salsa*Jalapeno cheese sauce, jalapeno peppers, mozzarella, sour cream, salsa, guacamole*980
@@ -34,7 +34,7 @@
 34*Beef Chilli Tortilla Stack*Tortillas, mozzarella, cheese, habanero sauce, tomato sauce, sour cream, classic beef chilli*790
 35*Five Bean Chilli Tortilla Stack*Tortillas, mozzarella, cheese, habanero sauce, tomato sauce, sour cream, five bean chilli*540
 36*Patatas Bravas*Potatoes, hot habanero sauce, tomato sauce* 590
-37* Halloumi Bites*Halloumi, jalapeno jelly*512
+37*Halloumi Bites*Halloumi, jalapeno jelly*512
 38*Classic Chicken*Chicken, BBQ sauce, hot habanero sauce*659
 39*Extra Barbeque Sauce*BBQ sauce*50
 40*Extra Hot Habanero Sauce*Habanero sauce*60
