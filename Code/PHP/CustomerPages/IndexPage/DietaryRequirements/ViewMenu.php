@@ -9,12 +9,12 @@ session_start()
 
 ///////////////////////////////////////////////////////////////////
 /////////////         Starting SQL Query      ////////////////////
-		$sql = "SELECT menu.ID, menu.Item, menu.ImagePath, menu.Price, Descriptions.Description, IngredientsAndCalories.Ingredients, Allergens.Allergens, IngredientsAndCalories.Calories, DietaryRequirements.Item FROM Descriptions, IngredientsAndCalories, Allergens, DietaryRequirements CROSS JOIN menu WHERE menu.ID = DietaryRequirements.ID AND DietaryRequirements.ID = Descriptions.ID AND Descriptions.ID = IngredientsAndCalories.ID AND IngredientsAndCalories.ID = Allergens.ID";
+		$sql = "SELECT menu.ID, menu.Item, menu.ImagePath, menu.Price, menu.Availability, Descriptions.Description, IngredientsAndCalories.Ingredients, Allergens.Allergens, IngredientsAndCalories.Calories, DietaryRequirements.Item FROM Descriptions, IngredientsAndCalories, Allergens, DietaryRequirements CROSS JOIN menu WHERE menu.ID = DietaryRequirements.ID AND DietaryRequirements.ID = Descriptions.ID AND Descriptions.ID = IngredientsAndCalories.ID AND IngredientsAndCalories.ID = Allergens.ID";
 		
 //////////////////////////////////////////////////////////////////
 /////////////         Multiple Refinements     //////////////////
 
-		$DietReqArray = $_GET['DietReq'];
+		$DietReqArray = $_POST['DietReq'];
 		$DietReq = array();
 
 
@@ -42,6 +42,7 @@ session_start()
 				$ingredients = $row['Ingredients'];
 				$allergen = $row['Allergens'];
 				$calories = $row['Calories'];
+				$Available = $row['Availability'];
 				?>
 				<form method="post" action="indexPage?action=add&ID=<?php echo $row['ID']; ?>">
 					<div class="col-lg-14 col-md-12 col-sm-10" id="center">
@@ -60,14 +61,15 @@ session_start()
 									echo "{$row['Price']}";
 									?>
 								</p>
+								<p id="ItemAvailablity">Available: <?php echo($Available); ?></p>
 								<div class="quantityForm">
 									<input type="text" name="quantity" value="1" class="form-control" />
 								</div>
 								<div class="itemBoxes">
 									<input type="submit" name="add_to_cart" class="btn btn-success" value="Add to Cart" />
 									<?php
-										$popup = "popupID"."".$id;
-										$hrefPopupID = "#popupID"."".$id;
+									$popup = "popupID"."".$id;
+									$hrefPopupID = "#popupID"."".$id;
 									?>
 									<a class="btn btn-success" href="<?php echo($hrefPopupID); ?>">Info</a>
 								</div>

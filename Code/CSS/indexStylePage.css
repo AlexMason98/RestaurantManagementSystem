@@ -296,7 +296,7 @@
 		overflow: scroll;
 	}
 
-	.ChangeMenuOverlay {
+	.ChangeMenuAvailability {
 		position: fixed;
 		top: 0;
 		left: 0;
@@ -311,16 +311,17 @@
 		height: 280px;
 	}
 
-	.ChangeMenuOverlay:target {
+	.ChangeMenuAvailability:target {
 		visibility: visible;
 		opacity: 1;
 		overflow-y: scroll;
-		height: 600px;
-		width: 500px;
+		height: 100px;
+		width: 300px;
 
 	}
 
-	.ChangeMenuOverlay {
+
+	.ChangeMenuAvailability {
 		margin: 10px auto; /*Margin around the popup box inside the 300px high item div */
 		/* padding: 20px; All-around padding for the popup box inside the 300px high div */
 		/*padding-left: 20px;
@@ -333,7 +334,11 @@
 		/*transition: all 2s ease-in-out; This is for fading out the popup box, left as an option */
 	}
 
-	.ChangeMenuOverlay .close {
+
+	.ChangeMenuAvailability .close {
+
+	.overlay .close {
+
 		position: absolute;
 		top: 20px;
 		right: 30px;
@@ -344,11 +349,12 @@
 		color: #333;
 	}
 
-	.ChangeMenuOverlay .close:hover {
+
+	.ChangeMenuAvailability .close:hover {
 		color: #06D85F;
 	}
 
-	.ChangeMenuOverlay .content {
+	.ChangeMenuAvailability .content {
 		max-height: 100%;
 		overflow: scroll;
 	}
