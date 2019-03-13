@@ -9,12 +9,12 @@ session_start()
 
 ///////////////////////////////////////////////////////////////////
 /////////////         Starting SQL Query      ////////////////////
-		$sql = "SELECT menu.ID, menu.Item, menu.ImagePath, menu.Price, Descriptions.Description, IngredientsAndCalories.Ingredients, Allergens.Allergens, IngredientsAndCalories.Calories, DietaryRequirements.Item FROM Descriptions, IngredientsAndCalories, Allergens, DietaryRequirements CROSS JOIN menu WHERE menu.ID = DietaryRequirements.ID AND DietaryRequirements.ID = Descriptions.ID AND Descriptions.ID = IngredientsAndCalories.ID AND IngredientsAndCalories.ID = Allergens.ID";
+		$sql = "SELECT menu.ID, menu.Item, menu.ImagePath, menu.Price, menu.Availability, Descriptions.Description, IngredientsAndCalories.Ingredients, Allergens.Allergens, IngredientsAndCalories.Calories, DietaryRequirements.Item FROM Descriptions, IngredientsAndCalories, Allergens, DietaryRequirements CROSS JOIN menu WHERE menu.ID = DietaryRequirements.ID AND DietaryRequirements.ID = Descriptions.ID AND Descriptions.ID = IngredientsAndCalories.ID AND IngredientsAndCalories.ID = Allergens.ID";
 		
 //////////////////////////////////////////////////////////////////
 /////////////         Multiple Refinements     //////////////////
 
-		$DietReqArray = $_GET['DietReq'];
+		$DietReqArray = $_POST['DietReq'];
 		$DietReq = array();
 
 
@@ -45,6 +45,7 @@ session_start()
 				$ingredients = $row['Ingredients'];
 				$allergen = $row['Allergens'];
 				$calories = $row['Calories'];
+				$Available = $row['Availability'];
 				?>
 				<form method="post" action="indexPage?action=add&ID=<?php echo $row['ID']; ?>">
 					<div class="col-lg-14 col-md-12 col-sm-10" id="center">
@@ -77,13 +78,14 @@ session_start()
 								<div class="itemBoxes">
 
 									<input type="submit" class="btn btn-success" name="<?php echo($addToCartID); ?>" value="Add to Cart" href="<?php echo($hrefAddToCartID); ?>" />
+
 									<a class="btn btn-success" href="<?php echo($hrefPopupID); ?>">Info</a>
 								</div>
 							</div>
 							<div id="<?php echo($popup); ?>" class="overlay">
 								<div class="popup">
 									<h5 id="itemInformation">Item Information</h5>
-									<a class="close" href="#">&times;</a>
+									<a class="close" href="">&times;</a>
 									<div class="popupInfo">
 										<h6 id="descriptionText">Description:</h6>
 										<p id="itemDescription"><?php echo($description); ?></p>
