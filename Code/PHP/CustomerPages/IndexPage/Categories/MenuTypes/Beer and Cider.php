@@ -42,4 +42,3 @@
  include_once '/var/www/html/Harshdeep/PHP/footer.php';
  ?>
  <!-- Footer -->
-
