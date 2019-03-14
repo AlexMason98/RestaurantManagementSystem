@@ -20,6 +20,7 @@ require '/var/www/html/Alex/PHP/Connections/ConnectionCustomer.php';
 							}
 							else{
 								while($row = mysqli_fetch_assoc($res)){
+									$id = $row['ID'];
 									echo "<tr><td>{$row['ID']}</td>\n";
 									echo "<td>{$row['Item']}</td>\n";
 									echo "<td>{$row['Quantity']}</td>\n";
@@ -62,7 +63,7 @@ require '/var/www/html/Alex/PHP/Connections/ConnectionCustomer.php';
 			<div class="row">
 				<div class="col-lg-8 col-md-6 col-sm-4"></div>
 				<div class="col-lg-4 col-md-6 col-sm-8">
-					<a class="btn btn-success btn-lg" href="#popupPayBefore">Pay Before</a>
+					<a class="btn btn-success btn-lg" href="PaymentSystem/index.php">Pay Before</a>
 					<a class="btn btn-success btn-lg" href="#popupPayAfter">Pay After</a>
 					<a class="btn btn-danger btn-lg" href="#popupCancelItems">Cancel Order</a>
 				</div>
