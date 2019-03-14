@@ -1,7 +1,8 @@
 <!-- Header -->
 <?php
 include_once '../../Header.php';
-require '/var/www/html/Alex/PHP/Connections/ConnectionCustomer.php';
+require '/var/www/html/Harshdeep/PHP/Connections/ConnectionCustomer.php';
+
 ?>
 <!-- Header -->
 
@@ -66,6 +67,7 @@ require '/var/www/html/Alex/PHP/Connections/ConnectionCustomer.php';
 					<a class="btn btn-success btn-lg" href="PaymentSystem/index.php">Pay Before</a>
 					<a class="btn btn-success btn-lg" href="#popupPayAfter">Pay After</a>
 					<a class="btn btn-danger btn-lg" href="#popupCancelItems">Cancel Order</a>
+					<a class="btn btn-danger btn-lg" href="#alertWaiter">Alert Waiter</a>
 				</div>
 			</div>
 		</div>
@@ -100,7 +102,7 @@ require '/var/www/html/Alex/PHP/Connections/ConnectionCustomer.php';
 							echo('<h5 id="errorRemoving">ERROR: Could not remove all items from basket</h5>');
 						}
 					?>
-				</div>		
+				</div>
 			</div>
 		</div>
 
@@ -117,7 +119,7 @@ require '/var/www/html/Alex/PHP/Connections/ConnectionCustomer.php';
 							echo('<h6>You have already ordered an item in this order, please wait until your current order has been fulfilled</h6>');
 
 						} else if ($numberOfRows != 0) {
-									
+
 							$sql = "INSERT INTO Orders (ID, Item, Quantity, Price, Time) SELECT TempOrders.ID, TempOrders.Item, TempOrders.Quantity, TempOrders.Price, now() FROM TempOrders";
 							if (mysqli_query($conn, $sql)) {
 								$sql = "DELETE FROM TempOrders";
@@ -139,10 +141,39 @@ require '/var/www/html/Alex/PHP/Connections/ConnectionCustomer.php';
 							echo('<h6>There are no items in your order</h6>');
 						}
 					?>
-				</div>		
+				</div>
 			</div>
 		</div>
-	</form>
+
+	<div id="alertWaiter" class="overlayAssistance">
+		<a class="close" href="#">&times;</a>
+		<div class="popupInfo">
+			<h5>What is your table number?</h5><br>
+			<input type="text" name="tableNumberEntry" />
+			<input type="submit" name="submitTable" value="Submit" />
+
+			<?php
+
+				if (isset($_POST['submitTable']) && isset($_POST['tableNumberEntry'])) {
+					$tableNumber = $_POST['tableNumberEntry'];
+					$sql = "INSERT INTO TableAssistance (TableID, Time, WaiterName, Status) VALUES ('$tableNumber', now(), 'Not Assigned', 'Needs Assistance')";
+
+					if (mysqli_query($conn, $sql)) {
+						echo('<br>');
+						echo('<br>');
+						echo('Success!');
+						echo('<br>');
+						echo('Our waiters have been informed that you require assistance, ');
+						echo('please wait until a waiter has become available to assist you.');
+					} else {
+						echo "Error: ".mysqli_error($conn);
+					}
+				}
+			?>
+		</div>
+	</div>
+</form>
+
 </section>
 
 <!-- Footer -->
