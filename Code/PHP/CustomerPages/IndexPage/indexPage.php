@@ -1,5 +1,6 @@
  <!-- Header -->
  <?php
+ // calls the header file, which header tag and the styleing sheets for the whole website. 
  include_once '../../Header.php';
  ?>
  <!-- Header -->
@@ -15,6 +16,7 @@
  						<div>
  							<?php
  							include_once 'Categories/Categories.php';
+ 							//calls the file from another folder
  							?>
  						</div>
  						<div>
@@ -39,6 +41,7 @@
 
  <!-- Footer -->
  <?php
+ // this holds the closing body tag and html tag
  include_once '../../footer.php';
  ?>
  <!-- Footer -->
