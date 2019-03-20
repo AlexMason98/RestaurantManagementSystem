@@ -81,46 +81,45 @@ $user = mysqli_fetch_array($results);
        </div>
 
        <div id="ChangeMenuAvailability" class="ChangeMenuAvailability">
-        <div class="ChangeAvailabilityPopUp">
-          <h5 id="itemInformation">Item Information</h5>
-          <a class="close" href="">&times;</a>
-          <div class="popupInfo">
-            <p>Enter ID</p>
-            <input type="number" name="AddItemId" placeholder="Enter ID"><br>
-            <input type="radio" name="TrueOrFalse[]" value="True">True<br>
-            <input type="radio" name="TrueOrFalse[]" value="False">False<br>
-            <input type="submit" name="GetDish" value="Submit">
-            <?php
-            require '../../Connections/ConnectionCustomer.php';
-            $GetItemID = $_POST['AddItemId'];
-            $GetTrueOrFalseArray = array();
-            $GetTrueOrFalse = "";
+    <div class="ChangeAvailabilityPopUp">
+      <a class="close" href="">&times;</a>
+      <div class="popupInfo">
+        <h3>Enter Dish Name</h3>
+        <input type="text" name="AddItemName" placeholder="Dish Name"><br>
+        <input type="radio" name="TrueOrFalse[]" value="True">True
+        <input type="radio" name="TrueOrFalse[]" value="False">False<br>
+        <input type="submit" class="btn btn-primary" name="GetDish" value="Submit">
+        <?php
+        require '../../Connections/ConnectionCustomer.php';
+        if(isset($_POST['AddItemName'])){
+        $GetItemName = $_POST['AddItemName'];
+        $GetTrueOrFalseArray = array();
+        $GetTrueOrFalse = "";
+        }
 
-            if(!empty($_POST['AddItemId']) && !empty($_POST['TrueOrFalse'])){
-             foreach ($_POST['TrueOrFalse'] as $value) {
-              array_push($GetTrueOrFalseArray, $value);
-            }
-            $GetTrueOrFalse .= join("", $GetTrueOrFalseArray);
-
-            if($GetTrueOrFalse == 'True'){
-              $UpdateSql = "UPDATE menu SET Availability = 'True' WHERE id=$GetItemID";
-            }elseif ($GetTrueOrFalse == 'False') {
-              $UpdateSql = "UPDATE menu SET Availability = 'False' WHERE id=$GetItemID";
-            }
-
-            $res = $conn->query($UpdateSql);
-            if($res === True){
-              echo "Dish Availability has changed.";
-            }else{
-              echo "Error updating record! Try again.";
-            }
+        if(!empty($_POST['AddItemName']) && !empty($_POST['TrueOrFalse'])){
+          foreach ($_POST['TrueOrFalse'] as $value) {
+            array_push($GetTrueOrFalseArray, $value);
           }
+          $GetTrueOrFalse .= join("", $GetTrueOrFalseArray);
+          if($GetTrueOrFalse == 'True'){
+            $UpdateSql = "UPDATE menu SET Availability = 'True' WHERE Item='$GetItemName'";
+          }elseif ($GetTrueOrFalse == 'False') {
+            $UpdateSql = "UPDATE menu SET Availability = 'False' WHERE Item='$GetItemName'";
+          }
+          $res = $conn->query($UpdateSql);
+          if($res === True){
+            echo "<br>Dish Availability has changed.";
+          }else{
+            echo "Error updating record! Try again.";
+          }
+        }
 
-          mysqli_close($conn);
-          ?>
-        </div>
+        mysqli_close($conn);
+        ?>
       </div>
     </div>
+  </div>
 
 
     <div class="footer">
