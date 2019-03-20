@@ -1,7 +1,6 @@
 <div class="card">
 	<div class="card-header" id="headingTwo">
 		<h2 class="mb-0">
-			<!-- drop down button for the Dietary Requirements -->
 			<button class="btn btn-lg" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" id="dropDown">
 				Dietary Requirements
 			</button>
@@ -9,7 +8,6 @@
 	</div>
 	<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
 		<div class="card-body">
-			<!-- printing the checkboxes for each of the refinements. Furthoermore, the it checks if the checkbox is checked and it checks the checkbox checked until it is unchecked. -->
 			<input type="checkbox" name="DietReq[]" id="Vegetarian" value="Vegetarian" <?php if(sizeof($_POST['DietReq'])>0){
 			foreach ($_POST['DietReq'] as $key => $value) {if($value == 'Vegetarian'){ echo "checked";}}} ?> > Vegetarian<br>
 
@@ -57,7 +55,7 @@
 
 			<input type="checkbox" name="DietReq[]" id="ContainsLupin" value="ContainsLupin"  <?php if(sizeof($_POST['DietReq'])>0){
 			foreach ($_POST['DietReq'] as $key => $value) {if($value == 'ContainsLupin'){ echo "checked";}}} ?> > Doesn't Contain Lupin<br>
-			<!-- Submite button which send the information as a post method. -->
+
 			<br><input type="Submit" value="Submit">
 
 		</div>
