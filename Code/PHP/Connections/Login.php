@@ -1,6 +1,7 @@
 <?php
+//calls the connection file, which connects to the database
 require 'ConnectionStaff.php';
-        // username and password sent from form 
+// username and password sent from form 
 $myusername=$_POST['myusername']; 
 $mypassword=$_POST['mypassword']; 
 
@@ -9,7 +10,7 @@ $myusername = stripslashes($myusername);
 $mypassword = stripslashes($mypassword);
 $myusername = mysql_real_escape_string($myusername);
 $mypassword = mysql_real_escape_string($mypassword);
-
+//sql query
 $sql="SELECT * FROM Logins WHERE ID='$myusername' and Password='$mypassword'";
 $result=mysql_query($sql);
 // Mysql_num_row is counting table row

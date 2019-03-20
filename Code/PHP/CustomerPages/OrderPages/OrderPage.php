@@ -26,10 +26,13 @@ require '/var/www/html/Harshdeep/PHP/Connections/ConnectionCustomer.php';
 									echo "<td>{$row['Item']}</td>\n";
 									echo "<td>{$row['Quantity']}</td>\n";
 									echo "<td>£{$row['Price']}</td></tr>\n";
+
+									// displays the  ID, item, quantity and Price in a row form
 								}
 								$numberOfRows = mysqli_num_rows($res);
 								$GLOBAL['numberOfRows'];
 								echo($numberOfRows);
+								// displays the number of rows, displaying the number of dishes added to cart. 
 							}
 
 							?>
@@ -69,6 +72,7 @@ require '/var/www/html/Harshdeep/PHP/Connections/ConnectionCustomer.php';
 					<a class="btn btn-danger btn-lg" href="#popupCancelItems">Cancel Order</a>
 					<a class="btn btn-danger btn-lg" href="#alertWaiter">Alert Waiter</a>
 				</div>
+				<!-- The button for the pay before, pay after, cancel order and alert waiter. -->
 			</div>
 		</div>
 
