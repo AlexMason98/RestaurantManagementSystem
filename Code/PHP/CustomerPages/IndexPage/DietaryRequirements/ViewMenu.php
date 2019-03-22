@@ -9,7 +9,7 @@ session_start()
 
 ///////////////////////////////////////////////////////////////////
 /////////////         Starting SQL Query      ////////////////////
-		$sql = "SELECT menu.ID, menu.Item, menu.ImagePath, menu.Price, menu.Category, Descriptions.Description, IngredientsAndCalories.Ingredients, Allergens.Allergens, IngredientsAndCalories.Calories, DietaryRequirements.Item FROM Descriptions, IngredientsAndCalories, Allergens, DietaryRequirements CROSS JOIN menu WHERE menu.ID = DietaryRequirements.ID AND DietaryRequirements.ID = Descriptions.ID AND Descriptions.ID = IngredientsAndCalories.ID AND IngredientsAndCalories.ID = Allergens.ID ";
+		$sql = "SELECT menu.ID, menu.Item, menu.ImagePath, menu.Price, menu.Availability, Descriptions.Description, IngredientsAndCalories.Ingredients, Allergens.Allergens, IngredientsAndCalories.Calories, DietaryRequirements.Item FROM Descriptions, IngredientsAndCalories, Allergens, DietaryRequirements CROSS JOIN menu WHERE menu.ID = DietaryRequirements.ID AND DietaryRequirements.ID = Descriptions.ID AND Descriptions.ID = IngredientsAndCalories.ID AND IngredientsAndCalories.ID = Allergens.ID AND menu.Availability = 'True' ";
 
 //////////////////////////////////////////////////////////////////
 /////////////            Category              //////////////////
@@ -33,11 +33,12 @@ session_start()
 
 		if(sizeof($DietReqArray)>0){
 			foreach ($DietReqArray as $key => $value) {
-				array_push($DietReq, $value. " = 'Yes' ");
+				array_push($DietReq, $value. " = 'No' ");
 			}
 			$sql = $sql . " AND ";
 			$sql .= join(" AND ", $DietReq);
-		}
+		}	
+
 
 ////////////                                     ////////////////
 ////////////////////////////////////////////////////////////////
@@ -48,6 +49,7 @@ session_start()
 			echo "0 results";
 		}
 		else{
+			echo $res -> num_rows;
 			while($row = mysqli_fetch_assoc($res)){
 
 				$image = $row['ImagePath'];
@@ -88,7 +90,6 @@ session_start()
 									<input type="text" name="<?php echo($quantityID); ?>" value="1" class="form-control" />
 								</div>
 								<div class="itemBoxes">
-
 									<input type="submit" class="btn btn-success" name="<?php echo($addToCartID); ?>" value="Add to Cart" href="<?php echo($hrefAddToCartID); ?>" />
 									<a class="btn btn-success" href="<?php echo($hrefPopupID); ?>">Info</a>
 								</div>
@@ -113,9 +114,6 @@ session_start()
 					</div>
 					<?php
 				}
-				?>
-
-				<?php
 				for ($id = 1; $id <= $num_rows; $id++) {
 					$addToCartID = "addToCart".$id;
 					?>
@@ -161,7 +159,6 @@ session_start()
 </div>
 <div class="container-fluid">
 	<div class="table-responsive">
-
 	</div>
 	<div class="row" id="buttonRow">
 		<div class="col-lg-12" id="OrderButton">
