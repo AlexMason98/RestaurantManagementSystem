@@ -118,10 +118,10 @@ $user = mysqli_fetch_array($results);
                         }
                       }                      
                     }
-                    //echo $UpdateSql;
+                    echo $UpdateSql;
                     $res = $conn->query($UpdateSql);
                     if($res === True){
-                      echo "Status changed";
+                      echo('<meta http-equiv="refresh" content="0">');
                     } else{
                       echo "Error updating record! Try again.";
                     }
