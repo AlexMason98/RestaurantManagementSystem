@@ -1,6 +1,8 @@
 <!-- Header -->
 <?php
 include_once '../../Header.php';
+$results = mysqli_query("SELECT * FROM Orders ;
+$user = mysqli_fetch_array($results);
 ?>
 <!-- Header -->
 
@@ -13,37 +15,45 @@ include_once '../../Header.php';
 					<table class="table table-striped table-bordered-less header">
 						<thead class="thead-light">
 							<tr>
-									<th style="width:10%">Table</th>
+									<th style="width:10%">TableNo</th>
 						    		<th style="width:50%">Order</th>
 						    		<th style="width:20%">Time</th>
 						    		<th style="width:20%">Status</th>
 						  	</tr>
 						</thead>
 						<?php
-							include_once '../../Connections/ConnectionStaff.php';
-							$sql = "SELECT Time, Items FROM Orders";
-							$res = $conn->query($sql);
-							if($res-> num_rows == 0){
-								echo "0 results";
-							}
-							else{
-								while($row = mysqli_fetch_assoc($res)){
-									echo "<tr><td>{$row['Items']}</td>\n";
-									echo "<td>{$row['Time']}</td></tr>\n";
-									echo "<td>{$row['Status']}</td></tr>\n";
-								}
-							}
-							mysqli_close($conn);
-							?>
+           						require '../../Connections/ConnectionCustomer.php';
+           						$sql = "SELECT TableNo, Item, Time, Status FROM Orders ORDER BY Time ASC";
+           						$res = $conn->query($sql);
+          						 if($res-> num_rows == 0){
+             							echo "0 results";
+           						}
+           							else{
+            						$num_rows = 0;
+            						while($row = mysqli_fetch_assoc($res)){
+             						 $num_rows++;
+             						 $id = $row['ID'];
+            						 // echo "id: " . $row["id"]. " - Name: " . $row["firstname"]. " " . $row["lastname"]. "<br>";
+              						echo "<tr>";
+             						echo "<td>{$row['TableNo']}</td><td>{$row['Item']}</td><td>{$row['Time']}</td><td>{$row['Status']}</td><td>";
+              						$StatusId = "status".$num_rows;
+              						$hrefStatusId = "#status".$num_rows;
+             						$StatusId = "status".$num_rows."[]";
+              						$dropdownChange = "dropdownChange".$num_rows;
+						}
+						}
+						mysqli_close($conn);
+?>
 					</table>
 				</div>
 			</div>
 		</div>
 
 </section>
+<?php
+include_once '../footer.php';
+?>
 </body>
 
 
-
-</body>
 </html>
