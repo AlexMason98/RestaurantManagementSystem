@@ -88,6 +88,7 @@ $user = mysqli_fetch_array($results);
                 if (isset($_POST[$submitButtonID]) && $_POST[$StatusID]) {
                   $ItemRowData =array();
                   $IdRowData = array();
+                  $StatusRowData = array();
                   $sql = "SELECT ID, Item, Status FROM Orders ORDER BY Time ASC";
                   $res = $conn->query($sql);
                   if ($res -> num_rows == 0) {
@@ -96,13 +97,16 @@ $user = mysqli_fetch_array($results);
                     while($row = mysqli_fetch_assoc($res)){
                       array_push($IdRowData, $row['ID']);
                       array_push($ItemRowData, $row['Item']);
+                      array_push($StatusRowData, $row['Status']);
                     }
                     $GetStatusArray =array();
                     foreach ($_POST[$StatusID] as $value) {
                       array_push($GetStatusArray, $value);
                     }
                     $GetStatus = join("", $GetStatusArray);
-                    if ($GetStatus == $_POST[$StatusID]) {
+                    
+                    if ($GetStatus == $StatusRowData[$i]) {
+                      echo($StatusRowData[$i]);
                       echo("Ting Works 2");
                     }else{
                       for ($j=0; $j < $i; $j++) { 
@@ -114,11 +118,13 @@ $user = mysqli_fetch_array($results);
                           $UpdateSql = "UPDATE  Orders SET Status = '$GetStatus' WHERE Item='$ItemRowData[$j]' AND ID='$IdRowData[$j]'";
                         }elseif ($GetStatus == "Delivered"){
                           $UpdateSql = "UPDATE  Orders SET Status = '$GetStatus' WHERE Item='$ItemRowData[$j]' AND ID='$IdRowData[$j]'";
+                        }elseif($GetStatus == "NoStatus"){
+                          $UpdateSql = "UPDATE  Orders SET Status = '$GetStatus' WHERE Item='$ItemRowData[$j]' AND ID='$IdRowData[$j]'";
                         }
                       }                      
                     }
-                    $res = $conn->query($UpdateSql);
-                    if($res === True){
+                    $res2 = $conn->query($UpdateSql);
+                    if($res2 === True){
                       echo('<meta http-equiv="refresh" content="0">');
                     } else{
                       echo "Error updating record! Try again.";
@@ -130,14 +136,9 @@ $user = mysqli_fetch_array($results);
               </div>
               <?php
             }
-
-
-
           } 
-
           mysqli_close($conn);
           ?>
-
         </table>
       </div>
     </div>
