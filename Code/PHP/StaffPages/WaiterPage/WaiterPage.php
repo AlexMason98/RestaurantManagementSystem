@@ -38,7 +38,7 @@ $user = mysqli_fetch_array($results);
            <?php
            require '../../Connections/ConnectionCustomer.php';
 
-           $sql = "SELECT ID, Item, Time,Quantity, Price, Status FROM Orders ORDER BY Time ASC";
+           $sql = "SELECT TableNo, Item, Time,Quantity, Price, Status FROM Orders ORDER BY Time ASC";
            $res = $conn->query($sql);
            if($res-> num_rows == 0){
              echo "0 results";
@@ -50,7 +50,8 @@ $user = mysqli_fetch_array($results);
               $id = $row['ID'];
              // echo "id: " . $row["id"]. " - Name: " . $row["firstname"]. " " . $row["lastname"]. "<br>";
               echo "<tr>";
-              echo "<td>{$row['ID']}</td><td>{$row['Item']}</td><td>{$row['Time']}</td><td>{$row['Status']}</td><td>";
+              echo "<td>{$row['TableNo']}</td><td>{$row['Item']}</td><td>{$row['Time']}</td><td>{$row['Status']}</td><td>";
+
               $StatusId = "status".$num_rows;
               $hrefStatusId = "#status".$num_rows;
               $StatusId = "status".$num_rows."[]";
@@ -89,13 +90,23 @@ $user = mysqli_fetch_array($results);
                   $ItemRowData =array();
                   $IdRowData = array();
                   $StatusRowData = array();
-                  $sql = "SELECT ID, Item, Status FROM Orders ORDER BY Time ASC";
+                  $TableNoRowData = array();
+
+                  $AllStatuses = array();
+                  array_push($AllStatuses, "NoStatus");
+                  array_push($AllStatuses, "OrderPlaced");
+                  array_push($AllStatuses, "Cooking");
+                  array_push($AllStatuses, "Cooked");
+                  array_push($AllStatuses, "Delivered");
+
+                  $sql = "SELECT TableNo, ID, Item, Status FROM Orders ORDER BY Time ASC";
                   $res = $conn->query($sql);
                   if ($res -> num_rows == 0) {
                     echo "0 results";
                   }else{
                     while($row = mysqli_fetch_assoc($res)){
                       array_push($IdRowData, $row['ID']);
+                      array_push($TableNoRowData, $row['TableNo']);
                       array_push($ItemRowData, $row['Item']);
                       array_push($StatusRowData, $row['Status']);
                     }
@@ -104,32 +115,43 @@ $user = mysqli_fetch_array($results);
                       array_push($GetStatusArray, $value);
                     }
                     $GetStatus = join("", $GetStatusArray);
-                    
-                    if ($GetStatus == $StatusRowData[$i]) {
-                      echo($StatusRowData[$i]);
-                      echo("Ting Works 2");
-                    }else{
-                      for ($j=0; $j < $i; $j++) { 
-                        if($GetStatus == "OrderPlaced"){
-                          $UpdateSql = "UPDATE  Orders SET Status = '$GetStatus' WHERE Item='$ItemRowData[$j]' AND ID='$IdRowData[$j]'";
-                        }elseif($GetStatus =="Cooking"){
-                          $UpdateSql = "UPDATE  Orders SET Status = '$GetStatus' WHERE Item='$ItemRowData[$j]' AND ID='$IdRowData[$j]'";
-                        }elseif($GetStatus == "Cooked"){
-                          $UpdateSql = "UPDATE  Orders SET Status = '$GetStatus' WHERE Item='$ItemRowData[$j]' AND ID='$IdRowData[$j]'";
-                        }elseif ($GetStatus == "Delivered"){
-                          $UpdateSql = "UPDATE  Orders SET Status = '$GetStatus' WHERE Item='$ItemRowData[$j]' AND ID='$IdRowData[$j]'";
-                        }elseif($GetStatus == "NoStatus"){
-                          $UpdateSql = "UPDATE  Orders SET Status = '$GetStatus' WHERE Item='$ItemRowData[$j]' AND ID='$IdRowData[$j]'";
-                        }
-                      }                      
-                    }
-                    $res2 = $conn->query($UpdateSql);
-                    if($res2 === True){
-                      echo('<meta http-equiv="refresh" content="0">');
-                    } else{
-                      echo "Error updating record! Try again.";
-                    }
 
+                    foreach ($StatusRowData as $key => $value) {
+                      if ($GetStatus == $value) {
+                        echo $value;
+                        echo("Status not changed. TRY AGIAN!");
+                        break;
+                      }else{
+                        for ($j=0; $j < $i; $j++) { 
+                          switch($GetStatus){
+                            case "OrderPlaced":
+                            $UpdateSql = "UPDATE  Orders SET Status = '$GetStatus' WHERE Item='$ItemRowData[$j]' AND TableNo='$TableNoRowData[$j]' AND ID ='$IdRowData[$j]'";
+                            break;
+                            case "Cooking":
+                            $UpdateSql = "UPDATE  Orders SET Status = '$GetStatus' WHERE Item='$ItemRowData[$j]' AND TableNo='$TableNoRowData[$j]' AND ID ='$IdRowData[$j]'";
+                            break;
+                            case "Cooked":
+                            $UpdateSql = "UPDATE  Orders SET Status = '$GetStatus' WHERE Item='$ItemRowData[$j]' AND TableNo='$TableNoRowData[$j]' AND ID ='$IdRowData[$j]'";
+                            break;
+                            case "Delivered":
+                            $UpdateSql = "UPDATE  Orders SET Status = '$GetStatus' WHERE Item='$ItemRowData[$j]' AND TableNo='$TableNoRowData[$j]' AND ID ='$IdRowData[$j]'";
+                            break;
+                            case "NoStatus":
+                            $UpdateSql = "UPDATE  Orders SET Status = '$GetStatus' WHERE Item='$ItemRowData[$j]' AND TableNo='$TableNoRowData[$j]' AND ID ='$IdRowData[$j]'";
+                            break;
+                            default:
+                            echo"didnt work";
+                          }
+                        }
+                        $res = $conn->query($UpdateSql);
+                        if($res === True){
+                          echo('<meta http-equiv="refresh" content="0">');
+                        } else{
+                          echo "Error updating record! Try again.";
+                        }
+                      }
+                    }
+                    
                   }
                 }
                 ?>
@@ -144,63 +166,63 @@ $user = mysqli_fetch_array($results);
     </div>
 
     <div class="right">
-     <div class="waiterButtonDiv">
-       <a href="#ChangeMenuAvailability" class="waiterButtons">Change Availability</a>
-       <a href="../TableAssistance.php" class="waiterButtons">Table Assistance</a>
-       <a href="../PlaceOrders.php" class="waiterButtons">Place Orders</a>
-       <a href="../CancelOrders.php" class="waiterButtons">Cancel Orders</a>
-     </div>
-   </div>
- </div>
-
- <div id="ChangeMenuAvailability" class="ChangeMenuAvailability">
-  <div class="ChangeAvailabilityPopUp">
-    <a class="close" href="">&times;</a>
-    <div class="popupInfo">
-      <h3>Enter Dish Name</h3>
-      <input type="text" name="AddItemName" placeholder="Dish Name"><br>
-      <input type="radio" name="TrueOrFalse[]" value="True">True
-      <input type="radio" name="TrueOrFalse[]" value="False">False<br>
-      <input type="submit" class="btn btn-primary" name="GetDish" value="Submit">
-      <?php
-      require '../../Connections/ConnectionCustomer.php';
-      if(isset($_POST['AddItemName'])){
-        $GetItemStatus = $_POST['AddItemName'];
-        $GetStatusArray = array();
-        $GetStatus = "";
-      }
-
-      if(!empty($_POST['AddItemName']) && !empty($_POST['TrueOrFalse'])){
-        foreach ($_POST['TrueOrFalse'] as $value) {
-          array_push($GetStatusArray, $value);
-        }
-        $GetStatus .= join("", $GetStatusArray);
-        if($GetStatus == 'True'){
-          $UpdateSql = "UPDATE menu SET Availability = 'True' WHERE Item='$GetItemStatus'";
-        }elseif ($GetStatus == 'False') {
-          $UpdateSql = "UPDATE menu SET Availability = 'False' WHERE Item='$GetItemStatus'";
-        }
-        $res = $conn->query($UpdateSql);
-        if($res === True){
-          echo "<br>Dish Availability has changed.";
-        }else{
-          echo "Error updating record! Try again.";
-        }
-      }
-
-      mysqli_close($conn);
-      ?>
+      <div class="waiterButtonDiv">
+        <a href="#ChangeMenuAvailability" class="waiterButtons">Change Availability</a>
+        <a href="../TableAssistance.php" class="waiterButtons">Table Assistance</a>
+        <a href="../PlaceOrders.php" class="waiterButtons">Place Orders</a>
+        <a href="../CancelOrders.php" class="waiterButtons">Cancel Orders</a>
+      </div>
     </div>
   </div>
-</div>
+
+  <div id="ChangeMenuAvailability" class="ChangeMenuAvailability">
+    <div class="ChangeAvailabilityPopUp">
+      <a class="close" href="">&times;</a>
+      <div class="popupInfo">
+        <h3>Enter Dish Name</h3>
+        <input type="text" name="AddItemName" placeholder="Dish Name"><br>
+        <input type="radio" name="TrueOrFalse[]" value="True">True
+        <input type="radio" name="TrueOrFalse[]" value="False">False<br>
+        <input type="submit" class="btn btn-primary" name="GetDish" value="Submit">
+        <?php
+        require '../../Connections/ConnectionCustomer.php';
+        if(isset($_POST['AddItemName'])){
+          $GetItemStatus = $_POST['AddItemName'];
+          $GetStatusArray = array();
+          $GetStatus = "";
+        }
+
+        if(!empty($_POST['AddItemName']) && !empty($_POST['TrueOrFalse'])){
+          foreach ($_POST['TrueOrFalse'] as $value) {
+            array_push($GetStatusArray, $value);
+          }
+          $GetStatus .= join("", $GetStatusArray);
+          if($GetStatus == 'True'){
+            $UpdateSql = "UPDATE menu SET Availability = 'True' WHERE Item='$GetItemStatus'";
+          }elseif ($GetStatus == 'False') {
+            $UpdateSql = "UPDATE menu SET Availability = 'False' WHERE Item='$GetItemStatus'";
+          }
+          $res = $conn->query($UpdateSql);
+          if($res === True){
+            echo "<br>Dish Availability has changed.";
+          }else{
+            echo "Error updating record! Try again.";
+          }
+        }
+
+        mysqli_close($conn);
+        ?>
+      </div>
+    </div>
+  </div>
 
 
-<div class="footer">
- <footer>
-   <!--<h6>User: </h6>-->
-   <a href="../../LoginScripts/Logout.php" class="signOutButton">Sign Out</a>
- </footer>
-</div>
+  <div class="footer">
+    <footer>
+      <!--<h6>User: </h6>-->
+      <a href="../../LoginScripts/Logout.php" class="signOutButton">Sign Out</a>
+    </footer>
+  </div>
 </form>
 </section>
 
