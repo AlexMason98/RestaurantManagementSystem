@@ -44,82 +44,117 @@ $user = mysqli_fetch_array($results);
              echo "0 results";
            }
            else{
-
+            $num_rows = 0;
             while($row = mysqli_fetch_assoc($res)){
+              $num_rows++;
+              $id = $row['ID'];
              // echo "id: " . $row["id"]. " - Name: " . $row["firstname"]. " " . $row["lastname"]. "<br>";
-             echo "<tr>";
-             echo "<td>{$row['ID']}</td><td>{$row['Item']}</td><td>{$row['Time']}</td><td>{$row['Status']}</td><td>";
-             $StatusId = "Status".$row['ID']."[]";
-             ?>
-             <select name="<?php echo $StatusId ?>">
-              <option value="NoStatus">No Status</option>
-              <option value="OrderPlaced">Order Placed</option>
-              <option value="Cooking">Cooking</option>
-              <option value="Cooked">Cooked</option>
-              <option value="Delivered">Delivered</option>
-              <input type="Submit" name="Submit">
-            </select>
+              echo "<tr>";
+              echo "<td>{$row['ID']}</td><td>{$row['Item']}</td><td>{$row['Time']}</td><td>{$row['Status']}</td><td>";
+              $StatusId = "status".$num_rows;
+              $hrefStatusId = "#status".$num_rows;
+              $StatusId = "status".$num_rows."[]";
+              $dropdownChange = "dropdownChange".$num_rows;
+              ?>
+
+              <select name="<?php echo $StatusId ?>">
+                <option value="NoStatus">No Status</option>
+                <option value="OrderPlaced">Order Placed</option>
+                <option value="Cooking">Cooking</option>
+                <option value="Cooked">Cooked</option>
+                <option value="Delivered">Delivered</option>
+                <div class="itemBoxes">
+                  <?php 
+                  $submitButtonID = "submitButton".$num_rows;
+                  $hrefSubmitButtonID = "#submitButton".$num_rows;
+                  ?>
+                  <input type="submit" class="btn btn-success" name="<?php echo($submitButtonID); ?>" value="Submit" href="<?php echo($hrefSubmitButtonID); ?>" />
+                </div>
+              </select>
 
 
-            <?php
-
-            for($i = 1; $i < $res-> num_rows ; $i++){
-              $PostStatusId = "Status".$i;
-              if(!($_POST[$PostStatusId] == 'NoStatus')){
-                if(isset($_POST[$PostStatusId]) ){
-                  $GetItemStatus = $_POST[$PostStatusId];
-                  $GetStatusArray = array();
-                  $GetStatus = "";
-                }
-                foreach ($GetItemStatus as $value) {
-                  array_push($GetStatusArray, $value);
-                }
-                $GetStatus .= join("", $GetStatusArray);
-                if($GetStatus == 'OrderPlaced'){
-                  $UpdateSql = "UPDATE  Orders SET Status = '$GetStatus' WHERE Item='{$row['Item']}' AND ID='{$row['ID']}'";
-                }elseif ($GetStatus == 'Cooking') {
-                  $UpdateSql = "UPDATE  Orders SET Status = '$GetStatus' WHERE Item='{$row['Item']}' AND ID='{$row['ID']}' ";
-                }elseif ($GetStatus == 'Cooked') {
-                  $UpdateSql = "UPDATE  Orders SET Status = '$GetStatus' WHERE Item='{$row['Item']}' AND ID='{$row['ID']}' ";
-                }elseif ($GetStatus == 'Delivered') {
-                  $UpdateSql = "UPDATE  Orders SET Status = '$GetStatus' WHERE Item='{$row['Item']}' AND ID='{$row['ID']}'";
-                }
-
-              // $res = $conn->query($UpdateSql);
-              // if($res === True){
-              //   echo "<br>Status has changed.";
-              // }else{
-              //   echo "Error updating record! Try again.";
-              // }
-              }
+              <?php
+              echo "</td>";
+              echo "</tr>";
             }
-            echo $GetStatus;
-            echo $UpdateSql;
-            
-            echo "</td>";
-            echo "</tr>";
-          }
 
-        } 
+            for ($i = 1; $i <= $num_rows; $i++) {
+              $submitButtonID = "submitButton".$i;
+              $StatusID = "status".$i;
 
-        mysqli_close($conn);
-        ?>
+              ?>
+              <div id="<?php echo($submitButtonID); ?>" class="addItemToCart">
+                <?php
+                echo("Before if");
+                if (isset($_POST[$submitButtonID]) && $_POST[$StatusID]) {
+                  $ItemRowData =array();
+                  $IdRowData = array();
+                  $sql = "SELECT ID, Item, Status FROM Orders";
+                  $res = $conn->query($sql);
+                  if ($res -> num_rows == 0) {
+                    echo "0 results";
+                  }else{
+                    while($row = mysqli_fetch_assoc($res)){
+                      array_push($IdRowData, $row['ID']);
+                      array_push($ItemRowData, $row['Item']);
+                    }
+                    $GetStatusArray =array();
+                    foreach ($_POST[$StatusID] as $value) {
+                      array_push($GetStatusArray, $value);
+                    }
+                    $GetStatus = join("", $GetStatusArray);
+                    if ($GetStatus == $_POST[$StatusID]) {
+                      echo("Ting Works 2");
+                    }else{
+                      for ($j=0; $j < $i; $j++) { 
+                        if($GetStatus == "OrderPlaced"){
+                          $UpdateSql = "UPDATE  Orders SET Status = '$GetStatus' WHERE Item='$ItemRowData[$j]' AND ID='$IdRowData[$j]'";
+                        }elseif($GetStatus =="Cooking"){
+                          $UpdateSql = "UPDATE  Orders SET Status = '$GetStatus' WHERE Item='$ItemRowData[$j]' AND ID='$IdRowData[$j]'";
+                        }elseif($GetStatus == "Cooked"){
+                          $UpdateSql = "UPDATE  Orders SET Status = '$GetStatus' WHERE Item='$ItemRowData[$j]' AND ID='$IdRowData[$j]'";
+                        }elseif ($GetStatus == "Delivered"){
+                          $UpdateSql = "UPDATE  Orders SET Status = '$GetStatus' WHERE Item='$ItemRowData[$j]' AND ID='$IdRowData[$j]'";
+                        }
+                      }                      
+                    }
+                    //echo $UpdateSql;
+                    $res = $conn->query($UpdateSql);
+                    if($res === True){
+                      echo "Status changed";
+                    } else{
+                      echo "Error updating record! Try again.";
+                    }
 
-      </table>
+                  }
+                }
+                ?>
+              </div>
+              <?php
+            }
+
+
+
+          } 
+
+          mysqli_close($conn);
+          ?>
+
+        </table>
+      </div>
     </div>
-  </div>
 
-  <div class="right">
-   <div class="waiterButtonDiv">
-     <a href="#ChangeMenuAvailability" class="waiterButtons">Change Availability</a>
-     <a href="../TableAssistance.php" class="waiterButtons">Table Assistance</a>
-     <a href="../PlaceOrders.php" class="waiterButtons">Place Orders</a>
-     <a href="../CancelOrders.php" class="waiterButtons">Cancel Orders</a>
+    <div class="right">
+     <div class="waiterButtonDiv">
+       <a href="#ChangeMenuAvailability" class="waiterButtons">Change Availability</a>
+       <a href="../TableAssistance.php" class="waiterButtons">Table Assistance</a>
+       <a href="../PlaceOrders.php" class="waiterButtons">Place Orders</a>
+       <a href="../CancelOrders.php" class="waiterButtons">Cancel Orders</a>
+     </div>
    </div>
  </div>
-</div>
 
-<div id="ChangeMenuAvailability" class="ChangeMenuAvailability">
+ <div id="ChangeMenuAvailability" class="ChangeMenuAvailability">
   <div class="ChangeAvailabilityPopUp">
     <a class="close" href="">&times;</a>
     <div class="popupInfo">
