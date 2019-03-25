@@ -1,6 +1,8 @@
 <?php
-require '/var/www/html/Harshdeep/PHP/Connections/ConnectionCustomer.php';
-session_start()
+require '/var/www/html/Alex/PHP/Connections/ConnectionCustomer.php';
+
+//require_once "/var/www/html/Main/PHP/CustomerPages/IndexPage/DietaryRequirements/Session.php";
+
 ?>
 
 <div class="row">
@@ -10,6 +12,7 @@ session_start()
 ///////////////////////////////////////////////////////////////////
 /////////////         Starting SQL Query      ////////////////////
 		$sql = "SELECT menu.ID, menu.Item, menu.ImagePath, menu.Price, menu.Availability, Descriptions.Description, IngredientsAndCalories.Ingredients, Allergens.Allergens, IngredientsAndCalories.Calories, DietaryRequirements.Item FROM Descriptions, IngredientsAndCalories, Allergens, DietaryRequirements CROSS JOIN menu WHERE menu.ID = DietaryRequirements.ID AND DietaryRequirements.ID = Descriptions.ID AND Descriptions.ID = IngredientsAndCalories.ID AND IngredientsAndCalories.ID = Allergens.ID AND menu.Availability = 'True' ";
+
 
 //////////////////////////////////////////////////////////////////
 /////////////            Category              //////////////////
@@ -37,12 +40,12 @@ session_start()
 			}
 			$sql = $sql . " AND ";
 			$sql .= join(" AND ", $DietReq);
+
 		}	
 
-
 ////////////                                     ////////////////
-////////////////////////////////////////////////////////////////
-
+////////////////////////////////////////////////////////////////	
+		
 		$res = $conn->query($sql);
 		$num_rows = mysqli_num_rows($res);
 		if($res-> num_rows == 0){
@@ -60,6 +63,7 @@ session_start()
 				$ingredients = $row['Ingredients'];
 				$allergen = $row['Allergens'];
 				$calories = $row['Calories'];
+				$Available = $row['Availability'];
 				?>
 				<form method="post" action="indexPage?action=add&ID=<?php echo $row['ID']; ?>">
 					<div class="col-lg-14 col-md-12 col-sm-10" id="center">
@@ -91,13 +95,14 @@ session_start()
 								</div>
 								<div class="itemBoxes">
 									<input type="submit" class="btn btn-success" name="<?php echo($addToCartID); ?>" value="Add to Cart" href="<?php echo($hrefAddToCartID); ?>" />
+
 									<a class="btn btn-success" href="<?php echo($hrefPopupID); ?>">Info</a>
 								</div>
 							</div>
 							<div id="<?php echo($popup); ?>" class="overlay">
 								<div class="popup">
 									<h5 id="itemInformation">Item Information</h5>
-									<a class="close" href="#">&times;</a>
+									<a class="close" href="">&times;</a>
 									<div class="popupInfo">
 										<h6 id="descriptionText">Description:</h6>
 										<p id="itemDescription"><?php echo($description); ?></p>
@@ -132,7 +137,20 @@ session_start()
 								echo '</script>';
 
 							} else {
-								$sql = "INSERT INTO TempOrders (ID, Item, Quantity, Price, Time) SELECT menu.ID, menu.Item, $quantity, menu.Price, now() FROM menu WHERE menu.ID = $id";
+
+								// This code gets the user's IP public address and uses it to distinguish the user's order between different systems
+								if (!empty($_SERVER['HTTP_CLIENT_IP'])) {  // Checks if IP is from shared internet
+							      $ip = $_SERVER['HTTP_CLIENT_IP'];
+							    
+							    } else if (!empty($_SERVER['HTTP_X_FORWARDED_FOR'])) { // Checks if IP is passed from a proxy
+							      $ip = $_SERVER['HTTP_X_FORWARDED_FOR'];
+							    
+							    } else { // Else, get IP address of connecting party 
+							      $ip = $_SERVER['REMOTE_ADDR'];
+
+    							}
+
+								$sql = "INSERT INTO TempOrders (IP, ID, Item, Quantity, Price, Time) SELECT '$ip', menu.ID, menu.Item, $quantity, menu.Price, now() FROM menu WHERE menu.ID = $id";
 
 								if (mysqli_query($conn, $sql)) {
 									echo '<script language="javascript">';
@@ -162,7 +180,7 @@ session_start()
 	</div>
 	<div class="row" id="buttonRow">
 		<div class="col-lg-12" id="OrderButton">
-			<a class="btn btn-light btn-lg btn-block" href="/Harshdeep/PHP/CustomerPages/OrderPages/OrderPage">Order</a>
+			<a class="btn btn-light btn-lg btn-block" href="../OrderPages/OrderPage">Order</a>
 		</div>
 	</div>
 </div>
