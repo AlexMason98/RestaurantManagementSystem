@@ -85,11 +85,10 @@ $user = mysqli_fetch_array($results);
               ?>
               <div id="<?php echo($submitButtonID); ?>" class="addItemToCart">
                 <?php
-                echo("Before if");
                 if (isset($_POST[$submitButtonID]) && $_POST[$StatusID]) {
                   $ItemRowData =array();
                   $IdRowData = array();
-                  $sql = "SELECT ID, Item, Status FROM Orders";
+                  $sql = "SELECT ID, Item, Status FROM Orders ORDER BY Time ASC";
                   $res = $conn->query($sql);
                   if ($res -> num_rows == 0) {
                     echo "0 results";
@@ -118,7 +117,6 @@ $user = mysqli_fetch_array($results);
                         }
                       }                      
                     }
-                    echo $UpdateSql;
                     $res = $conn->query($UpdateSql);
                     if($res === True){
                       echo('<meta http-equiv="refresh" content="0">');
