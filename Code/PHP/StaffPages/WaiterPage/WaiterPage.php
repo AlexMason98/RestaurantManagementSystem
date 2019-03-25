@@ -23,10 +23,10 @@ $user = mysqli_fetch_array($results);
          <table style="width:100%">
            <colgroup>
              <col style="width:5%">
-             <col style="width:50%">
+             <col style="width:45%">
              <col style="width:15%">
              <col style="width:15%">
-             <col style="width:15%">
+             <col style="width:20%">
            </colgroup>
            <tr>
              <th>Table</th>

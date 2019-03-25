@@ -128,6 +128,11 @@
 		width: 8%;
 	}
 
+	.currentOrderTable{
+		overflow-y: scroll;
+		height: 570px;
+	}
+
 	.loginbox{
 		background: rgba(3, 53, 132, 0.3);
 		position:absolute;
@@ -185,7 +190,7 @@
 		/*transition: opacity 300ms; This is for fading out the popup box, left as an option */
 		transition: opacity;
 		/*visibility: hidden;*/
-		display: hidden;
+		display: none;
 		opacity: 0;
 		width: 200px;
 		padding-left: 20px;
