@@ -26,13 +26,10 @@ require '/var/www/html/Harshdeep/PHP/Connections/ConnectionCustomer.php';
 									echo "<td>{$row['Item']}</td>\n";
 									echo "<td>{$row['Quantity']}</td>\n";
 									echo "<td>£{$row['Price']}</td></tr>\n";
-
-									// displays the  ID, item, quantity and Price in a row form
 								}
 								$numberOfRows = mysqli_num_rows($res);
 								$GLOBAL['numberOfRows'];
 								echo($numberOfRows);
-								// displays the number of rows, displaying the number of dishes added to cart. 
 							}
 
 							?>
@@ -67,12 +64,11 @@ require '/var/www/html/Harshdeep/PHP/Connections/ConnectionCustomer.php';
 			<div class="row">
 				<div class="col-lg-8 col-md-6 col-sm-4"></div>
 				<div class="col-lg-4 col-md-6 col-sm-8">
-					<a class="btn btn-success btn-lg" href="PaymentSystem/index.php">Pay Before</a>
+					<a class="btn btn-success btn-lg" href="#popupPayBefore">Pay Before</a>
 					<a class="btn btn-success btn-lg" href="#popupPayAfter">Pay After</a>
 					<a class="btn btn-danger btn-lg" href="#popupCancelItems">Cancel Order</a>
 					<a class="btn btn-danger btn-lg" href="#alertWaiter">Alert Waiter</a>
 				</div>
-				<!-- The button for the pay before, pay after, cancel order and alert waiter. -->
 			</div>
 		</div>
 
@@ -80,6 +76,7 @@ require '/var/www/html/Harshdeep/PHP/Connections/ConnectionCustomer.php';
 			<div class="popup">
 				<a class="close" name="closePopup" href="OrderPage.php">&times;</a>
 				<div class="popupInfo">
+
 					<?php
 						if ($numberOfRows != 0) {
 
@@ -110,11 +107,55 @@ require '/var/www/html/Harshdeep/PHP/Connections/ConnectionCustomer.php';
 			</div>
 		</div>
 
+		<div id="popupPayBefore" class="payAfterOverlay">
+			<div class="popup">
+				<a class="close" name="closePopup" href="OrderPage.php">&times;</a>
+				<div class="popupInfo">
+					<h5 id="enterTableText1">Enter Your Table Number:</h5><br>
+					<input type="text" name="payBeforeTableEntry" id="payBeforeTableEntry" />
+					<input type="submit" class="btn btn-success btn-sm" name="payBeforeSubmitButton" id="payBeforeSubmitButton" value="Submit" />
+
+					<?php
+					if (!empty($_POST['payBeforeTableEntry']) && ($_POST['payBeforeTableEntry'] >= 1) && ($_POST['payBeforeTableEntry'] <= 10) && (isset($_POST['payBeforeSubmitButton']))) {
+							$payBeforeTableNumber = ltrim($_POST['payBeforeTableEntry'], '0');
+							// This header redirects to the PaymentSystem's index page once I get the table number.
+							header("Refresh:0; url=PaymentSystem/index.php", true, 303);
+							exit();
+
+					} else if ((!empty($_POST['payBeforeTableEntry']) || ($_POST['payBeforeTableEntry'] == 0)) && isset($_POST['payBeforeSubmitButton'])) {
+						// If the table number is not between 1 and 10, but the table number entry form is not empty (or value inside is equal to 0) and submit has been pressed: 
+						echo("<br>");
+						echo("Please enter a valid table number");
+
+					} else if (empty($_POST['payBeforeTableEntry']) && isset($_POST['payBeforeSubmitButton'])) {
+						// Else, if the submit button has been pressed but the table number entry form is empty:
+						echo("<br>");
+						echo("Please enter a table number before placing your order");
+
+					}
+					?>
+				</div>
+			</div>
+		</div>
+
 		<div id="popupPayAfter" class="payAfterOverlay">
 			<div class="popup">
 				<a class="close" name="closePopup" href="OrderPage.php">&times;</a>
 				<div class="popupInfo">
+
+					<h5 id="enterTableText2">Enter Your Table Number:</h5><br>
+					<input type="text" name="payAfterTableEntry" id="payAfterTableEntry" />
+					<input type="submit" class="btn btn-success btn-sm" name="payAfterSubmitButton" id="payAfterSubmitButton" value="Submit" />
+
 					<?php
+					if (!empty($_POST['payAfterTableEntry']) && ($_POST['payAfterTableEntry'] >= 1) && ($_POST['payAfterTableEntry'] <= 10) && (isset($_POST['payAfterSubmitButton']))) {
+
+						echo('<style> #enterTableText2 { display: none; } </style>');
+						echo('<style> #payAfterTableEntry { display: none; } </style>');
+						echo('<style> #payAfterSubmitButton { display: none; } </style>');
+
+						$payAfterTableNumber = ltrim($_POST['payAfterTableEntry'], '0');
+
 						$sql = "SELECT Orders.ID FROM Orders, TempOrders WHERE Orders.ID = TempOrders.ID";
 						$res = mysqli_query($conn, $sql);
 
@@ -124,7 +165,7 @@ require '/var/www/html/Harshdeep/PHP/Connections/ConnectionCustomer.php';
 
 						} else if ($numberOfRows != 0) {
 
-							$sql = "INSERT INTO Orders (ID, Item, Quantity, Price, Time) SELECT TempOrders.ID, TempOrders.Item, TempOrders.Quantity, TempOrders.Price, now() FROM TempOrders";
+							$sql = "INSERT INTO Orders (IP, TableNumber, ID, Item, Quantity, Price, Time) SELECT TempOrders.IP, $tableNumber, TempOrders.ID, TempOrders.Item, TempOrders.Quantity, TempOrders.Price, now() FROM TempOrders";
 							if (mysqli_query($conn, $sql)) {
 								$sql = "DELETE FROM TempOrders";
 								if (mysqli_query($conn, $sql)) {
@@ -144,6 +185,17 @@ require '/var/www/html/Harshdeep/PHP/Connections/ConnectionCustomer.php';
 							echo('<h5>Can not place order!</h5>');
 							echo('<h6>There are no items in your order</h6>');
 						}
+					} else if ((!empty($_POST['payAfterTableEntry']) || ($_POST['payAfterTableEntry'] == 0)) && isset($_POST['payAfterSubmitButton'])) {
+						// If the table number is not between 1 and 10, but the table number entry form is not empty (or value inside is equal to 0) and submit has been pressed: 
+						echo("<br>");
+						echo("Please enter a valid table number");
+
+					} else if (empty($_POST['payAfterTableEntry']) && isset($_POST['payAfterSubmitButton'])) {
+						// Else, if the submit button has been pressed but the table number entry form is empty:
+						echo("<br>");
+						echo("Please enter a table number before placing your order");
+
+					}
 					?>
 				</div>
 			</div>
