@@ -12,7 +12,21 @@ require '/var/www/html/Alex/PHP/Connections/ConnectionCustomer.php';
 ///////////////////////////////////////////////////////////////////
 /////////////         Starting SQL Query      ////////////////////
 		$sql = "SELECT menu.ID, menu.Item, menu.ImagePath, menu.Price, menu.Availability, Descriptions.Description, IngredientsAndCalories.Ingredients, Allergens.Allergens, IngredientsAndCalories.Calories, DietaryRequirements.Item FROM Descriptions, IngredientsAndCalories, Allergens, DietaryRequirements CROSS JOIN menu WHERE menu.ID = DietaryRequirements.ID AND DietaryRequirements.ID = Descriptions.ID AND Descriptions.ID = IngredientsAndCalories.ID AND IngredientsAndCalories.ID = Allergens.ID AND menu.Availability = 'True' ";
-		
+
+
+//////////////////////////////////////////////////////////////////
+/////////////            Category              //////////////////
+
+		$CategoryArray = $_POST['category'];
+		$Category = array();
+		if(sizeof($CategoryArray)>0){
+			foreach ($CategoryArray as $key => $value) {
+				array_push($Category, "menu.Category = '".$value."'" );
+			}
+			$sql = $sql . " AND ";
+			$sql .= join("", $Category);
+		}
+
 //////////////////////////////////////////////////////////////////
 /////////////         Multiple Refinements     //////////////////
 
@@ -22,11 +36,12 @@ require '/var/www/html/Alex/PHP/Connections/ConnectionCustomer.php';
 
 		if(sizeof($DietReqArray)>0){
 			foreach ($DietReqArray as $key => $value) {
-				array_push($DietReq, $value. " = 'Yes' ");
+				array_push($DietReq, $value. " = 'No' ");
 			}
 			$sql = $sql . " AND ";
 			$sql .= join(" AND ", $DietReq);
-		}		
+
+		}	
 
 ////////////                                     ////////////////
 ////////////////////////////////////////////////////////////////	
@@ -37,6 +52,7 @@ require '/var/www/html/Alex/PHP/Connections/ConnectionCustomer.php';
 			echo "0 results";
 		}
 		else{
+			echo $res -> num_rows;
 			while($row = mysqli_fetch_assoc($res)){
 
 				$image = $row['ImagePath'];
@@ -78,7 +94,6 @@ require '/var/www/html/Alex/PHP/Connections/ConnectionCustomer.php';
 									<input type="text" name="<?php echo($quantityID); ?>" value="1" class="form-control" />
 								</div>
 								<div class="itemBoxes">
-
 									<input type="submit" class="btn btn-success" name="<?php echo($addToCartID); ?>" value="Add to Cart" href="<?php echo($hrefAddToCartID); ?>" />
 
 									<a class="btn btn-success" href="<?php echo($hrefPopupID); ?>">Info</a>
@@ -162,7 +177,6 @@ require '/var/www/html/Alex/PHP/Connections/ConnectionCustomer.php';
 </div>
 <div class="container-fluid">
 	<div class="table-responsive">
-
 	</div>
 	<div class="row" id="buttonRow">
 		<div class="col-lg-12" id="OrderButton">
