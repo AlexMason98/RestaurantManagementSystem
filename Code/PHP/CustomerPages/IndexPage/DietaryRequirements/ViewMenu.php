@@ -14,6 +14,10 @@ require '/var/www/html/Alex/PHP/Connections/ConnectionCustomer.php';
 		$sql = "SELECT menu.ID, menu.Item, menu.ImagePath, menu.Price, menu.Availability, Descriptions.Description, IngredientsAndCalories.Ingredients, Allergens.Allergens, IngredientsAndCalories.Calories, DietaryRequirements.Item FROM Descriptions, IngredientsAndCalories, Allergens, DietaryRequirements CROSS JOIN menu WHERE menu.ID = DietaryRequirements.ID AND DietaryRequirements.ID = Descriptions.ID AND Descriptions.ID = IngredientsAndCalories.ID AND IngredientsAndCalories.ID = Allergens.ID AND menu.Availability = 'True' ";
 
 
+
+
+
+
 //////////////////////////////////////////////////////////////////
 /////////////            Category              //////////////////
 
@@ -25,6 +29,10 @@ require '/var/www/html/Alex/PHP/Connections/ConnectionCustomer.php';
 			}
 			$sql = $sql . " AND ";
 			$sql .= join("", $Category);
+		}
+
+		if($_POST['Revert']){
+			header("Location: indexPage.php", true, 303);
 		}
 
 //////////////////////////////////////////////////////////////////

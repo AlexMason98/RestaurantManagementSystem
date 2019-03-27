@@ -21,6 +21,7 @@
 					<?php
 				}
 				echo "<br><input type='Submit' value='Submit'>";
+				echo "<input type='Submit' value='Revert'>";
 			}
 			mysqli_close($conn);
 			?>
