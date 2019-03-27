@@ -11,14 +11,12 @@ $user = mysqli_fetch_array($results);
 <!-- Header -->
 
 <section>
-
  <form method="post">
    <div class="container-fluid">
      <div class="left">
        <div class="currentOrderTitle">
          <h3>Current Orders</h3>
        </div>
-
        <div class="currentOrderTable">
          <table style="width:100%">
            <colgroup>
@@ -27,6 +25,7 @@ $user = mysqli_fetch_array($results);
              <col style="width:15%">
              <col style="width:15%">
              <col style="width:20%">
+             <!-- Sets the width of the tables. -->
            </colgroup>
            <tr>
              <th>Table</th>
@@ -34,12 +33,15 @@ $user = mysqli_fetch_array($results);
              <th>Time</th>
              <th>Status</th>
              <th>Change Status</th>
+             <!-- The heading for the table -->
            </tr>
            <?php
            require '../../Connections/ConnectionCustomer.php';
-
+           // connection file to the database
            $sql = "SELECT TableNo, Item, Time,Quantity, Price, Status FROM Orders ORDER BY Time ASC";
+           // sql query for which get the dishes from the databse, ordered by Time
            $res = $conn->query($sql);
+           // gets the result from the database
            if($res-> num_rows == 0){
              echo "0 results";
            }
@@ -48,58 +50,48 @@ $user = mysqli_fetch_array($results);
             while($row = mysqli_fetch_assoc($res)){
               $num_rows++;
               $id = $row['ID'];
-             // echo "id: " . $row["id"]. " - Name: " . $row["firstname"]. " " . $row["lastname"]. "<br>";
               echo "<tr>";
               echo "<td>{$row['TableNo']}</td><td>{$row['Item']}</td><td>{$row['Time']}</td><td>{$row['Status']}</td><td>";
+              // Displays the dishes for each table including the status for each dish.
 
-              $StatusId = "status".$num_rows;
-              $hrefStatusId = "#status".$num_rows;
               $StatusId = "status".$num_rows."[]";
               $dropdownChange = "dropdownChange".$num_rows;
+              // variable used to differentiate the dropdown and status for each dish by differentiating the name of each dropdown
               ?>
-
               <select name="<?php echo $StatusId ?>">
-                <option value="NoStatus">No Status</option>
                 <option value="OrderPlaced">Order Placed</option>
                 <option value="Cooking">Cooking</option>
                 <option value="Cooked">Cooked</option>
                 <option value="Delivered">Delivered</option>
                 <div class="itemBoxes">
+                  <!-- The dropdown option -->
                   <?php 
                   $submitButtonID = "submitButton".$num_rows;
                   $hrefSubmitButtonID = "#submitButton".$num_rows;
+                  // variable used to differentiate the submit button for each dropdown
                   ?>
                   <input type="submit" class="btn btn-success" name="<?php echo($submitButtonID); ?>" value="Submit" href="<?php echo($hrefSubmitButtonID); ?>" />
+                  <!-- the submit button to send the info as a post -->
                 </div>
               </select>
-
 
               <?php
               echo "</td>";
               echo "</tr>";
             }
-
             for ($i = 1; $i <= $num_rows; $i++) {
               $submitButtonID = "submitButton".$i;
               $StatusID = "status".$i;
-
               ?>
               <div id="<?php echo($submitButtonID); ?>" class="addItemToCart">
                 <?php
                 if (isset($_POST[$submitButtonID]) && $_POST[$StatusID]) {
                   $ItemRowData =array();
                   $IdRowData = array();
-                  $StatusRowData = array();
                   $TableNoRowData = array();
 
-                  $AllStatuses = array();
-                  array_push($AllStatuses, "NoStatus");
-                  array_push($AllStatuses, "OrderPlaced");
-                  array_push($AllStatuses, "Cooking");
-                  array_push($AllStatuses, "Cooked");
-                  array_push($AllStatuses, "Delivered");
-
                   $sql = "SELECT TableNo, ID, Item, Status FROM Orders ORDER BY Time ASC";
+                  
                   $res = $conn->query($sql);
                   if ($res -> num_rows == 0) {
                     echo "0 results";
@@ -108,50 +100,43 @@ $user = mysqli_fetch_array($results);
                       array_push($IdRowData, $row['ID']);
                       array_push($TableNoRowData, $row['TableNo']);
                       array_push($ItemRowData, $row['Item']);
-                      array_push($StatusRowData, $row['Status']);
+                      // Pushes the data from database into the array so it can be used outside the while loop
                     }
                     $GetStatusArray =array();
                     foreach ($_POST[$StatusID] as $value) {
                       array_push($GetStatusArray, $value);
+                      // get the value from the dropdown menu and then stores the values to the array.
                     }
                     $GetStatus = join("", $GetStatusArray);
 
-                    foreach ($StatusRowData as $key => $value) {
-                      if ($GetStatus == $value) {
-                        echo $value;
-                        echo("Status not changed. TRY AGIAN!");
+                    for ($j=0; $j < $i; $j++) { 
+                      switch($GetStatus){
+                        case "OrderPlaced":
+                        $UpdateSql = "UPDATE  Orders SET Status = '$GetStatus' WHERE Item='$ItemRowData[$j]' AND TableNo='$TableNoRowData[$j]' AND ID ='$IdRowData[$j]'";
                         break;
-                      }else{
-                        for ($j=0; $j < $i; $j++) { 
-                          switch($GetStatus){
-                            case "OrderPlaced":
-                            $UpdateSql = "UPDATE  Orders SET Status = '$GetStatus' WHERE Item='$ItemRowData[$j]' AND TableNo='$TableNoRowData[$j]' AND ID ='$IdRowData[$j]'";
-                            break;
-                            case "Cooking":
-                            $UpdateSql = "UPDATE  Orders SET Status = '$GetStatus' WHERE Item='$ItemRowData[$j]' AND TableNo='$TableNoRowData[$j]' AND ID ='$IdRowData[$j]'";
-                            break;
-                            case "Cooked":
-                            $UpdateSql = "UPDATE  Orders SET Status = '$GetStatus' WHERE Item='$ItemRowData[$j]' AND TableNo='$TableNoRowData[$j]' AND ID ='$IdRowData[$j]'";
-                            break;
-                            case "Delivered":
-                            $UpdateSql = "UPDATE  Orders SET Status = '$GetStatus' WHERE Item='$ItemRowData[$j]' AND TableNo='$TableNoRowData[$j]' AND ID ='$IdRowData[$j]'";
-                            break;
-                            case "NoStatus":
-                            $UpdateSql = "UPDATE  Orders SET Status = '$GetStatus' WHERE Item='$ItemRowData[$j]' AND TableNo='$TableNoRowData[$j]' AND ID ='$IdRowData[$j]'";
-                            break;
-                            default:
-                            echo"didnt work";
-                          }
-                        }
-                        $res = $conn->query($UpdateSql);
-                        if($res === True){
-                          echo('<meta http-equiv="refresh" content="0">');
-                        } else{
-                          echo "Error updating record! Try again.";
-                        }
+                        case "Cooking":
+                        $UpdateSql = "UPDATE  Orders SET Status = '$GetStatus' WHERE Item='$ItemRowData[$j]' AND TableNo='$TableNoRowData[$j]' AND ID ='$IdRowData[$j]'";
+                        break;
+                        case "Cooked":
+                        $UpdateSql = "UPDATE  Orders SET Status = '$GetStatus' WHERE Item='$ItemRowData[$j]' AND TableNo='$TableNoRowData[$j]' AND ID ='$IdRowData[$j]'";
+                        break;
+                        case "Delivered":
+                        $UpdateSql = "UPDATE  Orders SET Status = '$GetStatus' WHERE Item='$ItemRowData[$j]' AND TableNo='$TableNoRowData[$j]' AND ID ='$IdRowData[$j]'";
+                        break;
+                        case "NoStatus":
+                        $UpdateSql = "UPDATE  Orders SET Status = '$GetStatus' WHERE Item='$ItemRowData[$j]' AND TableNo='$TableNoRowData[$j]' AND ID ='$IdRowData[$j]'";
+                        break;
+                        default:
+                        echo"didnt work";
+                            // The swtich statement selects the sql query.  
                       }
                     }
-                    
+                    $res = $conn->query($UpdateSql);
+                    if($res === True){
+                      echo('<meta http-equiv="refresh" content="0">');
+                    } else{
+                      echo "Error updating record! Try again.";
+                    }
                   }
                 }
                 ?>
@@ -216,10 +201,8 @@ $user = mysqli_fetch_array($results);
     </div>
   </div>
 
-
   <div class="footer">
     <footer>
-      <!--<h6>User: </h6>-->
       <a href="../../LoginScripts/Logout.php" class="signOutButton">Sign Out</a>
     </footer>
   </div>
