@@ -1,0 +1,28 @@
+Summary of the Software
+
+Order Page
+•	Checks the IP address of the user to distinguish the user from other users.
+•	Items in basket are stored in a temporary order database.
+•	Items in basket are displayed in a table on order page. Order page is populated by pulling data from temporary order database using SQL.
+•	Gives options to pay before or after as well as cancel the order and alert the waiter.
+•	Pay before button links to a page which allows the user to input their card details and pay for the order.
+•	Pay after button simply tells the user to call the waiter once they have finished their food.
+•	Cancel order button which removes all items from the basket by deleting the order from temporary order database.
+•	Alert waiter button. Allows the user to input their table which inputs into a table assistance database the order time and table number.
+•	Error checking is done on the input to ensure there are no primary key violations or repeat inputs.
+
+Index Page
+•	This links to ViewMenu, DietaryRequirements, and Categories to display the index page.
+•	View menu displays all the dishes with their pictures and descriptions.
+•	This data is pulled from the Descriptions, IngredientsAndCalories, Allergens, and DietaryRequirements databases.
+•	When an item is added to the cart it is inserted into a temporary order database. This database is then used by the order page where users can pay.
+•	The dietary requirements are selected using the checkboxes. If a checkbox is selected, then the menu is updated to include only items with such dietary requirements.
+•	Categories are also done using checkboxes in a similar manner to dietary requirements.
+
+Waiter Page
+•	The waiter page displays the current orders. This is taken from the order database. 
+•	There is a drop down menu to change the status of the order. When you click submit the status is updated in the order database.
+•	There is a change availability button which brings up a pop up box. This allows the user to enter the name of the dish and choose if the dish is available or unavailable. This updates the menu database.
+•	The table assistance button takes you to the table assistance page.
+•	This page allows the user to enter which waiter is assigned to which table.
+•	There is also a sign out button which destroys the current session and takes the user back to the log in page.
