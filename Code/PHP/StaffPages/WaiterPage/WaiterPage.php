@@ -9,7 +9,6 @@ $user = mysqli_fetch_array($results);
 
 ?>
 <!-- Header -->
-
 <section>
  <form method="post">
    <div class="container-fluid">
@@ -91,7 +90,7 @@ $user = mysqli_fetch_array($results);
                   $TableNoRowData = array();
 
                   $sql = "SELECT TableNo, ID, Item, Status FROM Orders ORDER BY Time ASC";
-                  
+
                   $res = $conn->query($sql);
                   if ($res -> num_rows == 0) {
                     echo "0 results";
@@ -121,16 +120,14 @@ $user = mysqli_fetch_array($results);
                         $UpdateSql = "UPDATE  Orders SET Status = '$GetStatus' WHERE Item='$ItemRowData[$j]' AND TableNo='$TableNoRowData[$j]' AND ID ='$IdRowData[$j]'";
                         break;
                         case "Delivered":
-                        $UpdateSql = "UPDATE  Orders SET Status = '$GetStatus' WHERE Item='$ItemRowData[$j]' AND TableNo='$TableNoRowData[$j]' AND ID ='$IdRowData[$j]'";
-                        break;
-                        case "NoStatus":
-                        $UpdateSql = "UPDATE  Orders SET Status = '$GetStatus' WHERE Item='$ItemRowData[$j]' AND TableNo='$TableNoRowData[$j]' AND ID ='$IdRowData[$j]'";
+                        $UpdateSql = "DELETE  FROM Orders WHERE Item='$ItemRowData[$j]' AND TableNo='$TableNoRowData[$j]' AND ID ='$IdRowData[$j]'";
                         break;
                         default:
                         echo"didnt work";
-                            // The swtich statement selects the sql query.  
+                        // The swtich statement selects the sql query.  
                       }
                     }
+                    echo $UpdateSql;
                     $res = $conn->query($UpdateSql);
                     if($res === True){
                       echo('<meta http-equiv="refresh" content="0">');
