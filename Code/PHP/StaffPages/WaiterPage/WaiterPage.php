@@ -208,6 +208,6 @@ $user = mysqli_fetch_array($results);
 
 <!-- Footer -->
 <?php
-include_once '../footer.php';
+include_once '../../footer.php';
 ?>
 <!-- Footer -->
