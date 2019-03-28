@@ -17,7 +17,7 @@ $user = mysqli_fetch_array($results);
          <h3>Current Orders</h3>
        </div>
        <div class="currentOrderTable">
-         <table style="width:100%">
+         <table style="width:100%; font-size: 20px">
            <colgroup>
              <col style="width:5%">
              <col style="width:43%">
@@ -25,7 +25,7 @@ $user = mysqli_fetch_array($results);
              <col style="width:10%">
              <col style="width:10%">
              <col style="width:17%">
-             <!-- Sets the width of the tables. 14-->
+             <!-- Sets the width of the tables -->
            </colgroup>
            <tr>
              <th>Table</th>
@@ -39,7 +39,7 @@ $user = mysqli_fetch_array($results);
            <?php
            require '../../Connections/ConnectionCustomer.php';
            // connection file to the database
-           $sql = "SELECT TableNo, Item, Time,Quantity, Price, PaymentStatus, Status FROM Orders ORDER BY Time ASC";
+           $sql = "SELECT TableNo, Item, Time, Quantity, Price, PaymentStatus, Status FROM Orders ORDER BY Time ASC";
            // sql query for which get the dishes from the databse, ordered by Time
            $res = $conn->query($sql);
            // gets the result from the database
@@ -59,21 +59,19 @@ $user = mysqli_fetch_array($results);
               $dropdownChange = "dropdownChange".$num_rows;
               // variable used to differentiate the dropdown and status for each dish by differentiating the name of each dropdown
               ?>
-              <select name="<?php echo $StatusId ?>">
-                <option value="OrderPlaced">Order Placed</option>
+              <select name="<?php echo $StatusId ?>" id="statusSelect">
+                <option value="Order Placed">Order Placed</option>
                 <option value="Cooking">Cooking</option>
                 <option value="Cooked">Cooked</option>
                 <option value="Delivered">Delivered</option>
-                <div class="itemBoxes">
                   <!-- The dropdown option -->
                   <?php 
                   $submitButtonID = "submitButton".$num_rows;
                   $hrefSubmitButtonID = "#submitButton".$num_rows;
                   // variable used to differentiate the submit button for each dropdown
                   ?>
-                  <input type="submit" class="btn btn-success" name="<?php echo($submitButtonID); ?>" value="Submit" href="<?php echo($hrefSubmitButtonID); ?>" />
+                  <input type="submit" class="btn btn-success" name="<?php echo($submitButtonID); ?>" id="statusSubmit" value="Submit" href="<?php echo($hrefSubmitButtonID); ?>" />
                   <!-- the submit button to send the info as a post -->
-                </div>
               </select>
 
               <?php
@@ -113,7 +111,7 @@ $user = mysqli_fetch_array($results);
 
                     for ($j=0; $j < $i; $j++) { 
                       switch($GetStatus){
-                        case "OrderPlaced":
+                        case "Order Placed":
                         $UpdateSql = "UPDATE  Orders SET Status = '$GetStatus' WHERE Item='$ItemRowData[$j]' AND TableNo='$TableNoRowData[$j]' AND ID ='$IdRowData[$j]'";
                         break;
                         case "Cooking":
