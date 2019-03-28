@@ -1,5 +1,6 @@
 <?php
 
+namespace PhpPot\Service;
 require_once '../stripe-php/init.php';
 
 use \Stripe\Stripe;
