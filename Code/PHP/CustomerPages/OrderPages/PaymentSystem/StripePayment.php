@@ -1,5 +1,4 @@
 <?php
-namespace PhpPot\Service;
 
 require_once '../stripe-php/init.php';
 
@@ -17,6 +16,7 @@ class StripePayment
 
     public function __construct()
     {
+        // Uses config file to set the Stripe Secret Key and verify this key
         require_once "config.php";
         $this->apiKey = STRIPE_SECRET_KEY;
         $this->stripeService = new \Stripe\Stripe();
@@ -24,6 +24,7 @@ class StripePayment
         $this->stripeService->setApiKey($this->apiKey);
     }
 
+    // Adds customer to Customers tab in the Stripe Dashboard online
     public function addCustomer($customerDetailsAry)
     {
         
@@ -34,6 +35,7 @@ class StripePayment
         return $customerDetails;
     }
 
+    // Function to charge the amount from the user's card and display this info in Stripe Dashboard online
     public function chargeAmountFromCard($cardDetails)
     {
         $customerDetailsAry = array(
@@ -46,9 +48,9 @@ class StripePayment
             'customer' => $customerResult->id,
             'amount' => $cardDetails['amount']*100 ,
             'currency' => $cardDetails['currency_code'],
-            'description' => $cardDetails['item_name'],
+            'description' => $cardDetails['description'],
             'metadata' => array(
-                'order_id' => $cardDetails['item_number']
+                'table_number' => $cardDetails['table_number']
             )
         );
         $result = $charge->create($cardDetailsAry);
