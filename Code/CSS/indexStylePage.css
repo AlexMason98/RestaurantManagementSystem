@@ -82,6 +82,7 @@
 
 	#TotalPrice{
 		width: 100%;
+		margin-top: 10px;
 	}
 
 	#totalPriceText {
@@ -101,6 +102,19 @@
 	#orderPagePriceText {
 		font-weight: normal;
 		font-size: 24px;
+	}
+
+	#yourBasket {
+		padding-top: 20px;
+		padding-bottom: 15px;
+	}
+
+	#orderTableHeader {
+		font-size: 18px;
+	}
+
+	.itemsTable {
+		font-size: 18px;
 	}
 
 	#Pay{
