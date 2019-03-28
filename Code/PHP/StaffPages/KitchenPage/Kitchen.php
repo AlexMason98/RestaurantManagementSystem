@@ -1,4 +1,3 @@
-
 <!-- Header -->
 <?php
 include_once '../../Header.php';
@@ -8,15 +7,15 @@ include_once '../../Header.php';
 <section>
 	<div class="container-fluid" id="MainContainerKitchen">
 		<div class="row">
-			<div class="col-lg-12 col-md-8 col-sm-7">
+			<div class="col-lg-12 col-md-8 col-sm-7" id="KitchenOrderPage">
 				<table class="table table-striped table-bordered-less header">
 					<thead class="thead-light">
 						<tr>
-							<th style="width:5%">Table</th>
-							<th style="width:45%">Order</th>
-							<th style="width:15%">Time</th>
-							<th style="width:5%">Quantity</th>
-							<th style="width:25%">Status</th>
+							<th style="width:5%; font-size: 30px; font-weight: bold">Table</th>
+							<th style="width:45%; font-size: 30px; font-weight: bold">Order</th>
+							<th style="width:15%; font-size: 30px;font-weight: bold">Time</th>
+							<th style="width:10%; font-size: 30px; font-weight: bold">Quantity</th>
+							<th style="width:25%; font-size: 30px; font-weight: bold">Status</th>
 						</tr>
 					</thead>
 					<?php
@@ -30,10 +29,10 @@ include_once '../../Header.php';
 						$num_rows = 0;
 						while($row = mysqli_fetch_assoc($res)){
 							$num_rows++;
-							echo "<tr><td>{$row['TableNo']}</td>";
-							echo "<td>{$row['Item']}</td>";
-							echo "<td>{$row['Time']}</td>";
-							echo "<td>{$row['Quantity']}</td>";
+							echo "<tr><td><b>{$row['TableNo']}</b></td>";
+							echo "<td><b>{$row['Item']}</b></td>";
+							echo "<td><b>{$row['Time']}</b></td>";
+							echo "<td><b>{$row['Quantity']}</b></td>";
 							echo "<div>";
 							$cookingButton = "cooking".$num_rows;
 							$hrefcookingButton = "#cooking".$num_rows;
@@ -45,7 +44,7 @@ include_once '../../Header.php';
 								<input type="Submit" name="<?php echo $cookedButton;?>" value="Cooked">
 							</td>
 							<?php
-							echo "<div>";							
+							echo "<div></tr>";							
 						}
 						for ($i=1; $i <= $num_rows; $i++) { 
 							$CookingBut = "cooking".$i;
@@ -103,3 +102,4 @@ include_once '../../Header.php';
  // this holds the closing body tag and html tag
 include_once '../../footer.php';
 ?>
+ <!-- Footer -->
