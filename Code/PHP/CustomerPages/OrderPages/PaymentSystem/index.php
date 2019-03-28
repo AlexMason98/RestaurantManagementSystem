@@ -16,26 +16,22 @@ require_once "/var/www/html/Main/PHP/Connections/ConnectionCustomer.php";
         $ip = $_SERVER['REMOTE_ADDR'];
     }
 
-                            
+    // Select all the Orders from the TempOrders where the IP stored in the table equals the user's IP
     $sql = "SELECT * FROM TempOrders WHERE IP = '$ip'";
     $res = $conn->query($sql);
     if(!is_null($res)) {
         $TotalAmount = 0;
         while($row = mysqli_fetch_assoc($res)){
-            //echo("Row is: ".$i++);
             $TableNumber = $row['TableNo'];
             $ID = $row['ID'];
             $Item = $row['Item'];
             $Quantity = $row['Quantity'];
             $Price = $row['Price'];
+            // Set Total Amount by doing Total Amount = itself + Quantity of Item * Price of Item
             $TotalAmount = $TotalAmount + ($Quantity * $Price);
-            //echo("ID: ".$ID);
-            //echo("Item: ".$Item);
-            //echo("Price: ".$Price);
-            //echo("Total: ".$TotalAmount);
-            //echo("Table Number: ".$TableNumber);
         }
     } else {
+        // Else, display error while parsing order
         echo('Error While Parsing Order');
     }
 
@@ -65,15 +61,42 @@ if (!empty($_POST["token"])) {
     $id = $databaseConn->insert($query, $param_type, $param_value_array);
     
     if ($stripeResponse['amount_refunded'] == 0 && empty($stripeResponse['failure_code']) && $stripeResponse['paid'] == 1 && $stripeResponse['captured'] == 1 && $stripeResponse['status'] == 'succeeded') {
-        $successMessage = "Payment Successful! The Transaction ID is " . $stripeResponse["balance_transaction"];
-
+        $successMessage = "Your Transaction ID is: " . $stripeResponse["balance_transaction"];
+        
         $sql = "INSERT INTO Orders (IP, TableNo, ID, Item, Quantity, Price, Status, PaymentStatus, Time) SELECT TempOrders.IP, TempOrders.TableNo, TempOrders.ID, TempOrders.Item, TempOrders.Quantity, TempOrders.Price, 'Order Placed', 'Paid', now() FROM TempOrders WHERE TempOrders.IP = '$ip'";
 
             if (mysqli_query($conn, $sql)) {
                 $sql = "DELETE FROM TempOrders WHERE IP = '$ip'";
                 if (mysqli_query($conn, $sql)) {
-                    echo('<h5 id="receivedOrder">We have received your order!</h5>');
-                    echo('<h6 id="paymentLaterText">We will be delivering your meal to your table as soon as it is ready!</h6>');
+                ?>
+                    <style>
+                        #totalAmount {
+                            display: none;
+                        }
+
+                        #yourTableNumber {
+                            display: none;
+                        }
+
+                        #frmStripePayment {
+                            display: none;
+                        }
+                    </style>
+
+                    <?php 
+                        if(!empty($successMessage)) { ?>
+                            <div id="success">
+                                <img src="Confirmation.png" id="confirmationImg" height="200" width="200">
+                                <h4 id="receivedOrder">We have received your order!</h5>
+                                <h5 id="successMessage"><?php echo $successMessage; ?></h5>
+                                <br>
+                                <h5 id="deliverWhenReady">We will be delivering your meal to your table as soon as it is ready!</h6>
+                                <a class="btn btn-success btn-md" id="backToHome" href="/Main/PHP/CustomerPages/IndexPage/indexPage.php">Back to Home Page</a>
+
+                            </div>
+                    <?php  } ?>
+                
+                <?php
                 } else {
                     echo('<h5>Error Removing Order From Basket. Please request assistance from one of our waiters.</h5>');
                     echo('<br>');
@@ -86,14 +109,10 @@ if (!empty($_POST["token"])) {
     }
 }
 ?>
-
-    <?php if(!empty($successMessage)) { ?>
-    <div id="success-message"><?php echo $successMessage; ?></div>
-    <?php  } ?>
     <div id="error-message"></div>
             <br>
-            <h4>Total Amount: £<?php echo($TotalAmount); ?></h4>
-            <h4>Your Table Number: <?php echo($TableNumber); ?></h4>
+            <h4 id="totalAmount">Total Amount: £<?php echo($TotalAmount); ?></h4>
+            <h4 id="yourTableNumber">Your Table Number: <?php echo($TableNumber); ?></h4>
                 
             <form id="frmStripePayment" action="" method="post">
                 <div class="field-row">
