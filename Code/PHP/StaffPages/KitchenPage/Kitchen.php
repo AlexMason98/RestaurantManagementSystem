@@ -12,6 +12,7 @@ include_once '../../Header.php';
 				<table class="table table-striped table-bordered-less header">
 					<thead class="thead-light">
 						<tr>
+
 							<th style="width:5%">Table</th>
 							<th style="width:45%">Order</th>
 							<th style="width:15%">Time</th>
@@ -22,12 +23,14 @@ include_once '../../Header.php';
 					<?php
 					include_once '../../Connections/ConnectionCustomer.php';
 					$sql = "SELECT TableNo, Item, Time, Quantity, Status FROM Orders ORDER BY Time ASC";
+
 					$res = $conn->query($sql);
 					if($res-> num_rows == 0){
 						echo "0 results";
 					}
 					else{
 						while($row = mysqli_fetch_assoc($res)){
+
 							echo "<tr><td>{$row['TableNo']}</td>";
 							echo "<td>{$row['Item']}</td>";
 							echo "<td>{$row['Time']}</td>";
