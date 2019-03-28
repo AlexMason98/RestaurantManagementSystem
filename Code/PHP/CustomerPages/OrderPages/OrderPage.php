@@ -291,6 +291,7 @@ require '/var/www/html/Main/PHP/Connections/ConnectionCustomer.php';
 						echo("Please enter a table number before placing your order (Tables 1 - 10)");
 						/* If the submit is pressed with no entry, print "Please enter a table number before placing your order" */
 					}
+					mysqli_close($conn);
 					?>
 				</div>
 			</div>
@@ -305,12 +306,12 @@ require '/var/www/html/Main/PHP/Connections/ConnectionCustomer.php';
 			<input type="submit" name="submitTable" value="Submit" />
 
 			<?php
-
+				require "/var/www/html/Main/PHP/Connections/ConnectionStaff.php";
 				if (isset($_POST['submitTable']) && isset($_POST['tableNumberEntry'])) {
 					/* In the alert waiter overlay's submit button and table entry form is set, do this: */
 					$tableNumber = $_POST['tableNumberEntry'];
-					$sql = "INSERT INTO TableAssistance (TableID, Time, WaiterName, Status) VALUES ('$tableNumber', now(), 'Not Assigned', 'Needs Assistance')";
-
+					// $sql = "INSERT INTO TableAssistance (TableID, Time, WaiterName, Status) VALUES ('$tableNumber', now(), 'Not Assigned', 'Needs Assistance')";
+					$sql = "UPDATE TableAssistance SET Status = 'Needs Assistance' WHERE TableID = $tableNumber";
 					/* Insert into TableAssistance the table number, with 'Not Assigned' as the waiter assigned and 'Needs Assistance' as the status */
 					if (mysqli_query($conn, $sql)) {
 						/* If the query was successful, print "Our waiter have been informed that you require assistance" */
@@ -325,6 +326,7 @@ require '/var/www/html/Main/PHP/Connections/ConnectionCustomer.php';
 						/* If the SQL query failed, print the error message from the connection into the popup */
 					}
 				}
+				mysqli_close($conn);
 			?>
 		</div>
 	</div>
@@ -334,7 +336,7 @@ require '/var/www/html/Main/PHP/Connections/ConnectionCustomer.php';
 
 <!-- Footer -->
 <?php
-mysqli_close($conn);
+
 include_once '../../footer.php';
 ?>
 <!-- Footer -->

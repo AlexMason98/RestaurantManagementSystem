@@ -7,9 +7,9 @@
 
 	<title>Oaxaca</title>
 
-	<link rel="icon" type="image/icon" href="../../../Images/Favicon.ico">
+	<link rel="icon" type="image/icon" href="/var/www/html/Main/CSS/Images/Favicon.ico">
 	<!-- icon for the page -->
-	<link rel="stylesheet" type="text/css" href="../../../CSS/TableAssistanceStylePage.css">
+	<link rel="stylesheet" type="text/css" href="/var/www/html/Harshdeep/CSS/TableAssistanceStylePage.css">
 	<!-- style sheets for the table assignment page. -->
 
 	<!-- Bootstrap CSS -->
