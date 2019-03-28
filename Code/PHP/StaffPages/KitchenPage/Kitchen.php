@@ -18,11 +18,13 @@ include_once '../../Header.php';
 								<th style="width:22%; font-size: 30px;font-weight: bold">Time</th>
 								<th style="width:8%; font-size: 30px; font-weight: bold">Quantity</th>
 								<th style="width:20%; font-size: 30px; font-weight: bold">Status</th>
+								<!-- This creates the table and set the styling for the whole tables.-->
 							</tr>
 						</thead>
 						<?php
 						include_once '../../Connections/ConnectionCustomer.php';
 						$sql = "SELECT TableNo, ID, Item, Time, Quantity, Status FROM Orders WHERE Status!='Cooked' AND Status!='Deliveried' ORDER BY Time ASC";
+						// sql query which get the orders, and sorts them according to the Time they were enerted. Also this only display the data which doesnt have a status of Cooked and deliveried
 						$res = $conn->query($sql);
 						if($res-> num_rows == 0){
 							echo "0 results";
@@ -35,16 +37,20 @@ include_once '../../Header.php';
 								echo "<td><b>{$row['Item']}</b></td>";
 								echo "<td><b>{$row['Time']}</b></td>";
 								echo "<td align='center'><b>{$row['Quantity']}</b></td>";
+								// creates the rows for each column and insert information for the database
 								echo "<div>";
+
 								$cookingButton = "cooking".$num_rows;
 								$hrefcookingButton = "#cooking".$num_rows;
 								$cookedButton = "cooked".$num_rows;
 								$hrefcookingButton = "#cooked".$num_rows;
 								?>
+								<!-- Variable created to differentiate each button for each order. -->
 								<td>
 									<input type="Submit" name="<?php echo $cookingButton;?>" value="Cooking">
 									<input type="Submit" name="<?php echo $cookedButton;?>" value="Cooked">
 								</td>
+								<!-- creates the button  -->
 								<?php
 								echo "<div></tr>";							
 							}
@@ -58,8 +64,10 @@ include_once '../../Header.php';
 									$ItemRowData =array();
 									$IdRowData = array();
 									$TableNoRowData = array();
+									// array to store the data from the database
 
 									$sql = "SELECT TableNo, ID, Item, Time, Quantity, Status FROM Orders WHERE Status!='Cooked' AND Status!='Deliveried' ORDER BY Time ASC";
+
 									$res = $conn->query($sql);
 									if ($res -> num_rows == 0) {
 										echo "0 results";
@@ -68,20 +76,21 @@ include_once '../../Header.php';
 											array_push($IdRowData, $row['ID']);
 											array_push($TableNoRowData, $row['TableNo']);
 											array_push($ItemRowData, $row['Item']);
+											// while used to store the info from the database to the array . 
 										}
-
 										for ($j=0; $j < $i; $j++) { 
-											$IdRowData[$j];
 											if($_POST[$CookedBut]){
 												$UpdateSql = "UPDATE  Orders SET Status = 'Cooked' WHERE Item='$ItemRowData[$j]' AND TableNo='$TableNoRowData[$j]' AND ID ='$IdRowData[$j]'";
+												// updates sql query to change the status of the dishes to cooking
 											}elseif($_POST[$CookingBut]){
 												$UpdateSql = "UPDATE  Orders SET Status = 'Cooking' WHERE Item='$ItemRowData[$j]' AND TableNo='$TableNoRowData[$j]' AND ID ='$IdRowData[$j]'";
+													// updates sql query to change the status of the dishes to cooked
 											}
 										}
-									// echo $UpdateSql;
 										$res = $conn->query($UpdateSql);
 										if($res === True){
 											echo('<meta http-equiv="refresh" content="0">');
+											// refreshes the page when the sql query runs correctly/
 										} else{
 											echo "Error updating record! Try again.";
 										}

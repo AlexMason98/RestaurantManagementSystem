@@ -22,6 +22,7 @@
  						<div>
  							<?php
  							include_once 'DietaryRequirements/DietaryRequirements.php';
+ 							//calls the file from another folder
  							?>
  						</div>
 
@@ -31,6 +32,7 @@
  				<div class="col-lg-9 col-md-7 col-sm-6 " id="center">
  					<?php
  					include_once 'DietaryRequirements/ViewMenu.php';
+ 					//calls the file from another folder
  					?>
  				</div>
 
