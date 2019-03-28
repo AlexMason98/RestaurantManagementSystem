@@ -130,7 +130,6 @@ $user = mysqli_fetch_array($results);
                         // when it comes to deliveried the Dish is removed from the database.
                       }
                     }
-                    echo $UpdateSql;
                     $res = $conn->query($UpdateSql);
                     if($res === True){
                       echo('<meta http-equiv="refresh" content="0">');
@@ -154,7 +153,7 @@ $user = mysqli_fetch_array($results);
     <div class="right">
       <div class="waiterButtonDiv">
         <a href="#ChangeMenuAvailability" class="waiterButtons">Change Availability</a>
-        <a href="../TableAssistance.php" class="waiterButtons">Table Assistance</a>
+        <a href="TableAssignment.php" class="waiterButtons">Table Assistance</a>
       </div>
     </div>
   </div>
