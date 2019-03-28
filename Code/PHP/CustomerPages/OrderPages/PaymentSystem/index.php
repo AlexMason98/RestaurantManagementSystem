@@ -5,7 +5,6 @@ require_once "../../../Header.php";
 require_once "config.php";
 require_once "/var/www/html/Main/PHP/Connections/ConnectionCustomer.php";
 
-
     // This code gets the user's IP public address and uses it to distinguish the user's order between different systems
     if (!empty($_SERVER['HTTP_CLIENT_IP'])) {  // Checks if IP is from shared internet
         $ip = $_SERVER['HTTP_CLIENT_IP'];
@@ -21,18 +20,20 @@ require_once "/var/www/html/Main/PHP/Connections/ConnectionCustomer.php";
     $sql = "SELECT * FROM TempOrders WHERE IP = '$ip'";
     $res = $conn->query($sql);
     if(!is_null($res)) {
-        $i = 1;
+        $TotalAmount = 0;
         while($row = mysqli_fetch_assoc($res)){
-            echo("Row is: ".$i++);
+            //echo("Row is: ".$i++);
+            $TableNumber = $row['TableNo'];
             $ID = $row['ID'];
             $Item = $row['Item'];
             $Quantity = $row['Quantity'];
             $Price = $row['Price'];
-            $TotalAmount = $Quantity * $Price;
-            echo("ID: ".$ID);
-            echo("Item: ".$Item);
-            echo("Price: ".$Price);
-            echo("Total: ".$TotalAmount);
+            $TotalAmount = $TotalAmount + ($Quantity * $Price);
+            //echo("ID: ".$ID);
+            //echo("Item: ".$Item);
+            //echo("Price: ".$Price);
+            //echo("Total: ".$TotalAmount);
+            //echo("Table Number: ".$TableNumber);
         }
     } else {
         echo('Error While Parsing Order');
@@ -65,6 +66,23 @@ if (!empty($_POST["token"])) {
     
     if ($stripeResponse['amount_refunded'] == 0 && empty($stripeResponse['failure_code']) && $stripeResponse['paid'] == 1 && $stripeResponse['captured'] == 1 && $stripeResponse['status'] == 'succeeded') {
         $successMessage = "Payment Successful! The Transaction ID is " . $stripeResponse["balance_transaction"];
+
+        $sql = "INSERT INTO Orders (IP, TableNo, ID, Item, Quantity, Price, Status, PaymentStatus, Time) SELECT TempOrders.IP, TempOrders.TableNo, TempOrders.ID, TempOrders.Item, TempOrders.Quantity, TempOrders.Price, 'Order Placed', 'Paid', now() FROM TempOrders WHERE TempOrders.IP = '$ip'";
+
+            if (mysqli_query($conn, $sql)) {
+                $sql = "DELETE FROM TempOrders WHERE IP = '$ip' AND TableNo = '$TableNumber'";
+                if (mysqli_query($conn, $sql)) {
+                    echo('<h5 id="receivedOrder">We have received your order!</h5>');
+                    echo('<h6 id="paymentLaterText">We will be delivering your meal to your table as soon as it is ready!</h6>');
+                } else {
+                    echo('<h5>Error Removing Order From Basket. Please request assistance from one of our waiters.</h5>');
+                    echo('<br>');
+                    echo(mysqli_error($conn));
+                }
+            } else {
+                echo('<h5>Error Placing Order. Please request assistance from one of our waiters.</h5>');
+                echo(mysqli_error($conn));
+            }
     }
 }
 ?>
@@ -73,6 +91,9 @@ if (!empty($_POST["token"])) {
     <div id="success-message"><?php echo $successMessage; ?></div>
     <?php  } ?>
     <div id="error-message"></div>
+            <br>
+            <h4>Total Amount: £<?php echo($TotalAmount); ?></h4>
+            <h4>Your Table Number: <?php echo($TableNumber); ?></h4>
                 
             <form id="frmStripePayment" action="" method="post">
                 <div class="field-row">
@@ -141,8 +162,8 @@ if (!empty($_POST["token"])) {
                 </div>
                 <input type='hidden' name='amount' value='<?php echo($TotalAmount); ?>'> 
                 <input type='hidden' name='currency_code' value='GBP'>
-                <input type='hidden' name='item_name' value='<?php echo($Item); ?>'>
-                <input type='hidden' name='item_number' value='<?php echo($ID); ?>'>
+                <input type='hidden' name='description' value='Oaxaca Restaurants Order'>
+                <input type='hidden' name='table_number' value='<?php echo($TableNumber); ?>'>
             </form>
 
     <script type="text/javascript" src="https://js.stripe.com/v2/"></script>
