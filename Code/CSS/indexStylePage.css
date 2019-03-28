@@ -200,6 +200,10 @@
 		margin-top: 5px
 	}
 
+	#KitchenOrderPage{
+		font-size: 30px;
+	}
+
 	.ChangeMenuAvailability {
 		position: fixed;
 		top: 0;
