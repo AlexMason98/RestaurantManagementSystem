@@ -1,7 +1,7 @@
 <!-- Header -->
 <?php
 include_once '../../Header.php';
-require '/var/www/html/Harshdeep/PHP/Connections/ConnectionCustomer.php';
+require '/var/www/html/Main/PHP/Connections/ConnectionCustomer.php';
 
 ?>
 <!-- Header -->
@@ -192,7 +192,7 @@ require '/var/www/html/Harshdeep/PHP/Connections/ConnectionCustomer.php';
 								echo('<h5>Order Already Placed</h5>');
 								echo('<h6>We already have an order for your table number, please wait until your current order has been fulfilled</h6>');
 
-							} else if ($numberOfRows <= 0) {
+							} else if ($numberOfRows != 0) {
 								// After checking the table number doesn't already exist, I temporarily set the TableNo in the TempOrders table
 								// with the table number the user entered, for all items matching their IP address
 								$sql = "UPDATE TempOrders SET TableNo = $payBeforeTableNumber WHERE TempOrders.IP = '$ip'";
@@ -251,7 +251,7 @@ require '/var/www/html/Harshdeep/PHP/Connections/ConnectionCustomer.php';
 							echo('<h5>Order Already Placed</h5>');
 							echo('<h6>We already have an order for your table number, please wait until your current order has been fulfilled</h6>');
 
-						} else if ($numberOfRows <= 0) {
+						} else if ($numberOfRows != 0) {
 							// If the Table Number entered is not in the orders table, insert the Pay After order into Orders table
 							$sql = "INSERT INTO Orders (IP, TableNo, ID, Item, Quantity, Price, Status, PaymentStatus, Time) SELECT TempOrders.IP, $payAfterTableNumber, TempOrders.ID, TempOrders.Item, TempOrders.Quantity, TempOrders.Price, 'Order Placed', 'Unpaid', now() FROM TempOrders WHERE TempOrders.IP = '$ip'";
 							if (mysqli_query($conn, $sql)) {
