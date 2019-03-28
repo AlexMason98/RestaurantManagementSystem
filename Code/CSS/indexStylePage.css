@@ -82,15 +82,39 @@
 
 	#TotalPrice{
 		width: 100%;
+		margin-top: 10px;
 	}
 
 	#totalPriceText {
 		font-size: 24px;
 	}
 
+	#displayTotalPriceTable {
+		width: 100%;
+		margin-bottom: 1rem;
+		background-color: transparent;
+	}
+
+	#displayTotalPriceTable tbody tr {
+		background-color: rgba(0, 0, 0, 0);
+	}
+
 	#orderPagePriceText {
 		font-weight: normal;
 		font-size: 24px;
+	}
+
+	#yourBasket {
+		padding-top: 20px;
+		padding-bottom: 15px;
+	}
+
+	#orderTableHeader {
+		font-size: 18px;
+	}
+
+	.itemsTable {
+		font-size: 18px;
 	}
 
 	#Pay{
@@ -126,11 +150,6 @@
 		padding-top: 15px;
 		padding-bottom: 20px;
 		width: 8%;
-	}
-
-	.currentOrderTable{
-		overflow-y: scroll;
-		height: 570px;
 	}
 
 	.loginbox{
@@ -190,9 +209,8 @@
 		/*transition: opacity 300ms; This is for fading out the popup box, left as an option */
 		transition: opacity;
 		/*visibility: hidden;*/
-		display: none;
 		opacity: 0;
-		width: 200px;
+		width: 400px;
 		padding-left: 20px;
 		height: 220px;
 		font-size: 25px;
@@ -212,8 +230,7 @@
 		padding-right: 20px;*/
 		background: #fff;
 		border-radius: 5px;
-		width: 33.3%;
-		position: relative;
+		position: absolute;
 		/* margin-bottom: -30%; Fills the entire right hand side of screen with popup box info (no space constaints) */
 		/*transition: all 2s ease-in-out; This is for fading out the popup box, left as an option */
 	}
@@ -477,13 +494,14 @@
 	/* ----- Styling for Payment Form Starts Here ----- */
 
 	#frmStripePayment {
-		max-width: 300px;
-		padding: 25px;
-		border: #D0D0D0 1px solid;
+		max-width: 330px;
+		padding: 30px;
+		border: #FFFFFF 2px solid;
 		border-radius: 4px;
-		margin: 8% auto;
+		margin: auto;
 		width: 50%;
 		position: static;
+		font-size: 18px;
 	}
 
 	#frmStripePayment .field-row {
@@ -492,7 +510,7 @@
 
 	#frmStripePayment div label {
 		margin: 5px 0px 0px 5px;
-		color: #49615d;
+		color: #000000;
 		width: auto;
 	}
 
@@ -543,12 +561,22 @@
 	}
 
 	.btnAction {
-		background-color: #586ada;
+		background-color: #5cb85c;
 		padding: 10px 40px;
 		color: #FFF;
-		border: #5263cc 1px solid;
+		border: #4cae4c 1px solid;
 		border-radius: 4px;
 		cursor:pointer;
+		transform: translate(50%);
+		margin-top: 10px;
+	}
+
+	#month {
+		height: 50px;
+	}
+
+	#year {
+		height: 50px;
 	}
 
 	.btnAction:focus {
@@ -564,7 +592,7 @@
 	}
 
 	.cvv-input {
-		width: 60px;
+		width: 77px;
 	}
 
 	#error-message {
@@ -575,22 +603,14 @@
 		line-height: 25px;
 		color: #ca3e3e;
 		border: #ca3e3e 1px solid;
-		background-color: #ffffff;
 		display: none;
-		width: 350px;
-	}
-
-	#success-message {
-		margin: auto;
-		padding: 5px 25px;
-		font-size: 18px;
-		border-radius: 4px;
-		line-height: 25px;
-		color: #3da55d;
-		border: #43b567 1px solid;
-		background-color: #ffffff;
-		width: 350px;
-
+		width: 330px;
+		position: absolute;
+		right: 50%;
+		transform: translate(50%);
+		margin-top: 60px;
+		font-size: 20px;
+		text-align: center;
 	}
 
 	.display-none {
@@ -602,7 +622,6 @@
 		width: 270px;
 		text-align:center;
 	}
-
 
 	.ack-message {
 		font-size: 1.5em;
@@ -628,10 +647,61 @@
 	}
 
 	#loader img {
-		width: 45px;
 		vertical-align: middle;
+		transform: translateX(140%);
 	}
 	/* ----- Styling for Payment Form Ends Here ----- */
+
+	#totalAmount {
+		padding-left: 30px;
+		padding-bottom: 10px;
+	}
+
+	#yourTableNumber {
+		padding-left: 30px;
+		padding-bottom: 40px;
+	}
+
+	#success {
+		position: relative;
+		margin-top: 150px;
+	}
+
+	#confirmationImg {
+		position: absolute;
+  		left: 50%;
+  		transform: translate(-50%);
+	}
+
+	#receivedOrder {
+		position: absolute;
+  		left: 50%;
+  		transform: translate(-50%);
+  		padding-top: 250px;
+	}
+
+	#successMessage {
+		position: absolute;
+  		left: 50%;
+  		transform: translate(-50%);
+  		padding-top: 290px;
+	}
+
+	#deliverWhenReady {
+		position: absolute;
+  		left: 50%;
+  		transform: translate(-50%);
+  		padding-top: 320px;
+	}
+
+	#backToHome {
+		position: absolute;
+		left: 50%;
+		transform: translate(-50%);
+		width: 200px;
+		margin-top: 440px;
+		font-size: 20px;
+	}
 
 	#itemInformation {
 		padding-top: 10px;
@@ -701,6 +771,26 @@
 
 	#cannotCancel {
 		transform: translateY(50%);
+	}
+
+	#payBeforeButton {
+		width: 172.5px;
+		margin-bottom: 4px;
+	}
+
+	#payAfterButton {
+		width: 172.5px;
+		margin-bottom: 4px;
+	}
+
+	#cancelOrderButton {
+		width: 172.5px;
+		margin-bottom: 4px;
+	}
+
+	#alertWaiterButton {
+		width: 172.5px;
+		margin-bottom: 4px;
 	}
 }
 
