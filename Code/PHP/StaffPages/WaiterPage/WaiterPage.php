@@ -82,6 +82,7 @@ $user = mysqli_fetch_array($results);
               $submitButtonID = "submitButton".$i;
               $StatusID = "status".$i;
               ?>
+              <!-- To differentiate the drop menu which changes the status of the dish -->
               <div id="<?php echo($submitButtonID); ?>" class="addItemToCart">
                 <?php
                 if (isset($_POST[$submitButtonID]) && $_POST[$StatusID]) {
@@ -90,7 +91,7 @@ $user = mysqli_fetch_array($results);
                   $TableNoRowData = array();
 
                   $sql = "SELECT TableNo, ID, Item, Status FROM Orders ORDER BY Time ASC";
-
+                  // sql get the orders and there status.
                   $res = $conn->query($sql);
                   if ($res -> num_rows == 0) {
                     echo "0 results";
@@ -125,12 +126,15 @@ $user = mysqli_fetch_array($results);
                         default:
                         echo"didnt work";
                         // The swtich statement selects the sql query.  
+                        // which update the status to oder placed, cooking and cooked. 
+                        // when it comes to deliveried the Dish is removed from the database.
                       }
                     }
                     echo $UpdateSql;
                     $res = $conn->query($UpdateSql);
                     if($res === True){
                       echo('<meta http-equiv="refresh" content="0">');
+                      // Refreshes the page after the update sql has run.
                     } else{
                       echo "Error updating record! Try again.";
                     }
@@ -151,8 +155,6 @@ $user = mysqli_fetch_array($results);
       <div class="waiterButtonDiv">
         <a href="#ChangeMenuAvailability" class="waiterButtons">Change Availability</a>
         <a href="../TableAssistance.php" class="waiterButtons">Table Assistance</a>
-        <a href="../PlaceOrders.php" class="waiterButtons">Place Orders</a>
-        <a href="../CancelOrders.php" class="waiterButtons">Cancel Orders</a>
       </div>
     </div>
   </div>
@@ -160,12 +162,14 @@ $user = mysqli_fetch_array($results);
   <div id="ChangeMenuAvailability" class="ChangeMenuAvailability">
     <div class="ChangeAvailabilityPopUp">
       <a class="close" href="">&times;</a>
+      <!-- this is cross which allows you to close the pop up -->
       <div class="popupInfo">
         <h3>Enter Dish Name</h3>
         <input type="text" name="AddItemName" placeholder="Dish Name"><br>
         <input type="radio" name="TrueOrFalse[]" value="True">True
         <input type="radio" name="TrueOrFalse[]" value="False">False<br>
         <input type="submit" class="btn btn-primary" name="GetDish" value="Submit">
+        <!-- pop up for the change avaiablitiy. -->
         <?php
         require '../../Connections/ConnectionCustomer.php';
         if(isset($_POST['AddItemName'])){
@@ -179,11 +183,13 @@ $user = mysqli_fetch_array($results);
             array_push($GetStatusArray, $value);
           }
           $GetStatus .= join("", $GetStatusArray);
+          // store the value of true or false
           if($GetStatus == 'True'){
             $UpdateSql = "UPDATE menu SET Availability = 'True' WHERE Item='$GetItemStatus'";
           }elseif ($GetStatus == 'False') {
             $UpdateSql = "UPDATE menu SET Availability = 'False' WHERE Item='$GetItemStatus'";
           }
+          // the sql queries depending which avaialabity is selected. 
           $res = $conn->query($UpdateSql);
           if($res === True){
             echo "<br>Dish Availability has changed.";
@@ -201,6 +207,7 @@ $user = mysqli_fetch_array($results);
   <div class="footer">
     <footer>
       <a href="../../LoginScripts/Logout.php" class="signOutButton">Sign Out</a>
+      <!-- footer which has the sign button. -->
     </footer>
   </div>
 </form>

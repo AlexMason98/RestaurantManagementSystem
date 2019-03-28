@@ -18,6 +18,7 @@
 					?>
 					<option>
 						<input type="checkbox" name="WaiterAssignment[]" value="<?php echo $row['Fullname']; ?>"><?php echo $row['Fullname']; ?><br>
+						<!-- This is the checkbox for which names of the Waiter. So the can be assigned to a table. -->
 					</option>
 					<?php
 				}
@@ -47,9 +48,11 @@ if(!empty($_POST['TableNumber']) && !empty($_POST['WaiterAssignment'])){
 			array_push($WaiterName, $value);
 		}
 		$Name = join("",$WaiterName);
+		// this get the name using a post and then store that in a variable as a string which is then used in the sql query.
 	}
 
 	$UpdateSql = "UPDATE TableAssistance SET WaiterName = '$Name' WHERE TableID = $TableNumberArray";
+	// update the table
 	$res = $conn->query($UpdateSql);
 	if($res === True){
 		echo "<br>Table Assignment has changed.";
