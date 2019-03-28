@@ -1,4 +1,4 @@
-Header -->
+<!-- Header --> 
 <?php
 
 include_once '../../TAHeader.php';
@@ -33,4 +33,4 @@ include_once '../../TAHeader.php';
 <?php
 include_once '../../footer.php';
 ?>
-<!-- Footer
+<!-- Footer-->
