@@ -70,7 +70,7 @@ if (!empty($_POST["token"])) {
         $sql = "INSERT INTO Orders (IP, TableNo, ID, Item, Quantity, Price, Status, PaymentStatus, Time) SELECT TempOrders.IP, TempOrders.TableNo, TempOrders.ID, TempOrders.Item, TempOrders.Quantity, TempOrders.Price, 'Order Placed', 'Paid', now() FROM TempOrders WHERE TempOrders.IP = '$ip'";
 
             if (mysqli_query($conn, $sql)) {
-                $sql = "DELETE FROM TempOrders WHERE IP = '$ip' AND TableNo = '$TableNumber'";
+                $sql = "DELETE FROM TempOrders WHERE IP = '$ip'";
                 if (mysqli_query($conn, $sql)) {
                     echo('<h5 id="receivedOrder">We have received your order!</h5>');
                     echo('<h6 id="paymentLaterText">We will be delivering your meal to your table as soon as it is ready!</h6>');
