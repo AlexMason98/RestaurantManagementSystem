@@ -78,6 +78,7 @@
 		width: 100%;
 		box-sizing: border-box;
 		float: right;
+		margin-top: -3px;
 	}
 
 	.waiterButtons {
