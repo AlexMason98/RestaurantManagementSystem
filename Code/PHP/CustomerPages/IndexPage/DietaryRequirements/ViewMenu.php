@@ -1,8 +1,3 @@
-<?php
-require_once "/var/www/html/Main/PHP/CustomerPages/IndexPage/DietaryRequirements/Session.php";
-
-?>
-
 <div class="row">
 	<div class="col-lg-12 scrollit" id="DishesCol">
 		<?php
@@ -131,23 +126,29 @@ require_once "/var/www/html/Main/PHP/CustomerPages/IndexPage/DietaryRequirements
 					<?php
 				}
 				for ($id = 1; $id <= $num_rows; $id++) {
+					// For as many available items/rows, concatenate addToCart with $id which increments by 1 each time
 					$addToCartID = "addToCart".$id;
 					?>
+					<!-- Creates a div for each addToCart button, based on the number of available items -->
 					<div id="<?php echo($addToCartID); ?>" class="addItemToCart">
-
 						<?php
+						// Handler for each addToCart button. If button is pressed, do this:
 						if (isset($_POST[$addToCartID])) {
+							// Get quantity from corresponding quantity form (both submit button and quantity form have the same number/ID on the end)
 							$quantity = $_POST["quantity".$id];
-
+							// Select all from TempOrders where the ID is based on the id of the item they selected
 							$sql = "SELECT * FROM TempOrders WHERE ID = '$id'";
 							$res = mysqli_query($conn, $sql);
 
 							if (mysqli_num_rows($res) > 0) {
+								// If rows is above 0, this means the item already exists in the basket
 								echo '<script language="javascript">';
+								// Create Javascript alert saying "This item is already in your basket"
 								echo 'alert("This item is already in your basket")';
 								echo '</script>';
 
 							} else {
+								// Else, get the user's IP address and perform SQL query below
 
 								// This code gets the user's IP public address and uses it to distinguish the user's order between different systems
 								if (!empty($_SERVER['HTTP_CLIENT_IP'])) {  // Checks if IP is from shared internet
@@ -161,14 +162,17 @@ require_once "/var/www/html/Main/PHP/CustomerPages/IndexPage/DietaryRequirements
 
     							}
 
+    							// Insert item's details into the TempOrders table with the user's IP, which acts as the user's basket
 								$sql = "INSERT INTO TempOrders (IP, ID, Item, Quantity, Price, Time) SELECT '$ip', menu.ID, menu.Item, $quantity, menu.Price, now() FROM menu WHERE menu.ID = $id";
 
 								if (mysqli_query($conn, $sql)) {
+									// If query was successful, print "Successfully Added to Basket" with a Javascript alert
 									echo '<script language="javascript">';
 									echo 'alert("Successfully Added to Basket")';
 									echo '</script>';
 								} else {
 									echo "Error: ".mysqli_error($conn);
+									// Else, print "Error" with the SQL error produced from the connection
 								}
 							}
 						}
@@ -191,6 +195,7 @@ require_once "/var/www/html/Main/PHP/CustomerPages/IndexPage/DietaryRequirements
 	</div>
 	<div class="row" id="buttonRow">
 		<div class="col-lg-12" id="OrderButton">
+			<!-- This creates the Order Button and links to the OrderPage -->
 			<a class="btn btn-light btn-lg btn-block" href="../OrderPages/OrderPage">Order</a>
 		</div>
 	</div>
