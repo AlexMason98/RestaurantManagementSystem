@@ -55,8 +55,10 @@
 
 			<input type="checkbox" name="DietReq[]" id="ContainsLupin" value="ContainsLupin"  <?php if(sizeof($_POST['DietReq'])>0){
 			foreach ($_POST['DietReq'] as $key => $value) {if($value == 'ContainsLupin'){ echo "checked";}}} ?> > Doesn't Contain Lupin<br>
-
+			<!-- This creates the checkbox for the dietary requirements, Which are the saved under the named DietReq[] which links all the checkboxes. 
+			The foreach is there to get the value of the checkbox which are checked, so it can display the "checked attribute" by having the checkboxes ticked. -->
 			<br><input type="Submit" value="Submit">
+			<!-- Submits the diet requirements.  -->
 
 		</div>
 	</div>

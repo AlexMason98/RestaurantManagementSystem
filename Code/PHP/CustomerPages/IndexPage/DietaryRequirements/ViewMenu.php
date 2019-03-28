@@ -1,7 +1,5 @@
 <?php
-require '/var/www/html/Alex/PHP/Connections/ConnectionCustomer.php';
-
-//require_once "/var/www/html/Main/PHP/CustomerPages/IndexPage/DietaryRequirements/Session.php";
+require_once "/var/www/html/Main/PHP/CustomerPages/IndexPage/DietaryRequirements/Session.php";
 
 ?>
 
@@ -13,10 +11,8 @@ require '/var/www/html/Alex/PHP/Connections/ConnectionCustomer.php';
 /////////////         Starting SQL Query      ////////////////////
 		$sql = "SELECT menu.ID, menu.Item, menu.ImagePath, menu.Price, menu.Availability, Descriptions.Description, IngredientsAndCalories.Ingredients, Allergens.Allergens, IngredientsAndCalories.Calories, DietaryRequirements.Item FROM Descriptions, IngredientsAndCalories, Allergens, DietaryRequirements CROSS JOIN menu WHERE menu.ID = DietaryRequirements.ID AND DietaryRequirements.ID = Descriptions.ID AND Descriptions.ID = IngredientsAndCalories.ID AND IngredientsAndCalories.ID = Allergens.ID AND menu.Availability = 'True' ";
 
-
-
-
-
+		// The sql query which get information from Descriptions, IngredientsAndCalories, Allergens, DietaryRequirements and menu, 
+		// it compares the ID to check if the items are the same to stop duplicates. Also this query only displays the dishes with a Availiabity of True. 
 
 //////////////////////////////////////////////////////////////////
 /////////////            Category              //////////////////
@@ -29,10 +25,12 @@ require '/var/www/html/Alex/PHP/Connections/ConnectionCustomer.php';
 			}
 			$sql = $sql . " AND ";
 			$sql .= join("", $Category);
+			// this get the checkboxes checkboxes from the Categories page using a post method. This then pushes to array which is then used to to concatinate with the sql query. 
 		}
 
 		if($_POST['Revert']){
 			header("Location: indexPage.php", true, 303);
+			// this is used to reload the page, restoring the sql and display all the dishes, when the revert button in the categories pages.
 		}
 
 //////////////////////////////////////////////////////////////////
@@ -41,14 +39,14 @@ require '/var/www/html/Alex/PHP/Connections/ConnectionCustomer.php';
 		$DietReqArray = $_POST['DietReq'];
 		$DietReq = array();
 
-
 		if(sizeof($DietReqArray)>0){
 			foreach ($DietReqArray as $key => $value) {
 				array_push($DietReq, $value. " = 'No' ");
 			}
 			$sql = $sql . " AND ";
 			$sql .= join(" AND ", $DietReq);
-
+			// This checks which chekes is checked and then pushes to the arrray called $DietReq which is used to join and concatinate the original sql query.
+			// which then displays fliters.
 		}	
 
 ////////////                                     ////////////////
@@ -72,6 +70,7 @@ require '/var/www/html/Alex/PHP/Connections/ConnectionCustomer.php';
 				$allergen = $row['Allergens'];
 				$calories = $row['Calories'];
 				$Available = $row['Availability'];
+				// this stores the info from the database 
 				?>
 				<form method="post" action="indexPage?action=add&ID=<?php echo $row['ID']; ?>">
 					<div class="col-lg-14 col-md-12 col-sm-10" id="center">
@@ -84,11 +83,13 @@ require '/var/www/html/Alex/PHP/Connections/ConnectionCustomer.php';
 									<?php
 									echo "$item";
 									?>
+									<!-- Displays the Item of the dish -->
 								</p>
 								<p id="priceText">Price: £
 									<?php
 									echo "$price";
 									?>
+									<!-- display the price of the item -->
 								</p>
 
 								<?php
@@ -97,6 +98,7 @@ require '/var/www/html/Alex/PHP/Connections/ConnectionCustomer.php';
 								$hrefAddToCartID = "#addToCart"."".$id;
 								$popup = "popupID"."".$id;
 								$hrefPopupID = "#popupID"."".$id;
+								// This is going to be used to differentiate and generates a button for each dish id.
 								?>
 								<div id="<?php echo($quantityID); ?>" class="quantityForm">
 									<input type="text" name="<?php echo($quantityID); ?>" value="1" class="form-control" />
@@ -122,6 +124,7 @@ require '/var/www/html/Alex/PHP/Connections/ConnectionCustomer.php';
 										<p id="itemCalories"><?php echo($calories); ?></p>
 									</div>
 								</div>
+								<!-- this is the pop up code which displays the Description, ingredient, Allergens and calroies. This pop is also different for each dish becuase of the use of dish id.-->
 							</div>
 						</div>
 					</div>
