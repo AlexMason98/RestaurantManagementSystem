@@ -12,24 +12,35 @@ include_once '../../Header.php';
 				<table class="table table-striped table-bordered-less header">
 					<thead class="thead-light">
 						<tr>
-							<th style="width:10%">Table</th>
-							<th style="width:50%">Order</th>
-							<th style="width:20%">Time</th>
-							<th style="width:20%">Status</th>
+
+							<th style="width:5%">Table</th>
+							<th style="width:45%">Order</th>
+							<th style="width:15%">Time</th>
+							<th style="width:5%">Quantity</th>
+							<th style="width:25%">Status</th>
 						</tr>
 					</thead>
 					<?php
-					include_once '../../Connections/ConnectionStaff.php';
-					$sql = "SELECT Time, Items FROM Orders";
+					include_once '../../Connections/ConnectionCustomer.php';
+					$sql = "SELECT TableNo, Item, Time, Quantity, Status FROM Orders ORDER BY Time ASC";
+
 					$res = $conn->query($sql);
 					if($res-> num_rows == 0){
 						echo "0 results";
 					}
 					else{
 						while($row = mysqli_fetch_assoc($res)){
-							echo "<tr><td>{$row['Items']}</td>\n";
-							echo "<td>{$row['Time']}</td></tr>\n";
-							echo "<td>{$row['Status']}</td></tr>\n";
+
+							echo "<tr><td>{$row['TableNo']}</td>";
+							echo "<td>{$row['Item']}</td>";
+							echo "<td>{$row['Time']}</td>";
+							echo "<td>{$row['Quantity']}</td>";
+							?>
+							<td>
+								<input type="Submit" name="Cooking" value="Cooking">
+								<input type="Submit" name="Cooked" value="Cooked">
+							</td>
+							<?php
 						}
 					}
 					mysqli_close($conn);

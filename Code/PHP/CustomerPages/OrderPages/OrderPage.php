@@ -33,16 +33,30 @@ require '/var/www/html/Harshdeep/PHP/Connections/ConnectionCustomer.php';
 								echo('<h3 id="noItems">There are no items in your basket</h3>');
 							}
 							else{
+								?>
+								<h3 id="yourBasket">Your Basket</h4>
+
+								<thead class="thead-light" id="orderTableHeader">
+									<tr>
+										<th style="width:10%">Item ID</th>
+						    			<th style="width:65%">Item</th>
+						    			<th style="width:10%">Quantity</th>
+						    			<th style="width:15%">Price (Per Item)</th>
+						  			</tr>
+								</thead>
+								<?php
 								while($row = mysqli_fetch_assoc($res)){
 									$id = $row['ID'];
-									echo "<tr><td>{$row['ID']}</td>\n";
-									echo "<td>{$row['Item']}</td>\n";
-									echo "<td>{$row['Quantity']}</td>\n";
-									echo "<td>£{$row['Price']}</td></tr>\n";
+									?>
+									<tr class="itemsTable">
+										<td><?php echo($row['ID']); ?></td>
+										<td><?php echo($row['Item']); ?></td>
+										<td><?php echo ($row['Quantity']); ?></td>
+										<td>£<?php echo($row['Price']); ?></td>
+									</tr>
+									<?php
 								}
 								$numberOfRows = mysqli_num_rows($res);
-								$GLOBAL['numberOfRows'];
-								echo($numberOfRows);
 							}
 
 							?>
@@ -52,22 +66,28 @@ require '/var/www/html/Harshdeep/PHP/Connections/ConnectionCustomer.php';
 				<div class="col-lg-8 col-md-7 col-sm-5"></div>
 				<div class="col-lg-4 col-md-5 col-sm-7">
 					<table id="TotalPrice">
-						<tr><td id="totalPriceText">Total Price</td></tr>
+						<tr>
+							<td id="totalPriceText">Total Price</td>
+						</tr>
 					</table>
-					<table class="table table-striped table-bordered-less header">
+					<table class="table table-striped table-bordered-less header" id="displayTotalPriceTable">
 						<?php
 						$sql = "SELECT SUM(Quantity * Price) AS Total FROM TempOrders WHERE IP = '$ip'";
 						$res = $conn->query($sql);
-						if(is_null($res)) {
-							echo('<tr><td id="orderPagePriceText">');
-							echo('£0.00');
-							echo('</td></tr>');
-						} else {
+
+						if($res->num_rows > 0) {
 							while($row = mysqli_fetch_assoc($res)){
 								echo('<tr><td id="orderPagePriceText">');
 								echo("£{$row['Total']}");
 								echo('</td></tr>');
 							}
+							
+						} else {
+							?>
+							<tr>
+								<td id="orderPagePriceText">£0.00</td>
+							</tr>
+							<?php
 						}
 
 						?>
@@ -75,26 +95,19 @@ require '/var/www/html/Harshdeep/PHP/Connections/ConnectionCustomer.php';
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-lg-8 col-md-6 col-sm-4"></div>
-				<div class="col-lg-4 col-md-6 col-sm-8">
-					<a class="btn btn-success btn-lg" href="#popupPayBefore">Pay Before</a>
-					<a class="btn btn-success btn-lg" href="#popupPayAfter">Pay After</a>
-					<a class="btn btn-danger btn-lg" href="#popupCancelItems">Cancel Order</a>
-					<a class="btn btn-danger btn-lg" href="#alertWaiter">Alert Waiter</a>
+				<div class="col-lg-8 col-md-7 col-sm-5"></div>
+				<div class="col-lg-4 col-md-5 col-sm-7" id="buttonContainer">
+					<div class="greenButtons">
+						<a class="btn btn-success btn-lg" id="payBeforeButton" href="#popupPayBefore">Pay Before</a>
+						<a class="btn btn-success btn-lg" id="payAfterButton" href="#popupPayAfter">Pay After</a>
+					</div>
+					<div class="redButtons">
+						<a class="btn btn-danger btn-lg" id="cancelOrderButton" href="#popupCancelItems">Cancel Order</a>
+						<a class="btn btn-danger btn-lg" id="alertWaiterButton" href="#alertWaiter">Alert Waiter</a>
+					</div>
 				</div>
 			</div>
 		</div>
-
-		<!--<div id="tableNumber" class="overlayAssistance">
-			<div class="popup">
-				<a class="close" name="closePopup" href="OrderPage.php">&times;</a>
-				<div class="popupInfo">
-					<h5>Enter Your Table Number:</h5><br>
-					<input type="text" name="tableNumberEntry" />
-					<a class="btn btn-success btn-md" href="#popupPayAfter">Submit</a>
-				</div>
-			</div>
-		</div>-->
 
 		<div id="popupCancelItems" class="basketOverlay">
 			<div class="popup">
@@ -112,19 +125,25 @@ require '/var/www/html/Harshdeep/PHP/Connections/ConnectionCustomer.php';
 
 							if (isset($_POST['Yes'])) {
 								$sql = "DELETE FROM TempOrders";
-								mysqli_query($conn, $sql);
-								//echo("<h6>Successfully Cancelled Order</h6>");
+								
+								if (mysqli_query($conn, $sql)) {
 
-								// I use this so that the popup closes and the page refreshes so that basket is shown empty
-								header("Refresh:0; url=OrderPage.php", true, 303);
+									// I use this so that the popup closes and the page refreshes so that basket is shown empty
+									echo('<script>');
+									echo('window.location.href = "OrderPage.php";');
+									echo('</script>');
+								} else {
+									echo('<h5>Error Removing Items From Basket</h5>');
+									echo("Error: ".mysqli_error($conn));
+								}
 							} else if (isset($_POST['No'])) {
 								// I use this so that the popup closes and the page refreshes, showing the items still in basket
-								header("Refresh:0; url=OrderPage.php", true, 303);
+								echo('<script>');
+								echo('window.location.href = "OrderPage.php";');
+								echo('</script>');
 							}
 						} else if ($numberOfRows == 0) {
 							echo('<h5 id="cannotCancel">Can not cancel order. There are no items to remove from your basket</h5>');
-						} else {
-							echo('<h5 id="errorRemoving">ERROR: Could not remove all items from basket</h5>');
 						}
 					?>
 				</div>
@@ -141,26 +160,33 @@ require '/var/www/html/Harshdeep/PHP/Connections/ConnectionCustomer.php';
 
 					<?php
 					if (!empty($_POST['payBeforeTableEntry']) && ($_POST['payBeforeTableEntry'] >= 1) && ($_POST['payBeforeTableEntry'] <= 10) && (isset($_POST['payBeforeSubmitButton']))) {
-						//if (!empty($_POST['payBeforeTableEntry']) && isset($_POST['payBeforeSubmitButton'])) {
 
 							$payBeforeTableNumber = ltrim($_POST['payBeforeTableEntry'], '0');
 
+							// Checking to see if there is already an order by the table entered by the user
 							$sql = "SELECT Orders.IP, Orders.TableNo FROM Orders, TempOrders WHERE Orders.TableNo = $payBeforeTableNumber";
 							$res = mysqli_query($conn, $sql);
 
 							if (mysqli_num_rows($res) > 0) {
-								//echo('<h5>Existing Order For This Table, Seek Assistance from one of our Waiters</h5>');
+								echo('<style> #enterTableText1 { display: none; } </style>');
+								echo('<style> #payBeforeTableEntry { display: none; } </style>');
+								echo('<style> #payBeforeSubmitButton { display: none; } </style>');
 								echo('<h5>Order Already Placed</h5>');
 								echo('<h6>We already have an order for your table number, please wait until your current order has been fulfilled</h6>');
-								//echo('<h6>You have already ordered an item in this order, please wait until your current order has been fulfilled</h6>');
 
 							} else if ($numberOfRows != 0) {
-								// This header redirects to the PaymentSystem's index page once I get the table number.
-								echo('<script>');
-								echo('window.location.href = "PaymentSystem/index.php";');
-								echo('</script>');
-								//header("Refresh:0; url=PaymentSystem/index.php", true, 303);
-								//exit();
+								// After checking the table number doesn't already exist, I temporarily set the TableNo in the TempOrders table
+								// with the table number the user entered, for all items matching their IP address
+								$sql = "UPDATE TempOrders SET TableNo = $payBeforeTableNumber WHERE TempOrders.IP = '$ip'";
+								if (mysqli_query($conn, $sql)) {
+									// This header redirects to the PaymentSystem's index page once I get the table number.
+									echo('<script>');
+									echo('window.location.href = "PaymentSystem/index.php";');
+									echo('</script>');
+								} else {
+									echo('<h5>Error Inserting Table Number</h5>');
+									echo("Error: ".mysqli_error($conn));
+								}
 							}
 
 					} else if ((!empty($_POST['payBeforeTableEntry']) || ($_POST['payBeforeTableEntry'] == 0)) && isset($_POST['payBeforeSubmitButton'])) {
@@ -190,7 +216,6 @@ require '/var/www/html/Harshdeep/PHP/Connections/ConnectionCustomer.php';
 
 					<?php
 					if (!empty($_POST['payAfterTableEntry']) && ($_POST['payAfterTableEntry'] >= 1) && ($_POST['payAfterTableEntry'] <= 10) && (isset($_POST['payAfterSubmitButton']))) {
-					//if (!empty($_POST['payAfterTableEntry']) && isset($_POST['payAfterSubmitButton'])) {
 						echo('<style> #enterTableText2 { display: none; } </style>');
 						echo('<style> #payAfterTableEntry { display: none; } </style>');
 						echo('<style> #payAfterSubmitButton { display: none; } </style>');
@@ -201,14 +226,12 @@ require '/var/www/html/Harshdeep/PHP/Connections/ConnectionCustomer.php';
 						$res = mysqli_query($conn, $sql);
 
 						if (mysqli_num_rows($res) > 0) {
-							//echo('<h5>Existing Order For This Table, Seek Assistance from one of our Waiters</h5>');
 							echo('<h5>Order Already Placed</h5>');
 							echo('<h6>We already have an order for your table number, please wait until your current order has been fulfilled</h6>');
-							//echo('<h6>You have already ordered an item in this order, please wait until your current order has been fulfilled</h6>');
 
 						} else if ($numberOfRows != 0) {
 
-							$sql = "INSERT INTO Orders (IP, TableNo, ID, Item, Quantity, Price, Status, Time) SELECT TempOrders.IP, $payAfterTableNumber, TempOrders.ID, TempOrders.Item, TempOrders.Quantity, TempOrders.Price, 'Order Placed', now() FROM TempOrders WHERE TempOrders.IP = '$ip'";
+							$sql = "INSERT INTO Orders (IP, TableNo, ID, Item, Quantity, Price, Status, PaymentStatus, Time) SELECT TempOrders.IP, $payAfterTableNumber, TempOrders.ID, TempOrders.Item, TempOrders.Quantity, TempOrders.Price, 'Order Placed', 'Unpaid', now() FROM TempOrders WHERE TempOrders.IP = '$ip'";
 							if (mysqli_query($conn, $sql)) {
 								$sql = "DELETE FROM TempOrders WHERE IP = '$ip'";
 								if (mysqli_query($conn, $sql)) {
@@ -222,7 +245,7 @@ require '/var/www/html/Harshdeep/PHP/Connections/ConnectionCustomer.php';
 							} else {
 								echo('<h5>Error Placing Order, Seek Assistance from one of our Waiters</h5>');
 								echo('<br>');
-								echo(mysqli_error($conn));
+								echo("Error: ".mysqli_error($conn));
 							}
 						} else {
 							echo('<h5>Can not place order!</h5>');
