@@ -18,7 +18,7 @@ include_once '../../Header.php';
 								<th style="width:22%; font-size: 30px;font-weight: bold">Time</th>
 								<th style="width:8%; font-size: 30px; font-weight: bold">Quantity</th>
 								<th style="width:20%; font-size: 30px; font-weight: bold">Status</th>
-								<!-- This creates the table and set the styling for the whole tables.-->
+								<!-- This creates the table and set the styling for the whole tables. -->
 							</tr>
 						</thead>
 						<?php
