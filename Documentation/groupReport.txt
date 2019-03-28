@@ -32,3 +32,9 @@ Login page
 •	If the login details are correct, a new session is created for the waiter and they are redirected to the waiter home page
 •	When incorrect details are entered then an alert is displayed warning the user and prompting them to try again
 •	When a user tries to navigate to the waiter home page without logging in, the scripts redirect them back to the login page as there is no valid session
+
+Kitchen page:
+•	The kitchen page displays the current orders which are taken from the order database
+•	There are two buttons to change the status of an order ‘Cooking’ and ‘Cooked’
+•	When ‘Cooked’ is clicked the order is no longer displayed on the kitchen page 
+
