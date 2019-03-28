@@ -1,302 +1,302 @@
-﻿﻿1*Tortilla Chips With Dips*Yes*No*No*No*Yes*No*No*Yes*No*No*No*No*No*Yes*No*No
-2*Barbeque Southern Fried Chicken Strips*No*No*No*No*No*No*No*Yes*No*No*No*No*No*No*No*No
-3*Hot Habanero Chicken Strips*No*No*No*No*Yes*No*No*Yes*No*No*No*No*No*No*No*No
-4*Vegetarian Chilli Empanadas*Yes*No*No*No*Yes*No*No*Yes*No*No*No*No*No*No*No*No
-5*Chicken Empanadas*No*No*No*No*Yes*No*No*Yes*No*No*No*No*No*No*No*No
-6*Beef Chilli Empanadas*No*No*No*No*Yes*No*No*Yes*No*No*No*No*Yes*Yes*No*No
-7*Salsa and Guacamole Nachos*Yes*No*No*No*Yes*No*No*Yes*No*No*No*No*No*Yes*No*No
-8*Chicken, Chorizo and Sweetcorn Nachos*No*No*No*No*Yes*No*No*Yes*No*No*No*No*No*Yes*No*No
-9*Barbeque Chicken Wings*No*No*No*No*No*No*No*No*No*No*No*No*No*Yes*No*No
-10*Hot Habanero Chicken Wings*No*No*No*No*Yes*No*No*Yes*No*No*No*No*No*Yes*No*No
-11*Cajun Dusted Green Beans*No*No*No*Yes*No*No*No*No*No*No*No*Yes*No*Yes*No*No
-12*Garlic Tortilla With Chicken and Cheese Dip*Yes*No*No*No*No*No*No*Yes*No*No*No*No*No*No*No*No
-13*Garlic Tortilla With Cheese Dip*No*No*No*No*Yes*No*No*Yes*No*No*No*No*No*No*No*No
-14*Garlic Tortilla With Chorizo and Cheese Dip*No*No*No*No*Yes*No*No*Yes*No*No*No*No*No*No*No*No
-15*Garlic Tortilla With Chilli and Cheese Dip*Yes*No*No*No*No*No*No*Yes*No*No*No*Yes*No*No*No*No
-16*Halloumi Skewers*Yes*No*Yes*No*Yes*No*No*Yes*No*No*No*No*No*Yes*No*No
-17*Jalapeno Poppers*Yes*No*No*No*Yes*No*No*No*No*No*No*No*No*No*No*No
-18*Chilli Prawns*No*No*No*No*Yes*No*No*Yes*No*Yes*No*No*No*No*No*No
-19*Habanero Mushrooms*Yes*No*Yes*No*Yes*No*No*Yes*No*No*No*No*No*No*No*No
-20*Patatas Bravas*Yes*No*Yes*No*Yes*No*No*Yes*No*No*No*No*No*Yes*No*No
-21*The Ultimate Sharers*No*No*No*No*Yes*No*No*Yes*No*No*No*No*No*Yes*No*No
-22*Quesadilla Sharers*No*No*No*No*Yes*No*No*Yes*No*No*No*No*No*Yes*No*No
-23*Fully Loaded Nachos With Tomato Salsa*Yes*No*No*No*Yes*No*No*Yes*No*No*No*No*No*Yes*No*No
-24*Chicken Fully Loaded Nachos*No*No*No*No*Yes*No*No*Yes*No*No*No*No*No*Yes*No*No
-25*Beef Chilli Fully Loaded Nachos*No*No*No*No*Yes*No*No*Yes*No*No*No*No*Yes*Yes*No*No
-26*Five Bean Chilli Fully Loaded Nachos*Yes*No*No*No*Yes*No*No*Yes*No*No*No*No*No*Yes*No*No
-27*Crispy Tacos*No*No*No*No*Yes*No*No*Yes*No*No*No*No*No*Yes*No*No
-28*Habanero Mushrooms*Yes*No*Yes*No*Yes*No*No*Yes*No*No*No*No*No*No*No*No
-29*Mini Chicken Burrito*No*No*No*No*Yes*No*No*Yes*No*No*No*No*No*Yes*No*No
-30*Pan-Fried Chorizo*No*No*No*No*Yes*No*No*Yes*No*No*No*No*Yes*No*No*No
-31*Chorizo and Sweet Potato Croquettes*No*No*No*No*Yes*No*No*No*No*No*No*No*No*No*No*No
-32*Chicken, Chorizo and Sweetcorn Quesadilla Bites*No*No*No*No*Yes*No*No*Yes*No*No*No*No*No*Yes*No*No
-33*Roasted Veg and Chilli Beetroot Quesadilla Bites*Yes*No*No*No*Yes*No*No*Yes*No*No*No*No*No*Yes*No*No
-34*Beef Chilli Tortilla Stack*No*No*No*No*Yes*No*No*Yes*No*No*No*No*Yes*No*No*No
-35*Five Bean Chilli Tortilla Stack*Yes*No*No*No*Yes*No*No*Yes*No*No*No*No*No*No*No*No
-36*Patatas Bravas*Yes*No*Yes*No*Yes*No*No*Yes*No*No*No*No*No*Yes*No*No
-37*Halloumi Bites*Yes*No*Yes*Yes*Yes*No*No*Yes*No*No*No*No*No*No*No*No
-38*Classic Chicken*No*No*Yes*No*Yes*No*No*Yes*No*No*No*No*No*Yes*No*No
-39*Extra Barbeque Sauce*Yes*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No
-40*Extra Hot Habanero Sauce*Yes*No*Yes*No*Yes*No*No*Yes*No*No*No*No*No*No*No*No
-41*Barbeque Chicken and Pulled Pork*No*No*Yes*No*Yes*No*No*Yes*No*No*No*No*No*Yes*No*No
-42*Seasoned Roasted Veg Fajita*Yes*No*Yes*No*Yes*No*No*Yes*No*No*No*No*No*Yes*No*No
-43*Tender Steak*No*No*Yes*No*Yes*No*No*Yes*No*No*No*No*No*Yes*No*No
-44*Garlic King Prawns*No*No*Yes*No*Yes*No*No*Yes*No*Yes*No*No*No*Yes*No*No
-45*The Ultimate Fajita*No*No*Yes*No*Yes*No*No*Yes*No*No*No*No*No*Yes*No*No
-46*Extra Chicken*No*No*Yes*No*Yes*No*No*Yes*No*No*No*No*No*Yes*No*No
-47*Extra Barbeque Chicken and Pulled Pork*No*No*Yes*No*Yes*No*No*Yes*No*No*No*No*No*Yes*No*No
-48*Extra Tender Steak*No*No*Yes*No*Yes*No*No*Yes*No*No*No*No*No*Yes*No*No
-49*Extra Seasoned Roasted Veg*Yes*Yes*Yes*No*Yes*No*No*Yes*No*No*No*No*No*Yes*No*No
-50*Extra Garlic King Prawns*No*No*Yes*No*Yes*No*No*Yes*No*Yes*No*No*No*Yes*No*No
-51*Chicken and Barbeque Pulled Pork Burger*No*No*Yes*Yes*Yes*No*No*Yes*No*No*No*Yes*No*No*No*No
-52*Classic Beef Burger*No*No*Yes*Yes*Yes*No*No*No*No*No*No*Yes*No*No*No*No
-53*Southern Fried Chicken Burger*No*No*No*Yes*Yes*No*No*Yes*No*No*No*Yes*No*No*No*No
-54*Halloumi Burger*No*No*No*Yes*Yes*No*No*Yes*No*No*No*Yes*No*Yes*No*No
-55*Beef, Chorizo and Pulled Pork Burger*No*No*Yes*Yes*Yes*No*No*No*No*No*No*Yes*Yes*Yes*No*No
-56*Texan Stack Burger*No*No*No*Yes*Yes*No*No*Yes*No*No*No*Yes*No*Yes*No*No
-57*Extra Beef*No*No*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No
-58*Extra Chicken Breast*No*No*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No
-59*Extra Southern Fried Chicken Breast*No*No*No*No*No*No*No*Yes*No*No*No*No*No*No*No*No
-60*Extra Beef Chilli*No*No*Yes*No*Yes*No*No*Yes*No*No*No*No*Yes*No*No*No
-61*Extra Chorizo*No*No*Yes*No*Yes*No*No*No*No*No*No*No*Yes*No*No*No
-62*Extra Cheese*Yes*No*Yes*No*Yes*No*No*No*No*No*No*No*No*No*No*No
-63*Extra Bacon*No*No*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No
-64*Extra Guacamole*Yes*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No
-65*Extra Grilled Halloumi*Yes*No*No*No*Yes*No*No*No*No*No*No*No*No*No*No*No
-66*Steak and Fries*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No
-67*Steak and Salad*No*No*Yes*No*No*No*No*No*No*No*No*Yes*No*No*No*No
-68*Extra Jalapeno Cheese Sauce*Yes*No*No*No*Yes*No*No*No*No*No*No*No*No*No*No*No
-69*Extra Barbeque Sauce*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No*No
-70*Extra Peppercorn Sauce*No*No*No*No*Yes*No*No*Yes*No*No*No*Yes*No*No*No*No
-71*Rib Eye Steak*No*No*Yes*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No
-72*Barbeque Chicken Melt*No*No*Yes*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No
-73*Chicken and Ribs*No*No*Yes*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No
-74*Whole Rack of Ribs*No*No*Yes*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No
-75*Half Rack of Ribs*No*No*Yes*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No
-76*Pork Belly*No*No*No*Yes*Yes*No*No*Yes*No*No*No*No*Yes*No*No*No
-77*Southern Fried Chicken and Barbeque Pulled Pork*No*No*No*Yes*Yes*No*No*Yes*No*No*No*No*No*No*No*No
-78*Classic Beef Chilli*No*No*Yes*No*Yes*No*No*Yes*No*No*No*No*Yes*No*No*No
-79*Five Bean and Roasted Veg Chilli*Yes*No*Yes*No*Yes*No*No*Yes*No*No*No*No*No*No*No*No
-80*Fiery Chicken*No*No*Yes*No*Yes*No*No*Yes*No*No*No*No*No*No*No*No
-81*Barbeque Chicken Wrap*No*No*No*Yes*Yes*No*No*Yes*No*No*No*No*No*No*No*No
-82*Chicken Baja Bowl*No*No*No*No*Yes*No*No*Yes*No*No*No*No*No*No*No*No
-83*Jambalaya*No*No*Yes*No*Yes*No*No*Yes*No*Yes*No*No*No*No*No*No
-84*Steak Salad*No*No*Yes*No*No*No*No*Yes*No*No*No*No*No*No*No*No
-85*Mango and Avocado Salad*Yes*Yes*Yes*No*No*No*No*Yes*No*No*No*No*No*No*No*No
-86*Chicken, Mango and Avocado Salad*No*No*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No
-87*Prawn, Mango and Avocado Salad*No*No*Yes*No*No*No*No*No*No*Yes*No*No*No*No*No*No
-88*Chicken Fajita Salad*No*No*Yes*No*Yes*No*No*Yes*No*No*No*No*No*Yes*No*No
-89*Roasted Halloumi and Veg Naked Burrito*Yes*No*Yes*No*Yes*No*No*Yes*No*No*No*No*No*Yes*No*No
-90*Beef Chilli Naked Burrito*No*No*Yes*No*Yes*No*No*Yes*No*No*No*No*Yes*Yes*No*No
-91*Mild Habanero Chicken*No*No*Yes*No*Yes*No*No*Yes*No*No*No*No*No*Yes*No*No
-92*Skin-on Fries*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No*No
-93*Sweet Potato Fries*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No*No
-94*Sweet Potato Wedges*Yes*No*Yes*No*Yes*No*No*Yes*No*No*No*Yes*No*No*No*No
-95*Refried Beans*Yes*No*Yes*No*Yes*No*No*Yes*No*No*No*No*No*No*No*No
-96*Roasted Vegetables*Yes*Yes*Yes*No*No*No*No*Yes*No*No*No*No*No*No*No*No
-97*Rice*Yes*Yes*Yes*No*No*No*No*Yes*No*No*No*No*No*No*No*No
-98*Grilled Halloumi*Yes*No*Yes*No*Yes*No*No*No*No*No*No*No*No*No*No*No
-99*Onion Rings*Yes*No*No*No*Yes*No*No*No*No*No*No*No*No*No*No*No
-100*Coleslaw*Yes*No*No*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No
-101*Garlic Tortilla*Yes*Yes*No*No*No*No*No*Yes*No*No*No*No*No*No*No*No
-102*Corn On The Cob*Yes*No*Yes*No*Yes*No*No*No*No*No*No*No*No*No*No*No
-103*Small Churros*Yes*No*No*No*Yes*No*No*No*No*No*No*No*Yes*No*No*No
-104*Churros*Yes*No*No*No*Yes*No*No*No*No*No*No*No*Yes*No*No*No
-105*Hot Chocolate and Churros*Yes*No*No*No*Yes*No*No*No*No*No*No*No*Yes*No*No*No
-106*Pineapple Thins*Yes*No*Yes*No*Yes*No*No*No*No*No*No*No*No*No*No*No
-107*Chilli Pineapple Thins*Yes*No*Yes*No*Yes*No*No*No*No*No*No*Yes*No*No*No*No
-108*Brownie Baked Banana*Yes*No*No*Yes*Yes*No*No*No*No*No*No*No*Yes*No*No*No
-109*Toffee Popcorn Brownie*Yes*No*No*Yes*Yes*No*No*No*No*No*No*No*Yes*No*No*No
-110*Golden Nugget Cheesecake*Yes*No*No*No*Yes*Yes*Yes*No*No*No*No*No*Yes*No*Yes*No
-111*Blueberry and Apple Crumble*Yes*No*Yes*No*Yes*No*Yes*No*No*No*No*No*No*No*No*No
-112*Chocolate Orange Cake*Yes*No*No*Yes*Yes*No*No*No*No*No*No*No*Yes*No*No*No
-113*Cointreau 25ml Shot*Yes*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No
-114*Mexican Mess*Yes*No*No*Yes*Yes*No*No*No*No*No*No*No*Yes*No*No*No
-115*Ice Cream - One Scoop*Yes*No*Yes*No*Yes*No*No*No*No*No*No*No*Yes*No*No*No
-116*Ice Cream - Trio*Yes*No*Yes*No*Yes*No*No*No*No*No*No*No*Yes*No*No*No
-117*Brownies and Ice Cream*Yes*No*Yes*Yes*Yes*No*No*No*No*No*No*No*Yes*No*No*No
-118*Lemon Sorbet - One Scoop*Yes*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No
-119*Lemon Sorbet - Trio*Yes*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No
-120*Americano*Yes*No*No*Yes*Yes*No*No*No*No*No*No*No*Yes*No*No*No
-121*Latte*Yes*No*No*Yes*Yes*No*No*No*No*No*No*No*Yes*No*No*No
-122*Cappuccino*Yes*No*No*Yes*Yes*No*No*No*No*No*No*No*Yes*No*No*No
-123*Cappuccino - Large*Yes*No*No*Yes*Yes*No*No*No*No*No*No*No*Yes*No*No*No
-124*Espresso*Yes*No*No*Yes*Yes*No*No*No*No*No*No*No*Yes*No*No*No
-125*Double Espresso*Yes*No*No*Yes*Yes*No*No*No*No*No*No*No*Yes*No*No*No
-126*Tea*Yes*No*No*Yes*Yes*No*No*No*No*No*No*No*Yes*No*No*No
-127*Hot Chocolate*Yes*No*No*Yes*Yes*No*No*No*No*No*No*No*Yes*No*No*No
-128*Liqueur Coffee - Goslings Addition*Yes*No*No*Yes*Yes*No*No*No*No*No*No*No*Yes*Yes*No*No
-129*Liqueur Coffee - Baileys Addition*Yes*No*No*Yes*Yes*No*No*No*No*No*No*No*Yes*No*No*No
-130*Liqueur Coffee - Disaronno Amaretto Addition*Yes*No*No*Yes*Yes*No*No*No*No*No*No*No*Yes*No*No*No
-131*Liqueur Coffee - Jamesons Addition*Yes*No*No*Yes*Yes*No*No*No*No*No*No*No*Yes*No*No*No
-132*Liqueur Coffee - Kahlua Addition*Yes*No*No*Yes*Yes*No*No*No*No*No*No*No*Yes*No*No*No
-133*Liqueur Coffee - Martell Addition*Yes*No*No*Yes*Yes*No*No*No*No*No*No*No*Yes*No*No*No
-134*Decaff Americano*Yes*No*No*Yes*Yes*No*No*No*No*No*No*No*Yes*No*No*No
-135*Decaff Latte*Yes*No*No*Yes*Yes*No*No*No*No*No*No*No*Yes*No*No*No
-136*Decaff Cappuccino*Yes*No*No*Yes*Yes*No*No*No*No*No*No*No*Yes*No*No*No
-137*Decaff Cappuccino - Large*Yes*No*No*Yes*Yes*No*No*No*No*No*No*No*Yes*No*No*No
-138*Decaff Espresso*Yes*No*No*Yes*Yes*No*No*No*No*No*No*No*Yes*No*No*No
-139*Decaff Double Espresso*Yes*No*No*Yes*Yes*No*No*No*No*No*No*No*Yes*No*No*No
-140*Homemade Lemonade*Yes*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No
-141*Ginger Beer Mock-jito*Yes*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No
-142*Apple Juice Mock-jito*Yes*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No
-143*Lemonade Mock-jito*Yes*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No
-144*Virgin Colada*Yes*No*Yes*No*Yes*No*No*No*No*No*No*No*No*Yes*No*No
-145*Appleberry*Yes*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No
-146*Strawberry and Raspberry Agua Fresca*Yes*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No
-147*Mango and Passion Fruit Agua Fresca*Yes*Yes*Yes*No*No*No*No*No*No*No*No*No*No*Yes*No*No
-148*Classic Vanilla*No*No*Yes*No*Yes*No*No*No*No*No*No*No*No*No*No*No
-149*Classic Strawberry*No*No*Yes*No*Yes*No*No*No*No*No*No*No*No*No*No*No
-150*Classic Chocolate*No*No*Yes*No*Yes*No*No*No*No*No*No*No*No*No*No*No
-151*Classic Blueberry*No*No*Yes*No*Yes*No*No*No*No*No*No*No*No*No*No*No
-152*Salted Caramel Popcorn*Yes*No*Yes*No*Yes*No*No*No*No*No*No*No*Yes*No*No*No
-153*Chocolate Churro*Yes*No*No*No*Yes*No*No*No*No*No*No*No*No*No*No*No
-154*Classic Vanilla Bourbon*No*No*Yes*No*Yes*No*No*No*No*No*No*No*No*No*No*No
-155*Classic Strawberry Bourbon*No*No*Yes*No*Yes*No*No*No*No*No*No*No*No*No*No*No
-156*Classic Chocolate Bourbon*No*No*Yes*No*Yes*No*No*No*No*No*No*No*No*No*No*No
-157*Classic Blueberry Bourbon*No*No*Yes*No*Yes*No*No*No*No*No*No*No*No*No*No*No
-158*Salted Caramel Popcorn Bourbon*Yes*No*Yes*No*Yes*No*No*No*No*No*No*No*Yes*No*No*No
-159*Chocolate Churro Bourbon*Yes*No*No*No*Yes*No*No*No*No*No*No*No*No*No*No*No
-160*Classic Margarita*Yes*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No
-161*Tommies Margarita*Yes*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No
-162*Best Margarita In The World*Yes*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No
-163*Margarita Del Fuego*Yes*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No
-164*Strawberry Margarita*Yes*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No
-165*Coconut Margarita*Yes*No*Yes*No*Yes*No*No*No*No*No*No*No*No*Yes*No*No
-166*Classic Margarita Ocho*Yes*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No
-167*Tommies Margarita Ocho*Yes*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No
-168*Best Margarita In The World*Yes*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No
-169*Margarita Del Fuego Ocho*Yes*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No
-170*Strawberry Margarita Ocho*Yes*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No
-171*Coconut Margarita Ocho*Yes*No*Yes*No*Yes*No*No*No*No*No*No*No*No*Yes*No*No
-172*Classic Margarita Pitcher*Yes*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No
-173*Tommies Margarita Jug*Yes*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No
-174*Strawberry Margarita Jug*Yes*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No
-175*Pornstar Martini*Yes*No*Yes*No*No*No*No*No*No*No*No*No*No*Yes*No*No
-176*Southern Belle*Yes*No*Yes*No*No*No*No*No*No*No*No*No*No*Yes*No*No
-177*Mex On The Beach*Yes*Yes*Yes*No*No*No*No*No*No*No*No*No*No*Yes*No*No
-178*Raspberry Rum Collins*Yes*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No
-179*Cherry Libre*Yes*Yes*Yes*No*No*No*No*No*No*No*No*No*No*Yes*No*No
-180*Woo Woo*Yes*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No
-181*Frozen Strawberry Daiquiri*Yes*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No
-182*Gin Fizz*Yes*No*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No*No
-183*Espresso Martini*Yes*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No
-184*Kir Royale*Yes*No*Yes*No*No*No*No*No*No*No*No*No*No*Yes*No*No
-185*Amaretto Sour*Yes*No*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No*No
-186*Long Island Ice Tea*Yes*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No
-187*Berry Sling*Yes*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No
-188*Pina Colada*Yes*No*Yes*No*Yes*No*No*No*No*No*No*No*No*Yes*No*No
-189*Bourbon Sours*Yes*No*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No*No
-190*Fruity Passion Fruit Mojito*Yes*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No
-191*Classic Mojito*Yes*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No
-192*Apple Juice*Yes*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No
-193*Egar Cloudy Apple Juice (16oz)*Yes*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No
-194*Orange Juice*Yes*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No
-195*Pineapple Juice*Yes*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No
-196*Guava Juice (16oz)*Yes*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No
-197*El Velero Verdejo Blanco - 175ml, Valdepenas, Spain*Yes*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No
-198*El Velero Verdejo Blanco - 250ml, Valdepenas, Spain*Yes*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No
-199*El Velero Verdejo Blanco - Bottle, Valdepenas, Spain*Yes*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No
-200*Casa Vista Chardonnay - 175ml, Central Valley, Chile*Yes*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No
-201*Casa Vista Chardonnay - 250ml, Central Valley, Chile*Yes*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No
-202*Casa Vista Chardonnay - Bottle, Central Valley, Chile*Yes*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No
-203*Quindi Pinot Grigio - 175ml, Italy*Yes*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No
-204*Quindi Pinot Grigio - 250ml, Italy*Yes*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No
-205*Quindi Pinot Grigio - Bottle, Italy*Yes*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No
-206*Milford Point Sauvignon Blanc - 175ml, Marlborough, New Zealand*Yes*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No
-207*Milford Point Sauvignon Blanc - 250ml, Marlborough, New Zealand*Yes*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No
-208*Milford Point Sauvignon Blanc - Bottle, Marlborough, New Zealand*Yes*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No
-209*El Velero Tempranillo Tinto - 175ml, Valdepenas, Spain*Yes*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No
-210*El Velero Tempranillo Tinto - 250ml, Valdepenas, Spain*Yes*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No
-211*El Velero Tempranillo Tinto - Bottle, Valdepenas, Spain*Yes*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No
-212*Altoritas Merlot - 175ml, Central Valley, Chile*Yes*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No
-213*Altoritas Merlot - 250ml, Central Valley, Chile*Yes*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No
-214*Altoritas Merlot - Bottle, Central Valley, Chile*Yes*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No
-215*Casa Vista Cabernet Sauvignon - 175ml, Central Valley, Chile*Yes*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No
-216*Casa Vista Cabernet Sauvignon - 250ml, Central Valley, Chile*Yes*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No
-217*Casa Vista Cabernet Sauvignon - Bottle, Central Valley, Chile*Yes*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No
-218*Callia Lunaris Malbec - 175ml, Argentina*Yes*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No
-219*Callia Lunaris Malbec - 250ml, Argentina*Yes*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No
-220*Callia Lunaris Malbec - Bottle, Argentina*Yes*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No
-221*Don Jacobo Rioja Crianza - 175ml, Bodegas Corral, Spain*No*No*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No
-222*Don Jacobo Rioja Crianza - 250ml, Bodegas Corral, Spain*No*No*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No
-223*Don Jacobo Rioja Crianza - Bottle, Bodegas Corral, Spain*No*No*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No
-224*Echo Falls White Zinfandel - 175ml, USA*No*No*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No
-225*Echo Falls White Zinfandel - 250ml, USA*No*No*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No
-226*Echo Falls White Zinfandel - Bottle, USA*No*No*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No
-227*Parini Pinot Grigio Rose Delle Venezie - 175ml, Italy*No*No*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No
-228*Parini Pinot Grigio Rose Delle Venezie - 250ml, Italy*No*No*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No
-229*Parini Pinot Grigio Rose Delle Venezie - Bottle, Italy*No*No*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No
-230*Prosecco - 175ml, Midea, Italy*Yes*N/A*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No
-231*Prosecco - Bottle, Midea, Italy*Yes*N/A*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No
-232*Codorniu Brut Rosado - 175ml, Cava, Spain*Yes*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No
-233*Codorniu Brut Rosado - Bottle, Cava, Spain*Yes*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No
-234*Lanson Black Label Brut NV - Bottle*Yes*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No
-235*Evan Williams*Yes*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No
-236*Buffalo Trace*Yes*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No
-237*Colorado Tincup*Yes*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No
-238*Old Forester*Yes*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No
-239*Bulleit*Yes*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No
-240*Woodford Reserve*Yes*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No
-241*Eagle Rare 10 Year Old*Yes*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No
-242*Stagg Jr*Yes*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No
-243*Beefeater London Dry Gin*Yes*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No
-244*Tanqueray*Yes*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No
-245*Hendricks*Yes*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No
-246*Tanqueray 10*Yes*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No
-247*Smirnoff*Yes*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No
-248*Titos Texan*Yes*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No
-249*Ketel One*Yes*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No
-250*Pampero*Yes*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No
-251*Bacardi Carta Blanca*Yes*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No
-252*Captain Morgan Spiced*Yes*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No
-253*Old J Spiced*Yes*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No
-254*Old J Cherry*Yes*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No
-255*Old J Tiki Overproof*Yes*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No
-256*Goslings Black Seal*Yes*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No
-257*Bacardi 8 Year Old*Yes*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No
-258*Corona - 330ml ABV% 4.2*Yes*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No
-259*Corona - 710ml ABV% 4.2*Yes*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No
-260*Mexican Blonde - 330ml*Yes*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No
-261*Budweiser Prohibition - 330ml ABV% 0.05*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No*No
-262*Brewdog Vagabond - 330ml ABV% 4.5*Yes*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No
-263*Desperados - 330ml ABV% 5.9*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No*No
-264*Doom Bar - 500ml ABV% 4.3*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No
-265*Budweiser - 330ml ABV% 4.5*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No*No
-266*Peroni - 330ml ABV% 5.1*Yes*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No
-267*Modelo Especial - 355ml ABV% 4.5*Yes*No*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No
-268*Magners Irish Cider Apple - 568ml ABV% 4.5*Yes*No*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No
-269*Rekorderlig Strawberry and Lime - 500ml ABV 4%*Yes*No*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No
-270*Diet Pepsi - Glass*Yes*No*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No
-271*R Whites Lemonade - Glass*Yes*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No
-272*Pepsi Max - Glass*Yes*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No
-273*Tango Orange - Glass*Yes*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No
-274*Pepsi - Glass*Yes*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No
-275*Pepsi - Bottle 330ml*Yes*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No
-276*Diet Pepsi - Bottle 330ml*Yes*No*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No
-277*Pepsi Max - Bottle 330ml*Yes*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No
-278*Tango Orange - Bottle 330ml*Yes*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No
-279*7UP Free - Bottle 330ml*Yes*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No
-280*Strathmore Still Water - 330ml*Yes*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No
-281*Strathmore Still Water - 750ml*Yes*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No
-282*Strathmore Sparkling Water - 330ml*Yes*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No
-283*Strathmore Sparkling Water - 750ml*Yes*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No
-284*J2O Apple and Mango - 275ml*Yes*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No
-285*J2O Orange and Passion Fruit - 275ml*Yes*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No
-286*J2O Apple and Raspberry - 275ml*Yes*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No
-287*J2O Spritz Peach and Apricot - 275ml*Yes*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No
-288*J2O Spritz Apple and Watermelon - 275ml*Yes*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No
-289*Lipton Ice Tea - 330ml*Yes*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No
-290*Blanco Tequila - Ocho Blanco*Yes*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No
-291*Blanco Tequila - 1800 Blanco*Yes*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No
-292*Anejo Tequila - 1800 Anejo*Yes*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No
-293*Anejo Tequila - Sauza Tres Generaciones Anejo*Yes*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No
-294*Extra Anejo - Jose Cuervo Reserva De La Familia*Yes*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No
-295*Reposado Tequila - Jose Cuervo Traditional Reposado*Yes*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No
-296*Reposado Tequila - Sauza Tres Generaciones Reposado*Yes*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No
-297*The Rule Breaker - Maestro Dobel Diamante*Yes*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No
-298*Flavours - 1800 Coconut*Yes*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No
-299*Flavours - Patron Xo Cafe (Coffee)*Yes*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No
-300*Flavours - Patron Xo Incendio*Yes*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No
-301*Mezcal - Montelobos*Yes*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No
-302*Mezcal - Vida*Yes*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No
+1*Tortilla Chips With Dips*No*Yes*Yes*No*Yes*No*No*Yes*No*No*No*No*No*Yes*No*No
+2*Barbeque Southern Fried Chicken Strips*Yes*Yes*Yes*No*No*No*No*Yes*No*No*No*No*No*No*No*No
+3*Hot Habanero Chicken Strips*Yes*Yes*Yes*No*Yes*No*No*Yes*No*No*No*No*No*No*No*No
+4*Vegetarian Chilli Empanadas*No*Yes*Yes*No*Yes*No*No*Yes*No*No*No*No*No*No*No*No
+5*Chicken Empanadas*Yes*Yes*Yes*No*Yes*No*No*Yes*No*No*No*No*No*No*No*No
+6*Beef Chilli Empanadas*Yes*Yes*Yes*No*Yes*No*No*Yes*No*No*No*No*Yes*Yes*No*No
+7*Salsa and Guacamole Nachos*No*Yes*Yes*No*Yes*No*No*Yes*No*No*No*No*No*Yes*No*No
+8*Chicken, Chorizo and Sweetcorn Nachos*Yes*Yes*Yes*No*Yes*No*No*Yes*No*No*No*No*No*Yes*No*No
+9*Barbeque Chicken Wings*Yes*Yes*Yes*No*No*No*No*No*No*No*No*No*No*Yes*No*No
+10*Hot Habanero Chicken Wings*Yes*Yes*Yes*No*Yes*No*No*Yes*No*No*No*No*No*Yes*No*No
+11*Cajun Dusted Green Beans*Yes*Yes*Yes*Yes*No*No*No*No*No*No*No*Yes*No*Yes*No*No
+12*Garlic Tortilla With Chicken and Cheese Dip*No*Yes*Yes*No*No*No*No*Yes*No*No*No*No*No*No*No*No
+13*Garlic Tortilla With Cheese Dip*Yes*Yes*Yes*No*Yes*No*No*Yes*No*No*No*No*No*No*No*No
+14*Garlic Tortilla With Chorizo and Cheese Dip*Yes*Yes*Yes*No*Yes*No*No*Yes*No*No*No*No*No*No*No*No
+15*Garlic Tortilla With Chilli and Cheese Dip*No*Yes*Yes*No*No*No*No*Yes*No*No*No*Yes*No*No*No*No
+16*Halloumi Skewers*No*Yes*No*No*Yes*No*No*Yes*No*No*No*No*No*Yes*No*No
+17*Jalapeno Poppers*No*Yes*Yes*No*Yes*No*No*No*No*No*No*No*No*No*No*No
+18*Chilli Prawns*Yes*Yes*Yes*No*Yes*No*No*Yes*No*Yes*No*No*No*No*No*No
+19*Habanero Mushrooms*No*Yes*No*No*Yes*No*No*Yes*No*No*No*No*No*No*No*No
+20*Patatas Bravas*No*Yes*No*No*Yes*No*No*Yes*No*No*No*No*No*Yes*No*No
+21*The Ultimate Sharers*Yes*Yes*Yes*No*Yes*No*No*Yes*No*No*No*No*No*Yes*No*No
+22*Quesadilla Sharers*Yes*Yes*Yes*No*Yes*No*No*Yes*No*No*No*No*No*Yes*No*No
+23*Fully Loaded Nachos With Tomato Salsa*No*Yes*Yes*No*Yes*No*No*Yes*No*No*No*No*No*Yes*No*No
+24*Chicken Fully Loaded Nachos*Yes*Yes*Yes*No*Yes*No*No*Yes*No*No*No*No*No*Yes*No*No
+25*Beef Chilli Fully Loaded Nachos*Yes*Yes*Yes*No*Yes*No*No*Yes*No*No*No*No*Yes*Yes*No*No
+26*Five Bean Chilli Fully Loaded Nachos*No*Yes*Yes*No*Yes*No*No*Yes*No*No*No*No*No*Yes*No*No
+27*Crispy Tacos*Yes*Yes*Yes*No*Yes*No*No*Yes*No*No*No*No*No*Yes*No*No
+28*Habanero Mushrooms*No*Yes*No*No*Yes*No*No*Yes*No*No*No*No*No*No*No*No
+29*Mini Chicken Burrito*Yes*Yes*Yes*No*Yes*No*No*Yes*No*No*No*No*No*Yes*No*No
+30*Pan-Fried Chorizo*Yes*Yes*Yes*No*Yes*No*No*Yes*No*No*No*No*Yes*No*No*No
+31*Chorizo and Sweet Potato Croquettes*Yes*Yes*Yes*No*Yes*No*No*No*No*No*No*No*No*No*No*No
+32*Chicken, Chorizo and Sweetcorn Quesadilla Bites*Yes*Yes*Yes*No*Yes*No*No*Yes*No*No*No*No*No*Yes*No*No
+33*Roasted Veg and Chilli Beetroot Quesadilla Bites*No*Yes*Yes*No*Yes*No*No*Yes*No*No*No*No*No*Yes*No*No
+34*Beef Chilli Tortilla Stack*Yes*Yes*Yes*No*Yes*No*No*Yes*No*No*No*No*Yes*No*No*No
+35*Five Bean Chilli Tortilla Stack*No*Yes*Yes*No*Yes*No*No*Yes*No*No*No*No*No*No*No*No
+36*Patatas Bravas*No*Yes*No*No*Yes*No*No*Yes*No*No*No*No*No*Yes*No*No
+37*Halloumi Bites*No*Yes*No*Yes*Yes*No*No*Yes*No*No*No*No*No*No*No*No
+38*Classic Chicken*Yes*Yes*No*No*Yes*No*No*Yes*No*No*No*No*No*Yes*No*No
+39*Extra Barbeque Sauce*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No
+40*Extra Hot Habanero Sauce*No*Yes*No*No*Yes*No*No*Yes*No*No*No*No*No*No*No*No
+41*Barbeque Chicken and Pulled Pork*Yes*Yes*No*No*Yes*No*No*Yes*No*No*No*No*No*Yes*No*No
+42*Seasoned Roasted Veg Fajita*No*Yes*No*No*Yes*No*No*Yes*No*No*No*No*No*Yes*No*No
+43*Tender Steak*Yes*Yes*No*No*Yes*No*No*Yes*No*No*No*No*No*Yes*No*No
+44*Garlic King Prawns*Yes*Yes*No*No*Yes*No*No*Yes*No*Yes*No*No*No*Yes*No*No
+45*The Ultimate Fajita*Yes*Yes*No*No*Yes*No*No*Yes*No*No*No*No*No*Yes*No*No
+46*Extra Chicken*Yes*Yes*No*No*Yes*No*No*Yes*No*No*No*No*No*Yes*No*No
+47*Extra Barbeque Chicken and Pulled Pork*Yes*Yes*No*No*Yes*No*No*Yes*No*No*No*No*No*Yes*No*No
+48*Extra Tender Steak*Yes*Yes*No*No*Yes*No*No*Yes*No*No*No*No*No*Yes*No*No
+49*Extra Seasoned Roasted Veg*No*No*No*No*Yes*No*No*Yes*No*No*No*No*No*Yes*No*No
+50*Extra Garlic King Prawns*Yes*Yes*No*No*Yes*No*No*Yes*No*Yes*No*No*No*Yes*No*No
+51*Chicken and Barbeque Pulled Pork Burger*Yes*Yes*No*Yes*Yes*No*No*Yes*No*No*No*Yes*No*No*No*No
+52*Classic Beef Burger*Yes*Yes*No*Yes*Yes*No*No*No*No*No*No*Yes*No*No*No*No
+53*Southern Fried Chicken Burger*Yes*Yes*Yes*Yes*Yes*No*No*Yes*No*No*No*Yes*No*No*No*No
+54*Halloumi Burger*Yes*Yes*Yes*Yes*Yes*No*No*Yes*No*No*No*Yes*No*Yes*No*No
+55*Beef, Chorizo and Pulled Pork Burger*Yes*Yes*No*Yes*Yes*No*No*No*No*No*No*Yes*Yes*Yes*No*No
+56*Texan Stack Burger*Yes*Yes*Yes*Yes*Yes*No*No*Yes*No*No*No*Yes*No*Yes*No*No
+57*Extra Beef*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No*No
+58*Extra Chicken Breast*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No*No
+59*Extra Southern Fried Chicken Breast*Yes*Yes*Yes*No*No*No*No*Yes*No*No*No*No*No*No*No*No
+60*Extra Beef Chilli*Yes*Yes*No*No*Yes*No*No*Yes*No*No*No*No*Yes*No*No*No
+61*Extra Chorizo*Yes*Yes*No*No*Yes*No*No*No*No*No*No*No*Yes*No*No*No
+62*Extra Cheese*No*Yes*No*No*Yes*No*No*No*No*No*No*No*No*No*No*No
+63*Extra Bacon*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No*No
+64*Extra Guacamole*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No
+65*Extra Grilled Halloumi*No*Yes*Yes*No*Yes*No*No*No*No*No*No*No*No*No*No*No
+66*Steak and Fries*Yes*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No
+67*Steak and Salad*Yes*Yes*No*No*No*No*No*No*No*No*No*Yes*No*No*No*No
+68*Extra Jalapeno Cheese Sauce*No*Yes*Yes*No*Yes*No*No*No*No*No*No*No*No*No*No*No
+69*Extra Barbeque Sauce*No*No*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No
+70*Extra Peppercorn Sauce*Yes*Yes*Yes*No*Yes*No*No*Yes*No*No*No*Yes*No*No*No*No
+71*Rib Eye Steak*Yes*Yes*No*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No
+72*Barbeque Chicken Melt*Yes*Yes*No*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No
+73*Chicken and Ribs*Yes*Yes*No*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No
+74*Whole Rack of Ribs*Yes*Yes*No*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No
+75*Half Rack of Ribs*Yes*Yes*No*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No
+76*Pork Belly*Yes*Yes*Yes*Yes*Yes*No*No*Yes*No*No*No*No*Yes*No*No*No
+77*Southern Fried Chicken and Barbeque Pulled Pork*Yes*Yes*Yes*Yes*Yes*No*No*Yes*No*No*No*No*No*No*No*No
+78*Classic Beef Chilli*Yes*Yes*No*No*Yes*No*No*Yes*No*No*No*No*Yes*No*No*No
+79*Five Bean and Roasted Veg Chilli*No*Yes*No*No*Yes*No*No*Yes*No*No*No*No*No*No*No*No
+80*Fiery Chicken*Yes*Yes*No*No*Yes*No*No*Yes*No*No*No*No*No*No*No*No
+81*Barbeque Chicken Wrap*Yes*Yes*Yes*Yes*Yes*No*No*Yes*No*No*No*No*No*No*No*No
+82*Chicken Baja Bowl*Yes*Yes*Yes*No*Yes*No*No*Yes*No*No*No*No*No*No*No*No
+83*Jambalaya*Yes*Yes*No*No*Yes*No*No*Yes*No*Yes*No*No*No*No*No*No
+84*Steak Salad*Yes*Yes*No*No*No*No*No*Yes*No*No*No*No*No*No*No*No
+85*Mango and Avocado Salad*No*No*No*No*No*No*No*Yes*No*No*No*No*No*No*No*No
+86*Chicken, Mango and Avocado Salad*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No*No
+87*Prawn, Mango and Avocado Salad*Yes*Yes*No*No*No*No*No*No*No*Yes*No*No*No*No*No*No
+88*Chicken Fajita Salad*Yes*Yes*No*No*Yes*No*No*Yes*No*No*No*No*No*Yes*No*No
+89*Roasted Halloumi and Veg Naked Burrito*No*Yes*No*No*Yes*No*No*Yes*No*No*No*No*No*Yes*No*No
+90*Beef Chilli Naked Burrito*Yes*Yes*No*No*Yes*No*No*Yes*No*No*No*No*Yes*Yes*No*No
+91*Mild Habanero Chicken*Yes*Yes*No*No*Yes*No*No*Yes*No*No*No*No*No*Yes*No*No
+92*Skin-on Fries*No*No*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No
+93*Sweet Potato Fries*No*No*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No
+94*Sweet Potato Wedges*No*Yes*No*No*Yes*No*No*Yes*No*No*No*Yes*No*No*No*No
+95*Refried Beans*No*Yes*No*No*Yes*No*No*Yes*No*No*No*No*No*No*No*No
+96*Roasted Vegetables*No*No*No*No*No*No*No*Yes*No*No*No*No*No*No*No*No
+97*Rice*No*No*No*No*No*No*No*Yes*No*No*No*No*No*No*No*No
+98*Grilled Halloumi*No*Yes*No*No*Yes*No*No*No*No*No*No*No*No*No*No*No
+99*Onion Rings*No*Yes*Yes*No*Yes*No*No*No*No*No*No*No*No*No*No*No
+100*Coleslaw*No*Yes*Yes*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No
+101*Garlic Tortilla*No*No*Yes*No*No*No*No*Yes*No*No*No*No*No*No*No*No
+102*Corn On The Cob*No*Yes*No*No*Yes*No*No*No*No*No*No*No*No*No*No*No
+103*Small Churros*No*Yes*Yes*No*Yes*No*No*No*No*No*No*No*Yes*No*No*No
+104*Churros*No*Yes*Yes*No*Yes*No*No*No*No*No*No*No*Yes*No*No*No
+105*Hot Chocolate and Churros*No*Yes*Yes*No*Yes*No*No*No*No*No*No*No*Yes*No*No*No
+106*Pineapple Thins*No*Yes*No*No*Yes*No*No*No*No*No*No*No*No*No*No*No
+107*Chilli Pineapple Thins*No*Yes*No*No*Yes*No*No*No*No*No*No*Yes*No*No*No*No
+108*Brownie Baked Banana*No*Yes*Yes*Yes*Yes*No*No*No*No*No*No*No*Yes*No*No*No
+109*Toffee Popcorn Brownie*No*Yes*Yes*Yes*Yes*No*No*No*No*No*No*No*Yes*No*No*No
+110*Golden Nugget Cheesecake*No*Yes*Yes*No*Yes*Yes*Yes*No*No*No*No*No*Yes*No*Yes*No
+111*Blueberry and Apple Crumble*No*Yes*No*No*Yes*No*Yes*No*No*No*No*No*No*No*No*No
+112*Chocolate Orange Cake*No*Yes*Yes*Yes*Yes*No*No*No*No*No*No*No*Yes*No*No*No
+113*Cointreau 25ml Shot*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No
+114*Mexican Mess*No*Yes*Yes*Yes*Yes*No*No*No*No*No*No*No*Yes*No*No*No
+115*Ice Cream - One Scoop*No*Yes*No*No*Yes*No*No*No*No*No*No*No*Yes*No*No*No
+116*Ice Cream - Trio*No*Yes*No*No*Yes*No*No*No*No*No*No*No*Yes*No*No*No
+117*Brownies and Ice Cream*No*Yes*No*Yes*Yes*No*No*No*No*No*No*No*Yes*No*No*No
+118*Lemon Sorbet - One Scoop*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No
+119*Lemon Sorbet - Trio*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No
+120*Americano*No*Yes*Yes*Yes*Yes*No*No*No*No*No*No*No*Yes*No*No*No
+121*Latte*No*Yes*Yes*Yes*Yes*No*No*No*No*No*No*No*Yes*No*No*No
+122*Cappuccino*No*Yes*Yes*Yes*Yes*No*No*No*No*No*No*No*Yes*No*No*No
+123*Cappuccino - Large*No*Yes*Yes*Yes*Yes*No*No*No*No*No*No*No*Yes*No*No*No
+124*Espresso*No*Yes*Yes*Yes*Yes*No*No*No*No*No*No*No*Yes*No*No*No
+125*Double Espresso*No*Yes*Yes*Yes*Yes*No*No*No*No*No*No*No*Yes*No*No*No
+126*Tea*No*Yes*Yes*Yes*Yes*No*No*No*No*No*No*No*Yes*No*No*No
+127*Hot Chocolate*No*Yes*Yes*Yes*Yes*No*No*No*No*No*No*No*Yes*No*No*No
+128*Liqueur Coffee - Goslings Addition*No*Yes*Yes*Yes*Yes*No*No*No*No*No*No*No*Yes*Yes*No*No
+129*Liqueur Coffee - Baileys Addition*No*Yes*Yes*Yes*Yes*No*No*No*No*No*No*No*Yes*No*No*No
+130*Liqueur Coffee - Disaronno Amaretto Addition*No*Yes*Yes*Yes*Yes*No*No*No*No*No*No*No*Yes*No*No*No
+131*Liqueur Coffee - Jamesons Addition*No*Yes*Yes*Yes*Yes*No*No*No*No*No*No*No*Yes*No*No*No
+132*Liqueur Coffee - Kahlua Addition*No*Yes*Yes*Yes*Yes*No*No*No*No*No*No*No*Yes*No*No*No
+133*Liqueur Coffee - Martell Addition*No*Yes*Yes*Yes*Yes*No*No*No*No*No*No*No*Yes*No*No*No
+134*Decaff Americano*No*Yes*Yes*Yes*Yes*No*No*No*No*No*No*No*Yes*No*No*No
+135*Decaff Latte*No*Yes*Yes*Yes*Yes*No*No*No*No*No*No*No*Yes*No*No*No
+136*Decaff Cappuccino*No*Yes*Yes*Yes*Yes*No*No*No*No*No*No*No*Yes*No*No*No
+137*Decaff Cappuccino - Large*No*Yes*Yes*Yes*Yes*No*No*No*No*No*No*No*Yes*No*No*No
+138*Decaff Espresso*No*Yes*Yes*Yes*Yes*No*No*No*No*No*No*No*Yes*No*No*No
+139*Decaff Double Espresso*No*Yes*Yes*Yes*Yes*No*No*No*No*No*No*No*Yes*No*No*No
+140*Homemade Lemonade*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No
+141*Ginger Beer Mock-jito*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No
+142*Apple Juice Mock-jito*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No
+143*Lemonade Mock-jito*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No
+144*Virgin Colada*No*Yes*No*No*Yes*No*No*No*No*No*No*No*No*Yes*No*No
+145*Appleberry*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No
+146*Strawberry and Raspberry Agua Fresca*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No
+147*Mango and Passion Fruit Agua Fresca*No*No*No*No*No*No*No*No*No*No*No*No*No*Yes*No*No
+148*Classic Vanilla*Yes*Yes*No*No*Yes*No*No*No*No*No*No*No*No*No*No*No
+149*Classic Strawberry*Yes*Yes*No*No*Yes*No*No*No*No*No*No*No*No*No*No*No
+150*Classic Chocolate*Yes*Yes*No*No*Yes*No*No*No*No*No*No*No*No*No*No*No
+151*Classic Blueberry*Yes*Yes*No*No*Yes*No*No*No*No*No*No*No*No*No*No*No
+152*Salted Caramel Popcorn*No*Yes*No*No*Yes*No*No*No*No*No*No*No*Yes*No*No*No
+153*Chocolate Churro*No*Yes*Yes*No*Yes*No*No*No*No*No*No*No*No*No*No*No
+154*Classic Vanilla Bourbon*Yes*Yes*No*No*Yes*No*No*No*No*No*No*No*No*No*No*No
+155*Classic Strawberry Bourbon*Yes*Yes*No*No*Yes*No*No*No*No*No*No*No*No*No*No*No
+156*Classic Chocolate Bourbon*Yes*Yes*No*No*Yes*No*No*No*No*No*No*No*No*No*No*No
+157*Classic Blueberry Bourbon*Yes*Yes*No*No*Yes*No*No*No*No*No*No*No*No*No*No*No
+158*Salted Caramel Popcorn Bourbon*No*Yes*No*No*Yes*No*No*No*No*No*No*No*Yes*No*No*No
+159*Chocolate Churro Bourbon*No*Yes*Yes*No*Yes*No*No*No*No*No*No*No*No*No*No*No
+160*Classic Margarita*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No
+161*Tommies Margarita*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No
+162*Best Margarita In The World*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No
+163*Margarita Del Fuego*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No
+164*Strawberry Margarita*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No
+165*Coconut Margarita*No*Yes*No*No*Yes*No*No*No*No*No*No*No*No*Yes*No*No
+166*Classic Margarita Ocho*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No
+167*Tommies Margarita Ocho*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No
+168*Best Margarita In The World*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No
+169*Margarita Del Fuego Ocho*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No
+170*Strawberry Margarita Ocho*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No
+171*Coconut Margarita Ocho*No*Yes*No*No*Yes*No*No*No*No*No*No*No*No*Yes*No*No
+172*Classic Margarita Pitcher*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No
+173*Tommies Margarita Jug*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No
+174*Strawberry Margarita Jug*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No
+175*Pornstar Martini*No*Yes*No*No*No*No*No*No*No*No*No*No*No*Yes*No*No
+176*Southern Belle*No*Yes*No*No*No*No*No*No*No*No*No*No*No*Yes*No*No
+177*Mex On The Beach*No*No*No*No*No*No*No*No*No*No*No*No*No*Yes*No*No
+178*Raspberry Rum Collins*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No
+179*Cherry Libre*No*No*No*No*No*No*No*No*No*No*No*No*No*Yes*No*No
+180*Woo Woo*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No
+181*Frozen Strawberry Daiquiri*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No
+182*Gin Fizz*No*Yes*No*Yes*No*No*No*No*No*No*No*No*No*No*No*No
+183*Espresso Martini*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No
+184*Kir Royale*No*Yes*No*No*No*No*No*No*No*No*No*No*No*Yes*No*No
+185*Amaretto Sour*No*Yes*No*Yes*No*No*No*No*No*No*No*No*No*No*No*No
+186*Long Island Ice Tea*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No
+187*Berry Sling*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No
+188*Pina Colada*No*Yes*No*No*Yes*No*No*No*No*No*No*No*No*Yes*No*No
+189*Bourbon Sours*No*Yes*No*Yes*No*No*No*No*No*No*No*No*No*No*No*No
+190*Fruity Passion Fruit Mojito*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No
+191*Classic Mojito*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No
+192*Apple Juice*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No
+193*Egar Cloudy Apple Juice (16oz)*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No
+194*Orange Juice*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No
+195*Pineapple Juice*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No
+196*Guava Juice (16oz)*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No
+197*El Velero Verdejo Blanco - 175ml, Valdepenas, Spain*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No
+198*El Velero Verdejo Blanco - 250ml, Valdepenas, Spain*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No
+199*El Velero Verdejo Blanco - Bottle, Valdepenas, Spain*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No
+200*Casa Vista Chardonnay - 175ml, Central Valley, Chile*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No
+201*Casa Vista Chardonnay - 250ml, Central Valley, Chile*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No
+202*Casa Vista Chardonnay - Bottle, Central Valley, Chile*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No
+203*Quindi Pinot Grigio - 175ml, Italy*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No
+204*Quindi Pinot Grigio - 250ml, Italy*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No
+205*Quindi Pinot Grigio - Bottle, Italy*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No
+206*Milford Point Sauvignon Blanc - 175ml, Marlborough, New Zealand*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No
+207*Milford Point Sauvignon Blanc - 250ml, Marlborough, New Zealand*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No
+208*Milford Point Sauvignon Blanc - Bottle, Marlborough, New Zealand*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No
+209*El Velero Tempranillo Tinto - 175ml, Valdepenas, Spain*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No
+210*El Velero Tempranillo Tinto - 250ml, Valdepenas, Spain*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No
+211*El Velero Tempranillo Tinto - Bottle, Valdepenas, Spain*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No
+212*Altoritas Merlot - 175ml, Central Valley, Chile*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No
+213*Altoritas Merlot - 250ml, Central Valley, Chile*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No
+214*Altoritas Merlot - Bottle, Central Valley, Chile*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No
+215*Casa Vista Cabernet Sauvignon - 175ml, Central Valley, Chile*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No
+216*Casa Vista Cabernet Sauvignon - 250ml, Central Valley, Chile*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No
+217*Casa Vista Cabernet Sauvignon - Bottle, Central Valley, Chile*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No
+218*Callia Lunaris Malbec - 175ml, Argentina*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No
+219*Callia Lunaris Malbec - 250ml, Argentina*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No
+220*Callia Lunaris Malbec - Bottle, Argentina*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No
+221*Don Jacobo Rioja Crianza - 175ml, Bodegas Corral, Spain*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No*No
+222*Don Jacobo Rioja Crianza - 250ml, Bodegas Corral, Spain*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No*No
+223*Don Jacobo Rioja Crianza - Bottle, Bodegas Corral, Spain*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No*No
+224*Echo Falls White Zinfandel - 175ml, USA*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No*No
+225*Echo Falls White Zinfandel - 250ml, USA*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No*No
+226*Echo Falls White Zinfandel - Bottle, USA*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No*No
+227*Parini Pinot Grigio Rose Delle Venezie - 175ml, Italy*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No*No
+228*Parini Pinot Grigio Rose Delle Venezie - 250ml, Italy*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No*No
+229*Parini Pinot Grigio Rose Delle Venezie - Bottle, Italy*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No*No
+230*Prosecco - 175ml, Midea, Italy*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No
+231*Prosecco - Bottle, Midea, Italy*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No
+232*Codorniu Brut Rosado - 175ml, Cava, Spain*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No
+233*Codorniu Brut Rosado - Bottle, Cava, Spain*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No
+234*Lanson Black Label Brut NV - Bottle*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No
+235*Evan Williams*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No
+236*Buffalo Trace*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No
+237*Colorado Tincup*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No
+238*Old Forester*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No
+239*Bulleit*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No
+240*Woodford Reserve*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No
+241*Eagle Rare 10 Year Old*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No
+242*Stagg Jr*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No
+243*Beefeater London Dry Gin*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No
+244*Tanqueray*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No
+245*Hendricks*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No
+246*Tanqueray 10*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No
+247*Smirnoff*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No
+248*Titos Texan*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No
+249*Ketel One*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No
+250*Pampero*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No
+251*Bacardi Carta Blanca*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No
+252*Captain Morgan Spiced*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No
+253*Old J Spiced*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No
+254*Old J Cherry*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No
+255*Old J Tiki Overproof*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No
+256*Goslings Black Seal*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No
+257*Bacardi 8 Year Old*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No
+258*Corona - 330ml ABV% 4.2*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No
+259*Corona - 710ml ABV% 4.2*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No
+260*Mexican Blonde - 330ml*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No
+261*Budweiser Prohibition - 330ml ABV% 0.05*No*No*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No
+262*Brewdog Vagabond - 330ml ABV% 4.5*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No
+263*Desperados - 330ml ABV% 5.9*No*No*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No
+264*Doom Bar - 500ml ABV% 4.3*No*Yes*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No
+265*Budweiser - 330ml ABV% 4.5*No*No*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No
+266*Peroni - 330ml ABV% 5.1*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No
+267*Modelo Especial - 355ml ABV% 4.5*No*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No*No
+268*Magners Irish Cider Apple - 568ml ABV% 4.5*No*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No*No
+269*Rekorderlig Strawberry and Lime - 500ml ABV 4%*No*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No*No
+270*Diet Pepsi - Glass*No*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No*No
+271*R Whites Lemonade - Glass*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No
+272*Pepsi Max - Glass*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No
+273*Tango Orange - Glass*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No
+274*Pepsi - Glass*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No
+275*Pepsi - Bottle 330ml*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No
+276*Diet Pepsi - Bottle 330ml*No*Yes*No*No*No*No*No*No*No*No*No*No*No*No*No*No
+277*Pepsi Max - Bottle 330ml*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No
+278*Tango Orange - Bottle 330ml*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No
+279*7UP Free - Bottle 330ml*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No
+280*Strathmore Still Water - 330ml*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No
+281*Strathmore Still Water - 750ml*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No
+282*Strathmore Sparkling Water - 330ml*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No
+283*Strathmore Sparkling Water - 750ml*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No
+284*J2O Apple and Mango - 275ml*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No
+285*J2O Orange and Passion Fruit - 275ml*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No
+286*J2O Apple and Raspberry - 275ml*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No
+287*J2O Spritz Peach and Apricot - 275ml*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No
+288*J2O Spritz Apple and Watermelon - 275ml*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No
+289*Lipton Ice Tea - 330ml*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No
+290*Blanco Tequila - Ocho Blanco*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No
+291*Blanco Tequila - 1800 Blanco*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No
+292*Anejo Tequila - 1800 Anejo*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No
+293*Anejo Tequila - Sauza Tres Generaciones Anejo*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No
+294*Extra Anejo - Jose Cuervo Reserva De La Familia*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No
+295*Reposado Tequila - Jose Cuervo Traditional Reposado*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No
+296*Reposado Tequila - Sauza Tres Generaciones Reposado*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No
+297*The Rule Breaker - Maestro Dobel Diamante*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No
+298*Flavours - 1800 Coconut*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No
+299*Flavours - Patron Xo Cafe (Coffee)*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No
+300*Flavours - Patron Xo Incendio*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No
+301*Mezcal - Montelobos*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No
+302*Mezcal - Vida*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No*No
