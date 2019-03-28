@@ -32,7 +32,12 @@ include_once '../../Header.php';
 							echo "<td>{$row['Item']}</td>";
 							echo "<td>{$row['Time']}</td>";
 							echo "<td>{$row['Quantity']}</td>";
-							echo "<td>{$row['Status']}</td></tr>";
+							?>
+							<td>
+								<input type="Submit" name="Cooking" value="Cooking">
+								<input type="Submit" name="Cooked" value="Cooked">
+							</td>
+							<?php
 						}
 					}
 					mysqli_close($conn);
