@@ -20,11 +20,11 @@ $user = mysqli_fetch_array($results);
          <table style="width:100%">
            <colgroup>
              <col style="width:5%">
-             <col style="width:45%">
-             <col style="width:12%">
-             <col style="width:14%">
-             <col style="width:12%">
-             <col style="width:12%">
+             <col style="width:43%">
+             <col style="width:15%">
+             <col style="width:10%">
+             <col style="width:10%">
+             <col style="width:17%">
              <!-- Sets the width of the tables. 14-->
            </colgroup>
            <tr>
