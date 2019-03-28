@@ -21,15 +21,17 @@ $user = mysqli_fetch_array($results);
            <colgroup>
              <col style="width:5%">
              <col style="width:45%">
-             <col style="width:15%">
-             <col style="width:15%">
-             <col style="width:20%">
-             <!-- Sets the width of the tables. -->
+             <col style="width:12%">
+             <col style="width:14%">
+             <col style="width:12%">
+             <col style="width:12%">
+             <!-- Sets the width of the tables. 14-->
            </colgroup>
            <tr>
              <th>Table</th>
              <th>Items</th>
              <th>Time</th>
+             <th>Payment Status</th>
              <th>Status</th>
              <th>Change Status</th>
              <!-- The heading for the table -->
@@ -37,7 +39,7 @@ $user = mysqli_fetch_array($results);
            <?php
            require '../../Connections/ConnectionCustomer.php';
            // connection file to the database
-           $sql = "SELECT TableNo, Item, Time,Quantity, Price, Status FROM Orders ORDER BY Time ASC";
+           $sql = "SELECT TableNo, Item, Time,Quantity, Price, PaymentStatus, Status FROM Orders ORDER BY Time ASC";
            // sql query for which get the dishes from the databse, ordered by Time
            $res = $conn->query($sql);
            // gets the result from the database
@@ -50,7 +52,7 @@ $user = mysqli_fetch_array($results);
               $num_rows++;
               $id = $row['ID'];
               echo "<tr>";
-              echo "<td>{$row['TableNo']}</td><td>{$row['Item']}</td><td>{$row['Time']}</td><td>{$row['Status']}</td><td>";
+              echo "<td>{$row['TableNo']}</td><td>{$row['Item']}</td><td>{$row['Time']}</td><td>{$row['PaymentStatus']}</td><td>{$row['Status']}</td><td>";
               // Displays the dishes for each table including the status for each dish.
 
               $StatusId = "status".$num_rows."[]";
