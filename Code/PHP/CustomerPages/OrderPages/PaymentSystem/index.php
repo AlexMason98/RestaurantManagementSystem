@@ -48,6 +48,7 @@ if (!empty($_POST["token"])) {
     $amount = $stripeResponse["amount"] /100;
 
     $param_type = 'sssssss'; // Indicates type of parameters, 's' denotes String, 'd' denotes Number/Decimal
+    // Array containing values to be inserted into Payment table
     $param_value_array = array(
         $stripeResponse["balance_transaction"],
         $_POST['name'],
@@ -57,18 +58,24 @@ if (!empty($_POST["token"])) {
         $stripeResponse["status"],
         json_encode($stripeResponse)
     );
+    // SQL query to actually insert data into Payment database table. The '?' in values denotes that these values will be coming from the array later on
     $query = "INSERT INTO Payment (TransactionID, Name, Email, TotalAmount, Currency, PaymentStatus, PaymentResponse) values (?, ?, ?, ?, ?, ?, ?)";
     $id = $databaseConn->insert($query, $param_type, $param_value_array);
     
+    // If the Payment Status/Response is successful/succeeded, do this:
     if ($stripeResponse['amount_refunded'] == 0 && empty($stripeResponse['failure_code']) && $stripeResponse['paid'] == 1 && $stripeResponse['captured'] == 1 && $stripeResponse['status'] == 'succeeded') {
+        // Concatenate transaction ID and string into success message
         $successMessage = "Your Transaction ID is: " . $stripeResponse["balance_transaction"];
         
+        // Insert paid-for order into the Orders table. Note that the PaymentStatus being entered is "Paid"
         $sql = "INSERT INTO Orders (IP, TableNo, ID, Item, Quantity, Price, Status, PaymentStatus, Time) SELECT TempOrders.IP, TempOrders.TableNo, TempOrders.ID, TempOrders.Item, TempOrders.Quantity, TempOrders.Price, 'Order Placed', 'Paid', now() FROM TempOrders WHERE TempOrders.IP = '$ip'";
 
             if (mysqli_query($conn, $sql)) {
+                // If SQL query was successful, delete the order from the temporary TempOrders table where IP matches user's IP
                 $sql = "DELETE FROM TempOrders WHERE IP = '$ip'";
                 if (mysqli_query($conn, $sql)) {
                 ?>
+                    <!-- Make these divs hidden to display new content, which is the payment success divs -->
                     <style>
                         #totalAmount {
                             display: none;
@@ -84,13 +91,17 @@ if (!empty($_POST["token"])) {
                     </style>
 
                     <?php 
+                        // Final validation check that the success message is not empty, which it won't be after a successful payment
                         if(!empty($successMessage)) { ?>
                             <div id="success">
+                                <!-- Display Confirmation Image (A green tick) -->
                                 <img src="Confirmation.png" id="confirmationImg" height="200" width="200">
+                                <!-- Print to user "We have displayed your order" and their transaction ID -->
                                 <h4 id="receivedOrder">We have received your order!</h5>
                                 <h5 id="successMessage"><?php echo $successMessage; ?></h5>
                                 <br>
                                 <h5 id="deliverWhenReady">We will be delivering your meal to your table as soon as it is ready!</h6>
+                                <!-- Button to allow user to navigate back to home page once payment completed -->
                                 <a class="btn btn-success btn-md" id="backToHome" href="/Main/PHP/CustomerPages/IndexPage/indexPage.php">Back to Home Page</a>
 
                             </div>
@@ -98,22 +109,27 @@ if (!empty($_POST["token"])) {
                 
                 <?php
                 } else {
+                    // If DELETE FROM TempOrders query failed, print "Error Removing Order from Basket" and the error from the connection
                     echo('<h5>Error Removing Order From Basket. Please request assistance from one of our waiters.</h5>');
                     echo('<br>');
                     echo(mysqli_error($conn));
                 }
             } else {
+                // If INSERT INTO Orders query failed, print "Error Placing Order" with the error from the connection
                 echo('<h5>Error Placing Order. Please request assistance from one of our waiters.</h5>');
                 echo(mysqli_error($conn));
             }
     }
 }
 ?>
+    <!-- Div which displays the error message. It is hidden until the user encounters an error, like not filling in all forms for example -->
     <div id="error-message"></div>
             <br>
+            <!-- Echo Total Amount and Table Number, as a final confirmation to the user -->
             <h4 id="totalAmount">Total Amount: £<?php echo($TotalAmount); ?></h4>
             <h4 id="yourTableNumber">Your Table Number: <?php echo($TableNumber); ?></h4>
                 
+            <!-- Stripe Payment Form to take card details -->
             <form id="frmStripePayment" action="" method="post">
                 <div class="field-row">
                     <label>Card Holder Name</label>
@@ -175,10 +191,12 @@ if (!empty($_POST["token"])) {
                         id="submit-btn" class="btnAction"
                         onClick="stripePay(event);">
 
+                    <!-- Display LoaderIcon.gif when user clicks submit and all forms are not empty -->
                     <div id="loader">
                         <img alt="loader" src="LoaderIcon.gif">
                     </div>
                 </div>
+                <!-- These input types are hidden because they are data for the Stripe Dashboard online -->
                 <input type='hidden' name='amount' value='<?php echo($TotalAmount); ?>'> 
                 <input type='hidden' name='currency_code' value='GBP'>
                 <input type='hidden' name='description' value='Oaxaca Restaurants Order'>
@@ -189,6 +207,7 @@ if (!empty($_POST["token"])) {
     <script src="vendor/jquery/jquery-3.2.1.min.js"
         type="text/javascript"></script>
     <script>
+// Card validation script which gets the value from each form and ensures the forms are not empty
 function cardValidation () {
     var valid = true;
     var name = $('#name').val();
@@ -220,16 +239,17 @@ function cardValidation () {
         valid = false;
     }
 
+    // If any of the above values are empty, display the error message div with the text "All Fields are required"
     if(valid == false) {
         $("#error-message").html("All Fields are required").show();
     }
 
     return valid;
 }
-//set your publishable key
+// Sets our publishable key
 Stripe.setPublishableKey("<?php echo STRIPE_PUBLISHABLE_KEY; ?>");
 
-//callback to handle the response from stripe
+// Callback to handle the response from Stripe API
 function stripeResponseHandler(status, response) {
     if (response.error) {
         //enable the submit button
@@ -260,7 +280,7 @@ function stripePay(e) {
             exp_year: $('#year').val()
         }, stripeResponseHandler);
 
-        //submit from callback
+        // Submit from Callback
         return false;
     }
 }
