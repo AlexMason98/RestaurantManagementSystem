@@ -1,3 +1,7 @@
+<?php
+require '/var/www/html/Main/PHP/Connections/ConnectionCustomer.php';	
+?>
+
 <div class="row">
 	<div class="col-lg-12 scrollit" id="DishesCol">
 		<?php
@@ -14,13 +18,20 @@
 
 		$CategoryArray = $_POST['category'];
 		$Category = array();
-		if(sizeof($CategoryArray)>0){
+		if(sizeof($CategoryArray)==1){
 			foreach ($CategoryArray as $key => $value) {
 				array_push($Category, "menu.Category = '".$value."'" );
 			}
 			$sql = $sql . " AND ";
 			$sql .= join("", $Category);
 			// this get the checkboxes checkboxes from the Categories page using a post method. This then pushes to array which is then used to to concatinate with the sql query. 
+		}elseif(sizeof($CategoryArray)>1){
+			?>
+			<h3>You can not select more than 1 category at a time.</h3>
+			<?php
+			$sql = "SELECT menu.ID, menu.Item, menu.ImagePath, menu.Price, menu.Availability, Descriptions.Description, IngredientsAndCalories.Ingredients, Allergens.Allergens, IngredientsAndCalories.Calories, DietaryRequirements.Item FROM Descriptions, IngredientsAndCalories, Allergens, DietaryRequirements CROSS JOIN menu WHERE menu.ID = DietaryRequirements.ID AND DietaryRequirements.ID = Descriptions.ID AND Descriptions.ID = IngredientsAndCalories.ID AND IngredientsAndCalories.ID = Allergens.ID AND menu.Availability = 'True' ";
+		}else {
+			$sql = "SELECT menu.ID, menu.Item, menu.ImagePath, menu.Price, menu.Availability, Descriptions.Description, IngredientsAndCalories.Ingredients, Allergens.Allergens, IngredientsAndCalories.Calories, DietaryRequirements.Item FROM Descriptions, IngredientsAndCalories, Allergens, DietaryRequirements CROSS JOIN menu WHERE menu.ID = DietaryRequirements.ID AND DietaryRequirements.ID = Descriptions.ID AND Descriptions.ID = IngredientsAndCalories.ID AND IngredientsAndCalories.ID = Allergens.ID AND menu.Availability = 'True' ";
 		}
 
 		if($_POST['Revert']){
@@ -46,14 +57,12 @@
 
 ////////////                                     ////////////////
 ////////////////////////////////////////////////////////////////	
-		
 		$res = $conn->query($sql);
 		$num_rows = mysqli_num_rows($res);
 		if($res-> num_rows == 0){
 			echo "0 results";
 		}
 		else{
-			echo $res -> num_rows;
 			while($row = mysqli_fetch_assoc($res)){
 
 				$image = $row['ImagePath'];
