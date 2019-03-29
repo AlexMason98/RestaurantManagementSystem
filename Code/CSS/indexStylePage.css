@@ -258,6 +258,7 @@
 
 	#KitchenOrderPage{
 		font-size: 30px;
+		overflow-y: scroll; 
 	}
 
 	.ChangeMenuAvailability {
@@ -275,6 +276,10 @@
 		height: 220px;
 		font-size: 25px;
 		line-height: 150%;
+	}
+
+	.currentOrderTable{
+		overflow-y: scroll;
 	}
 
 	.ChangeMenuAvailability:target {
