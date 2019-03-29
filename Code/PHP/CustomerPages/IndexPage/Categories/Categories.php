@@ -1,4 +1,4 @@
-<div class="card">
+<div class="card" id="categoriesCard">
 	<div class="card-header" id="headingOne">
 		<button class="btn btn-lg" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"  id="dropDown">
 			Categories
