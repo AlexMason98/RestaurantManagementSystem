@@ -105,12 +105,12 @@ require '/var/www/html/Main/PHP/Connections/ConnectionCustomer.php';
 								// This is going to be used to differentiate and generates a button for each dish id.
 								?>
 								<div id="<?php echo($quantityID); ?>" class="quantityForm">
-									<input type="text" name="<?php echo($quantityID); ?>" value="1" class="form-control" />
+									<input type="text" name="<?php echo($quantityID); ?>" id="quantityBox" value="1" class="form-control" />
 								</div>
 								<div class="itemBoxes">
-									<input type="submit" class="btn btn-success" name="<?php echo($addToCartID); ?>" value="Add to Cart" href="<?php echo($hrefAddToCartID); ?>" />
+									<input type="submit" class="btn btn-success" name="<?php echo($addToCartID); ?>" value="Add to Cart" href="<?php echo($hrefAddToCartID); ?>" id="addToCartSubmit" />
 
-									<a class="btn btn-success" href="<?php echo($hrefPopupID); ?>">Info</a>
+									<a class="btn btn-success" href="<?php echo($hrefPopupID); ?>" id="infoButton">Info</a>
 								</div>
 							</div>
 							<div id="<?php echo($popup); ?>" class="overlay">
@@ -203,9 +203,9 @@ require '/var/www/html/Main/PHP/Connections/ConnectionCustomer.php';
 	<div class="table-responsive">
 	</div>
 	<div class="row" id="buttonRow">
-		<div class="col-lg-12" id="OrderButton">
+		<div class="OrderButton">
 			<!-- This creates the Order Button and links to the OrderPage -->
-			<a class="btn btn-light btn-lg btn-block" href="../OrderPages/OrderPage">Order</a>
+			<a class="btn btn-success btn-lg" id="OrderButton" href="../OrderPages/OrderPage">Order</a>
 		</div>
 	</div>
 </div>

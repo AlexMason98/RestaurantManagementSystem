@@ -53,6 +53,12 @@
 		/*padding-left: 35px;*/
 	}
 
+	#OrderButton {
+		width: 1350px;
+		margin-left: 4px;
+		font-size: 24px; 
+	}
+
 	#DropDown{
 		padding-top: 20px;
 		padding-bottom: 20px;
@@ -150,6 +156,24 @@
 		padding-top: 15px;
 		padding-bottom: 20px;
 		width: 8%;
+	}
+
+	#quantityBox {
+		font-size: 20px;
+		color: black;
+		font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+	}
+
+	#addToCartSubmit {
+		font-size: 20px;
+		margin-top: 15px;
+		font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+	}
+
+	#infoButton {
+		font-size: 20px;
+		margin-top: 15px;
+		font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
 	}
 
 	.loginbox{
