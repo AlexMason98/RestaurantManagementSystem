@@ -47,6 +47,14 @@
 		padding-right: 0px;
 	}
 
+	#categoriesCard {
+		font-size: 18px
+	}
+
+	#dietaryRequirementsCard {
+		font-size: 18px;
+	}
+
 	#buttonRow{
 		padding-top: 20px;
 		/*padding-right: 35px;*/

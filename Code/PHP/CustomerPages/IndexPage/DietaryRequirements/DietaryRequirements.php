@@ -1,4 +1,4 @@
-<div class="card">
+<div class="card" id="dietaryRequirementsCard">
 	<div class="card-header" id="headingTwo">
 		<h2 class="mb-0">
 			<button class="btn btn-lg" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" id="dropDown">
