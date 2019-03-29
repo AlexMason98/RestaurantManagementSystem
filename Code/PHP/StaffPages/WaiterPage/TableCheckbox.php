@@ -1,15 +1,14 @@
 <div class="col-lg-12">
 	<div class="row">
 		<div class="col-lg-4"></div>
-		<div class="col-lg-4">
-			<img src="TablePlan.png" id="TablePlan" width ="521" height ="241">
+		<div class="col-lg-4" >
+			<img src="TablePlan.png" id="TablePlan" width ="600" height ="300">
 		</div>
 		<div class="col-lg-4"></div>
 	</div>
-
-	<div class="row">
-		<div class="col-lg-2"></div>
-		<div class="col-lg-4">
+	<div class="row" id="ChangeAssistance">
+		<div class="col-lg-1"></div>
+		<div class="col-lg-5">
 			<h1>Table Plan</h1>
 			<p>Click to claim a table</p>
 			<p>Enter Table number</p>
@@ -41,14 +40,13 @@
 			}
 			?>
 		</div>
-		<div class="col-lg-1"></div>
-		<div class="col-lg-4">
-			<table>
+		<div class="col-lg-5" id="TATable">
+			<table style="width: 100%">
 				<tr>
-					<th style="width: 10%">Table</th>
-					<th style="width: 36%">Time</th>
-					<th style="width: 27%">Waiter Name</th>
-					<th style="width: 27%">Status</th>
+					<th style="width: 16%; font-size: 25px;">Table</th>
+					<th style="width: 30%; font-size: 25px;">Time</th>
+					<th style="width: 27%; font-size: 25px;">Waiter Name</th>
+					<th style="width: 27%; font-size: 25px;">Status</th>
 					<!-- The heading for the table -->
 				</tr>
 				<?php
@@ -95,7 +93,10 @@ if(!empty($_POST['TableNumber']) && !empty($_POST['WaiterAssignment'])){
 	// update the table
 	$res = $conn->query($UpdateSql);
 	if($res === True){
-		echo "<br>Table Assignment has changed.";
+		// We refresh the Waiter page if the UpdateSQL query has executed so that we can display the new status change
+		echo('<script>');
+		echo('window.location.href = "TableAssignment.php";');
+		echo('</script>');
 	}else{
 		echo "Error updating record! Try again.";
 	}
