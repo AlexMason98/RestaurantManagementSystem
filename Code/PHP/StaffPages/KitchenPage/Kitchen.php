@@ -66,7 +66,7 @@ include_once '../../Header.php';
 									$TableNoRowData = array();
 									// array to store the data from the database
 
-									$sql = "SELECT TableNo, ID, Item, Time, Quantity, Status FROM Orders WHERE Status!='Cooked' AND Status!='Deliveried' ORDER BY Time ASC";
+									$sql = "SELECT TableNo, ID, Item, Time, Quantity, Status FROM Orders WHERE Status != 'Cooked' AND Status != 'Deliveried' ORDER BY Time ASC";
 
 									$res = $conn->query($sql);
 									if ($res -> num_rows == 0) {
@@ -79,18 +79,20 @@ include_once '../../Header.php';
 											// while used to store the info from the database to the array . 
 										}
 										for ($j=0; $j < $i; $j++) { 
-											if($_POST[$CookedBut]){
-												$UpdateSql = "UPDATE  Orders SET Status = 'Cooked' WHERE Item='$ItemRowData[$j]' AND TableNo='$TableNoRowData[$j]' AND ID ='$IdRowData[$j]'";
+											if(isset($_POST[$CookedBut])){
+												$UpdateSql = "UPDATE Orders SET Status = 'Cooked' WHERE Item='$ItemRowData[$j]' AND TableNo='$TableNoRowData[$j]' AND ID ='$IdRowData[$j]'";
 												// updates sql query to change the status of the dishes to cooking
-											}elseif($_POST[$CookingBut]){
-												$UpdateSql = "UPDATE  Orders SET Status = 'Cooking' WHERE Item='$ItemRowData[$j]' AND TableNo='$TableNoRowData[$j]' AND ID ='$IdRowData[$j]'";
+											}elseif(isset($_POST[$CookingBut])){
+												$UpdateSql = "UPDATE Orders SET Status = 'Cooking' WHERE Item='$ItemRowData[$j]' AND TableNo='$TableNoRowData[$j]' AND ID ='$IdRowData[$j]'";
 													// updates sql query to change the status of the dishes to cooked
 											}
 										}
 										$res = $conn->query($UpdateSql);
 										if($res === True){
-											echo('<meta http-equiv="refresh" content="0">');
-											// refreshes the page when the sql query runs correctly/
+											// We refresh the Kitchen page if there has been a change in the table so that we can display the new status change
+											echo('<script>');
+											echo('window.location.href = "Kitchen.php";');
+											echo('</script>');
 										} else{
 											echo "Error updating record! Try again.";
 										}
