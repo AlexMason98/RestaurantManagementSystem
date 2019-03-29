@@ -116,7 +116,7 @@ require '/var/www/html/Main/PHP/Connections/ConnectionCustomer.php';
 							<div id="<?php echo($popup); ?>" class="overlay">
 								<div class="popup">
 									<h5 id="itemInformation">Item Information</h5>
-									<a class="close" href="">&times;</a>
+									<a class="close" href="#">&times;</a>
 									<div class="popupInfo">
 										<h6 id="descriptionText">Description:</h6>
 										<p id="itemDescription"><?php echo($description); ?></p>
