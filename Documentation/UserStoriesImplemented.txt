@@ -1,21 +1,33 @@
 List of user stories implemented:
-	
+
 	Customer:
-•	As a customer I want to view an electronic menu so that I can select my dishes digitally
+
+•	As a customer I want to view an electronic menu so that I can select my dishes 
 •	As a customer I want to have images of the dishes so that I can view the dishes in the menu
-•	As a customer I want the calories and ingredients of each dish displayed so that the content of the food can be seen 
-•	As a customer I want to be able to see the allergens of each dish so that I can check if I am allergic to any of the ingredients in the dish 
-•	As a customer I want to be able to filter the dishes by category so that it is easier to find the dishes I am interested in
+•	As a customer I want to be able to have complete information on ingredients and calories for each dish so I can both avoid foods I am allergic to and follow my diet
+•	As a customer I want to be able to filter the dishes by category so that it is easier to find the  dishes I am interested in
 •	As a customer I want to be able to filter the dishes by dietary requirements so that I can filter out dishes that I am allergic too, and filter dishes for vegetarians and vegans
 •	As a customer I want an ‘add to cart’ button that allows me to select the dishes I want to order and how many
+•	As a customer I want to be able to order food so I can eat
 •	As a customer I want to be able to cancel an order I have placed 
 •	As a customer I want to be able to alert the waiter so that I can get the assistance with my order
 •	As a customer I want to have an intuitive way of submitting an order so that the process is straight forward
+•	As a customer I want to be able to pay from the electronic interface I have at the table so that I can leave at my own convenience
 
-	Waiter:
+
+Waiter:
+
 •	As a waiter I want a login page so that only a waiter can login to the waiter page
 •	As a waiter I would like to be able to change the menu, so that I can show customers only the dishes that are currently available
 •	As a waiter, I want to be able to mark the order as delivered so that the order progress is tracked correctly
 •	As a waiter, I want to be able to see which tables have received their orders but have yet to pay, so that I can prevent people from leaving without paying 
 •	As a waiter, I want to see the time the order was placed so that I can prioritise them
 •	As a waiter, I want to be notified when the customer needs help so I can assist them
+•	As a waiter I want to be able to change the status of an order so that other waiters are kept informed on the current status of orders and can relay that information to customers
+•	As a waiter I want to be assigned to a certain table so that I won’t interfere with other waiter.
+
+Kitchen staff:
+
+•	As kitchen staff I want to be able to notify waiters once an order is ready so that they can deliver it
+•	As kitchen staff I want to know the times at which the orders were placed so that I can tell if I am on track
+•	As kitchen staff I want to be informed when a customer order is confirmed so I can start preparing it
