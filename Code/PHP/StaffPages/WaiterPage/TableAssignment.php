@@ -1,19 +1,19 @@
 <!-- Header --> 
 <?php
-include_once '../../TAHeader.php';
+include_once '../../Header.php';
 ?>
 <!-- Header -->
 
 
 <!-- image for the layout of the table -->
-<form method="post">
-	<img src="TablePlan.png" id="TablePlan" width ="521" height ="241">
-
-	<?php
-	include 'TableCheckbox.php';
+<section>
+	<form method="post">
+		<?php
+		include 'TableCheckbox.php';
 		// call a file in the same folder
-	?>
-</form>
+		?>
+	</form>
+</section>
 
 
 <!-- Footer -->

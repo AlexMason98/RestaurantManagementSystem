@@ -78,12 +78,36 @@
 		width: 300px;
 	}
 
+	#TablePlan{
+		margin-top: 50px;
+		margin-left: 60px;
+	}
+
+	.itemsTable {
+		font-size: 18px;
+	}
+
+	#ChangeAssistance{
+		margin-top: 50px;
+		margin-left: 10px;
+		border: solid;
+		border-color: black;
+		font-size: 35px;
+		line-height: 120%;
+	}
+
+	#TATable{
+		font-size: 20px;
+		margin-top: 50px;
+		margin-right: 10px;
+		margin-left: 50px;
+	}
+
 	#pricing{
 		font-family: 'Annie Use Your Telescope', specimen;
 		padding: 10px;
 		font-size: 24px;
 		border: 1px solid;
-		
 		line-height: 120%;
 		height: 300px;
 		width: 580px;
@@ -706,29 +730,29 @@
 
 	#confirmationImg {
 		position: absolute;
-  		left: 50%;
-  		transform: translate(-50%);
+		left: 50%;
+		transform: translate(-50%);
 	}
 
 	#receivedOrder {
 		position: absolute;
-  		left: 50%;
-  		transform: translate(-50%);
-  		padding-top: 250px;
+		left: 50%;
+		transform: translate(-50%);
+		padding-top: 250px;
 	}
 
 	#successMessage {
 		position: absolute;
-  		left: 50%;
-  		transform: translate(-50%);
-  		padding-top: 290px;
+		left: 50%;
+		transform: translate(-50%);
+		padding-top: 290px;
 	}
 
 	#deliverWhenReady {
 		position: absolute;
-  		left: 50%;
-  		transform: translate(-50%);
-  		padding-top: 320px;
+		left: 50%;
+		transform: translate(-50%);
+		padding-top: 320px;
 	}
 
 	#backToHome {
