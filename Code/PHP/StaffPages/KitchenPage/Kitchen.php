@@ -10,7 +10,7 @@ include_once '../../Header.php';
 		<div class="container-fluid" id="MainContainerKitchen">
 			<div class="row">
 				<div class="col-lg-12 col-md-8 col-sm-7" id="KitchenOrderPage">
-					<table class="table table-striped table-bordered-less header">
+					<table class="table table-striped table-bordered-less header" id="KitchenOrderTable">
 						<thead class="thead-light">
 							<tr>
 								<th style="width:5%; font-size: 30px; font-weight: bold">Table</th>

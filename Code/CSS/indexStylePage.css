@@ -261,6 +261,10 @@
 		overflow-y: scroll; 
 	}
 
+	#KitchenOrderTable {
+		margin-top: 20px;
+	}
+
 	.ChangeMenuAvailability {
 		position: fixed;
 		top: 0;
