@@ -3,7 +3,7 @@
 //the information for the database connection 
 $servername = "localhost";
 $username = "root";
-$password = "";
+$password = "teamproject5";
 $dbname = "staff";
 // Create/checking connection
 $conn = mysqli_connect($servername, $username, $password, $dbname);
