@@ -165,11 +165,13 @@ $user = mysqli_fetch_array($results);
       <a class="close" href="">&times;</a>
       <!-- this is cross which allows you to close the pop up -->
       <div class="popupInfo">
-        <h3>Enter Dish Name</h3>
-        <input type="text" name="AddItemName" placeholder="Dish Name"><br>
-        <input type="radio" name="TrueOrFalse[]" value="True">True
-        <input type="radio" name="TrueOrFalse[]" value="False">False<br>
-        <input type="submit" class="btn btn-primary" name="GetDish" value="Submit">
+        <h3 id="enterDishNameText">Enter Dish Name</h3>
+        <input type="text" name="AddItemName" id="dishNameText" placeholder="Dish Name"><br>
+        <div id="trueAndFalseButtons">
+          <input type="radio" name="TrueOrFalse[]" value="True"> True
+          <input type="radio" name="TrueOrFalse[]" value="False"> False<br>
+        </div>
+        <input type="submit" class="btn btn-success btn-md" id="getDishSubmit" name="GetDish" value="Submit">
         <!-- pop up for the change avaiablitiy. -->
         <?php
         require '../../Connections/ConnectionCustomer.php';
