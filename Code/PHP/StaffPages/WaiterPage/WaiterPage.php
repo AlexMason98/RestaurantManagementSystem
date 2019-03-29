@@ -112,28 +112,30 @@ $user = mysqli_fetch_array($results);
                     for ($j=0; $j < $i; $j++) { 
                       switch($GetStatus){
                         case "Order Placed":
-                        $UpdateSql = "UPDATE  Orders SET Status = '$GetStatus' WHERE Item='$ItemRowData[$j]' AND TableNo='$TableNoRowData[$j]' AND ID ='$IdRowData[$j]'";
+                        $UpdateSql = "UPDATE Orders SET Status = '$GetStatus' WHERE Item='$ItemRowData[$j]' AND TableNo='$TableNoRowData[$j]' AND ID ='$IdRowData[$j]'";
                         break;
                         case "Cooking":
-                        $UpdateSql = "UPDATE  Orders SET Status = '$GetStatus' WHERE Item='$ItemRowData[$j]' AND TableNo='$TableNoRowData[$j]' AND ID ='$IdRowData[$j]'";
+                        $UpdateSql = "UPDATE Orders SET Status = '$GetStatus' WHERE Item='$ItemRowData[$j]' AND TableNo='$TableNoRowData[$j]' AND ID ='$IdRowData[$j]'";
                         break;
                         case "Cooked":
-                        $UpdateSql = "UPDATE  Orders SET Status = '$GetStatus' WHERE Item='$ItemRowData[$j]' AND TableNo='$TableNoRowData[$j]' AND ID ='$IdRowData[$j]'";
+                        $UpdateSql = "UPDATE Orders SET Status = '$GetStatus' WHERE Item='$ItemRowData[$j]' AND TableNo='$TableNoRowData[$j]' AND ID ='$IdRowData[$j]'";
                         break;
                         case "Delivered":
-                        $UpdateSql = "DELETE  FROM Orders WHERE Item='$ItemRowData[$j]' AND TableNo='$TableNoRowData[$j]' AND ID ='$IdRowData[$j]'";
+                        $UpdateSql = "DELETE FROM Orders WHERE Item='$ItemRowData[$j]' AND TableNo='$TableNoRowData[$j]' AND ID ='$IdRowData[$j]'";
                         break;
                         default:
-                        echo"didnt work";
-                        // The swtich statement selects the sql query.  
-                        // which update the status to oder placed, cooking and cooked. 
-                        // when it comes to deliveried the Dish is removed from the database.
+                        echo "Error getting status";
+                        // The switch statement selects the SQL query.  
+                        // This updates the status to 'Order Placed', 'Cooking' and 'Cooked'. 
+                        // When the status is set to 'Delivered' the Dish is removed from the database.
                       }
                     }
                     $res = $conn->query($UpdateSql);
                     if($res === True){
-                      echo('<meta http-equiv="refresh" content="0">');
-                      // Refreshes the page after the update sql has run.
+                      // We refresh the Waiter page if the UpdateSQL query has executed so that we can display the new status change
+                      echo('<script>');
+                      echo('window.location.href = "WaiterPage.php";');
+                      echo('</script>');
                     } else{
                       echo "Error updating record! Try again.";
                     }
